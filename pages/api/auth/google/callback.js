@@ -16,22 +16,18 @@ export default async function handler(req, res) {
     redirect_uri: `${process.env.SERVER_ROOT_URI}/api/auth/google/callback`,
     grant_type: "authorization_code",
   };
-  let id_token = "";
-  let access_token = "";
-  try {
-    const response = await axios.post(url, querystring.stringify(values), {
+
+  const { id_token, access_token, refresh_token } = await axios
+    .post(url, querystring.stringify(values), {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
+    })
+    .then((res) => res.data)
+    .catch((error) => {
+      console.error(`Failed to fetch auth tokens`);
+      throw new Error(error.message);
     });
-
-    id_token = response.data.id_token;
-    access_token = response.data.access_token;
-  } catch (error) {
-    console.error(error);
-  }
-
-  // Fetch the user's profile with the access token and bearer
 
   const googleUser = await axios
     .get(
@@ -53,5 +49,8 @@ export default async function handler(req, res) {
   res.status(200).json({
     user: googleUser,
     token,
+    id_token,
+    access_token,
+    refresh_token,
   });
 }
