@@ -1,0 +1,57 @@
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
+const querystring = require("querystring");
+const axios = require("axios").default;
+
+const jwt = require("jsonwebtoken");
+
+export default async function handler(req, res) {
+  const code = req.query.code;
+
+  const url = "https://oauth2.googleapis.com/token";
+  const values = {
+    code,
+    client_id: process.env.GOOGLE_CLIENT_ID,
+    client_secret: process.env.GOOGLE_CLIENT_SECRET,
+    redirect_uri: `${process.env.SERVER_ROOT_URI}/api/auth/google/callback`,
+    grant_type: "authorization_code",
+  };
+  let id_token = "";
+  let access_token = "";
+  try {
+    const response = await axios.post(url, querystring.stringify(values), {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    });
+
+    id_token = response.data.id_token;
+    access_token = response.data.access_token;
+  } catch (error) {
+    console.error(error);
+  }
+
+  // Fetch the user's profile with the access token and bearer
+
+  const googleUser = await axios
+    .get(
+      `https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${access_token}`,
+      {
+        headers: {
+          Authorization: `Bearer ${id_token}`,
+        },
+      }
+    )
+    .then((res) => res.data)
+    .catch((error) => {
+      console.error(`Failed to fetch user`);
+      throw new Error(error.message);
+    });
+
+  const token = jwt.sign(googleUser, "ksksks");
+
+  res.status(200).json({
+    user: googleUser,
+    token,
+  });
+}
