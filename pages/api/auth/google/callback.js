@@ -1,6 +1,4 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-const querystring = require("querystring");
 const axios = require("axios").default;
 
 const jwt = require("jsonwebtoken");
@@ -17,8 +15,10 @@ export default async function handler(req, res) {
     grant_type: "authorization_code",
   };
 
+  const params = new URLSearchParams(values);
+
   const { id_token, access_token, refresh_token } = await axios
-    .post(url, querystring.stringify(values), {
+    .post(url, params.toString(), {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
@@ -44,7 +44,7 @@ export default async function handler(req, res) {
       throw new Error(error.message);
     });
 
-  const token = jwt.sign(googleUser, "ksksks");
+  const token = jwt.sign(googleUser, process.env.JWT_SECRET);
 
   res.status(200).json({
     user: googleUser,

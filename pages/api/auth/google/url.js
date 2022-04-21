@@ -13,7 +13,9 @@ export default function handler(req, res) {
     ].join(" "),
   };
 
-  const url = `${rootUrl}?${querystring.stringify(options)}`;
+  const params = new URLSearchParams(options);
+
+  const url = `${rootUrl}?${params.toString()}`;
 
   res.status(200).json({ url });
 }
