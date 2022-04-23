@@ -1,12 +1,14 @@
-import gsap from "gsap";
 import Head from "next/head";
-import { useEffect, useRef } from "react";
+import Footer from "../components/Footer";
 
-export default function Home() {
-  useEffect(() => {
-    gsap.to(".box", { rotation: "+=360", repeat: -1 });
-  });
+import Header from "../components/Header";
 
+import AboutSection from "../components/sections/AboutSection";
+import EventsSection from "../components/sections/EventsSection";
+import HeroSection from "../components/sections/HeroSection";
+import SponsorsSection from "../components/sections/SponsorsSection";
+
+export default function HomePage() {
   return (
     <div>
       <Head>
@@ -15,11 +17,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="grid h-screen place-items-center">
-        <div className="box w-20 h-20 bg-green-50 flex place-content-center shadow rounded">
-          Hello
-        </div>
+      <Header />
+
+      <main className="overflow-x-hidden">
+        <HeroSection />
+        <AboutSection />
+        <EventsSection />
+        <SponsorsSection />
       </main>
+
+      <Footer />
     </div>
   );
 }
