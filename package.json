@@ -13,6 +13,7 @@
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "gsap": "^3.10.3",
+    "hls.js": "^1.1.5",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.1",
