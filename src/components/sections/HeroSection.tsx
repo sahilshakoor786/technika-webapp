@@ -7,7 +7,7 @@ export default class VideoPlayer extends React.Component {
     if (Hls.isSupported() && this.player) {
       const video = this.player;
       const hls = new Hls();
-      const url = "/videos/main_video_2/640p.m3u8";
+      const url = "/videos/main_video_2/720p.m3u8";
 
       hls.loadSource(url);
       hls.attachMedia(video);
@@ -20,8 +20,14 @@ export default class VideoPlayer extends React.Component {
     return (
       <section
         id="hero"
-        className="relative flex items-center justify-center h-screen overflow-hidden"
+        className="relative flex  justify-center h-screen overflow-hidden"
       >
+        <div
+          className="z-10 relative text-white md:w-1/2 
+      bg-blue-800/10 backdrop-blur shadow-lg py-6 px-2 space-y-2"
+        >
+          <img src="/videos/image-2.png" width="20%" />
+        </div>
         <video
           className="absolute w-auto min-w-full min-h-full max-w-none"
           ref={(player) => (this.player = player)}
@@ -35,7 +41,7 @@ export default class VideoPlayer extends React.Component {
       bg-blue-800/10 backdrop-blur flex flex-col justify-center shadow-lg py-6 px-2 space-y-2"
         >
           <span className="text-6xl md:text-8xl text-white font-dm-sans text-center break-all">
-            #tecknika
+            TECHNIKA
           </span>
           <span className="text-5xl md:text-6xl text-white font-dm-sans text-center">
             Go beyond
