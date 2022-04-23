@@ -7,7 +7,7 @@ export default class VideoPlayer extends React.Component {
     if (Hls.isSupported() && this.player) {
       const video = this.player;
       const hls = new Hls();
-      const url = "/videos/main_video/640p.m3u8";
+      const url = "/videos/main_video_2/640p.m3u8";
 
       hls.loadSource(url);
       hls.attachMedia(video);
