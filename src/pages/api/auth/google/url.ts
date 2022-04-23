@@ -1,5 +1,13 @@
-const querystring = require("querystring");
-export default function handler(req, res) {
+import { NextApiRequest, NextApiResponse } from "next";
+import querystring from "querystring";
+
+export default function handler({
+  req,
+  res,
+}: {
+  req: NextApiRequest;
+  res: NextApiResponse;
+}) {
   const rootUrl = "https://accounts.google.com/o/oauth2/v2/auth";
   const options = {
     redirect_uri: `${process.env.SERVER_ROOT_URI}/api/auth/google/callback`,

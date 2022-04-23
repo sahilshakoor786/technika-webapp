@@ -1,9 +1,19 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
+import { NextApiRequest, NextApiResponse } from "next";
+
+const querystring = require("querystring");
 const axios = require("axios").default;
 
 const jwt = require("jsonwebtoken");
 
-export default async function handler(req, res) {
+export default async function handler({
+  req,
+  res,
+}: {
+  req: NextApiRequest;
+  res: NextApiResponse;
+}) {
   const code = req.query.code;
 
   const url = "https://oauth2.googleapis.com/token";
@@ -23,10 +33,10 @@ export default async function handler(req, res) {
         "Content-Type": "application/x-www-form-urlencoded",
       },
     })
-    .then((res) => res.data)
-    .catch((error) => {
+    .then((res: any) => res.data)
+    .catch((error: any) => {
       console.error(`Failed to fetch auth tokens`);
-      throw new Error(error.message);
+      throw new Error(error.message); // NOTE: This halts the execution
     });
 
   const googleUser = await axios
@@ -38,10 +48,10 @@ export default async function handler(req, res) {
         },
       }
     )
-    .then((res) => res.data)
-    .catch((error) => {
+    .then((res: any) => res.data)
+    .catch((error: any) => {
       console.error(`Failed to fetch user`);
-      throw new Error(error.message);
+      throw new Error(error.message); // NOTE: This halts the execution
     });
 
   const token = jwt.sign(googleUser, process.env.JWT_SECRET);
