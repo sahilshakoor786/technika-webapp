@@ -7,13 +7,7 @@ const axios = require("axios").default;
 
 const jwt = require("jsonwebtoken");
 
-export default async function handler({
-  req,
-  res,
-}: {
-  req: NextApiRequest;
-  res: NextApiResponse;
-}) {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
   const code = req.query.code;
 
   const url = "https://oauth2.googleapis.com/token";
@@ -36,7 +30,7 @@ export default async function handler({
     .then((res: any) => res.data)
     .catch((error: any) => {
       console.error(`Failed to fetch auth tokens`);
-      throw new Error(error.message); // NOTE: This halts the execution
+      throw new Error(error.message);
     });
 
   const googleUser = await axios
@@ -51,7 +45,7 @@ export default async function handler({
     .then((res: any) => res.data)
     .catch((error: any) => {
       console.error(`Failed to fetch user`);
-      throw new Error(error.message); // NOTE: This halts the execution
+      throw new Error(error.message);
     });
 
   const token = jwt.sign(googleUser, process.env.JWT_SECRET);
@@ -63,4 +57,4 @@ export default async function handler({
     access_token,
     refresh_token,
   });
-}
+};

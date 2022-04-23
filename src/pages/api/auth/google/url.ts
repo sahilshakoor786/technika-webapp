@@ -1,13 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import querystring from "querystring";
 
-export default function handler({
-  req,
-  res,
-}: {
-  req: NextApiRequest;
-  res: NextApiResponse;
-}) {
+import { connectToDatabase } from "src/lib/mongodb";
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  const { db } = await connectToDatabase();
   const rootUrl = "https://accounts.google.com/o/oauth2/v2/auth";
   const options = {
     redirect_uri: `${process.env.SERVER_ROOT_URI}/api/auth/google/callback`,
@@ -26,4 +22,4 @@ export default function handler({
   const url = `${rootUrl}?${params.toString()}`;
 
   res.status(200).json({ url });
-}
+};
