@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import React, { useEffect, useState } from "react";
 import FancyImage from "../FancyImage";
+import Image from "next/image";
 
 export default function EventsSection() {
   gsap.registerPlugin(ScrollTrigger);
