@@ -69,8 +69,10 @@ export default function Header() {
         ></div>
       </div>
 
-      <img src="/images/logo.png" className="absolute z-10 w-32 top-10 left-10" />
-
+      <img
+        src="https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png"
+        className="absolute z-10 w-32 top-10 left-10"
+      />
 
       <div
         id="menu-links"
@@ -124,7 +126,10 @@ export default function Header() {
         shadow-lg
         grid place-items-center"
       >
-        <img src="/images/menu.svg" className="w-6 h-6" />
+        <img
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/menu.svg"
+          className="w-6 h-6"
+        />
       </button>
     </header>
   );
