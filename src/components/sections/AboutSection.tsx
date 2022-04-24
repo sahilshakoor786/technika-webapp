@@ -11,11 +11,22 @@ export default function AboutSection() {
       scrollTrigger: {
         trigger: "#about",
         start: "top center",
+        scrub: 1,
       },
       height: 400,
-      opacity: 1,
-      duration: 2,
+      duration: 1,
       ease: "slow(0.7, 0.7, false)",
+    });
+
+    gsap.to("#about-image", {
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top center",
+        scrub: 1,
+      },
+      scale: 1,
+      duration: 1,
+      delay: 0.5
     });
   }, []);
 
@@ -25,15 +36,17 @@ export default function AboutSection() {
       className="h-screen bg-slate-700 p-10 flex justify-center 
       items-center md:space-x-10 flex-wrap"
     >
-      <FancyImage
-        src="https://dummyimage.com/300x400"
-        width={300}
-        height={400}
-      />
+      <span id="about-image" className="scale-75">
+        <FancyImage
+          src="https://dummyimage.com/300x400"
+          width={300}
+          height={400}
+        />
+      </span>
 
       <div
         id="about-text"
-        className="font-primary text-xl text-white  opacity-0 text-left max-w-xl relative h-0 overflow-hidden grid place-items-center"
+        className="font-primary text-xl text-white text-left max-w-xl relative h-0 overflow-hidden grid place-items-center"
       >
         <span>
           Lorem Ipsum is simply dummy text of the printing and typesetting
