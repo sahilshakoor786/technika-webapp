@@ -16,7 +16,7 @@
     "jsx": "preserve",
     "baseUrl": "."
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/auth/google/callback.ts", "src/pages/_app.js"],
-  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/auth/google/callback.ts", "src/pages/_app.js", "backend/model/user.js", "backend/model/counters.js", "backend/lib/utils.js"],
+  "exclude": ["node_modules","backend"],
   "compileOnSave": false,
 }

@@ -43,6 +43,8 @@ app.get("/", (req, res) => {
   res.send(views);
 });
 
+app.get("api/auth/google/url");
+
 const run = async () => {
   const mongooseConnection = await mongoose.connect(
     process.env.MONGO_URL || "mongodb://localhost:27017/tsc-backend"

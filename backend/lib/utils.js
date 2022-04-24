@@ -1,7 +1,7 @@
 // get next sequnece number
 import Counter from "src/model/counters";
 
-export async function getNextSequence(name: string): Promise<number> {
+export async function getNextSequence(name) {
   var sequence = await Counter.findOneAndUpdate(
     { _id: name },
     { $inc: { sequence_value: 1 } },
