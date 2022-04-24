@@ -9,7 +9,8 @@ export default function HeroSection() {
     if (Hls.isSupported() && playerRef.current) {
       const video = playerRef.current;
       const hls = new Hls();
-      const url = "/videos/main_video_2/720p.m3u8";
+      const url =
+        "https://d2jf5yk8vvx0ti.cloudfront.net/videos/main_video_2/720p.m3u8";
 
       hls.loadSource(url);
       hls.attachMedia(video);
@@ -24,7 +25,6 @@ export default function HeroSection() {
       id="hero"
       className="relative flex justify-center h-screen items-center overflow-hidden"
     >
- 
       <video
         className="absolute w-auto min-w-full min-h-full max-w-none"
         ref={playerRef}
