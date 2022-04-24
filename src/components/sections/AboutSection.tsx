@@ -15,17 +15,16 @@ export default function AboutSection() {
       },
       height: 400,
       duration: 1,
-      ease: "slow(0.7, 0.7, false)",
     });
 
     gsap.to("#about-image", {
       scrollTrigger: {
         trigger: "#about",
         start: "top center",
+        end: "top top",
         scrub: 1,
       },
-      scale: 1,
-      duration: 1,
+      height: 400,
       delay: 0.5
     });
   }, []);
@@ -36,7 +35,7 @@ export default function AboutSection() {
       className="h-screen bg-slate-700 p-10 flex justify-center 
       items-center md:space-x-10 flex-wrap"
     >
-      <span id="about-image" className="scale-75">
+      <span id="about-image" className="h-0 overflow-hidden">
         <FancyImage
           src="https://dummyimage.com/300x400"
           width={300}
