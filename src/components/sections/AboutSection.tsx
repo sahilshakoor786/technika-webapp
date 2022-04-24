@@ -11,10 +11,27 @@ export default function AboutSection() {
       scrollTrigger: {
         trigger: "#about",
         start: "top center",
+        end: "top top",
+        scrub: 1,
       },
-      height: 400,
+      height: 480,
+      duration: 1,
       opacity: 1,
-      duration: 2,
+      delay: 0.5,
+      ease: "slow(0.7, 0.7, false)",
+    });
+
+    gsap.to("#about-image", {
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top center",
+        end: "top top",
+        scrub: 1,
+      },
+      height: 460,
+      delay: 0.7,
+      opacity: 1,
+      duration: 1,
       ease: "slow(0.7, 0.7, false)",
     });
   }, []);
@@ -22,26 +39,37 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="h-screen bg-slate-700 p-10 flex justify-center 
+      className="h-full min-h-screen bg-slate-700 py-10 px-10 lg:px-20 flex justify-center 
       items-center md:space-x-10 flex-wrap"
     >
-      <FancyImage
-        src="https://dummyimage.com/300x400"
-        width={300}
-        height={400}
-      />
+      <span
+        id="about-image"
+        className="h-0 w-full max-w-xl overflow-hidden 
+      flex justify-center items-center opacity-50"
+      >
+        <FancyImage
+          src="https://dummyimage.com/300x400"
+          width={300}
+          height={400}
+        />
+      </span>
 
       <div
         id="about-text"
-        className="font-primary text-xl text-white  opacity-0 text-left max-w-xl relative h-0 overflow-hidden grid place-items-center"
+        className="font-primary text-xl text-white text-center max-w-xl relative h-0 
+          overflow-hidden grid place-items-center opacity-50"
       >
         <span>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
+          <h1 className="text-5xl my-4">About</h1>
+          Technical Sub-Council HBTU takes initiative, promotes, conducts, and
+          manages all the technical events and activities in HBTU to foster
+          technical growth and problem solving among its students. It is the
+          overseer of all technical clubs in HBTU and helps in the management
+          and conduction of events/activities in coordination with the clubs.
+          Technical Sub-Council through its events strives to give the students
+          a platform to learn and understand various technologies that aid
+          innovation and development, through various events, seminars and
+          activities
         </span>
       </div>
     </section>

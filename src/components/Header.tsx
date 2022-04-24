@@ -1,10 +1,8 @@
 import gsap from "gsap";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
-
   const [timelines, setTimelines] = useState<Array<gsap.core.Timeline>>([]);
 
   useEffect(() => {
@@ -13,6 +11,7 @@ export default function Header() {
         duration: 0.8,
         scaleX: 1.2,
         scaleY: 1.2,
+        backgroundColor: "rgb(236 72 153)",
         ease: "elastic.out(1, 0.3)",
       }),
       gsap.timeline({ paused: true }).to("#menu-button", {
@@ -22,6 +21,7 @@ export default function Header() {
       gsap.timeline({ paused: true }).to("#drawer-overlay-01", {
         scaleX: 100,
         scaleY: 100,
+        opacity: 0,
         duration: 1.2,
         ease: "slow(0.7, 0.7, false)",
       }),
@@ -60,12 +60,12 @@ export default function Header() {
       <div id="menu-overlays">
         <div
           id="drawer-overlay-01"
-          className="fixed z-20 right-12 top-10 w-10 h-10 rounded-full bg-blue-900/70"
+          className="fixed z-20 right-10 top-10 w-12 h-12 rounded-full bg-pink-500/70 "
         ></div>
 
         <div
           id="drawer-overlay-02"
-          className="fixed z-20 right-12 top-10 w-10 h-10 rounded-full bg-black/30"
+          className="fixed z-20 right-10 top-10 w-12 h-12 rounded-full bg-black/70"
         ></div>
       </div>
 
@@ -120,11 +120,11 @@ export default function Header() {
       <button
         id="menu-button"
         onClick={toggleMenu}
-        className="fixed z-20 right-10 top-10 rounded-full w-14 h-14 bg-blue-900 
+        className="fixed z-20 right-10 top-10 rounded-full w-12 h-12 bg-blue-900 
         shadow-lg
         grid place-items-center"
       >
-        <img src="/images/menu.svg" className="w-8 h-8" />
+        <img src="/images/menu.svg" className="w-6 h-6" />
       </button>
     </header>
   );

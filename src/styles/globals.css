@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
+@font-face {
+  font-family: "aquire-font";
+  src: url("/fonts/aquire-font/Aquire.otf") format("opentype");
+  src: url("/fonts/aquire-font/AquireBold.otf") format("opentype");
+  src: url("/fonts/aquire-font/AquireLight.otf") format("opentype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,17 +35,5 @@
 @layer utilities {
   .font-primary {
     font-family: "aquire-font";
-    src: url("/aquire-font/Aquire-BW0ox.ttf");
-    src: url("/aquire-font/AquireBold-8Ma60.ttf");
-    src: url("/aquire-font/AquireLight-YzE0o.ttf");
   }
-}
-
-
-
-@font-face {
-  font-family: "aquire-font";
-  src: url("/aquire-font/Aquire-BW0ox.ttf");
-  src: url("/aquire-font/AquireBold-8Ma60.ttf");
-  src: url("/aquire-font/AquireLight-YzE0o.ttf");
 }
