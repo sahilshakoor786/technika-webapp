@@ -79,7 +79,7 @@ var user = new Schema({
 });
 
 // NOTE: i think this line is a bug
-// mongoose.models = {};
+mongoose.models = {};
 
 var User = mongoose.model("User", user);
-export default User;
+export default mongoose.models.User || User;

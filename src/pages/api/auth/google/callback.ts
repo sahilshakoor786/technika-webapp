@@ -7,12 +7,12 @@ const axios = require("axios").default;
 
 const jwt = require("jsonwebtoken");
 
-import { connectToDatabase } from "src/lib/mongodb";
+import { connectToDatabase } from "backend/lib/mongodb";
 import User from "src/model/user";
 
-import { getNextSequence } from "src/lib/utils";
+import { getNextSequence } from "backend/lib/utils";
 
-import { getSession } from "src/lib/session";
+import { getSession } from "backend/lib/session";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   connectToDatabase();
@@ -66,10 +66,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
   let id = "0000" + nextId.toString();
 
-  id = id.slice(nextId.toString().length - 1);
+  const tscId = "TSC22" + id.slice(nextId.toString().length - 1);
 
   const user = new User({
-    tscId: "TSC22" + id,
+    tscId: tscId,
     email,
     name: googleUser.name,
     isHbtuStudent: true,
@@ -92,8 +92,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const session = await getSession(req, res);
 
   session.user = {
-    tscId: user.tscId,
-    email: user.email,
+    tscId: tscId,
+    email: email,
     token: token,
   };
 

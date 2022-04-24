@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import querystring from "querystring";
 
-import { connectToDatabase } from "src/lib/mongodb";
+import { connectToDatabase } from "backend/lib/mongodb";
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { db } = await connectToDatabase();
   const rootUrl = "https://accounts.google.com/o/oauth2/v2/auth";
