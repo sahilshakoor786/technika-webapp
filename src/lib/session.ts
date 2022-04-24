@@ -18,6 +18,7 @@ redisClient.on("connect", function () {
   console.log("Connected to redis successfully");
 });
 
+// TODO: is this correct? this is giving error on my end
 export const getSession = nextSession({
   secret: process.env.SESSION_SECRET || "secret",
   cookie: {
