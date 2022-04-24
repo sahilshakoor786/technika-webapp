@@ -1,5 +1,7 @@
 const axios = require("axios").default;
 const jwt = require("jsonwebtoken");
+const utils = require("../lib/utils");
+const User = require("../model/user");
 /**
  * @param {express.Request} req
  * @param {express.Response} res
@@ -81,7 +83,7 @@ exports.googleCallback = async (req, res, _) => {
 
     const email = googleUser.email;
 
-    let nextId = await getNextSequence("userid");
+    let nextId = await utils.getNextSequence("userid");
     if (nextId === null) {
       console.error(`Failed to get next user id`);
     }
@@ -110,7 +112,18 @@ exports.googleCallback = async (req, res, _) => {
 
     await user.save();
 
-    res.status(200).json(session);
+    res.status(200).json({
+      token,
+      user: {
+        tscId,
+        email,
+        name: googleUser.name,
+        picture: googleUser.picture,
+
+        isHbtuStudent: user.isHbtuStudent,
+        isTSCTeamMember: user.isTSCAdmin,
+      },
+    });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
