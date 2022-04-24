@@ -2,6 +2,7 @@ import gsap from "gsap";
 
 import React, { useEffect, useRef, useState } from "react";
 import FancyImage from "../FancyImage";
+import Image from "next/image";
 
 export default function EventsSection() {
   const [popup, setPopup] = useState(false);
@@ -100,7 +101,10 @@ export default function EventsSection() {
             className="transition ease-in-out delay-15 z-20 right-4 top-4 absolute rounded-full w-12 h-12 bg-pink-500 
               shadow-lg grid place-items-center hover:scale-110"
           >
-            <img src="/images/close.svg" className="w-6 h-6" />
+            <Image
+              src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+              className="w-6 h-6"
+            />
           </button>
         </div>
       </div>
@@ -116,7 +120,10 @@ export default function EventsSection() {
             className="transition ease-in-out delay-15 z-20 right-4 top-4 absolute rounded-full w-12 h-12 bg-pink-500 
     shadow-lg grid place-items-center hover:scale-110"
           >
-            <img src="/images/close.svg" className="w-6 h-6" />
+            <Image
+              src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+              className="w-6 h-6"
+            />
           </button>
         </div>
       </div>
@@ -132,7 +139,10 @@ export default function EventsSection() {
             className="transition ease-in-out delay-15 z-20 right-4 top-4 absolute rounded-full w-12 h-12 bg-pink-500 
     shadow-lg grid place-items-center hover:scale-110"
           >
-            <img src="/images/close.svg" className="w-6 h-6" />
+            <Image
+              src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+              className="w-6 h-6"
+            />
           </button>
         </div>
       </div>
@@ -148,7 +158,10 @@ export default function EventsSection() {
             className="transition ease-in-out delay-15 z-20 right-4 top-4 absolute rounded-full w-12 h-12 bg-pink-500 
     shadow-lg grid place-items-center hover:scale-110"
           >
-            <img src="/images/close.svg" className="w-6 h-6" />
+            <Image
+              src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+              className="w-6 h-6"
+            />
           </button>
         </div>
       </div>

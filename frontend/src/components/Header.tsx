@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 export default function Header() {
   const [menu, setMenu] = useState(false);
   const [timelines, setTimelines] = useState<Array<gsap.core.Timeline>>([]);
@@ -69,7 +69,7 @@ export default function Header() {
         ></div>
       </div>
 
-      <img
+      <Image
         src="https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png"
         className="absolute z-10 w-32 top-10 left-10"
       />
@@ -126,7 +126,7 @@ export default function Header() {
         shadow-lg
         grid place-items-center"
       >
-        <img
+        <Image
           src="https://d2jf5yk8vvx0ti.cloudfront.net/images/menu.svg"
           className="w-6 h-6"
         />
