@@ -12,6 +12,8 @@ import User from "src/model/user";
 
 import { getNextSequence } from "src/lib/utils";
 
+import { getSession } from "src/lib/session";
+
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   connectToDatabase();
   const code = req.query.code;
@@ -87,11 +89,13 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   await user.save();
 
-  res.status(200).json({
-    user: googleUser,
-    token,
-    id_token,
-    access_token,
-    refresh_token,
-  });
+  const session = await getSession(req, res);
+
+  session.user = {
+    tscId: user.tscId,
+    email: user.email,
+    token: token,
+  };
+
+  res.status(200).json(session);
 };
