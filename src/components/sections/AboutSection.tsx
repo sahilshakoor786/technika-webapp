@@ -14,8 +14,11 @@ export default function AboutSection() {
         end: "top top",
         scrub: 1,
       },
-      height: 400,
+      height: 480,
       duration: 1,
+      opacity: 1,
+      delay: 0.5,
+      ease: "slow(0.7, 0.7, false)",
     });
 
     gsap.to("#about-image", {
@@ -25,18 +28,22 @@ export default function AboutSection() {
         end: "top top",
         scrub: 1,
       },
-      height: 440,
-      delay: 0.5
+      height: 460,
+      delay: 0.7,
+      opacity: 1,
+      duration: 1,
+      ease: "slow(0.7, 0.7, false)",
     });
   }, []);
 
   return (
     <section
       id="about"
-      className="h-full min-h-screen bg-slate-700 p-10 flex justify-center 
+      className="h-full min-h-screen bg-slate-700 py-10 px-10 lg:px-20 flex justify-center 
       items-center md:space-x-10 flex-wrap"
     >
-      <span id="about-image" className="h-0 w-full max-w-xl overflow-hidden flex justify-center">
+      <span id="about-image" className="h-0 w-full max-w-xl overflow-hidden 
+      flex justify-center items-center opacity-50">
         <FancyImage
           src="https://dummyimage.com/300x400"
           width={300}
@@ -46,7 +53,8 @@ export default function AboutSection() {
 
       <div
         id="about-text"
-        className="font-primary text-xl text-white text-left max-w-xl relative h-0 overflow-hidden grid place-items-center"
+        className="font-primary text-xl text-white text-center max-w-xl relative h-0 
+          overflow-hidden grid place-items-center opacity-50"
       >
         <span>
           Technical Sub-Council HBTU takes initiative, promotes, conducts,

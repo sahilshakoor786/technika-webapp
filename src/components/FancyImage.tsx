@@ -22,7 +22,7 @@ export default function FancyImage({
     gsap.to(imgRef.current, {
       rotateX: ((e.screenY / 10) % 20) * -Math.sign(e.movementY),
       rotateY: ((e.screenX / 10) % 20) * Math.sign(e.movementX),
-      scale: 1.2,
+      scale: 1.1,
       ease: "ease.in",
       duration: 1,
     });

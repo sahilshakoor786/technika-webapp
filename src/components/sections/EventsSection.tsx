@@ -91,10 +91,10 @@ export default function EventsSection() {
       <div
         id="event-1"
         className="fixed w-screen h-screen  top-full flex justify-center items-center 
-        backdrop-blur opacity-0  z-40 scale-50">
+        backdrop-blur opacity-0 px-5 z-40 scale-50">
 
 
-        <div className="w-1/2 h-2/3 bg-white shadow-lg relative rounded-lg">
+        <div className="w-full max-w-5xl h-2/3 bg-white shadow-lg relative rounded-lg">
 
           <button
             onClick={() => fancyPopup(0)}
@@ -111,10 +111,10 @@ export default function EventsSection() {
       <div
         id="event-2"
         className="fixed w-screen h-screen  top-full flex justify-center items-center 
-        backdrop-blur opacity-0  z-40 scale-50">
+        backdrop-blur opacity-0 px-5 z-40 scale-50">
 
 
-        <div className="w-1/2 h-2/3 bg-white shadow-lg relative rounded-lg">
+        <div className="w-full max-w-5xl h-2/3 bg-white shadow-lg relative rounded-lg">
 
           <button
             onClick={() => fancyPopup(1)}
@@ -131,10 +131,10 @@ export default function EventsSection() {
       <div
         id="event-3"
         className="fixed w-screen h-screen  top-full flex justify-center items-center 
-        backdrop-blur opacity-0  z-40 scale-50">
+        backdrop-blur opacity-0 px-5 z-40 scale-50">
 
 
-        <div className="w-1/2 h-2/3 bg-white shadow-lg relative rounded-lg">
+        <div className="w-full max-w-5xl h-2/3 bg-white shadow-lg relative rounded-lg">
 
           <button
             onClick={() => fancyPopup(2)}
@@ -151,10 +151,10 @@ export default function EventsSection() {
       <div
         id="event-4"
         className="fixed w-screen h-screen  top-full flex justify-center items-center 
-        backdrop-blur opacity-0  z-40 scale-50">
+        backdrop-blur opacity-0 px-5 z-40 scale-50">
 
 
-        <div className="w-1/2 h-2/3 bg-white shadow-lg relative rounded-lg">
+        <div className="w-full max-w-5xl h-2/3 bg-white shadow-lg relative rounded-lg">
 
           <button
             onClick={() => fancyPopup(3)}
