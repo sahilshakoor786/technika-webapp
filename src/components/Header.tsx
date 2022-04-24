@@ -60,12 +60,12 @@ export default function Header() {
       <div id="menu-overlays">
         <div
           id="drawer-overlay-01"
-          className="fixed z-20 right-10 top-10 w-12 h-12 rounded-full bg-pink-500/50"
+          className="fixed z-20 right-10 top-10 w-12 h-12 rounded-full bg-pink-500/70 "
         ></div>
 
         <div
           id="drawer-overlay-02"
-          className="fixed z-20 right-10 top-10 w-12 h-12 rounded-full bg-black/50"
+          className="fixed z-20 right-10 top-10 w-12 h-12 rounded-full bg-black/70"
         ></div>
       </div>
 
