@@ -69,6 +69,9 @@ export default function Header() {
         ></div>
       </div>
 
+      <img src="/images/logo.png" className="absolute z-10 w-32 top-10 left-10" />
+
+
       <div
         id="menu-links"
         className="fixed text-white z-20 hidden

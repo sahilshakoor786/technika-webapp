@@ -21,12 +21,12 @@
 
 @layer components {
   .menu-link {
-    @apply transition ease-in-out delay-150 font-dm-sans text-right  hover:text-pink-500;
+    @apply transition ease-in-out delay-150 font-primary text-right  hover:text-pink-500;
   }
 }
 
 @layer utilities {
-  .font-dm-sans {
+  .font-primary {
     font-family: "aquire-font";
     src: url("/aquire-font/Aquire-BW0ox.ttf");
     src: url("/aquire-font/AquireBold-8Ma60.ttf");

@@ -43,7 +43,7 @@ export default function FancyImage({
 
   return (
     <div
-      className="relative grid place-items-center"
+      className="relative grid place-items-center cursor-pointer"
       style={{ width: width, height: height, perspective: 700 }}
       onMouseMove={fancyImageHover}
       onMouseOut={fancyImageOut}
