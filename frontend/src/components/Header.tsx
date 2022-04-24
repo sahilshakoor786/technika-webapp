@@ -1,6 +1,5 @@
 import gsap from "gsap";
 import { useEffect, useState } from "react";
-
 export default function Header() {
   const [menu, setMenu] = useState(false);
   const [timelines, setTimelines] = useState<Array<gsap.core.Timeline>>([]);
