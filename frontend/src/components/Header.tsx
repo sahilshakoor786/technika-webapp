@@ -69,11 +69,13 @@ export default function Header() {
         ></div>
       </div>
 
-      <img
-        src="https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png"
-        className="absolute z-10 w-32 top-10 left-10"
-      />
-
+      <a href="/">
+        <img
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png"
+          className="absolute z-10 w-32 top-10 left-10"
+        />
+      </a>
+      
       <div
         id="menu-links"
         className="fixed text-white z-20 hidden
@@ -100,20 +102,38 @@ export default function Header() {
           </span>
 
           <span className="h-0 overflow-hidden">
-            <a href="/#events" className="menu-link text-7xl">
+            <a
+              href="/#about"
+              className="menu-link text-7xl"
+              onClick={toggleMenu}
+            >
+              About
+            </a>
+          </span>
+
+          <span className="h-0 overflow-hidden">
+            <a
+              href="/#events"
+              className="menu-link text-7xl"
+              onClick={toggleMenu}
+            >
               Events
             </a>
           </span>
 
           <span className="h-0 overflow-hidden">
-            <a href="/#" className="menu-link text-7xl">
-              Register
+            <a
+              href="/#sponsors"
+              className="menu-link text-7xl"
+              onClick={toggleMenu}
+            >
+              Sponsors
             </a>
           </span>
 
           <span className="h-0 overflow-hidden">
-            <a href="/#sponsors" className="menu-link text-7xl">
-              Sponsors
+            <a href="/register" className="menu-link text-7xl">
+              Register
             </a>
           </span>
         </div>

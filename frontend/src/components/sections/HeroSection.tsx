@@ -23,10 +23,10 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="h-full min-h-screen relative flex justify-center items-center"
+      className="bg-black h-full min-h-screen relative flex justify-center items-center"
     >
       <video
-        className="absolute w-auto min-w-full min-h-full max-w-none"
+        className="absolute w-auto min-w-full min-h-full max-w-none bg-black"
         ref={playerRef}
         autoPlay={true}
         loop
@@ -40,12 +40,17 @@ export default function HeroSection() {
         <span className="text-6xl md:text-8xl font-bold text-white font-primary text-center break-all">
           TECHNIKA
         </span>
-        <span className="text-3xl md:text-5xl text-white font-primary text-center">
+        <span className="text-5xl md:text-6xl font-bold text-white font-primary text-center break-all">
+          29-05-2020
+        </span>
+        <span className="text-2xl md:text-4xl text-white font-primary text-center">
           Unravel la créativité
         </span>
 
         <span className="flex justify-center">
-          <PrimaryButton text="Register now" onClick={() => alert("red")} />
+          <a href="/register">
+            <PrimaryButton text="Register now" />
+          </a>
         </span>
       </div>
     </section>
