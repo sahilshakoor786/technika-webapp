@@ -64,8 +64,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
   let id = "0000" + nextId.toString();
 
-  // id is last 5 digits of id
-
   id = id.slice(nextId.toString().length - 1);
 
   const user = new User({
@@ -83,6 +81,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     user.isHbtuStudent = true;
   } else {
     user.isHbtuStudent = false;
+    user.college = "";
+    user.city = "";
   }
 
   await user.save();

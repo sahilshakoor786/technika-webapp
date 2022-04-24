@@ -43,7 +43,6 @@ var user = new Schema({
   },
   college: {
     type: String,
-    required: true,
     default: "Harcourt Butler University , Kanpur",
   },
 
@@ -59,6 +58,21 @@ var user = new Schema({
   },
 
   picture: {
+    type: String,
+    default: "",
+  },
+
+  batch: {
+    type: String,
+    default: "",
+  },
+
+  year: {
+    type: String,
+    default: "",
+  },
+
+  branch: {
     type: String,
     default: "",
   },
