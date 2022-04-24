@@ -22,9 +22,9 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex justify-center h-screen items-center overflow-hidden"
+      className="h-full min-h-screen relative flex justify-center items-center"
     >
- 
+
       <video
         className="absolute w-auto min-w-full min-h-full max-w-none"
         ref={playerRef}
@@ -35,13 +35,13 @@ export default function HeroSection() {
 
       <div
         className="z-10 relative text-white md:w-1/2  h-1/2
-      bg-blue-800/10 backdrop-blur flex flex-col justify-center shadow-lg py-6 px-2 space-y-2"
+      bg-blue-800/10 backdrop-blur flex flex-col justify-center shadow-lg py-6 px-2 space-y-2 rounded-lg"
       >
-        <span className="text-6xl md:text-8xl text-white font-primary text-center break-all">
+        <span className="text-6xl md:text-8xl font-bold text-white font-primary text-center break-all">
           TECHNIKA
         </span>
-        <span className="text-5xl md:text-6xl text-white font-primary text-center">
-          Go beyond
+        <span className="text-3xl md:text-5xl text-white font-primary text-center">
+          Unravel la créativité
         </span>
 
         <span className="flex justify-center">
