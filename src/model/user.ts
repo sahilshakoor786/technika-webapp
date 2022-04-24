@@ -6,15 +6,16 @@ var user = new Schema({
     type: String,
     required: true,
   },
-  firstName: {
-    type: String,
-    required: true,
-  },
-  lastName: {
+
+  googleId: {
     type: String,
     required: true,
   },
 
+  name: {
+    type: String,
+    required: true,
+  },
   email: {
     type: String,
     required: true,
@@ -56,8 +57,14 @@ var user = new Schema({
     type: String,
     default: "",
   },
+
+  picture: {
+    type: String,
+    default: "",
+  },
 });
 
 mongoose.models = {};
 
 var User = mongoose.model("User", user);
+export default User;
