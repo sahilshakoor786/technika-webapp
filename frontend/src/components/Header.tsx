@@ -74,7 +74,7 @@ export default function Header() {
           className="absolute z-10 w-32 top-10 left-10"
         />
       </a>
-      
+
       <div
         id="menu-links"
         className="fixed text-white z-20 hidden
@@ -87,8 +87,11 @@ export default function Header() {
             </a>
           </span>
           <span className="h-0 overflow-hidden">
-            <a href="mailto:info@technika.com" className="menu-link text-3xl">
-              info@technika.com
+            <a
+              href="mailto:support@technika.org.in"
+              className="menu-link text-3xl"
+            >
+              support@technika.org.in
             </a>
           </span>
         </div>
