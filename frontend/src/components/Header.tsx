@@ -7,28 +7,28 @@ export default function Header() {
   useEffect(() => {
     setTimelines([
       gsap.timeline({ paused: true }).to("#menu-button", {
-        duration: 0.8,
+        duration: window.innerWidth < 737 ? 1.2 : 0.8,
         scaleX: 1.2,
         scaleY: 1.2,
         backgroundColor: "rgb(236 72 153)",
         ease: "elastic.out(1, 0.3)",
       }),
       gsap.timeline({ paused: true }).to("#menu-button", {
-        duration: 0.3,
+        duration: window.innerWidth < 737 ? 0.7 : 0.3,
         rotateZ: -45,
       }),
       gsap.timeline({ paused: true }).to("#drawer-overlay-01", {
         scaleX: 100,
         scaleY: 100,
         opacity: 0,
-        duration: 0.9,
+        duration: window.innerWidth < 737 ? 2 : 1.2,
         ease: "slow(0.7, 0.7, false)",
       }),
       gsap.timeline({ paused: true }).to("#drawer-overlay-02", {
         scaleX: 100,
         scaleY: 100,
-        delay: 0.4,
-        duration: 0.7,
+        delay: window.innerWidth < 737 ? 0.7 : 0.4,
+        duration: window.innerWidth < 737 ? 1.8 : 1,
         ease: "slow(0.7, 0.7, false)",
       }),
       gsap.timeline({ paused: true }).to("#menu-links", {
