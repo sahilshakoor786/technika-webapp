@@ -11,7 +11,7 @@ exports.getUrl = async (req, res, _) => {
   try {
     const rootUrl = "https://accounts.google.com/o/oauth2/v2/auth";
     const options = {
-      redirect_uri: `${process.env.SERVER_ROOT_URI}/api/auth/google/callback`,
+      redirect_uri: `${process.env.SERVER_ROOT_URI}/auth/google/callback`,
       client_id: process.env.GOOGLE_CLIENT_ID,
       access_type: "offline",
       response_type: "code",
@@ -46,7 +46,7 @@ exports.googleCallback = async (req, res, _) => {
       code,
       client_id: process.env.GOOGLE_CLIENT_ID,
       client_secret: process.env.GOOGLE_CLIENT_SECRET,
-      redirect_uri: `${process.env.SERVER_ROOT_URI}/api/auth/google/callback`,
+      redirect_uri: `${process.env.SERVER_ROOT_URI}/auth/google/callback`,
       grant_type: "authorization_code",
     };
 

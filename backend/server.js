@@ -11,15 +11,15 @@ app.use(express.urlencoded());
 
 const { body, validationResult } = require("express-validator");
 
-app.get("/api/auth/google/url", authController.getUrl);
-app.get("/api/auth/google/callback", authController.googleCallback);
+app.get("/auth/google/url", authController.getUrl);
+app.get("/auth/google/callback", authController.googleCallback);
 
 const run = async () => {
   const mongooseConnection = await mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost:27017/tsc-backend"
   );
 
-  const port = process.env.PORT || 3005;
+  const port = process.env.PORT || 3006;
   app.listen(port, () =>
     console.log(`Node js Backend listening on http://localhost:${port} !`)
   );

@@ -38,10 +38,10 @@ export default function HeroSection() {
       bg-blue-800/10 backdrop-blur flex flex-col justify-center shadow-lg py-6 px-2 space-y-2 rounded-lg"
       >
         <span className="text-6xl md:text-8xl font-bold text-white font-primary text-center break-all">
-          TECHNIKA
+          TECHNIKA 22
         </span>
         <span className="text-5xl md:text-6xl font-bold text-white font-primary text-center break-all">
-          29-05-2020
+          21 - 22 MAY
         </span>
         <span className="text-2xl md:text-4xl text-white font-primary text-center">
           Unravel la créativité
