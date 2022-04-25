@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { FakeMouseActiveHandler, FakeMouseInactiveHandler } from "./FakeMouse";
 
 export default function HeroAudio() {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -31,6 +32,8 @@ export default function HeroAudio() {
         grid place-items-center bg-pink-500 transition ease-in-out 
         delay-15 hover:-translate-y-1 hover:scale-110"
         onClick={toggleAudio}
+        onMouseEnter={FakeMouseActiveHandler}
+        onMouseLeave={FakeMouseInactiveHandler}
       >
         {playing ? (
           <svg

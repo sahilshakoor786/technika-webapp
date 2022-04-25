@@ -63,8 +63,7 @@ export default function HeroSection() {
           </a>
         </span>
       </div>
-
-
+      
       <HeroAudio />
     </section>
   );

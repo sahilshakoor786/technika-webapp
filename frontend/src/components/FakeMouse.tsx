@@ -17,7 +17,9 @@ export function FakeMouseMoveHandler(
 
 export function FakeMouseActiveHandler() {
   gsap.to("#fake-mouse", {
-    scale: 3,
+    scale: 2,
+    rotateZ: 45,
+    borderRadius: 0,
     duration: 1,
     ease: "slow(0.7, 0.7, false)",
   });
@@ -27,6 +29,8 @@ export function FakeMouseInactiveHandler() {
   gsap.to("#fake-mouse", {
     scale: 1,
     opacity: 1,
+    rotateZ: 0,
+    borderRadius: "100%",
     duration: 1,
     ease: "slow(0.7, 0.7, false)",
   });

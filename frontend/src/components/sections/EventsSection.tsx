@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import FancyImage from "../FancyImage";
 import Image from "next/image";
 import { FakeMouseActiveHandler, FakeMouseInactiveHandler } from "../FakeMouse";
+import PrimaryButton from "../PrimaryButton";
 
 export default function EventsSection() {
   gsap.registerPlugin(ScrollTrigger);
@@ -116,6 +117,16 @@ export default function EventsSection() {
             onClick={() => fancyPopup(3)}
           />
         </span>
+
+        <span className="flex justify-center">
+          <a
+            href="/events"
+            onMouseEnter={FakeMouseActiveHandler}
+            onMouseLeave={FakeMouseInactiveHandler}
+          >
+            <PrimaryButton text="Explore more events" />
+          </a>
+        </span>
       </div>
 
       <>
@@ -127,6 +138,8 @@ export default function EventsSection() {
           <div className="w-full max-w-3xl h-2/3 bg-white shadow-lg relative rounded-lg">
             <button
               onClick={() => fancyPopup(0)}
+              onMouseEnter={FakeMouseActiveHandler}
+              onMouseLeave={FakeMouseInactiveHandler}
               className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
               absolute rounded-full w-12 h-12 bg-pink-500 
               shadow-lg grid place-items-center hover:scale-110"
@@ -186,6 +199,8 @@ export default function EventsSection() {
           <div className="w-full max-w-3xl h-2/3 bg-white shadow-lg relative rounded-lg">
             <button
               onClick={() => fancyPopup(1)}
+              onMouseEnter={FakeMouseActiveHandler}
+              onMouseLeave={FakeMouseInactiveHandler}
               className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
               absolute rounded-full w-12 h-12 bg-pink-500 
               shadow-lg grid place-items-center hover:scale-110"
@@ -249,6 +264,8 @@ export default function EventsSection() {
           <div className="w-full max-w-3xl h-2/3 bg-white shadow-lg relative rounded-lg">
             <button
               onClick={() => fancyPopup(2)}
+              onMouseEnter={FakeMouseActiveHandler}
+              onMouseLeave={FakeMouseInactiveHandler}
               className="transition ease-in-out delay-15 z-20 -right-4 -top-4 absolute rounded-full w-12 h-12 bg-pink-500 
     shadow-lg grid place-items-center hover:scale-110"
             >
@@ -319,6 +336,8 @@ export default function EventsSection() {
           <div className="w-full max-w-3xl h-2/3 bg-white shadow-lg relative rounded-lg">
             <button
               onClick={() => fancyPopup(3)}
+              onMouseEnter={FakeMouseActiveHandler}
+              onMouseLeave={FakeMouseInactiveHandler}
               className="transition ease-in-out delay-15 z-20 -right-4 -top-4 absolute rounded-full w-12 h-12 bg-pink-500 
     shadow-lg grid place-items-center hover:scale-110"
             >
