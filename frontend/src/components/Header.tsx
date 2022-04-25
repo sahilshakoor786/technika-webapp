@@ -95,7 +95,7 @@ export default function Header() {
 
         <div className="flex flex-col space-y-3">
           <span className="h-0 overflow-hidden">
-            <a href="/" className="menu-link text-7xl">
+            <a href="/" className="menu-link text-5xl">
               Home
             </a>
           </span>
@@ -103,7 +103,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#about"
-              className="menu-link text-7xl"
+              className="menu-link text-5xl"
               onClick={toggleMenu}
             >
               About
@@ -113,7 +113,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#events"
-              className="menu-link text-7xl"
+              className="menu-link text-5xl"
               onClick={toggleMenu}
             >
               Events
@@ -123,7 +123,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#sponsors"
-              className="menu-link text-7xl"
+              className="menu-link text-5xl"
               onClick={toggleMenu}
             >
               Sponsors
@@ -131,7 +131,7 @@ export default function Header() {
           </span>
 
           <span className="h-0 overflow-hidden">
-            <a href="/register" className="menu-link text-7xl">
+            <a href="/register" className="menu-link text-5xl">
               Register
             </a>
           </span>
