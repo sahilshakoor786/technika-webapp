@@ -4,7 +4,7 @@ export default function Footer() {
       <h2 className="font-primary text-xl font-bold text-white">Proudly brought to you by</h2>
       <div className="flex justify-center items-center my-5">
         <img
-          src="https://tscs3bucket.s3.ap-south-1.amazonaws.com/images/hbtu.jpg"
+          src="https://tscs3bucket.s3.ap-south-1.amazonaws.com/images/HBTU+Logo+white+2.png"
           className="h-20 mx-10"
         />
         <img

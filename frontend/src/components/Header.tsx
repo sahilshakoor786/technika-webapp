@@ -7,28 +7,28 @@ export default function Header() {
   useEffect(() => {
     setTimelines([
       gsap.timeline({ paused: true }).to("#menu-button", {
-        duration: 0.8,
+        duration: window.innerWidth < 737 ? 1.2 : 0.8,
         scaleX: 1.2,
         scaleY: 1.2,
         backgroundColor: "rgb(236 72 153)",
         ease: "elastic.out(1, 0.3)",
       }),
       gsap.timeline({ paused: true }).to("#menu-button", {
-        duration: 0.3,
+        duration: window.innerWidth < 737 ? 0.7 : 0.3,
         rotateZ: -45,
       }),
       gsap.timeline({ paused: true }).to("#drawer-overlay-01", {
         scaleX: 100,
         scaleY: 100,
         opacity: 0,
-        duration: 1.2,
+        duration: window.innerWidth < 737 ? 2 : 1.2,
         ease: "slow(0.7, 0.7, false)",
       }),
       gsap.timeline({ paused: true }).to("#drawer-overlay-02", {
         scaleX: 100,
         scaleY: 100,
-        delay: 0.4,
-        duration: 1,
+        delay: window.innerWidth < 737 ? 0.7 : 0.4,
+        duration: window.innerWidth < 737 ? 1.8 : 1,
         ease: "slow(0.7, 0.7, false)",
       }),
       gsap.timeline({ paused: true }).to("#menu-links", {
@@ -77,28 +77,28 @@ export default function Header() {
 
       <div
         id="menu-links"
-        className="fixed text-white z-20 hidden
-        w-full h-full justify-between items-center p-20 flex-col-reverse md:flex-row"
+        className="fixed text-white z-20 hidden top-10
+        w-full h-full justify-between md:items-center p-20 flex-col-reverse md:flex-row"
       >
-        <div className="flex flex-col space-y-0">
+        <div className="flex flex-col">
           <span className="h-0 overflow-hidden">
-            <a href="#" className="menu-link text-3xl">
+            <a href="#" className="menu-link text-2xl">
               Contact us
             </a>
           </span>
           <span className="h-0 overflow-hidden">
             <a
               href="mailto:support@technika.org.in"
-              className="menu-link text-3xl"
+              className="menu-link text-xl"
             >
               support@technika.org.in
             </a>
           </span>
         </div>
 
-        <div className="flex flex-col space-y-3">
+        <div className="flex flex-col">
           <span className="h-0 overflow-hidden">
-            <a href="/" className="menu-link text-7xl">
+            <a href="/" className="menu-link text-3xl md:text-5xl">
               Home
             </a>
           </span>
@@ -106,7 +106,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#about"
-              className="menu-link text-7xl"
+              className="menu-link text-3xl md:text-5xl"
               onClick={toggleMenu}
             >
               About
@@ -116,7 +116,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#events"
-              className="menu-link text-7xl"
+              className="menu-link text-3xl md:text-5xl"
               onClick={toggleMenu}
             >
               Events
@@ -126,7 +126,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#sponsors"
-              className="menu-link text-7xl"
+              className="menu-link text-3xl md:text-5xl"
               onClick={toggleMenu}
             >
               Sponsors
@@ -134,7 +134,7 @@ export default function Header() {
           </span>
 
           <span className="h-0 overflow-hidden">
-            <a href="/register" className="menu-link text-7xl">
+            <a href="/register" className="menu-link text-3xl md:text-5xl">
               Register
             </a>
           </span>
