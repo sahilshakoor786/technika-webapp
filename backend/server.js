@@ -11,8 +11,8 @@ app.use(express.urlencoded());
 
 const { body, validationResult } = require("express-validator");
 
-app.get("auth/google/url", authController.getUrl);
-app.get("auth/google/callback", authController.googleCallback);
+app.get("/auth/google/url", authController.getUrl);
+app.get("/auth/google/callback", authController.googleCallback);
 
 const run = async () => {
   const mongooseConnection = await mongoose.connect(
