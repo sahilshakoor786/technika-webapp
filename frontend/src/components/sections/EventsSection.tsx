@@ -56,7 +56,7 @@ export default function EventsSection() {
       //   from: "center",
       //   amount: 1.5,
       // },
-      duration: .5,
+      duration: 1,
       ease: "slow(0.7, 0.7, false)",
     });
   }, []);
