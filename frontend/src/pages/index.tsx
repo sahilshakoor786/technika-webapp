@@ -23,8 +23,10 @@ export default function HomePage() {
 
       <Header />
 
-      <main className="overflow-x-hidden bg-black 
-      bg-cover bg-fixed bg-main-image">
+      <main
+        className="overflow-x-hidden bg-black 
+      bg-cover bg-fixed bg-main-image"
+      >
         <HeroSection />
         <AboutSection />
         <EventsSection />
