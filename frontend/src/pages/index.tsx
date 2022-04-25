@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { useEffect } from "react";
+import FakeMouse, { FakeMouseMoveHandler } from "src/components/FakeMouse";
 import Footer from "../components/Footer";
 
 import Header from "../components/Header";
@@ -10,13 +12,13 @@ import SponsorsSection from "../components/sections/SponsorsSection";
 
 export default function HomePage() {
   return (
-    <div>
+    <div onMouseMove={FakeMouseMoveHandler}>
       <Head>
         <title>Tecknika</title>
         <meta name="description" content="Technical Sub-Council HBTU takes initiative, promotes, conducts, and
           manages all the technical events and activities in HBTU to foster
           technical growth and problem solving among its students" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <Header />
@@ -30,6 +32,7 @@ export default function HomePage() {
       </main>
 
       <Footer />
+      <FakeMouse />
     </div>
   );
 }

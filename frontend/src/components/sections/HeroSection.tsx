@@ -1,6 +1,7 @@
 import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
 import React, { useEffect, useRef } from "react";
+import { FakeMouseActiveHandler, FakeMouseInactiveHandler } from "../FakeMouse";
 
 export default function HeroSection() {
   const playerRef = useRef<HTMLVideoElement>(null);
@@ -37,7 +38,10 @@ export default function HeroSection() {
         className="z-10 relative text-white md:w-1/2  h-1/2
       bg-blue-800/10 backdrop-blur flex flex-col justify-center items-center shadow-lg py-6 px-2 space-y-2 rounded-lg"
       >
-        <img src="https://tscs3bucket.s3.ap-south-1.amazonaws.com/images/TECHNIKA+LOGO+WHITE.png" className="w-20" />
+        <img
+          src="https://tscs3bucket.s3.ap-south-1.amazonaws.com/images/TECHNIKA+LOGO+WHITE.png"
+          className="w-20"
+        />
         <span className="text-5xl md:text-8xl font-bold text-white font-primary text-center break-all">
           TECHNIKA 22
         </span>
@@ -49,7 +53,11 @@ export default function HeroSection() {
         </span>
 
         <span className="flex justify-center">
-          <a href="/register">
+          <a
+            href="/register"
+            onMouseEnter={FakeMouseActiveHandler}
+            onMouseLeave={FakeMouseInactiveHandler}
+          >
             <PrimaryButton text="Register now" />
           </a>
         </span>
