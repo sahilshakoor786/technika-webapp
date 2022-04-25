@@ -2,6 +2,7 @@ import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
 import React, { useEffect, useRef } from "react";
 import { FakeMouseActiveHandler, FakeMouseInactiveHandler } from "../FakeMouse";
+import HeroAudio from "../HeroAudio";
 
 export default function HeroSection() {
   const playerRef = useRef<HTMLVideoElement>(null);
@@ -62,6 +63,9 @@ export default function HeroSection() {
           </a>
         </span>
       </div>
+
+
+      <HeroAudio />
     </section>
   );
 }

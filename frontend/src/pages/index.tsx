@@ -38,3 +38,17 @@ export default function HomePage() {
     </div>
   );
 }
+
+/*
+  onClick={() => {
+        console.log("clicked");
+
+        let audio = new Audio(
+          ""
+        );
+        audio;
+        audio.volume = 0.2;
+        audio.play();
+      }}
+
+*/
