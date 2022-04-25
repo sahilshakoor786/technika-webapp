@@ -82,14 +82,14 @@ export default function Header() {
       >
         <div className="flex flex-col space-y-0">
           <span className="h-0 overflow-hidden">
-            <a href="#" className="menu-link text-3xl">
+            <a href="#" className="menu-link text-2xl">
               Contact us
             </a>
           </span>
           <span className="h-0 overflow-hidden">
             <a
               href="mailto:support@technika.org.in"
-              className="menu-link text-3xl"
+              className="menu-link text-xl"
             >
               support@technika.org.in
             </a>
