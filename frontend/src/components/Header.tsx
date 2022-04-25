@@ -21,14 +21,14 @@ export default function Header() {
         scaleX: 100,
         scaleY: 100,
         opacity: 0,
-        duration: 1.2,
+        duration: 0.9,
         ease: "slow(0.7, 0.7, false)",
       }),
       gsap.timeline({ paused: true }).to("#drawer-overlay-02", {
         scaleX: 100,
         scaleY: 100,
         delay: 0.4,
-        duration: 1,
+        duration: 0.7,
         ease: "slow(0.7, 0.7, false)",
       }),
       gsap.timeline({ paused: true }).to("#menu-links", {
@@ -77,10 +77,10 @@ export default function Header() {
 
       <div
         id="menu-links"
-        className="fixed text-white z-20 hidden
-        w-full h-full justify-between items-center p-20 flex-col-reverse md:flex-row"
+        className="fixed text-white z-20 hidden top-10
+        w-full h-full justify-between md:items-center p-20 flex-col-reverse md:flex-row"
       >
-        <div className="flex flex-col space-y-0">
+        <div className="flex flex-col">
           <span className="h-0 overflow-hidden">
             <a href="#" className="menu-link text-2xl">
               Contact us
@@ -96,9 +96,9 @@ export default function Header() {
           </span>
         </div>
 
-        <div className="flex flex-col space-y-3">
+        <div className="flex flex-col">
           <span className="h-0 overflow-hidden">
-            <a href="/" className="menu-link text-5xl">
+            <a href="/" className="menu-link text-3xl md:text-5xl">
               Home
             </a>
           </span>
@@ -106,7 +106,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#about"
-              className="menu-link text-5xl"
+              className="menu-link text-3xl md:text-5xl"
               onClick={toggleMenu}
             >
               About
@@ -116,7 +116,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#events"
-              className="menu-link text-5xl"
+              className="menu-link text-3xl md:text-5xl"
               onClick={toggleMenu}
             >
               Events
@@ -126,7 +126,7 @@ export default function Header() {
           <span className="h-0 overflow-hidden">
             <a
               href="/#sponsors"
-              className="menu-link text-5xl"
+              className="menu-link text-3xl md:text-5xl"
               onClick={toggleMenu}
             >
               Sponsors
@@ -134,7 +134,7 @@ export default function Header() {
           </span>
 
           <span className="h-0 overflow-hidden">
-            <a href="/register" className="menu-link text-5xl">
+            <a href="/register" className="menu-link text-3xl md:text-5xl">
               Register
             </a>
           </span>
