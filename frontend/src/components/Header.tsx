@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useEffect, useState } from "react";
+import { FakeMouseActiveHandler, FakeMouseInactiveHandler } from "./FakeMouse";
 export default function Header() {
   const [menu, setMenu] = useState(false);
   const [timelines, setTimelines] = useState<Array<gsap.core.Timeline>>([]);
@@ -68,7 +69,11 @@ export default function Header() {
         ></div>
       </div>
 
-      <a href="/">
+      <a
+        href="/"
+        onMouseEnter={FakeMouseActiveHandler}
+        onMouseLeave={FakeMouseInactiveHandler}
+      >
         <img
           src="https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png"
           className="absolute z-10 w-32 top-10 left-10"
@@ -147,6 +152,8 @@ export default function Header() {
         className="fixed z-20 right-10 top-10 rounded-full w-12 h-12 bg-blue-900 
         shadow-lg
         grid place-items-center"
+        onMouseEnter={FakeMouseActiveHandler}
+        onMouseLeave={FakeMouseInactiveHandler}
       >
         <img
           src="https://d2jf5yk8vvx0ti.cloudfront.net/images/menu.svg"

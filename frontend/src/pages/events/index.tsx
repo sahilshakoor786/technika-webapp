@@ -1,6 +1,6 @@
 import Layout from "src/components/Layout";
 
-export default function RegisterPage() {
+export default function EventsPage() {
   return (
     <Layout>
       <main
@@ -13,7 +13,7 @@ export default function RegisterPage() {
           shadow-lg py-6 px-2 space-y-2 rounded-lg"
         >
           <h1 className="font-primary text-3xl md:text-5xl text-center">
-            Registrations not started yet
+            More about events coming soon
           </h1>
         </div>
       </main>

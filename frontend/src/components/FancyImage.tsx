@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { EventHandler, MouseEvent, useRef, useState } from "react";
+import { FakeMouseActiveHandler, FakeMouseInactiveHandler } from "./FakeMouse";
 
 type FancyImageProps = {
   src?: string;
@@ -49,6 +50,8 @@ export default function FancyImage({
       style={{ width: width, height: height, perspective: 700 }}
       onMouseMove={fancyImageHover}
       onMouseOut={fancyImageOut}
+      onMouseEnter={FakeMouseActiveHandler}
+      onMouseLeave={FakeMouseInactiveHandler}
     >
       <img
         src={src}
