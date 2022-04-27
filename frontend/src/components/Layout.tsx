@@ -1,12 +1,11 @@
 import Head from "next/head";
 import { ReactElement } from "react";
-import FakeMouse, { FakeMouseMoveHandler } from "./FakeMouse";
 import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Layout({ children }: { children: ReactElement }) {
   return (
-    <div onMouseMove={FakeMouseMoveHandler}>
+    <div>
       <Head>
         <title>Tecknika</title>
         <meta
@@ -23,7 +22,6 @@ export default function Layout({ children }: { children: ReactElement }) {
       <div>{children}</div>
 
       <Footer />
-      <FakeMouse />
-    </div>
+/    </div>
   );
 }

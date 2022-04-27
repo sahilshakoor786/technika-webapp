@@ -1,7 +1,6 @@
 import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
 import React, { useEffect, useRef } from "react";
-import { FakeMouseActiveHandler, FakeMouseInactiveHandler } from "../FakeMouse";
 import HeroAudio from "../HeroAudio";
 
 export default function HeroSection() {
@@ -56,8 +55,6 @@ export default function HeroSection() {
         <span className="flex justify-center">
           <a
             href="/register"
-            onMouseEnter={FakeMouseActiveHandler}
-            onMouseLeave={FakeMouseInactiveHandler}
           >
             <PrimaryButton text="Register now" />
           </a>
