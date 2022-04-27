@@ -1,6 +1,7 @@
 import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
 import React, { useEffect, useRef } from "react";
+import SecondaryButton from "../SecondaryButton";
 import HeroAudio from "../HeroAudio";
 
 export default function HeroSection() {
@@ -52,30 +53,20 @@ export default function HeroSection() {
           Unravel la créativité
         </span>
 
-        <span className="flex justify-center">
-          <a
-            href="/register"
-          >
+        <span className="flex justify-around space-x-4">
+          <a href="/register">
             <PrimaryButton text="Register now" />
+          </a>
+          <a
+            href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+1.pdf"
+            download
+          >
+            <SecondaryButton text="Download Brochure" />
           </a>
         </span>
       </div>
+
+      <HeroAudio />
     </section>
   );
 }
-
-/*
-            <a
-              href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+1.pdf"
-              download
-            >
-              <button
-                className="transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 
-            duration-300 my-5 px-2 py-2 text-sm font-italic text-white 
-            bg-pink-900 shadow-lg rounded"
-              >
-                Download Brochure
-              </button>
-            </a>
-
-*/
