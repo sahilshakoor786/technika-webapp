@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 const authController = require("./controller/auth");
+const middleware = require("./middleware/auth");
 
 app.use(express.json());
 app.use(express.urlencoded());
@@ -13,6 +14,8 @@ const { body, validationResult } = require("express-validator");
 
 app.get("/auth/google/url", authController.getUrl);
 app.get("/auth/google/callback", authController.googleCallback);
+
+app.get("/me", middleware.authMiddleware, authController.me);
 
 const run = async () => {
   const mongooseConnection = await mongoose.connect(

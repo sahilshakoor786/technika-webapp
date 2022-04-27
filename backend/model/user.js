@@ -68,11 +68,6 @@ var user = new Schema(
       default: "",
     },
 
-    year: {
-      type: String,
-      default: "",
-    },
-
     branch: {
       type: String,
       default: "",

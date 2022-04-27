@@ -61,7 +61,7 @@ exports.googleCallback = async (req, res, _) => {
       })
       .then((res) => res.data)
       .catch((error) => {
-        console.error(`Failed to fetch auth tokens`);
+        console.error(`Failed to fetch auth tokens`, 300, error);
         throw new Error(error.message);
       });
 
@@ -76,53 +76,69 @@ exports.googleCallback = async (req, res, _) => {
       )
       .then((res) => res.data)
       .catch((error) => {
-        console.error(`Failed to fetch user`);
+        console.error(`Failed to fetch user`, 300, error);
         throw new Error(error.message);
       });
 
-    const token = jwt.sign(googleUser, process.env.JWT_SECRET);
+    const user = await User.findOne({ googleId: googleUser.id });
 
-    const email = googleUser.email;
+    if (!user) {
+      const email = googleUser.email;
 
-    let nextId = await utils.getNextSequence("userid");
-    if (nextId === null) {
-      console.error(`Failed to get next user id`);
-    }
-    let id = "0000" + nextId.toString();
+      let nextId = await utils.getNextSequence("userid");
+      if (nextId === null) {
+        console.error(`Failed to get next user id`);
+      }
+      let id = "0000" + nextId.toString();
 
-    const tscId = "TSC22" + id.slice(nextId.toString().length - 1);
+      const tscId = "TSC22" + id.slice(nextId.toString().length - 1);
 
-    const user = new User({
-      tscId: tscId,
-      email,
-      name: googleUser.name,
-      isHbtuStudent: true,
-      isTSCTeamMember: false,
-      isTSCAdmin: false,
-      picture: googleUser.picture,
-      googleId: googleUser.id,
-    });
-
-    if (email.split("@")[1] === "hbtu.ac.in") {
-      user.isHbtuStudent = true;
-    } else {
-      user.isHbtuStudent = false;
-      user.college = "";
-      user.city = "";
-    }
-
-    await user.save();
-
-    res.status(200).json({
-      token,
-      user: {
-        tscId,
+      const user = new User({
+        tscId: tscId,
         email,
         name: googleUser.name,
+        isHbtuStudent: true,
+        isTSCTeamMember: false,
+        isTSCAdmin: false,
         picture: googleUser.picture,
+        googleId: googleUser.id,
+      });
 
+      if (email.split("@")[1] === "hbtu.ac.in") {
+        user.isHbtuStudent = true;
+      } else if (email.split("@")[1] === "technika.org.in") {
+        user.isHbtuStudent = true;
+        user.isTSCTeamMember = true;
+      } else if (email == "shubham@technika.org.in") {
+        user.isHbtuStudent = true;
+        user.isTSCTeamMember = true;
+        user.isTSCAdmin = true;
+      } else {
+        user.isHbtuStudent = false;
+        user.college = "";
+        user.city = "";
+      }
+
+      await user.save();
+    }
+
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
+      expiresIn: "1d",
+    });
+
+    res.status(200).json({
+      success: true,
+      message: "User logged in successfully",
+      token,
+      id: user._id,
+      tscId: user.tscId,
+      user: {
+        name: user.name,
+        email: user.email,
         isHbtuStudent: user.isHbtuStudent,
-        isTSCTeamMember: user.isTSCAdmin,
+        isTSCTeamMember: user.isTSCTeamMember,
+        isTSCAdmin: user.isTSCAdmin,
+        picture: user.picture,
       },
     });
   } catch (error) {
