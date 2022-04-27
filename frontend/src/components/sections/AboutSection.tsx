@@ -58,15 +58,12 @@ export default function AboutSection() {
           className="h-0 opacity-50 overflow-hidden font-primary text-xl text-white text-center max-w-xl 
         grid place-items-center py-10 "
         >
-          Technical Sub-Council HBTU takes initiative, promotes, conducts, and
-          manages all the technical events and activities in HBTU to foster
-          technical growth and problem solving among its students. It is the
-          overseer of all technical clubs in HBTU and helps in the management
-          and conduction of events/activities in coordination with the clubs.
-          Technical Sub-Council through its events strives to give the students
-          a platform to learn and understand various technologies that aid
-          innovation and development, through various events, seminars and
-          activities
+          Born from the rage of the technological era, Technika is a perennial
+          yearly two-day technical fest organized by the Technical sub-council
+          of Harcourt Butler Technical University Kanpur (U.P). Technika
+          inherits the idea to surpass the creative artistry among the budding
+          minds by real-world problems. This origin will bear the eternal flame
+          that will ignite the wings of the phoenix.
         </div>
       </div>
     </section>
