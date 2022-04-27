@@ -137,10 +137,14 @@ exports.upload = async (req, res, _) => {
     const result = await s3.upload(uploadParams).promise();
 
     if (result.ETag) {
-      const picture = `https://d2jf5yk8vvx0ti.cloudfront.net/${result.Key}`;
+      let location = result.Location;
+      location = location.replace(
+        "https://tscs3bucket.s3.amazonaws.com",
+        "https://d2jf5yk8vvx0ti.cloudfront.net"
+      );
 
       const user = await User.findByIdAndUpdate(userId, {
-        picture: picture,
+        picture: location,
       });
 
       return res.status(200).json({
