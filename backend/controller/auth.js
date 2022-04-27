@@ -122,7 +122,7 @@ exports.googleCallback = async (req, res, _) => {
       await user.save();
     }
 
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
       expiresIn: "1d",
     });
 
@@ -133,6 +133,27 @@ exports.googleCallback = async (req, res, _) => {
       id: user._id,
       tscId: user.tscId,
       user: {
+        name: user.name,
+        email: user.email,
+        isHbtuStudent: user.isHbtuStudent,
+        isTSCTeamMember: user.isTSCTeamMember,
+        isTSCAdmin: user.isTSCAdmin,
+        picture: user.picture,
+      },
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+exports.me = async (req, res, _) => {
+  try {
+    const user = await User.findById(req.user.id);
+
+    res.status(200).json({
+      user: {
+        id: user._id,
+        tscId: user.tscId,
         name: user.name,
         email: user.email,
         isHbtuStudent: user.isHbtuStudent,

@@ -63,6 +63,7 @@ export default function HeroSection() {
               <PrimaryButton text="Register now" />
             </a>
           </span>
+          <span> </span>
           <span>
             <a
               href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+1.pdf"
