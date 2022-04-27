@@ -1,12 +1,13 @@
 import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SecondaryButton from "../SecondaryButton";
-import HeroAudio from "../HeroAudio";
 
 export default function HeroSection() {
   const playerRef = useRef<HTMLVideoElement>(null);
-
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [playing, setPlaying] = useState(false);
+  
   useEffect(() => {
     if (Hls.isSupported() && playerRef.current) {
       const video = playerRef.current;
@@ -22,11 +23,31 @@ export default function HeroSection() {
     }
   }, []);
 
+
+  function playAudio() {
+    if (audioRef.current) {
+      if (!playing) {
+        audioRef.current.volume = 0.2;
+        audioRef.current.play();
+
+        setPlaying(true);
+      }
+    }
+  }
+
   return (
     <section
       id="hero"
+      onClick={playAudio}
       className="bg-black h-full min-h-screen relative flex justify-center items-center"
     >
+      <audio
+        ref={audioRef as React.RefObject<HTMLAudioElement>}
+        id="hero-audio"
+        src="https://d2jf5yk8vvx0ti.cloudfront.net/audio/audio.aac"
+        loop
+        className="invisible"
+      />
       <video
         className="absolute w-auto min-w-full min-h-full max-w-none bg-black"
         ref={playerRef}
@@ -65,8 +86,6 @@ export default function HeroSection() {
           </a>
         </span>
       </div>
-
-      <HeroAudio />
     </section>
   );
 }
