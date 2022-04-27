@@ -5,7 +5,10 @@ const mongoose = require("mongoose");
 
 const app = express();
 const authController = require("./controller/auth");
+const userController = require("./controller/user");
 const middleware = require("./middleware/auth");
+const multer = require("multer");
+const upload = multer();
 
 app.use(express.json());
 app.use(express.urlencoded());
@@ -15,7 +18,8 @@ const { body, validationResult } = require("express-validator");
 app.get("/auth/google/url", authController.getUrl);
 app.get("/auth/google/callback", authController.googleCallback);
 
-app.get("/me", middleware.authMiddleware, authController.me);
+app.get("/me", middleware.authMiddleware, userController.me);
+app.post("/profile/upload/:userId", upload.any(), userController.upload);
 
 const run = async () => {
   const mongooseConnection = await mongoose.connect(
