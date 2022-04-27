@@ -53,18 +53,32 @@ export default function HeroSection() {
           Unravel la créativité
         </span>
 
-        <span className="flex justify-center">
-          <a
-            href="/register"
-            onMouseEnter={FakeMouseActiveHandler}
-            onMouseLeave={FakeMouseInactiveHandler}
-          >
-            <PrimaryButton text="Register now" />
-          </a>
+        <span className="justify-self-start text-center">
+          <span>
+            <a
+              href="/register"
+              onMouseEnter={FakeMouseActiveHandler}
+              onMouseLeave={FakeMouseInactiveHandler}
+            >
+              <PrimaryButton text="Register now" />
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+1.pdf"
+              download
+            >
+              <button
+                className="transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 
+            duration-300 my-5 px-2 py-2 text-sm font-italic text-white 
+            bg-pink-900 shadow-lg rounded"
+              >
+                Download Brochure
+              </button>
+            </a>
+          </span>
         </span>
       </div>
-      
-      <HeroAudio />
     </section>
   );
 }
