@@ -4,8 +4,7 @@ export default function ErrorPage() {
   return (
     <Layout>
       <main
-        className="overflow-x-hidden bg-black 
-      bg-cover bg-fixed bg-main-image h-screen flex justify-center items-center"
+        className="overflow-x-hidden h-screen flex justify-center items-center"
       >
         <div
           className="z-10 mx-10 p-10 relative md:w-1/2  h-1/2

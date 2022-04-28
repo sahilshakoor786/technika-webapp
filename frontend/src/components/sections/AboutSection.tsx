@@ -36,12 +36,14 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="h-fit min-h-screen bg-main-image bg-cover
+      className="h-fit min-h-screen
       flex-wrap p-10 flex justify-center items-center flex-col"
     >
-      <h1 className="text-white font-primary text-5xl my-10">About</h1>
+      <h1 className="text-white font-primary text-5xl my-10 px-10 py-2 backdrop-blur rounded-lg">
+        About
+      </h1>
 
-      <div className="flex justify-center items-center md:space-x-10 flex-wrap backdrop-blur">
+      <div className="flex justify-center items-center md:space-x-10 flex-wrap backdrop-blur rounded">
         <span
           id="about-image"
           className="h-0 md:px-10
@@ -55,8 +57,9 @@ export default function AboutSection() {
         </span>
         <div
           id="about-text"
-          className="h-0 opacity-50 overflow-hidden font-sans text-xl text-white text-center max-w-xl 
-        grid place-items-center py-10 "
+          className="h-0 opacity-50 
+          overflow-hidden font-sans text-xl text-white text-center max-w-xl 
+          grid place-items-center p-10 "
         >
           Born from the rage of the technological era, Technika is a perennial
           yearly two-day technical fest organized by the Technical sub-council

@@ -1,7 +1,14 @@
 import gsap from "gsap";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { getToken, Token } from "src/types/token";
+
 export default function Header() {
+  const router = useRouter();
+
   const [menu, setMenu] = useState(false);
+  const [token, setToken] = useState<Token>();
+
   const [timelines, setTimelines] = useState<Array<gsap.core.Timeline>>([]);
 
   useEffect(() => {
@@ -39,6 +46,7 @@ export default function Header() {
         delay: 0.4,
       }),
     ]);
+    getUser();
   }, []);
 
   function toggleMenu() {
@@ -52,6 +60,11 @@ export default function Header() {
       });
     }
     setMenu(!menu);
+  }
+
+  function getUser() {
+    const token = getToken();
+    setToken(token);
   }
 
   return (
@@ -68,9 +81,7 @@ export default function Header() {
         ></div>
       </div>
 
-      <a
-        href="/"
-      >
+      <a href="/">
         <img
           src="https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png"
           className="absolute z-10 w-32 top-10 left-10"
@@ -134,7 +145,6 @@ export default function Header() {
               Sponsors
             </a>
           </span>
-
           <span className="h-0 overflow-hidden">
             <a href="/register" className="menu-link text-3xl md:text-5xl">
               Register
@@ -155,6 +165,14 @@ export default function Header() {
           className="w-6 h-6"
         />
       </button>
+
+      {token?.token && (
+        <a href="/dashboard">
+        <button className="fixed z-20 right-28 top-10 rounded-full overflow-hidden border-2 w-12 h-12 bg-blue-900 shadow-lg">
+          <img src={token.user.picture} className="w-full h-full" />
+        </button>
+        </a>
+      )}
     </header>
   );
 }

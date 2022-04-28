@@ -19,7 +19,7 @@
 
 @layer components {
   .menu-link {
-    @apply transition ease-in-out delay-150 font-primary text-right  hover:text-pink-500;
+    @apply transition ease-in-out delay-150 font-primary text-right  hover:text-pink-500 cursor-pointer;
   }
 }
 

@@ -17,12 +17,13 @@ export function useSelect({
   const [value, setValue] = useState<string | number>(0);
   const input = (
     <select
-      className="px-4 py-2 rounded focus:outline-none"
+      className="shadow px-4 py-2 rounded focus:outline-none"
       placeholder={placeholder}
       onChange={(e) => (onChange ? onChange(e) : setValue(e.target.value))}
+      value={value}
     >
       {options.map((option) => (
-        <option key={option.value} value={option.value} selected={option.value == value}>{option.label}</option>
+        <option key={option.value} value={option.value}>{option.label}</option>
       ))}
     </select>
   );

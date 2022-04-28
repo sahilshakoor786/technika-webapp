@@ -9,8 +9,7 @@ export default function HomePage() {
   return (
     <Layout>
       <main
-        className="overflow-x-hidden bg-black 
-      bg-cover bg-fixed">
+        className="overflow-x-hidden">
         <HeroSection />
         <AboutSection />
         <EventsSection />

@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import FancyImage from "../FancyImage";
 import Image from "next/image";
 import PrimaryButton from "../PrimaryButton";
+import Link from "next/link";
 
 export default function EventsSection() {
   gsap.registerPlugin(ScrollTrigger);
@@ -74,10 +75,12 @@ export default function EventsSection() {
   return (
     <section
       id="events"
-      className="h-full min-h-screen bg-events-image bg-cover
+      className="h-full min-h-screen
       flex-wrap p-10 flex justify-center items-center flex-col"
     >
-      <h1 className="text-white font-primary text-5xl my-10">Events</h1>
+      <h1 className="text-white font-primary text-5xl my-10 px-10 py-2 backdrop-blur rounded-lg">
+        Events
+      </h1>
 
       <div className="flex justify-center items-center md:space-x-10 flex-wrap">
         <span

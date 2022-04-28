@@ -2,13 +2,11 @@ import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
 import React, { useEffect, useRef, useState } from "react";
 import SecondaryButton from "../SecondaryButton";
-import src from "gsap/src";
 
 export default function HeroSection() {
   const playerRef = useRef<HTMLVideoElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
-  const [supported, setSupported] = useState(false);
 
   useEffect(() => {
     if (Hls.isSupported() && playerRef.current) {
@@ -22,7 +20,6 @@ export default function HeroSection() {
       hls.on(Hls.Events.MANIFEST_PARSED, function () {
         video.play();
       });
-      setSupported(true);
     }
   }, []);
 
@@ -41,7 +38,7 @@ export default function HeroSection() {
     <section
       id="hero"
       onClick={playAudio}
-      className="bg-black h-full min-h-screen relative flex justify-center items-center"
+      className="h-full min-h-screen relative flex justify-center items-center"
     >
       <audio
         ref={audioRef as React.RefObject<HTMLAudioElement>}
@@ -77,9 +74,9 @@ export default function HeroSection() {
         </span>
 
         <span className="flex justify-around space-x-4">
-          <a href="/register">
-            <PrimaryButton text="Register now" />
-          </a>
+        <a href="/register">
+              <PrimaryButton text="Register now" />
+            </a>
           <a
             href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+1.pdf"
             download

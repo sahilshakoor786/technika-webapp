@@ -13,7 +13,7 @@ export function useInput({
   const input =
     type !== "textarea" ? (
       <input
-        className="px-4 py-2 rounded focus:outline-none"
+        className="sahdow px-4 py-2 rounded focus:outline-none"
         value={value}
         onChange={(e) => (onChange)? onChange(e) : setValue(e.target.value)}
         type={type}
@@ -21,7 +21,7 @@ export function useInput({
       />
     ) : (
       <textarea
-        className="px-4 py-2 rounded focus:outline-none h-32"
+        className="shadow px-4 py-2 rounded focus:outline-none h-32"
         onChange={(e) => (onChange)? onChange(e) : setValue(e.target.value)}
         value={value}
         placeholder={placeholder}
