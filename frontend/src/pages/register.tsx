@@ -1,20 +1,26 @@
-import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Layout from "src/components/Layout";
 import { axiosInstance } from "src/lib/axios";
 
 export default function RegisterPage() {
-
-
+  const router = useRouter();
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     googleRedirect();
   }, []);
 
   async function googleRedirect() {
-    const res = await axiosInstance.get("/auth/google/url");
-    console.log(res.data)
+    try {
+      const res = await axiosInstance.get("/auth/google/url");
+      router.replace(res.data.url);
+    } catch (error) {
+      setError(true);
+      console.error(error);
+    }
   }
-  
+
   return (
     <Layout>
       <main
@@ -26,9 +32,11 @@ export default function RegisterPage() {
         bg-blue-800/10 backdrop-blur flex flex-col justify-center
           shadow-lg py-6 px-2 space-y-2 rounded-lg"
         >
-          <h1 className="font-primary text-3xl md:text-5xl text-center">
-            Registrations not started yet
-          </h1>
+          {error && (
+            <h1 className="font-primary text-2xl text-center">
+              An unexpected error occurded during google login
+            </h1>
+          )}
         </div>
       </main>
     </Layout>
