@@ -94,34 +94,17 @@ export default function RegisterPage() {
         value: "Plastic Technology",
         label: "Plastic Technology",
       },
+      {
+        value: "Other",
+        label: "Other",
+      },
     ],
     placeholder: "Select your Branch",
   });
 
-  const batchInput = useSelect({
-    options: [
-      {
-        value: "",
-        label: "Select your batch",
-      },
-      {
-        value: "1st Year",
-        label: "1st Year",
-      },
-      {
-        value: "2nd Year",
-        label: "2nd Year",
-      },
-      {
-        value: "3rd Year",
-        label: "3rd Year",
-      },
-      {
-        value: "Final Year",
-        label: "Final Year",
-      },
-    ],
-    placeholder: "Select your batch",
+  const batchInput = useInput({
+    type: "number",
+    placeholder: "Year of graduation",
   });
 
   useEffect(() => {
