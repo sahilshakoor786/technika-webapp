@@ -19,7 +19,8 @@ var eventRegistrationDetail = new Schema({
     default: false,
   },
 
-  teamLeader: {
+  leaderId: {
+    // This is the userId of the event lead
     type: String,
     required: false,
     default: "",
