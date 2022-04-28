@@ -10,7 +10,7 @@ export default function Auth({ children }: { children: ReactElement }) {
 
   function checkAuth() {
     const ts = localStorage.getItem("token");
-    if(ts || ts == "" ) {
+    if(!ts || ts == "" ) {
         router.replace("/error")
     }
   }
