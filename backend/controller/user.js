@@ -34,7 +34,18 @@ exports.me = async (req, res, _) => {
 
 exports.update = async (req, res, _) => {
   try {
-    const user = await User.findById(req.query.id);
+    const userId = req.params.userId;
+    if (!userId) {
+      res.status(400).json({ success: false, message: "User id not found" });
+      return;
+    }
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      res.status(400).json({ success: false, message: "User not found" });
+      return;
+    }
 
     if (req.body.name) {
       user.name = req.body.name;
