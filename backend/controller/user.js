@@ -4,6 +4,11 @@ exports.me = async (req, res, _) => {
   try {
     const user = await User.findById(req.user.id);
 
+    if (!user) {
+      res.status(400).json({ success: false, message: "User not found" });
+      return;
+    }
+
     res.status(200).json({
       user: {
         id: user._id,
@@ -19,7 +24,6 @@ exports.me = async (req, res, _) => {
         city: user.city,
         phone: user.phone,
         batch: user.batch,
-        branch: user.branch,
       },
     });
   } catch (error) {

@@ -25,12 +25,10 @@ var registrationPayment = new Schema({
 
   paymentDate: {
     type: Date,
-    required: true,
   },
 
   paymentMode: {
     type: String,
-    required: true,
   },
 });
 var RegistrationPayment = mongoose.model(
