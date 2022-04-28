@@ -4,6 +4,15 @@ const nextConfig = {
   publicRuntimeConfig: {
     apiBase: process.env.API_BASE,
   },
-}
+  async redirects() {
+    return [
+      {
+        source: "/register",
+        destination: "/api/register",
+        permanent: true,
+      },
+    ];
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
