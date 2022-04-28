@@ -6,6 +6,7 @@ type FancyImageProps = {
   width: number;
   height: number;
   onClick?: () => void;
+  text?: string;
 };
 
 export default function FancyImage({
@@ -13,6 +14,7 @@ export default function FancyImage({
   width,
   height,
   onClick,
+  text,
 }: FancyImageProps) {
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -50,13 +52,16 @@ export default function FancyImage({
       onMouseMove={fancyImageHover}
       onMouseOut={fancyImageOut}
     >
-      <img
-        src={src}
+      <div
         ref={imgRef as React.RefObject<HTMLImageElement>}
-        className="shadow-lg absolute rounded-lg rotate-0 scale-100"
-        alt="About Image"
+        className="
+          shadow-lg 
+          absolute rounded-lg rotate-0 scale-100 bg-cover border-2"
         onClick={onClick}
-      />
+        style={{ width: width, height: height, backgroundImage: `url('${src}')`  }}
+      ></div>
+
+      <span className="z-20 text-white text-2xl backdrop-blur">{text}</span>
     </div>
   );
 }

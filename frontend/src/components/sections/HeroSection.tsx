@@ -7,7 +7,8 @@ export default function HeroSection() {
   const playerRef = useRef<HTMLVideoElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
-  
+  const [supported, setSupported] = useState(false);
+
   useEffect(() => {
     if (Hls.isSupported() && playerRef.current) {
       const video = playerRef.current;
@@ -20,9 +21,9 @@ export default function HeroSection() {
       hls.on(Hls.Events.MANIFEST_PARSED, function () {
         video.play();
       });
+      setSupported(true);
     }
   }, []);
-
 
   function playAudio() {
     if (audioRef.current) {
@@ -48,20 +49,30 @@ export default function HeroSection() {
         loop
         className="invisible"
       />
-      <video
-        className="absolute w-auto min-w-full min-h-full max-w-none bg-black"
-        ref={playerRef}
-        autoPlay={true}
-        loop
-        muted
-      />
+      {supported ? (
+        <video
+          className="absolute w-auto min-w-full min-h-full max-w-none bg-black"
+          ref={playerRef}
+          autoPlay={true}
+          loop
+          muted
+        />
+      ) : (
+        <video
+          className="absolute w-auto min-w-full min-h-full max-w-none bg-black"
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/videos/main_video_2/720p.m3u8"
+          autoPlay={true}
+          loop
+          muted
+        />
+      )}
 
       <div
         className="z-10 relative text-white md:w-1/2  h-1/2
       bg-blue-800/10 backdrop-blur flex flex-col justify-center items-center shadow-lg py-6 px-2 space-y-2 rounded-lg"
       >
         <img
-          src="https://tscs3bucket.s3.ap-south-1.amazonaws.com/images/TECHNIKA+LOGO+WHITE.png"
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/TECHNIKA+LOGO+WHITE.png"
           className="w-20"
         />
         <span className="text-5xl md:text-8xl font-bold text-white font-primary text-center break-all">

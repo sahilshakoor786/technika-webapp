@@ -10,7 +10,7 @@ export default function HomePage() {
     <Layout>
       <main
         className="overflow-x-hidden bg-black 
-      bg-cover bg-fixed bg-main-image">
+      bg-cover bg-fixed">
         <HeroSection />
         <AboutSection />
         <EventsSection />

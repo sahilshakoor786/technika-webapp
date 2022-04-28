@@ -36,26 +36,26 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="h-fit min-h-screen backdrop-blur
+      className="h-fit min-h-screen bg-main-image bg-cover
       flex-wrap p-10 flex justify-center items-center flex-col"
     >
       <h1 className="text-white font-primary text-5xl my-10">About</h1>
 
-      <div className="flex justify-center items-center md:space-x-10 flex-wrap">
+      <div className="flex justify-center items-center md:space-x-10 flex-wrap backdrop-blur">
         <span
           id="about-image"
           className="h-0 md:px-10
         opacity-50 overflow-hidden grid place-items-center"
         >
           <FancyImage
-            src="https://dummyimage.com/300x400"
-            width={300}
-            height={400}
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/20220310191440__MG_8605.JPG"
+            width={400}
+            height={300}
           />
         </span>
         <div
           id="about-text"
-          className="h-0 opacity-50 overflow-hidden font-primary text-xl text-white text-center max-w-xl 
+          className="h-0 opacity-50 overflow-hidden font-sans text-xl text-white text-center max-w-xl 
         grid place-items-center py-10 "
         >
           Born from the rage of the technological era, Technika is a perennial

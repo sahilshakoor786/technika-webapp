@@ -74,53 +74,63 @@ export default function EventsSection() {
   return (
     <section
       id="events"
-      className="h-full min-h-screen 
+      className="h-full min-h-screen bg-events-image bg-cover
       flex-wrap p-10 flex justify-center items-center flex-col"
     >
       <h1 className="text-white font-primary text-5xl my-10">Events</h1>
 
       <div className="flex justify-center items-center md:space-x-10 flex-wrap">
-        <span className="fancy-image h-0 opacity-25 overflow-hidden px-10 
-        flex justify-center items-center">
+        <span
+          className="fancy-image h-0 opacity-25 overflow-hidden px-10 
+        flex justify-center items-center"
+        >
           <FancyImage
-            src="https://dummyimage.com/300x400&text=Central Events"
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
             width={200}
             height={300}
             onClick={() => fancyPopup(0)}
+            text="Central Events"
           />
         </span>
-        <span className="fancy-image h-0 opacity-25 overflow-hidden px-10 
-        flex justify-center items-center">
+        <span
+          className="fancy-image h-0 opacity-25 overflow-hidden px-10 
+        flex justify-center items-center"
+        >
           <FancyImage
-            src="https://dummyimage.com/300x400&text=Mech Marvel"
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
             width={200}
             height={300}
             onClick={() => fancyPopup(1)}
+            text="Mech Marvel"
           />
         </span>
-        <span className="fancy-image h-0 opacity-25 overflow-hidden px-10 
-        flex justify-center items-center">
+        <span
+          className="fancy-image h-0 opacity-25 overflow-hidden px-10 
+        flex justify-center items-center"
+        >
           <FancyImage
-            src="https://dummyimage.com/300x400&text=Game of codes"
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
             width={200}
             height={300}
             onClick={() => fancyPopup(2)}
+            text="Game of codes"
           />
         </span>
-        <span className="fancy-image h-0 opacity-25 overflow-hidden px-10
-        flex justify-center items-center">
+        <span
+          className="fancy-image h-0 opacity-25 overflow-hidden px-10
+        flex justify-center items-center"
+        >
           <FancyImage
-            src="https://dummyimage.com/300x400&text=Electronics Hub"
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
             width={200}
             height={300}
             onClick={() => fancyPopup(3)}
+            text="Electronics Hub"
           />
         </span>
 
         <span className="flex justify-center">
-          <a
-            href="/events"
-          >
+          <a href="/events">
             <PrimaryButton text="Explore more events" />
           </a>
         </span>
@@ -139,7 +149,10 @@ export default function EventsSection() {
               absolute rounded-full w-12 h-12 bg-pink-500 
               shadow-lg grid place-items-center hover:scale-110"
             >
-              <img src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg" className="w-6 h-6" />
+              <img
+                src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+                className="w-6 h-6"
+              />
             </button>
 
             <div
@@ -198,7 +211,10 @@ export default function EventsSection() {
               absolute rounded-full w-12 h-12 bg-pink-500 
               shadow-lg grid place-items-center hover:scale-110"
             >
-              <img src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg" className="w-6 h-6" />
+              <img
+                src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+                className="w-6 h-6"
+              />
             </button>
 
             <div
@@ -256,11 +272,14 @@ export default function EventsSection() {
         >
           <div className="w-full max-w-3xl h-2/3 bg-white shadow-lg relative rounded-lg">
             <button
-              onClick={() => fancyPopup(2)} 
+              onClick={() => fancyPopup(2)}
               className="transition ease-in-out delay-15 z-20 -right-4 -top-4 absolute rounded-full w-12 h-12 bg-pink-500 
     shadow-lg grid place-items-center hover:scale-110"
             >
-              <img src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg" className="w-6 h-6" />
+              <img
+                src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+                className="w-6 h-6"
+              />
             </button>
 
             <div
@@ -330,7 +349,10 @@ export default function EventsSection() {
               className="transition ease-in-out delay-15 z-20 -right-4 -top-4 absolute rounded-full w-12 h-12 bg-pink-500 
     shadow-lg grid place-items-center hover:scale-110"
             >
-              <img src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg" className="w-6 h-6" />
+              <img
+                src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+                className="w-6 h-6"
+              />
             </button>
 
             <div
