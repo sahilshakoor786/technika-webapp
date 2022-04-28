@@ -16,7 +16,7 @@ app.use(express.urlencoded());
 const { body, validationResult } = require("express-validator");
 
 app.get("/auth/google/url", authController.getUrl);
-app.get("/auth/google/callback", authController.googleCallback);
+app.post("/auth/google/callback", authController.googleCallback);
 
 app.get("/me", middleware.authMiddleware, userController.me);
 app.put("/profile", middleware.authMiddleware, userController.update);
