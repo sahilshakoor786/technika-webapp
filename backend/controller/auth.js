@@ -81,7 +81,7 @@ exports.googleCallback = async (req, res, _) => {
         throw new Error(error.message);
       });
 
-    const user = await User.findOne({ googleId: googleUser.id });
+    let user = await User.findOne({ googleId: googleUser.id });
 
     if (!user) {
       const email = googleUser.email;
@@ -94,7 +94,7 @@ exports.googleCallback = async (req, res, _) => {
 
       const tscId = "TSC22" + id.slice(nextId.toString().length - 1);
 
-      const user = new User({
+       user = new User({
         tscId: tscId,
         email,
         name: googleUser.name,
