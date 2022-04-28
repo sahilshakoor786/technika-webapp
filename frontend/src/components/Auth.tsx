@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { ReactElement, useEffect } from "react";
+import { getToken } from "src/types/token";
 
 export default function Auth({ children }: { children: ReactElement }) {
   const router = useRouter();
@@ -9,9 +10,9 @@ export default function Auth({ children }: { children: ReactElement }) {
   }, []);
 
   function checkAuth() {
-    const ts = localStorage.getItem("token");
-    if(!ts || ts == "" ) {
-        router.replace("/error")
+    const token = getToken();
+    if (!token) {
+      router.replace("/register");
     }
   }
 

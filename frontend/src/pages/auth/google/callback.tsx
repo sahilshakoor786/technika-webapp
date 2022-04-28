@@ -19,7 +19,6 @@ export default function GoogleCallback() {
       localStorage.setItem("token", JSON.stringify(res.data));
       router.replace("/register/complete");
     } catch (error) {
-      console.log(error);
       router.replace("/error");
     }
   }
