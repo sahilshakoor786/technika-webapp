@@ -143,25 +143,38 @@ export default function RegisterPage() {
   }
 
   async function saveProfile() {
-    try {
-      const res = await axiosInstance.put(`/profile?id=${token?.id}`, {
-        name: nameInput.value,
-        phone: phoneInput.value,
-        cityInput: cityInput.value,
+    setLoading(true);
 
-        college: collegeInput.value,
-        branch: branchInput.value,
-        city: cityInput.value,
-      }, {
-        headers: {
-          "authorization": `Bearer ${token?.token}`
+    try {
+      const res = await axiosInstance.put(
+        `/profile?id=${token?.id}`,
+        {
+          name: nameInput.value,
+          phone: phoneInput.value,
+          cityInput: cityInput.value,
+
+          college: collegeInput.value,
+          branch: branchInput.value,
+          city: cityInput.value,
+        },
+        {
+          headers: {
+            authorization: `Bearer ${token?.token}`,
+          },
         }
-      });
+      );
+      
+      if(token) {
+        token.user = res.data;
+        localStorage.setItem("token", JSON.stringify(token));
+      }
 
       router.replace("/events");
     } catch (error) {
       router.replace("/error");
     }
+
+    setLoading(false);
   }
 
   return (
@@ -172,8 +185,8 @@ export default function RegisterPage() {
       bg-cover bg-fixed bg-main-image h-screen flex justify-center items-center"
         >
           <div
-            className="z-10 px-10 relative md:w-1/3 h-fit backdrop-blur flex flex-col
-          shadow-lg py-6 space-y-3 rounded-lg bg-white/50"
+            className="z-10 mx-10 p-10 relative md:w-1/3 h-fit backdrop-blur flex flex-col
+          shadow-lg space-y-3 rounded-lg bg-white/50"
           >
             <h1 className="font-primary text-2xl text-center text-white">
               Complete your registration
@@ -192,9 +205,11 @@ export default function RegisterPage() {
             {branchInput.input}
             {batchInput.input}
 
-
-            {!loading ?  <PrimaryButton text="Save Profile" onClick={saveProfile} /> : <Spinner /> }
-           
+            {!loading ? (
+              <PrimaryButton text="Save Profile" onClick={saveProfile} />
+            ) : (
+              <Spinner />
+            )}
           </div>
         </main>
       </Layout>
