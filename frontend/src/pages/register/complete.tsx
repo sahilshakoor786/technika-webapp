@@ -151,11 +151,11 @@ export default function RegisterPage() {
         {
           name: nameInput.value,
           phone: phoneInput.value,
-          cityInput: cityInput.value,
+          city: cityInput.value,
 
           college: collegeInput.value,
           branch: branchInput.value,
-          city: cityInput.value,
+          batchInput: batchInput.value,
         },
         {
           headers: {
