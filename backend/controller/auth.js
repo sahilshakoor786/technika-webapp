@@ -134,12 +134,20 @@ exports.googleCallback = async (req, res, _) => {
       id: user._id,
       tscId: user.tscId,
       user: {
+        id: user._id,
+        tscId: user.tscId,
         name: user.name,
         email: user.email,
         isHbtuStudent: user.isHbtuStudent,
         isTSCTeamMember: user.isTSCTeamMember,
         isTSCAdmin: user.isTSCAdmin,
         picture: user.picture,
+
+        college: user.college,
+        city: user.city,
+        phone: user.phone,
+        batch: user.batch,
+        branch: user.branch,
       },
     });
   } catch (error) {
