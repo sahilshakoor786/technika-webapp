@@ -41,7 +41,7 @@ exports.getUrl = async (req, res, _) => {
 
 exports.googleCallback = async (req, res, _) => {
   try {
-    const code = req.query.code;
+    const code = req.body.code;
 
     const url = "https://oauth2.googleapis.com/token";
     const values = {

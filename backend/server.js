@@ -19,6 +19,7 @@ app.get("/auth/google/url", authController.getUrl);
 app.get("/auth/google/callback", authController.googleCallback);
 
 app.get("/me", middleware.authMiddleware, userController.me);
+app.put("/profile", middleware.authMiddleware, userController.update);
 app.post("/profile/upload/:userId", upload.any(), userController.upload);
 
 const run = async () => {
