@@ -2,6 +2,7 @@ import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
 import React, { useEffect, useRef, useState } from "react";
 import SecondaryButton from "../SecondaryButton";
+import src from "gsap/src";
 
 export default function HeroSection() {
   const playerRef = useRef<HTMLVideoElement>(null);
@@ -49,23 +50,13 @@ export default function HeroSection() {
         loop
         className="invisible"
       />
-      {supported ? (
-        <video
-          className="absolute w-auto min-w-full min-h-full max-w-none bg-black"
-          ref={playerRef}
-          autoPlay={true}
-          loop
-          muted
-        />
-      ) : (
-        <video
-          className="absolute w-auto min-w-full min-h-full max-w-none bg-black"
-          src="https://d2jf5yk8vvx0ti.cloudfront.net/videos/main_video_2/720p.m3u8"
-          autoPlay={true}
-          loop
-          muted
-        />
-      )}
+      <video
+        className="absolute w-auto min-w-full min-h-full max-w-none bg-black"
+        ref={playerRef}
+        autoPlay={true}
+        loop
+        muted
+      />
 
       <div
         className="z-10 relative text-white md:w-1/2  h-1/2
