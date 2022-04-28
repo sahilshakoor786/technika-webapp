@@ -147,7 +147,7 @@ export default function RegisterPage() {
 
     try {
       const res = await axiosInstance.put(
-        `/profile?id=${token?.id}`,
+        `/profile/${token?.id}`,
         {
           name: nameInput.value,
           phone: phoneInput.value,
