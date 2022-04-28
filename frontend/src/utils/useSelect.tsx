@@ -22,7 +22,7 @@ export function useSelect({
       onChange={(e) => (onChange ? onChange(e) : setValue(e.target.value))}
     >
       {options.map((option) => (
-        <option key={option.value} value={option.value}>{option.label}</option>
+        <option key={option.value} value={option.value} selected={option.value == value}>{option.label}</option>
       ))}
     </select>
   );
