@@ -1,6 +1,20 @@
+import { useEffect } from "react";
 import Layout from "src/components/Layout";
+import { axiosInstance } from "src/lib/axios";
 
 export default function RegisterPage() {
+
+
+
+  useEffect(() => {
+    googleRedirect();
+  }, []);
+
+  async function googleRedirect() {
+    const res = await axiosInstance.get("/auth/google/url");
+    console.log(res.data)
+  }
+  
   return (
     <Layout>
       <main
