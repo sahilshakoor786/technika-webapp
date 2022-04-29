@@ -36,7 +36,7 @@ app.get("/event", eventController.listEvent);
 app.post("/event/register/check", eventController.checkRegister);
 // app.get("/events/me", eventController.checkRegister);
 
-// app.get("/user/:tscId", eventController.checkRegister);
+app.get("/user/:tscId", userController.getUserByTscId);
 
 app.post(
   "/event/register/payment/create",

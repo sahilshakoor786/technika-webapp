@@ -181,3 +181,34 @@ exports.upload = async (req, res, _) => {
     });
   }
 };
+
+exports.getUserByTscId = async (req, res, _) => {
+  try {
+    const tscId = req.params.tscId;
+    if (!tscId) {
+      res.status(400).json({ success: false, message: "Tsc id not found" });
+      return;
+    }
+
+    const user = await User.findOne({ tscId });
+
+    if (!user) {
+      res.status(400).json({ success: false, message: "User not found" });
+      return;
+    }
+
+    res.status(200).json({
+      user: {
+        id: user._id,
+        tscId: user.tscId,
+        name: user.name,
+        picture: user.picture,
+        college: user.college,
+        city: user.city,
+        batch: user.batch,
+      },
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
