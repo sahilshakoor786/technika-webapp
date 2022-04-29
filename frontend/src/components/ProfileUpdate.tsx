@@ -138,7 +138,7 @@ export default function ProfileUpdate({ onSuccess, onError }: ProfileUpdateProps
 
           college: collegeInput.value,
           branch: branchInput.value,
-          batchInput: batchInput.value,
+          batch: batchInput.value,
         },
         {
           headers: {
