@@ -94,7 +94,7 @@ exports.googleCallback = async (req, res, _) => {
 
       const tscId = "TSC22" + id.slice(nextId.toString().length - 1);
 
-       user = new User({
+      user = new User({
         tscId: tscId,
         email,
         name: googleUser.name,
@@ -115,6 +115,7 @@ exports.googleCallback = async (req, res, _) => {
         user.isTSCTeamMember = true;
         user.isTSCAdmin = true;
       } else {
+        user.tscId = ""; // for non-hbtu students and non-tsc team members generate tsc id after payment
         user.isHbtuStudent = false;
         user.college = "";
         user.city = "";

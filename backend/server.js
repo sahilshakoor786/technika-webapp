@@ -7,6 +7,7 @@ var cors = require("cors");
 const app = express();
 const authController = require("./controller/auth");
 const userController = require("./controller/user");
+const eventController = require("./controller/events");
 const middleware = require("./middleware/auth");
 const multer = require("multer");
 const upload = multer();
@@ -23,6 +24,24 @@ app.post("/auth/google/callback", authController.googleCallback);
 app.get("/me", middleware.authMiddleware, userController.me);
 app.put("/profile/:userId", middleware.authMiddleware, userController.update);
 app.post("/profile/upload/:userId", upload.any(), userController.upload);
+
+app.post(
+  "/event/register",
+  middleware.authMiddleware,
+  eventController.register
+);
+
+app.post(
+  "/event/register/payment/create",
+  middleware.authMiddleware,
+  eventController.payment
+);
+
+app.post(
+  "/event/register/payment/verify",
+  middleware.authMiddleware,
+  eventController.paymentSuccess
+);
 
 const run = async () => {
   const mongooseConnection = await mongoose.connect(

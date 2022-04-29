@@ -5,7 +5,7 @@ var user = new Schema(
   {
     tscId: {
       type: String,
-      required: true,
+      default: "",
     },
 
     googleId: {
