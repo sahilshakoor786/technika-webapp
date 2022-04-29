@@ -7,6 +7,7 @@ const Razorpay = require("razorpay");
 const crypto = require("crypto");
 const utils = require("../lib/utils");
 
+// eventId, eventLeadId , teamMembersTSCIds
 exports.register = async (req, res) => {
   try {
     const eventId = req.body.eventId;
@@ -285,4 +286,100 @@ exports.paymentSuccess = async (req, res) => {
     success: true,
     message: "Payment success",
   });
+};
+
+exports.getEvent = async (req, res) => {
+  try {
+    const eventId = req.params.eventId;
+    if (!eventId) {
+      res.status(400).json({ success: false, message: "Event id not found" });
+      return;
+    }
+
+    const event = await Event.findById(eventId);
+
+    if (!event) {
+      res.status(400).json({
+        success: false,
+        message: "Event not found",
+      });
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      result: event,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+exports.listEvent = async (req, res) => {
+  try {
+    const events = await Event.find({});
+
+    if (!events) {
+      res.status(400).json({
+        success: false,
+        message: "Events not found",
+      });
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      result: events,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+exports.checkRegister = async (req, res) => {
+  try {
+    const userId = req.body.userId;
+
+    if (!userId) {
+      res.status(400).json({ success: false, message: "User id not found" });
+      return;
+    }
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      res.status(400).json({ success: false, message: "User not found" });
+      return;
+    }
+
+    if (user.isHbtuStudent) {
+      res.status(200).json({
+        success: true,
+        message: "User is HBTU student",
+      });
+    }
+
+    const registrationPayment = await RegistrationPayment.findOne({
+      userId: userId,
+      paymentStatus: "success",
+    });
+
+    if (registrationPayment) {
+      res.status(200).json({
+        success: true,
+        message: "User  registered",
+      });
+      return;
+    }
+
+    res.status(400).json({
+      success: false,
+      message: "User not registered",
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: error.message });
+  }
 };

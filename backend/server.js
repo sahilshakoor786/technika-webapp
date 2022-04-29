@@ -31,6 +31,13 @@ app.post(
   eventController.register
 );
 
+app.get("/event/:eventId", eventController.getEvent);
+app.get("/event", eventController.listEvent);
+app.post("/event/register/check", eventController.checkRegister);
+// app.get("/events/me", eventController.checkRegister);
+
+// app.get("/user/:tscId", eventController.checkRegister);
+
 app.post(
   "/event/register/payment/create",
   middleware.authMiddleware,
