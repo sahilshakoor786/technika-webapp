@@ -52,7 +52,7 @@ export default function DashboardPage() {
           className="h-full min-h-screen 
           overflow-x-hidden flex justify-center"
         >
-          <div className="max-w-5xl grid md:grid-cols-2 place-items-center gap-8 my-20 mt-32">
+          <div className="w-full max-w-5xl grid md:grid-cols-2 place-items-center gap-8 my-20 mt-32">
             <div
               className="p-10 w-full h-full backdrop-blur 
               flex flex-col space-y-3
