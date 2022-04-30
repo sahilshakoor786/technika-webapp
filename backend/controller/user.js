@@ -24,6 +24,7 @@ exports.me = async (req, res, _) => {
         city: user.city,
         phone: user.phone,
         batch: user.batch,
+        branch: user.branch,
       },
     });
   } catch (error) {
@@ -206,6 +207,7 @@ exports.getUserByTscId = async (req, res, _) => {
         college: user.college,
         city: user.city,
         batch: user.batch,
+        branch: user.branch,
       },
     });
   } catch (error) {

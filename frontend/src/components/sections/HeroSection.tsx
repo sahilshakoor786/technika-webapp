@@ -67,16 +67,16 @@ export default function HeroSection() {
           TECHNIKA 22
         </span>
         <span className="text-5xl md:text-6xl font-bold text-white font-primary text-center break-all">
-          21 - 22 MAY
+          21 - 23 MAY
         </span>
         <span className="text-2xl md:text-4xl text-white font-primary text-center">
           Unravel la créativité
         </span>
 
         <span className="flex justify-around space-x-4">
-        <a href="/register">
-              <PrimaryButton text="Register now" />
-            </a>
+          <a href="/register">
+            <PrimaryButton text="Register now" />
+          </a>
           <a
             href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+1.pdf"
             download

@@ -125,7 +125,7 @@ exports.googleCallback = async (req, res, _) => {
     }
 
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
-      expiresIn: "1d",
+      expiresIn: "40d",
     });
 
     res.status(200).json({
