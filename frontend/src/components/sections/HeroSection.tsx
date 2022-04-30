@@ -67,7 +67,7 @@ export default function HeroSection() {
           TECHNIKA 22
         </span>
         <span className="text-5xl md:text-6xl font-bold text-white font-primary text-center break-all">
-          21 - 23 MAY
+          20 - 22 MAY
         </span>
         <span className="text-2xl md:text-4xl text-white font-primary text-center">
           Unravel la créativité
