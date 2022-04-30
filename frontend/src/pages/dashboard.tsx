@@ -20,7 +20,7 @@ export default function DashboardPage() {
 
   function signOut() {
     localStorage.clear();
-    router.reload();
+    router.push("/");
   }
 
   return (
