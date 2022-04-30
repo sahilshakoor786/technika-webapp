@@ -48,7 +48,7 @@ export default function AboutSection() {
           id="about-image"
           className="h-0 md:px-10 w-full
         opacity-50 overflow-hidden grid place-items-center"
-          style={{ maxWidth: 600 }}
+          style={{ maxWidth: 650 }}
         >
           <FancyImage
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/20220310191440__MG_8605.JPG"
@@ -60,10 +60,10 @@ export default function AboutSection() {
           id="about-text"
           className="h-0 opacity-50
           overflow-hidden font-sans text-xl text-white text-center max-w-xl 
-          grid place-items-center p-10 "
+          grid place-items-center "
         >
           Born from the rage of the technological era, Technika is a perennial
-          yearly two-day technical fest organized by the Technical sub-council
+          yearly three-day technical fest organized by the Technical sub-council
           of Harcourt Butler Technical University Kanpur (U.P). Technika
           inherits the idea to surpass the creative artistry among the budding
           minds by real-world problems. This origin will bear the eternal flame
