@@ -3,9 +3,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'main-image': "url('https://d2jf5yk8vvx0ti.cloudfront.net/images/blueprint-4056027_1280.webp')",
-        'events-image': "url('https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-hristo-fidanov-1252890.jpg')"
-      }
+        "main-image":
+          "url('https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-tara-winstead-8386440.jpg')",
+        "events-image":
+          "url('https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-wendy-wei-1555900.jpg')",
+      },
     },
   },
   plugins: [],

@@ -36,7 +36,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="h-fit min-h-screen
+      className="h-fit min-h-screen bg-cover bg-main-image
       flex-wrap p-10 flex justify-center items-center flex-col"
     >
       <h1 className="text-white font-primary text-5xl my-10 px-10 py-2 backdrop-blur rounded-lg">
@@ -46,18 +46,19 @@ export default function AboutSection() {
       <div className="flex justify-center items-center md:space-x-10 flex-wrap backdrop-blur rounded">
         <span
           id="about-image"
-          className="h-0 md:px-10
+          className="h-0 md:px-10 w-full
         opacity-50 overflow-hidden grid place-items-center"
+          style={{ maxWidth: 600 }}
         >
           <FancyImage
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/20220310191440__MG_8605.JPG"
-            width={400}
+            width={500}
             height={300}
           />
         </span>
         <div
           id="about-text"
-          className="h-0 opacity-50 
+          className="h-0 opacity-50
           overflow-hidden font-sans text-xl text-white text-center max-w-xl 
           grid place-items-center p-10 "
         >

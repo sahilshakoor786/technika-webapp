@@ -75,7 +75,7 @@ export default function EventsSection() {
   return (
     <section
       id="events"
-      className="h-full min-h-screen
+      className="h-full min-h-screen bg-events-image bg-cover
       flex-wrap p-10 flex justify-center items-center flex-col"
     >
       <h1 className="text-white font-primary text-5xl my-10 px-10 py-2 backdrop-blur rounded-lg">
@@ -160,7 +160,7 @@ export default function EventsSection() {
 
             <div
               className="grid grid-cols-3 gap-2 px-10 overflow-scroll h-full
-            text-slate-600 font-primary"
+            text-slate-600"
             >
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Central Events</span>
@@ -222,7 +222,7 @@ export default function EventsSection() {
 
             <div
               className="grid grid-cols-3 gap-2 px-10 overflow-scroll h-full
-            text-slate-600 font-primary"
+            text-slate-600"
             >
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Mech Marvel</span>
@@ -287,7 +287,7 @@ export default function EventsSection() {
 
             <div
               className="grid grid-cols-3 gap-2 px-10 overflow-scroll h-full
-            text-slate-600 font-primary"
+            text-slate-600"
             >
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Game Of Codes</span>
@@ -360,7 +360,7 @@ export default function EventsSection() {
 
             <div
               className="grid grid-cols-3 gap-2 px-10 overflow-scroll h-full
-            text-slate-600 font-primary"
+            text-slate-600"
             >
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">ELECTRONICS HUB </span>

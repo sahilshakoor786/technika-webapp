@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: ReactElement }) {
       </Head>
 
       <Header />
-      <div className="bg-fixed bg-main-image bg-cover">{children}</div>
+      <div className="bg-fixed bg-black bg-main-image bg-cover">{children}</div>
       <Footer />
     </>
   );

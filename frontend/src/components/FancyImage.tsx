@@ -48,7 +48,12 @@ export default function FancyImage({
   return (
     <div
       className="relative grid place-items-center cursor-pointer"
-      style={{ width: width, height: height, perspective: 700 }}
+      style={{
+        width: "100%",
+        maxWidth: width,
+        height: height,
+        perspective: 700,
+      }}
       onMouseMove={fancyImageHover}
       onMouseOut={fancyImageOut}
     >
@@ -58,7 +63,11 @@ export default function FancyImage({
           shadow-lg 
           absolute rounded-lg rotate-0 scale-100 bg-cover border-2"
         onClick={onClick}
-        style={{ width: width, height: height, backgroundImage: `url('${src}')`  }}
+        style={{
+          width: width,
+          height: height,
+          backgroundImage: `url('${src}')`,
+        }}
       ></div>
 
       <span className="z-20 text-white text-2xl backdrop-blur">{text}</span>
