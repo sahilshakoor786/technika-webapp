@@ -52,7 +52,7 @@ export default function DashboardPage() {
           className="h-full min-h-screen 
           overflow-x-hidden flex justify-center"
         >
-          <div className="max-w-5xl grid md:grid-cols-2 place-items-center gap-8 my-20 mt-32">
+          <div className="w-full max-w-5xl grid md:grid-cols-2 place-items-center gap-8 my-20 mt-32">
             <div
               className="p-10 w-full h-full backdrop-blur 
               flex flex-col space-y-3
@@ -85,19 +85,18 @@ export default function DashboardPage() {
                       >
                         <span className="font-bold">TSC ID</span>
                         <span className="text-center">
-                          {" "}
                           <span>
                             {token?.tscId || "-"}
                             <button
                               onClick={copyText}
-                              className="absolute p-3 bg-pink-800 shadow-lg 
-                    rounded-full right-2 top-3 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500"
+                              className="absolute p-3 bg-white/10 shadow-lg 
+                    rounded-full right-2 top-3 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
                                 height="16"
-                                fill="#fff"
+                                fill="#666"
                                 viewBox="0 0 16 16"
                               >
                                 <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />

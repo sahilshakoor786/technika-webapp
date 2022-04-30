@@ -146,9 +146,11 @@ export default function Header() {
             </a>
           </span>
           <span className="h-0 overflow-hidden">
-            <a href="/register" className="menu-link text-3xl md:text-5xl">
-              Register
-            </a>
+            {!token?.token && (
+              <a href="/events" className="menu-link text-3xl md:text-5xl">
+                Register
+              </a>
+            )}
           </span>
         </div>
       </div>
@@ -168,9 +170,9 @@ export default function Header() {
 
       {token?.token && (
         <a href="/dashboard">
-        <button className="fixed z-20 right-28 top-10 rounded-full overflow-hidden border-2 w-12 h-12 bg-blue-900 shadow-lg">
-          <img src={token.user.picture} className="w-full h-full" />
-        </button>
+          <button className="fixed z-20 right-28 top-10 rounded-full overflow-hidden border-2 w-12 h-12 bg-blue-900 shadow-lg">
+            <img src={token.user.picture} className="w-full h-full" />
+          </button>
         </a>
       )}
     </header>
