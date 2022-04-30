@@ -50,7 +50,7 @@ export default function AboutSection() {
         opacity-50 overflow-hidden grid place-items-center"
         >
           <FancyImage
-            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/20220310191440__MG_8605.JPG"
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/20220310191740__MG_8620.JPG"
             width={400}
             height={300}
           />

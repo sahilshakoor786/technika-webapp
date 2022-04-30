@@ -75,8 +75,8 @@ export default function EventsSection() {
   return (
     <section
       id="events"
-      className="h-full min-h-screen
-      flex-wrap p-10 flex justify-center items-center flex-col"
+      className="h-full min-h-screen 
+      flex-wrap p-10 flex justify-center  items-center flex-col"
     >
       <h1 className="text-white font-primary text-5xl my-10 px-10 py-2 backdrop-blur rounded-lg">
         Events
