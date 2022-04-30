@@ -148,7 +148,6 @@ exports.googleCallback = async (req, res, _) => {
         city: user.city,
         phone: user.phone,
         batch: user.batch,
-        branch: user.branch,
       },
     });
   } catch (error) {
