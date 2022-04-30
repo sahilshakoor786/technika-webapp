@@ -6,13 +6,15 @@ import { useSelect } from "src/utils/useSelect";
 import PrimaryButton from "./PrimaryButton";
 import Spinner from "./Spinner";
 
-
 type ProfileUpdateProps = {
-    onSuccess: () => void;
-    onError: () => void;
-  };
-  
-export default function ProfileUpdate({ onSuccess, onError }: ProfileUpdateProps) {
+  onSuccess: () => void;
+  onError: () => void;
+};
+
+export default function ProfileUpdate({
+  onSuccess,
+  onError,
+}: ProfileUpdateProps) {
   const [token, setToken] = useState<Token>();
   const [loading, setLoading] = useState(false);
 
@@ -168,6 +170,7 @@ export default function ProfileUpdate({ onSuccess, onError }: ProfileUpdateProps
           className="bg-gray-300 rounded-full w-20 h-20"
         />
       </div>
+
       {nameInput.input}
       {phoneInput.input}
       {cityInput.input}
