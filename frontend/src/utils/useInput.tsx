@@ -13,7 +13,7 @@ export function useInput({
   const input =
     type !== "textarea" ? (
       <input
-        className="sahdow px-4 py-2 rounded focus:outline-none"
+        className="shadow px-4 py-2 rounded focus:outline-none"
         value={value}
         onChange={(e) => (onChange)? onChange(e) : setValue(e.target.value)}
         type={type}
