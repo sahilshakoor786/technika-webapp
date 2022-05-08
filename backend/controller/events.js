@@ -7,7 +7,7 @@ const Razorpay = require("razorpay");
 const crypto = require("crypto");
 const utils = require("../lib/utils");
 
-// eventId, eventLeadId , teamMembersTSCIds
+// eventId, eventLeadTSCId , teamMembersTSCIds
 exports.register = async (req, res) => {
   try {
     const eventId = req.body.eventId;
@@ -23,23 +23,30 @@ exports.register = async (req, res) => {
       return;
     }
 
-    const eventLead = req.body.eventLeadId;
+    const eventLeadTSCId = req.body.eventLeadTSCId;
 
-    if (!eventLead) {
+    if (!eventLeadTSCId) {
       res
         .status(400)
         .json({ success: false, message: "Event lead id not found" });
       return;
     }
 
-    if (eventLead != req.user.id) {
+    const user = await User.findOne({ tscId: eventLeadTSCId });
+
+    if (!user) {
+      res.status(400).json({ success: false, message: "User not found" });
+      return;
+    }
+
+    if (user.id != req.user.id) {
       res.status(400).json({ success: false, message: "Unauthorized" });
       return;
     }
 
     const eventRegistrationDetail = await EventRegistrationDetail.findOne({
       eventId: eventId,
-      leaderId: eventLead,
+      leaderId: user.id,
     });
 
     if (eventRegistrationDetail) {
@@ -50,16 +57,9 @@ exports.register = async (req, res) => {
       return;
     }
 
-    const user = await User.findById(eventLead);
-
-    if (!user) {
-      res.status(400).json({ success: false, message: "User not found" });
-      return;
-    }
-
     if (!user.isHbtuStudent) {
       const registrationPayment = await RegistrationPayment.findOne({
-        userId: eventLead,
+        userId: user.id,
         paymentStatus: "success",
       });
 
@@ -138,7 +138,7 @@ exports.register = async (req, res) => {
         eventId: eventId,
         isCompleteRegistration: true,
         isTeamRegistration: true,
-        leaderId: eventLead,
+        leaderId: user.id,
         teamMembers: teamMembers,
       });
 
