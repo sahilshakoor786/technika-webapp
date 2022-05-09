@@ -38,7 +38,7 @@ export default function Page() {
               </span>
 
               <div
-                className="w-full grid grid-cols-2 gap-2 text-slate-600 
+                className="w-full grid grid-cols-2 gap-2 px-10 text-slate-600 
                 rounded-full"
               >
                 <span className="font-bold text-slate-800">Name</span>
@@ -52,9 +52,9 @@ export default function Page() {
               </div>
             </div>
 
-            <span className="mb-10">
-              <EventRegisterButton eventId="" />
-            </span>
+            <div className="mb-10">
+              <EventRegisterButton eventId="TSCMM004" />
+            </div>
 
             <div
               className="overflow-hidden font-sans text-xl 
