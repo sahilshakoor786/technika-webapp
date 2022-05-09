@@ -5,6 +5,7 @@ var events = new Schema({
   eventId: {
     type: String,
     required: true,
+    unique: true,
   },
 
   eventName: {
@@ -17,13 +18,8 @@ var events = new Schema({
     required: true,
   },
 
-  eventDate: {
-    type: String,
-    required: true,
-  },
-
   eventTime: {
-    type: String,
+    type: Date,
     required: true,
   },
 
