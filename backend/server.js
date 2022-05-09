@@ -63,7 +63,7 @@ const router = AdminJSExpress.buildAuthenticatedRouter(adminJs, {
   authenticate: async (email, password) => {
     const adminEmail = process.env.ADMIN_EMAIL || "admintsc@technika.org.in";
     const adminPassword = process.env.ADMIN_PASSWORD || "adminPassword";
-    if (email === "email" && password === "password") {
+    if (email === adminEmail && password === adminPassword) {
       return {
         email: "admin@technika.org.in",
         name: "Admnin",

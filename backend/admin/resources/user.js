@@ -36,11 +36,11 @@ module.exports = {
         showInDrawer: true,
       },
       bulkDelete: {
-        isAccessible: true,
+        isAccessible: false,
       },
 
       delete: {
-        isAccessible: true,
+        isAccessible: false,
       },
     },
   },
