@@ -92,7 +92,7 @@ export default function HeroSection() {
             </a>
           )}
           <a
-            href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+1.pdf"
+            href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+2.pdf"
             download
           >
             <SecondaryButton text="Download Brochure" />
