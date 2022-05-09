@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "admin:dev": "nodemon adminServer.js",
+    "admin:start": "node adminServer.js"
   },
   "dependencies": {
     "@adminjs/express": "^4.1.0",
