@@ -13,8 +13,8 @@ const multer = require("multer");
 const upload = multer();
 
 app.use(cors());
-// app.use(express.json());
-// app.use(express.urlencoded());
+app.use(express.json());
+app.use(express.urlencoded());
 
 const { body, validationResult } = require("express-validator");
 
@@ -77,8 +77,8 @@ const router = AdminJSExpress.buildAuthenticatedRouter(adminJs, {
 });
 
 app.use(adminJs.options.rootPath, router);
-app.use(bodyParser());
-app.use(bodyParser.json());
+// app.use(bodyParser());
+// app.use(bodyParser.json());
 const run = async () => {
   const mongooseConnection = await mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost:27017/tsc-backend"
