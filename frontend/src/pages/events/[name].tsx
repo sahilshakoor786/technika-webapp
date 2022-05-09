@@ -3,12 +3,12 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { useEffect } from "react";
 import Auth from "src/components/Auth";
+import EventRegisterButton from "src/components/EventRegisterButton";
 import FancyImage from "src/components/FancyImage";
 import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 
 export default function Page() {
-
   return (
     <Auth>
       <Layout>
@@ -53,7 +53,7 @@ export default function Page() {
             </div>
 
             <span className="mb-10">
-              <SecondaryButton text="Register to event" />
+              <EventRegisterButton eventId="" />
             </span>
 
             <div
