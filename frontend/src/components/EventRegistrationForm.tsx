@@ -24,6 +24,7 @@ export default function EventRegistrationForm({
   const [registered, setRegistered] = useState<boolean>(false);
   const [payment, setPayment] = useState<boolean>(false);
   const [participants, setParticipants] = useState<Array<string>>([]);
+  const [accomation, setAccomation] = useState<Boolean>(false);
 
   useEffect(() => {
     getUser();
@@ -135,7 +136,7 @@ export default function EventRegistrationForm({
         const res = await axiosInstance.post(
           `/event/register/payment/create`,
           {
-            isAccommodation: true
+            isAccommodation: accomation,
           },
           {
             headers: {
@@ -155,15 +156,11 @@ export default function EventRegistrationForm({
             console.log(args);
             setRegistered(true);
 
-            await axiosInstance.post(
-              `/event/register/payment/verify`,
-              args,
-              {
-                headers: {
-                  authorization: `Bearer ${token.token}`,
-                },
-              }
-            );
+            await axiosInstance.post(`/event/register/payment/verify`, args, {
+              headers: {
+                authorization: `Bearer ${token.token}`,
+              },
+            });
           },
         };
         const rzpay = new Razorpay(options);
@@ -263,6 +260,15 @@ export default function EventRegistrationForm({
             </>
           ) : (
             <>
+              <span>
+                Need accomations?
+                <input
+                  type="checkbox"
+                  onChange={(e) =>
+                    setAccomation(e.target.value == "on" ? true : false)
+                  }
+                />
+              </span>
               <PrimaryButton
                 text="Pay for all events now"
                 onClick={handlePayment}
