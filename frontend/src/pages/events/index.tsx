@@ -232,7 +232,7 @@ export default function EventsPage() {
                   text="Fun Fare"
                 />
               </Link>
-              <Link href="/events/anadigilogix">
+              <Link href="/events/anadigilox">
                 <FancyImage
                   src="https://dummyimage.com/200x300"
                   width={200}
@@ -288,12 +288,12 @@ export default function EventsPage() {
                   text="Blank Coding"
                 />
               </Link>
-              <Link href="/events/robo-war">
+              <Link href="/events/edm">
                 <FancyImage
                   src="https://dummyimage.com/200x300"
                   width={200}
                   height={300}
-                  text="Robo-War"
+                  text="EDM"
                 />
               </Link>
               <Link href="/events/programming-date">
