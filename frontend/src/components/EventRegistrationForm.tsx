@@ -118,6 +118,8 @@ export default function EventRegistrationForm({
             },
           }
         );
+
+        setRegistered(true);
       } catch (error: any) {
         setError(error.response.data.message);
       }
@@ -159,13 +161,14 @@ export default function EventRegistrationForm({
           },
           handler: async (args) => {
             console.log(args);
-            setRegistered(true);
 
             await axiosInstance.post(`/event/register/payment/verify`, args, {
               headers: {
                 authorization: `Bearer ${token.token}`,
               },
             });
+
+            setPayment(true);
           },
         };
         const rzpay = new Razorpay(options);
