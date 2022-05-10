@@ -47,7 +47,8 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Simulation
+                Circuit Trouble
+
               </h1>
 
               <div
@@ -67,12 +68,14 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Auditorium</span>
+                  <span className="text-slate-800 ">
+                    Electronics Department
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">12 PM-1 PM</span>
+                  <span className="text-slate-800">11:00 PM-1:00 PM</span>
                 </div>
               </div>
 
@@ -87,8 +90,8 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The participants will have to answer 15 questions in the best
-                possible way by using their reasoning & creativity.
+                This event consist of two rounds in which first round will be of multiple choice  written test based on basic electrical circuits and only the qualified contestants will make a team of 2 who will be eligible for the next round in which participants will provided with a problem based on electronics circuit .
+
               </div>
             </div>
           </main>
@@ -111,8 +114,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM12
-" />
+              <EventRegistrationForm eventId="TSCEH05" />
             </div>
           </div>
         </>

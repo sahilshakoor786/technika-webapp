@@ -47,7 +47,8 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Simulation
+                Robo-Combat
+
               </h1>
 
               <div
@@ -67,12 +68,13 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Auditorium</span>
+                  <span className="text-slate-800 ">Tennis lawn
+</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">12 PM-1 PM</span>
+                  <span className="text-slate-800">4:30-8:30 PM</span>
                 </div>
               </div>
 
@@ -87,8 +89,8 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The participants will have to answer 15 questions in the best
-                possible way by using their reasoning & creativity.
+              In this event, players will be required to put on their self-built robots in a 1X1 arena. The robot which will be equipped with best fighting & defending tactics will won the tournament.
+
               </div>
             </div>
           </main>
@@ -111,8 +113,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM12
-" />
+              <EventRegistrationForm eventId="TSCMM01" />
             </div>
           </div>
         </>

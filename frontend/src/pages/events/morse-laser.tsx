@@ -47,7 +47,9 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Simulation
+               Morse Laser
+
+
               </h1>
 
               <div
@@ -67,12 +69,15 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Auditorium</span>
+                  <span className="text-slate-800 ">
+                  Auditorium
+
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">12 PM-1 PM</span>
+                  <span className="text-slate-800">11:00 PM-1:00 PM</span>
                 </div>
               </div>
 
@@ -87,8 +92,9 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The participants will have to answer 15 questions in the best
-                possible way by using their reasoning & creativity.
+                The contestants would be provided with movie name written in Morse's code and they have to guess the movie name .
+
+
               </div>
             </div>
           </main>
@@ -111,8 +117,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM12
-" />
+              <EventRegistrationForm eventId="TSCEH06" />
             </div>
           </div>
         </>

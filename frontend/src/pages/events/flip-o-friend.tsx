@@ -47,7 +47,10 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Simulation
+               Flip-o-friend
+
+
+
               </h1>
 
               <div
@@ -67,12 +70,16 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Auditorium</span>
+                  <span className="text-slate-800 ">
+                  DBMS LAB/INTERNET LAB
+
+
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">12 PM-1 PM</span>
+                  <span className="text-slate-800">3:00 PM-4:00 PM</span>
                 </div>
               </div>
 
@@ -86,9 +93,10 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
-                The participants will have to answer 15 questions in the best
-                possible way by using their reasoning & creativity.
+              >There is team of 2 contestants with a twist that both the participants will be made to code in different rooms and on separate questions , within 15-20 minutes both will be swapped.
+
+
+
               </div>
             </div>
           </main>
@@ -111,8 +119,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM12
-" />
+              <EventRegistrationForm eventId="TSCGC05" />
             </div>
           </div>
         </>

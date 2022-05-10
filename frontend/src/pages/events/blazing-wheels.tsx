@@ -47,7 +47,11 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Simulation
+              Blazing Wheel
+
+
+
+
               </h1>
 
               <div
@@ -67,12 +71,17 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Auditorium</span>
+                  <span className="text-slate-800 ">
+                  BE- FT Lawn
+
+
+
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">12 PM-1 PM</span>
+                  <span className="text-slate-800">3:00 PM-5:00 PM</span>
                 </div>
               </div>
 
@@ -86,9 +95,11 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
-                The participants will have to answer 15 questions in the best
-                possible way by using their reasoning & creativity.
+              >Design a wired/wireless manually controlled robot which should be able to travel on uneven
+
+
+
+
               </div>
             </div>
           </main>
@@ -111,8 +122,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM12
-" />
+              <EventRegistrationForm eventId="TSCMM04" />
             </div>
           </div>
         </>
