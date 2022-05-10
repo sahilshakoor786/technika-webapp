@@ -371,23 +371,31 @@ exports.checkRegististrationPayment = async (req, res) => {
       return;
     }
 
-    const registrationPayment = await RegistrationPayment.findOne({
-      userId: userId,
-      paymentStatus: "success",
-    });
-
-    if (registrationPayment) {
+    if (user.isHbtuStudent) {
       res.status(200).json({
         success: true,
-        message: "User  payment already done",
+        message: "User is HBTU student",
       });
       return;
-    }
+    } else {
+      const registrationPayment = await RegistrationPayment.findOne({
+        userId: userId,
+        paymentStatus: "success",
+      });
 
-    res.status(200).json({
-      success: false,
-      message: "User payment not done",
-    });
+      if (registrationPayment) {
+        res.status(200).json({
+          success: true,
+          message: "User  payment already done",
+        });
+        return;
+      }
+
+      res.status(200).json({
+        success: false,
+        message: "User payment not done",
+      });
+    }
   } catch (error) {
     console.log(error);
     res.status(500).json({ success: false, message: error.message });
