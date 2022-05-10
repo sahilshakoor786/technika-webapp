@@ -13,3 +13,13 @@ export function getToken(): Token | undefined {
     return JSON.parse(ts);
   }
 }
+
+export function setUser(user: User): void {
+  const tsstring = localStorage.getItem("token");
+
+  if (tsstring) {
+    const ts = JSON.parse(tsstring) as Token;
+    ts.user = user;
+    localStorage.setItem("token", JSON.stringify(ts));
+  }
+}
