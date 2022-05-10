@@ -104,16 +104,9 @@ export default function DashboardPage() {
                 },
               });
 
-              const userRes = await axiosInstance.post(`/me`, args, {
-                headers: {
-                  authorization: `Bearer ${token.token}`,
-                },
-              });
-
-              token.user = userRes.data.user;
-              setToken(token);
-              
               setPayment(true);
+
+              window.location.reload();
             } catch (error) {
               setMessage("Payment failed");
             }
@@ -177,7 +170,7 @@ export default function DashboardPage() {
                         <span className="font-bold">TSC ID</span>
                         <span className="text-center">
                           <span>
-                            {token?.tscId || "-"}
+                            {token?.user.tscId || "-"}
                             <button
                               onClick={copyText}
                               className="absolute p-3 bg-white/10 shadow-lg 
