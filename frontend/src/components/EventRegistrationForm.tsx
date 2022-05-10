@@ -133,7 +133,7 @@ export default function EventRegistrationForm({
 
         const options: RazorpayOptions = {
           name: "Tecknika",
-          amount: res.data.paymentAmount,
+          amount: res.data.result.paymentAmount,
           key: res.data.result.key,
           currency: "INR",
           order_id: res.data.result.paymentId,

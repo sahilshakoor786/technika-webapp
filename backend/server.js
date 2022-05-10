@@ -33,7 +33,12 @@ app.post(
 
 app.get("/event/:eventId", eventController.getEvent);
 app.get("/event", eventController.listEvent);
-app.post("/event/register/check", eventController.checkRegister);
+app.post("/event/register/check", eventController.checkRigistartion);
+app.post(
+  "/event/register/check/payment",
+  eventController.checkRegististrationPayment
+);
+
 // app.get("/events/me", eventController.checkRegister);
 
 app.get("/user/:tscId", userController.getUserByTscId);
