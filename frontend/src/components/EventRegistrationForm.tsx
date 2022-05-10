@@ -157,7 +157,7 @@ export default function EventRegistrationForm({
         const rzpay = new Razorpay(options);
 
         rzpay.on("payment.failed", function (response: any) {
-          console.log(response);
+          setError("Payment failed");
         });
 
         rzpay.open();
