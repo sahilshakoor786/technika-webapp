@@ -184,7 +184,7 @@ export default function EventRegistrationForm({
         </>
       ) : (
         <>
-          <h1 className="font-primary text-2xl text-center">
+          <h1 className="font-primary text-3xl text-center font-bold">
             Register to {event?.eventName}
           </h1>
 
@@ -209,7 +209,7 @@ export default function EventRegistrationForm({
           </div>
 
           {registered ? (
-            <span>Registered</span>
+            <span className="font-primary text-xl">Registered to event</span>
           ) : payment ? (
             <>
               <p>Team Leader</p>
