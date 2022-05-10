@@ -50,6 +50,7 @@ export default function EventRegistrationForm({
 
       try {
         await axiosInstance.post(`/event/register/check`, {
+          eventId: eventId,
           userId: token?.user.id ?? "",
         });
 
