@@ -30,6 +30,11 @@ var registrationPayment = new Schema({
   paymentMode: {
     type: String,
   },
+
+  isAccommodation: {
+    type: Boolean,
+    default: false,
+  },
 });
 var RegistrationPayment = mongoose.model(
   "RegistrationPayment",

@@ -174,6 +174,7 @@ exports.register = async (req, res) => {
 
 exports.payment = async (req, res) => {
   const userId = req.user.id;
+  const isAccommodation = req.body.isAccommodation || false;
 
   if (!userId) {
     res.status(400).json({ success: false, message: "User id not found" });
@@ -212,7 +213,7 @@ exports.payment = async (req, res) => {
     });
 
     var options = {
-      amount: 400,
+      amount: isAccommodation ? 1500 : 400,
       currency: "INR",
       receipt: user.email,
     };
@@ -222,7 +223,7 @@ exports.payment = async (req, res) => {
       userId: userId,
       paymentStatus: "pending",
       paymentId: order.id,
-      paymentAmount: 400,
+      paymentAmount: isAccommodation ? 1500 : 400,
       paymentDate: new Date(),
     });
 
@@ -234,7 +235,7 @@ exports.payment = async (req, res) => {
       result: {
         key: process.env.RAZORPAY_KEY_ID,
         paymentId: order.id,
-        paymentAmount: 400,
+        paymentAmount: isAccommodation ? 1500 : 400,
         currency: "INR",
         user: {
           name: user.name,
@@ -445,6 +446,58 @@ exports.checkRigistartion = async (req, res) => {
     res.status(200).json({
       success: false,
       message: "User not registered",
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+exports.userEvents = async (req, res) => {
+  try {
+    const userId = req.body.userId;
+
+    if (!userId) {
+      res.status(400).json({ success: false, message: "User id not found" });
+      return;
+    }
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      res.status(400).json({ success: false, message: "User not found" });
+      return;
+    }
+
+    const events = await Event.find({});
+
+    if (!events) {
+      res.status(400).json({ success: false, message: "Events not found" });
+      return;
+    }
+
+    const eventRegistrations = await EventRegistrationDetail.find({
+      $or: [{ leaderId: userId }, { teamMembers: ObjectId(userId) }],
+    });
+
+    if (!eventRegistrations) {
+      res.status(400).json({ success: false, message: "Events not found" });
+      return;
+    }
+
+    let eventIds = [];
+
+    eventRegistrations.forEach((eventRegistration) => {
+      eventIds.push(eventRegistration.eventId);
+    });
+
+    const eventsList = events.filter((event) => {
+      return eventIds.includes(event.eventId);
+    });
+
+    res.status(200).json({
+      success: true,
+      result: eventsList,
     });
   } catch (error) {
     console.log(error);
