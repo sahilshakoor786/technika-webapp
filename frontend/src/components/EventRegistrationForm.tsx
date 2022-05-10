@@ -20,7 +20,7 @@ export default function EventRegistrationForm({
   const [error, setError] = useState("");
   const [token, setToken] = useState<Token>();
   const [event, setEvent] = useState<Event>();
- 
+
   const [registered, setRegitered] = useState<boolean>(false);
   const [payment, setPayment] = useState<boolean>(false);
   const [participants, setParticipants] = useState<Array<string>>([]);
@@ -152,8 +152,9 @@ export default function EventRegistrationForm({
           order_id: res.data.result.paymentId,
           prefill: res.data.result.user,
           handler: (args) => {
-            console.log(args)
-          }
+            console.log(args);
+            setRegitered(true);
+          },
         };
         const rzpay = new Razorpay(options);
 
@@ -191,18 +192,24 @@ export default function EventRegistrationForm({
             className="grid grid-cols-2 gap-2 p-5
             text-slate-600 bg-slate-100 rounded-lg m-5"
           >
-            <span className="font-primary font-bold text-slate-800">Solo Event</span>
+            <span className="font-primary font-bold text-slate-800">
+              Solo Event
+            </span>
             <span>{event?.isSoloEvent ? "Yes" : "No"}</span>
 
-            <span className="font-primary font-bold text-slate-800 ">Max Team Size</span>
+            <span className="font-primary font-bold text-slate-800 ">
+              Max Team Size
+            </span>
             <span>{event?.maxTeamSize}</span>
 
-            <span className="font-primary font-bold text-slate-800">Min Team Size</span>
+            <span className="font-primary font-bold text-slate-800">
+              Min Team Size
+            </span>
             <span>{event?.minTeamSize}</span>
           </div>
 
           {registered ? (
-            <span>Already Registered</span>
+            <span>Registered</span>
           ) : payment ? (
             <>
               <p>Team Leader</p>
