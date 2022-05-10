@@ -165,9 +165,9 @@ export default function EventsSection() {
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Central Events</span>
               </span>
-              <span className="font-bold text-slate-800">Time</span>
-              <span className="font-bold text-slate-800 ">Name</span>
-              <span className="font-bold text-slate-800">Venue</span>
+              <span className="font-primary font-bold text-slate-800">Time</span>
+              <span className="font-primary font-bold text-slate-800 ">Name</span>
+              <span className="font-primary font-bold text-slate-800">Venue</span>
 
               <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
 
@@ -227,9 +227,9 @@ export default function EventsSection() {
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Mech Marvel</span>
               </span>
-              <span className="font-bold text-slate-800">Time</span>
-              <span className="font-bold text-slate-800 ">Name</span>
-              <span className="font-bold text-slate-800">Venue</span>
+              <span className="font-primary font-bold text-slate-800">Time</span>
+              <span className="font-primary font-bold text-slate-800 ">Name</span>
+              <span className="font-primary font-bold text-slate-800">Venue</span>
 
               <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
 
@@ -292,9 +292,9 @@ export default function EventsSection() {
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Game Of Codes</span>
               </span>
-              <span className="font-bold text-slate-800">Time</span>
-              <span className="font-bold text-slate-800 ">Name</span>
-              <span className="font-bold text-slate-800">Venue</span>
+              <span className="font-primary font-bold text-slate-800">Time</span>
+              <span className="font-primary font-bold text-slate-800 ">Name</span>
+              <span className="font-primary font-bold text-slate-800">Venue</span>
 
               <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
 
@@ -365,9 +365,9 @@ export default function EventsSection() {
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">ELECTRONICS HUB </span>
               </span>
-              <span className="font-bold text-slate-800">Time</span>
-              <span className="font-bold text-slate-800 ">Name</span>
-              <span className="font-bold text-slate-800">Venue</span>
+              <span className="font-primary font-bold text-slate-800">Time</span>
+              <span className="font-primary font-bold text-slate-800 ">Name</span>
+              <span className="font-primary font-bold text-slate-800">Venue</span>
 
               <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
 

@@ -67,11 +67,11 @@ export default function Page() {
                   className="rounded-lg grid grid-cols-2 gap-2 p-10 
                  backdrop-blur shadow-lg bg-white/30"
                 >
-                  <span className="font-bold text-slate-800 ">Venue</span>
-                  <span>BE- FT Lawn</span>
+                  <span className="font-primary font-bold text-slate-800 ">Venue</span>
+                  <span className="text-slate-800 ">BE- FT Lawn</span>
 
-                  <span className="font-bold text-slate-800 ">Time</span>
-                  <span>TBH</span>
+                  <span className="font-primary font-bold text-slate-800 ">Time</span>
+                  <span className="text-slate-800">TBH</span>
                 </div>
               </div>
 
