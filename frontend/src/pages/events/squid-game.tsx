@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+                Squid Games
               </h1>
 
               <div
@@ -72,7 +72,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">9 AM-11 AM</span>
                 </div>
               </div>
 
@@ -87,8 +87,8 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+                An event comprising of multiple rounds whose theme will revolve
+                around the popular Korean Netflix series “Squid Games”.
               </div>
             </div>
           </main>
@@ -111,7 +111,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCGC02" />
             </div>
           </div>
         </>

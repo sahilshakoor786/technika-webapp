@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+                Path Pradarshak
               </h1>
 
               <div
@@ -67,12 +67,12 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">Auditorium</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">12:30 PM-2 PM</span>
                 </div>
               </div>
 
@@ -87,8 +87,11 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+                Path Pradarshak is an innovation challenge where teams will come
+                up with their unique solutions on given problem statements. Team
+                have to prepare their solution taking care of it’s cost, demand,
+                and reliability. Ideas which will serve society in different
+                manner.
               </div>
             </div>
           </main>
@@ -111,7 +114,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCGC02" />
             </div>
           </div>
         </>

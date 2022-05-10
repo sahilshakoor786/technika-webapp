@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+                Kya engineer banega re tu
               </h1>
 
               <div
@@ -67,12 +67,12 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">Auditorium</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">11 AM-12:30 PM</span>
                 </div>
               </div>
 
@@ -87,8 +87,17 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+                Have you also been humiliated by the line "Kya fayda aisi
+                engineering ka ki pankha, cooler bhi na shi kar pao". If yes
+                then it’s your chance to learn how to repair ‘pankha cooler’
+                Engineers are considered "all-rounders" in society. One of the
+                very important aspects of engineering is "reverse engineering."
+                Reverse-engineering is the act of dismantling/close inspection
+                of an object to see how it works. The purpose of reverse
+                engineering is to find out how an object or system works. There
+                are a variety of reasons to do this. Reverse-engineering can be
+                used to learn how something works and to recreate the object or
+                create a similar object with added enhancement.
               </div>
             </div>
           </main>
@@ -111,7 +120,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCGC02" />
             </div>
           </div>
         </>
