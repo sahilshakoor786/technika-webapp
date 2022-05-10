@@ -20,7 +20,9 @@ export default function EventRegistrationForm({
   const [error, setError] = useState("");
   const [token, setToken] = useState<Token>();
   const [event, setEvent] = useState<Event>();
+ 
   const [registered, setRegitered] = useState<boolean>(false);
+  const [payment, setPayment] = useState<boolean>(false);
   const [participants, setParticipants] = useState<Array<string>>([]);
 
   useEffect(() => {
@@ -57,6 +59,16 @@ export default function EventRegistrationForm({
         setRegitered(true);
       } catch (error) {
         setRegitered(false);
+      }
+
+      try {
+        await axiosInstance.post(`/event/register/check`, {
+          userId: token?.user.id ?? "",
+        });
+
+        setPayment(true);
+      } catch (error) {
+        setPayment(false);
       }
 
       setLoading(false);
@@ -192,7 +204,7 @@ export default function EventRegistrationForm({
 
           {registered ? (
             <span>Already Registered</span>
-          ) : token?.tscId ? (
+          ) : payment ? (
             <>
               <p>Team Leader</p>
               <input
