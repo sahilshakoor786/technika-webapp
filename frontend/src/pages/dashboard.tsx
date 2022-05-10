@@ -95,15 +95,31 @@ export default function DashboardPage() {
             address: "HBTU KANPUR",
           },
           handler: async (args) => {
-            console.log(args);
+            setLoading(true);
 
-            await axiosInstance.post(`/event/register/payment/verify`, args, {
-              headers: {
-                authorization: `Bearer ${token.token}`,
-              },
-            });
+            try {
+              await axiosInstance.post(`/event/register/payment/verify`, args, {
+                headers: {
+                  authorization: `Bearer ${token.token}`,
+                },
+              });
 
-            setPayment(true);
+              const userRes = await axiosInstance.post(`/me`, args, {
+                headers: {
+                  authorization: `Bearer ${token.token}`,
+                },
+              });
+
+              token.user = userRes.data.user;
+              localStorage.setItem("token", JSON.stringify(token));
+
+              setToken(token);
+              setPayment(true);
+            } catch (error) {
+              setMessage("Payment failed");
+            }
+
+            setLoading(false);
           },
         };
         const rzpay = new Razorpay(options);
