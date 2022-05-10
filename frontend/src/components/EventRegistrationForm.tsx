@@ -21,7 +21,7 @@ export default function EventRegistrationForm({
   const [token, setToken] = useState<Token>();
   const [event, setEvent] = useState<Event>();
 
-  const [registered, setRegitered] = useState<boolean>(false);
+  const [registered, setRegistered] = useState<boolean>(false);
   const [payment, setPayment] = useState<boolean>(false);
   const [participants, setParticipants] = useState<Array<string>>([]);
 
@@ -51,22 +51,22 @@ export default function EventRegistrationForm({
       }
 
       try {
-        await axiosInstance.post(`/event/register/check`, {
+        const res = await axiosInstance.post(`/event/register/check`, {
           eventId: eventId,
           userId: token?.user.id ?? "",
         });
 
-        setRegitered(true);
+        setRegistered(res.data.success);
       } catch (error) {
-        setRegitered(false);
+        setRegistered(false);
       }
 
       try {
-        await axiosInstance.post(`/event/register/check`, {
+        const res = await axiosInstance.post(`/event/register/check/payment`, {
           userId: token?.user.id ?? "",
         });
 
-        setPayment(true);
+        setPayment(res.data.success);
       } catch (error) {
         setPayment(false);
       }
@@ -142,8 +142,6 @@ export default function EventRegistrationForm({
           }
         );
 
-        console.log(res.data.result);
-
         const options: RazorpayOptions = {
           name: "Tecknika",
           amount: res.data.result.paymentAmount,
@@ -153,7 +151,7 @@ export default function EventRegistrationForm({
           prefill: res.data.result.user,
           handler: (args) => {
             console.log(args);
-            setRegitered(true);
+            setRegistered(true);
           },
         };
         const rzpay = new Razorpay(options);
