@@ -95,15 +95,23 @@ export default function DashboardPage() {
             address: "HBTU KANPUR",
           },
           handler: async (args) => {
-            console.log(args);
+            setLoading(true);
 
-            await axiosInstance.post(`/event/register/payment/verify`, args, {
-              headers: {
-                authorization: `Bearer ${token.token}`,
-              },
-            });
+            try {
+              await axiosInstance.post(`/event/register/payment/verify`, args, {
+                headers: {
+                  authorization: `Bearer ${token.token}`,
+                },
+              });
 
-            setPayment(true);
+              setPayment(true);
+
+              window.location.reload();
+            } catch (error) {
+              setMessage("Payment failed");
+            }
+
+            setLoading(false);
           },
         };
         const rzpay = new Razorpay(options);
@@ -162,7 +170,7 @@ export default function DashboardPage() {
                         <span className="font-bold">TSC ID</span>
                         <span className="text-center">
                           <span>
-                            {token?.tscId || "-"}
+                            {token?.user.tscId || "-"}
                             <button
                               onClick={copyText}
                               className="absolute p-3 bg-white/10 shadow-lg 
