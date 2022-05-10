@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 const utils = require("../lib/utils");
 const User = require("../model/user");
 const express = require("express");
+const ses = require("../lib/ses");
 
 /**
  * @param {express.Request} req
@@ -122,6 +123,43 @@ exports.googleCallback = async (req, res, _) => {
       }
 
       await user.save();
+
+      const emailBody = `
+      <html>
+      <body>
+        Hi ${user.name}, 
+    
+        <h1>Welcome to Technika,</h1>
+    
+        <p>
+          It is just a quick note to thankyou for registering in technika website.
+        </p>
+        
+        <p>
+          You'll get another e-mail from us full of resources to help you get going
+          in the right direction and the get the most out of this. So, its better
+          you keep hanging around.
+        </p>
+        
+    
+        <p>
+          You can find all support materials at technika.org.in & reach out to our
+          support team with any questions contact@technika.org.in.
+        </p>
+        
+    
+        <p>Regards, Team Technika</p>  <br />
+      </body>
+    </html>
+    
+
+      `;
+
+      await ses.sendEmail(
+        `${user.name}<${user.email}>`,
+        "Welcome to Technika",
+        emailBody
+      );
     }
 
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {

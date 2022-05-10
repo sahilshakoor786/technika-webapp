@@ -3,7 +3,7 @@ const UserSchema = require("../model/user");
 const events = require("./resources/events");
 const user = require("./resources/user");
 module.exports = {
-  rootPath: "/admin",
+  rootPath: "/",
   resources: [
     {
       resource: EventsSchema,
