@@ -6,6 +6,8 @@ const express = require("express");
 const Razorpay = require("razorpay");
 const crypto = require("crypto");
 const utils = require("../lib/utils");
+const { default: mongoose } = require("mongoose");
+const { ObjectId } = require("mongodb");
 
 // eventId, eventLeadTSCId , teamMembersTSCIds
 exports.register = async (req, res) => {
@@ -132,6 +134,20 @@ exports.register = async (req, res) => {
         }
 
         teamMembers.push(teamMember._id);
+      }
+
+      if (teamMembers.length < event.minTeamSize) {
+        res.status(400).json({
+          success: false,
+          message: "Minimum team size is " + event.minTeamSize,
+        });
+      }
+
+      if (teamMembers.length > event.maxTeamSize) {
+        res.status(400).json({
+          success: false,
+          message: "Maximum team size is " + event.maxTeamSize,
+        });
       }
 
       const eventRegistrationDetail = new EventRegistrationDetail({
@@ -339,7 +355,7 @@ exports.listEvent = async (req, res) => {
   }
 };
 
-exports.checkRegister = async (req, res) => {
+exports.checkRegististrationPayment = async (req, res) => {
   try {
     const userId = req.body.userId;
 
@@ -355,13 +371,6 @@ exports.checkRegister = async (req, res) => {
       return;
     }
 
-    if (user.isHbtuStudent) {
-      res.status(200).json({
-        success: true,
-        message: "User is HBTU student",
-      });
-    }
-
     const registrationPayment = await RegistrationPayment.findOne({
       userId: userId,
       paymentStatus: "success",
@@ -370,12 +379,62 @@ exports.checkRegister = async (req, res) => {
     if (registrationPayment) {
       res.status(200).json({
         success: true,
-        message: "User  registered",
+        message: "User  payment already done",
       });
       return;
     }
 
-    res.status(400).json({
+    res.status(200).json({
+      success: false,
+      message: "User payment not done",
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+exports.checkRigistartion = async (req, res) => {
+  try {
+    const userId = req.body.userId;
+    const eventId = req.body.eventId;
+
+    if (!userId || !eventId) {
+      res
+        .status(400)
+        .json({ success: false, message: "User id or event id not found" });
+      return;
+    }
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      res.status(400).json({ success: false, message: "User not found" });
+      return;
+    }
+
+    const event = await Event.findOne({ eventId: eventId });
+
+    if (!event) {
+      res.status(400).json({ success: false, message: "Event not found" });
+      return;
+    }
+
+    const registration = await EventRegistrationDetail.findOne({
+      $and: [
+        { $or: [{ leaderId: userId }, { teamMembers: ObjectId(userId) }] },
+        { eventId: eventId },
+      ],
+    });
+
+    if (registration) {
+      res
+        .status(200)
+        .json({ success: true, message: "User already registered" });
+      return;
+    }
+
+    res.status(200).json({
       success: false,
       message: "User not registered",
     });
