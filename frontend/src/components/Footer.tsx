@@ -14,10 +14,38 @@ export default function Footer() {
           className="h-20 mx-10"
         />
       </div>
-
       <div className="font-primary text-white">
-        © Technical Sub-Counsil , HBTU Kanpur |
+        © Technical Sub-Council , HBTU Kanpur |
         <a href="/privacy-policy.html"> Privacy Policy</a>
+      </div>
+      <div className="social-links flex items-center mt-3">
+        <a
+          href="https://www.linkedin.com/company/technical-sub-council-hbtu"
+          target="_blank"
+        >
+          <img
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-linkedin-circled.svg"
+            className=" h-14 w-14"
+          />
+        </a>
+        <a
+          href="https://instagram.com/technika22?igshid=YmMyMTA2M2Y="
+          target="_blank"
+        >
+          <img
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-instagram.svg"
+            className=" h-14 w-14"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/technicalsubcouncihbtu/ "
+          target="_blank"
+        >
+          <img
+            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-facebook.svg"
+            className=" h-14 w-14"
+          />
+        </a>
       </div>
     </footer>
   );
