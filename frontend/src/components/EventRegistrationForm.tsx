@@ -179,13 +179,13 @@ export default function EventRegistrationForm({
             className="grid grid-cols-2 gap-2 p-5
             text-slate-600 bg-slate-100 rounded-lg m-5"
           >
-            <span className="font-bold text-slate-800">Solo Event</span>
+            <span className="font-primary font-bold text-slate-800">Solo Event</span>
             <span>{event?.isSoloEvent ? "Yes" : "No"}</span>
 
-            <span className="font-bold text-slate-800 ">Max Team Size</span>
+            <span className="font-primary font-bold text-slate-800 ">Max Team Size</span>
             <span>{event?.maxTeamSize}</span>
 
-            <span className="font-bold text-slate-800">Min Team Size</span>
+            <span className="font-primary font-bold text-slate-800">Min Team Size</span>
             <span>{event?.minTeamSize}</span>
           </div>
 

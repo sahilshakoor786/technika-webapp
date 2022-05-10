@@ -53,29 +53,25 @@ export default function Page() {
               </h1>
 
               <div
-                className="w-full grid grid-cols-1 lg:grid-cols-3 gap-y-10 place-items-center 
-              bg-white/50 py-10 rounded-xl"
+                className="w-full grid grid-cols-1 lg:grid-cols-3 
+                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
+                style={{
+                  height: 500,
+                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/5b9ee668ee6de.image.jpg")`,
+                }}
               >
                 <span className="col-span-2">
-                  <FancyImage
-                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/20220310191740__MG_8620.JPG"
-                    width={530}
-                    height={300}
-                  />
                 </span>
 
                 <div
-                  className="w-full grid grid-cols-2 gap-2 px-10 text-slate-600 
-                rounded-full"
+                  className="rounded-lg grid grid-cols-2 gap-2 p-10 
+                 backdrop-blur shadow-lg bg-white/30"
                 >
-                  <span className="font-bold text-slate-800">Name</span>
-                  <span>Junk Yard</span>
+                  <span className="font-primary font-bold text-slate-800 ">Venue</span>
+                  <span className="text-slate-800 ">BE- FT Lawn</span>
 
-                  <span className="font-bold text-slate-800 ">Venue</span>
-                  <span>BE- FT Lawn</span>
-
-                  <span className="font-bold text-slate-800 ">Time</span>
-                  <span>TBH</span>
+                  <span className="font-primary font-bold text-slate-800 ">Time</span>
+                  <span className="text-slate-800">TBH</span>
                 </div>
               </div>
 
