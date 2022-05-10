@@ -211,9 +211,10 @@ exports.payment = async (req, res) => {
       key_id: process.env.RAZORPAY_KEY_ID,
       key_secret: process.env.RAZORPAY_KEY_SECRET,
     });
+    const amount = isAccommodation ? 150000 : 400000;
 
     var options = {
-      amount: isAccommodation ? 1500 : 400,
+      amount: amount,
       currency: "INR",
       receipt: user.email,
     };
@@ -223,8 +224,9 @@ exports.payment = async (req, res) => {
       userId: userId,
       paymentStatus: "pending",
       paymentId: order.id,
-      paymentAmount: isAccommodation ? 1500 : 400,
+      paymentAmount: amount,
       paymentDate: new Date(),
+      isAccommodation: isAccommodation,
     });
 
     await registrationPaymentObj.save();
@@ -235,7 +237,7 @@ exports.payment = async (req, res) => {
       result: {
         key: process.env.RAZORPAY_KEY_ID,
         paymentId: order.id,
-        paymentAmount: isAccommodation ? 1500 : 400,
+        paymentAmount: amount,
         currency: "INR",
         user: {
           name: user.name,

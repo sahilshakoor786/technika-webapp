@@ -147,11 +147,16 @@ export default function EventRegistrationForm({
 
         const options: RazorpayOptions = {
           name: "Tecknika",
+          description: "Events Registration Fee Tecknika",
+          image: "https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png",
           amount: res.data.result.paymentAmount,
           key: res.data.result.key,
           currency: "INR",
           order_id: res.data.result.paymentId,
           prefill: res.data.result.user,
+          notes: {
+            address: "HBTU KANPUR",
+          },
           handler: async (args) => {
             console.log(args);
             setRegistered(true);
