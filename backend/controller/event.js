@@ -1,5 +1,5 @@
 const User = require("../model/user");
-const Event = require("../model/evnets");
+const Event = require("../model/event");
 const EventRegistrationDetail = require("../model/eventRegistrationDetail");
 const RegistrationPayment = require("../model/registrationPayment");
 const express = require("express");
@@ -296,7 +296,7 @@ exports.getEvent = async (req, res) => {
       return;
     }
 
-    const event = await Event.find({ eventId: eventId });
+    const event = await Event.findOne({ eventId: eventId });
 
     if (!event) {
       res.status(400).json({
