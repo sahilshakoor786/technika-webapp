@@ -136,14 +136,14 @@ exports.register = async (req, res) => {
         teamMembers.push(teamMember._id);
       }
 
-      if (teamMembers.length < event.minTeamSize) {
+      if (teamMembers.length + 1 < event.minTeamSize) {
         res.status(400).json({
           success: false,
           message: "Minimum team size is " + event.minTeamSize,
         });
       }
 
-      if (teamMembers.length > event.maxTeamSize) {
+      if (teamMembers.length + 1 > event.maxTeamSize) {
         res.status(400).json({
           success: false,
           message: "Maximum team size is " + event.maxTeamSize,
