@@ -12,7 +12,7 @@ export default function EventsPage() {
           flex justify-center items-center"
         >
           <div
-            className="p-10 relative text-white md:w-3/4  h-1/2
+            className="p-10 relative text-white w-full md:w-3/4  h-1/2
         bg-blue-800/10 backdrop-blur flex flex-col justify-center
           shadow-lg py-6 px-2 space-y-2 rounded-lg"
           >

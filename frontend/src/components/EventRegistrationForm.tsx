@@ -1,11 +1,13 @@
 import { AxiosResponse } from "axios";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Event } from "src/types/event";
 import { getToken, Token } from "src/types/token";
 import { axiosInstance } from "src/utils/axios";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import Spinner from "./Spinner";
+
+import useRazorpay, { RazorpayOptions } from "react-razorpay";
 
 type EventRegistrationFormProps = {
   eventId: string;
@@ -89,7 +91,7 @@ export default function EventRegistrationForm({
       setLoading(true);
 
       try {
-        const res = await axiosInstance.post(
+        await axiosInstance.post(
           `/event/register`,
           {
             eventId: event?.eventId,
@@ -109,6 +111,52 @@ export default function EventRegistrationForm({
       setLoading(false);
     }
   }
+
+  const Razorpay = useRazorpay();
+
+  const handlePayment = async () => {
+    if (token) {
+      setLoading(true);
+
+      try {
+        const res = await axiosInstance.post(
+          `/event/register/payment/create`,
+          {},
+          {
+            headers: {
+              authorization: `Bearer ${token.token}`,
+            },
+          }
+        );
+
+        console.log(res.data.result);
+
+        const options: RazorpayOptions = {
+          name: "Tecknika",
+          amount: res.data.paymentAmount,
+          key: res.data.result.key,
+          currency: "INR",
+          order_id: res.data.result.paymentId,
+          prefill: res.data.result.user,
+        };
+        const rzpay = new Razorpay(options);
+
+        rzpay.on("payment.success", function (response: any) {
+          console.log(response);
+        });
+
+        rzpay.on("payment.failed", function (response: any) {
+          console.log(response);
+        });
+
+        rzpay.open();
+      } catch (error: any) {
+        setError("Payment failed");
+      }
+
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="h-full flex flex-col items-center justify-center overflow-y-scroll">
@@ -143,7 +191,7 @@ export default function EventRegistrationForm({
 
           {registered ? (
             <span>Already Registered</span>
-          ) : (
+          ) : token?.tscId ? (
             <>
               <p>Team Leader</p>
               <input
@@ -183,6 +231,13 @@ export default function EventRegistrationForm({
                 <SecondaryButton text="Add more" onClick={addMoreParticipant} />
                 <PrimaryButton text="Register now" onClick={handleRegister} />
               </div>
+            </>
+          ) : (
+            <>
+              <PrimaryButton
+                text="Pay for all events now"
+                onClick={handlePayment}
+              />
             </>
           )}
         </>

@@ -216,6 +216,7 @@ exports.payment = async (req, res) => {
       success: true,
       message: "Payment request sent",
       result: {
+        key: process.env.RAZORPAY_KEY_ID,
         paymentId: order.id,
         paymentAmount: 400,
         currency: "INR",
