@@ -16,37 +16,24 @@ export default function EventsPage() {
         bg-blue-800/10 backdrop-blur flex flex-col justify-center
           shadow-lg py-6 px-2 space-y-2 rounded-lg"
           >
-            <h1 className="font-primary text-3xl md:text-5xl text-center">
+            <h1
+              className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+            >
               Events
             </h1>
 
-            <div className="w-full flex space-x-3 justify-center flex-wrap">
-              <Link href="/events/event-name">
-                <FancyImage
-                  src="https://dummyimage.com/200x300"
-                  width={200}
-                  height={300}
-                  text="Sample event"
-                />
-              </Link>
-
-              <Link href="/events/event-name">
-                <FancyImage
-                  src="https://dummyimage.com/200x300"
-                  width={200}
-                  height={300}
-                  text="Sample event"
-                />
-              </Link>
-
-              <Link href="/events/event-name">
-                <FancyImage
-                  src="https://dummyimage.com/200x300"
-                  width={200}
-                  height={300}
-                  text="Sample event"
-                />
-              </Link>
+            <div className="w-full flex justify-center flex-wrap">
+              <span className="py-5 px-10">
+                <Link href="/events/junk-yard">
+                  <FancyImage
+                    src="https://dummyimage.com/200x300"
+                    width={200}
+                    height={300}
+                    text="Junk Yard"
+                  />
+                </Link>
+              </span>
             </div>
           </div>
         </main>
