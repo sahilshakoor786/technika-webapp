@@ -134,7 +134,9 @@ export default function EventRegistrationForm({
       try {
         const res = await axiosInstance.post(
           `/event/register/payment/create`,
-          {},
+          {
+            isAccommodation: true
+          },
           {
             headers: {
               authorization: `Bearer ${token.token}`,
@@ -149,9 +151,19 @@ export default function EventRegistrationForm({
           currency: "INR",
           order_id: res.data.result.paymentId,
           prefill: res.data.result.user,
-          handler: (args) => {
+          handler: async (args) => {
             console.log(args);
             setRegistered(true);
+
+            await axiosInstance.post(
+              `/event/register/payment/verify`,
+              args,
+              {
+                headers: {
+                  authorization: `Bearer ${token.token}`,
+                },
+              }
+            );
           },
         };
         const rzpay = new Razorpay(options);
