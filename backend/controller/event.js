@@ -457,7 +457,7 @@ exports.checkRigistartion = async (req, res) => {
 
 exports.userEvents = async (req, res) => {
   try {
-    const userId = req.body.userId;
+    const userId = req.params.userId;
 
     if (!userId) {
       res.status(400).json({ success: false, message: "User id not found" });
@@ -478,28 +478,70 @@ exports.userEvents = async (req, res) => {
       return;
     }
 
-    const eventRegistrations = await EventRegistrationDetail.find({
-      $or: [{ leaderId: userId }, { teamMembers: ObjectId(userId) }],
-    });
-
-    if (!eventRegistrations) {
-      res.status(400).json({ success: false, message: "Events not found" });
-      return;
-    }
-
-    let eventIds = [];
-
-    eventRegistrations.forEach((eventRegistration) => {
-      eventIds.push(eventRegistration.eventId);
-    });
-
-    const eventsList = events.filter((event) => {
-      return eventIds.includes(event.eventId);
-    });
+    const eventRegistrations = await EventRegistrationDetail.aggregate([
+      {
+        $lookup: {
+          from: "events",
+          localField: "eventId",
+          foreignField: "eventId",
+          as: "event",
+        },
+      },
+      {
+        $lookup: {
+          let: {
+            userObjId: {
+              $toObjectId: "$leaderId",
+            },
+          },
+          from: "users",
+          pipeline: [
+            {
+              $match: {
+                $expr: {
+                  $eq: ["$_id", "$$userObjId"],
+                },
+              },
+            },
+          ],
+          as: "leader",
+        },
+      },
+      {
+        $lookup: {
+          from: "users",
+          localField: "teamMembers",
+          foreignField: "_id",
+          as: "teamMembersDetails",
+        },
+      },
+      {
+        $unwind: {
+          path: "$leader",
+        },
+      },
+      {
+        $unwind: {
+          path: "$event",
+        },
+      },
+      {
+        $match: {
+          $or: [
+            {
+              leaderId: "",
+            },
+            {
+              teamMembers: new ObjectId("626d2ed25aa050a403d3bc07"),
+            },
+          ],
+        },
+      },
+    ]);
 
     res.status(200).json({
       success: true,
-      result: eventsList,
+      result: eventRegistrations,
     });
   } catch (error) {
     console.log(error);

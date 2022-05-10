@@ -39,7 +39,7 @@ app.post(
   eventController.checkRegististrationPayment
 );
 
-// app.get("/events/me", eventController.checkRegister);
+app.get("/events/:userId", eventController.userEvents);
 
 app.get("/user/:tscId", userController.getUserByTscId);
 
