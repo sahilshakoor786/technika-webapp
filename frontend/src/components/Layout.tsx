@@ -1,9 +1,32 @@
 import Head from "next/head";
-import { ReactElement } from "react";
+import { ReactElement, useEffect } from "react";
+import { getToken, setUser } from "src/types/token";
+import { axiosInstance } from "src/utils/axios";
 import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Layout({ children }: { children: ReactElement }) {
+ 
+  useEffect(() => {
+    getUser();
+  }, []);
+
+  function getUser() {
+    const token = getToken();
+
+    if (token) {
+      axiosInstance
+        .get(`/me`, {
+          headers: {
+            Authorization: `Bearer ${token.token}`,
+          },
+        })
+        .then((res) => {
+          setUser(res.data.user);
+        });
+    }
+  }
+  
   return (
     <>
       <Head>

@@ -111,9 +111,8 @@ export default function DashboardPage() {
               });
 
               token.user = userRes.data.user;
-              localStorage.setItem("token", JSON.stringify(token));
-
               setToken(token);
+              
               setPayment(true);
             } catch (error) {
               setMessage("Payment failed");
