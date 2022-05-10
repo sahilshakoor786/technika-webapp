@@ -6,21 +6,39 @@ import PrimaryButton from "src/components/PrimaryButton";
 import ProfileUpdate from "src/components/ProfileUpdate";
 import SecondaryButton from "src/components/SecondaryButton";
 import { getToken, Token } from "src/types/token";
+import { axiosInstance } from "src/utils/axios";
+
+import useRazorpay, { RazorpayOptions } from "react-razorpay";
+import Spinner from "src/components/Spinner";
 
 export default function DashboardPage() {
   const router = useRouter();
 
+  const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [editActive, setEditActive] = useState(false);
 
   const [token, setToken] = useState<Token>();
+  const [payment, setPayment] = useState<boolean>(false);
+  const [accomation, setAccomation] = useState<Boolean>(false);
 
   useEffect(() => {
     getUser();
   }, []);
 
-  function getUser() {
+  async function getUser() {
     const token = getToken();
+
+    try {
+      const res = await axiosInstance.post(`/event/register/check/payment`, {
+        userId: token?.user.id ?? "",
+      });
+
+      setPayment(res.data.success);
+    } catch (error) {
+      setPayment(false);
+    }
+
     setToken(token);
   }
 
@@ -44,6 +62,64 @@ export default function DashboardPage() {
     navigator.clipboard.writeText(token?.tscId ?? "");
     setMessage("TSC Id Copied");
   }
+
+  const Razorpay = useRazorpay();
+
+  const handlePayment = async () => {
+    if (token) {
+      setLoading(true);
+
+      try {
+        const res = await axiosInstance.post(
+          `/event/register/payment/create`,
+          {
+            isAccommodation: accomation,
+          },
+          {
+            headers: {
+              authorization: `Bearer ${token.token}`,
+            },
+          }
+        );
+
+        const options: RazorpayOptions = {
+          name: "Tecknika",
+          description: "Events Registration Fee Tecknika",
+          image: "https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png",
+          amount: res.data.result.paymentAmount,
+          key: res.data.result.key,
+          currency: "INR",
+          order_id: res.data.result.paymentId,
+          prefill: res.data.result.user,
+          notes: {
+            address: "HBTU KANPUR",
+          },
+          handler: async (args) => {
+            console.log(args);
+
+            await axiosInstance.post(`/event/register/payment/verify`, args, {
+              headers: {
+                authorization: `Bearer ${token.token}`,
+              },
+            });
+
+            setPayment(true);
+          },
+        };
+        const rzpay = new Razorpay(options);
+
+        rzpay.on("payment.failed", function (response: any) {
+          setMessage("Payment failed");
+        });
+
+        rzpay.open();
+      } catch (error: any) {
+        setMessage("Payment failed");
+      }
+
+      setLoading(false);
+    }
+  };
 
   return (
     <Auth>
@@ -78,7 +154,7 @@ export default function DashboardPage() {
                   </div>
 
                   <div>
-                    {token?.tscId ? (
+                    {payment ? (
                       <div
                         className="bg-white/50 rounded-lg px-10 py-5 my-5 
                 grid grid-cols-2 gap-2 relative shadow-md"
@@ -107,10 +183,28 @@ export default function DashboardPage() {
                         </span>
                       </div>
                     ) : (
-                      <div
-                        className="bg-white/50 rounded-lg px-10 py-5 my-5 grid place-items-center relative shadow-md"
-                      >
-                        <PrimaryButton text="Click here to get TSC ID" />
+                      <div className="bg-white/50 rounded-lg px-10 py-5 my-5 grid place-items-center relative shadow-md">
+                        {loading ? (
+                          <Spinner />
+                        ) : (
+                          <>
+                            <span className="flex justify-center space-x-2 items-center w-full">
+                              <span>Need accomations?</span>
+                              <input
+                                type="checkbox"
+                                onChange={(e) =>
+                                  setAccomation(
+                                    e.target.value == "on" ? true : false
+                                  )
+                                }
+                              />
+                            </span>
+                            <PrimaryButton
+                              text="Pay for all events now"
+                              onClick={handlePayment}
+                            />
+                          </>
+                        )}
                       </div>
                     )}
                   </div>

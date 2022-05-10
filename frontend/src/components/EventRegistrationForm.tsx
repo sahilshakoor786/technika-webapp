@@ -1,5 +1,4 @@
-import { AxiosResponse } from "axios";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Event } from "src/types/event";
 import { getToken, Token } from "src/types/token";
 import { axiosInstance } from "src/utils/axios";
@@ -268,8 +267,8 @@ export default function EventRegistrationForm({
             </>
           ) : (
             <>
-              <span>
-                Need accomations?
+              <span className="flex justify-center space-x-2 items-center w-full">
+                <span>Need accomations?</span>
                 <input
                   type="checkbox"
                   onChange={(e) =>

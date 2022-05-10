@@ -1,10 +1,8 @@
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Auth from "src/components/Auth";
 import EventRegistrationForm from "src/components/EventRegistrationForm";
-import FancyImage from "src/components/FancyImage";
 import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 
@@ -60,17 +58,20 @@ export default function Page() {
                   backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/5b9ee668ee6de.image.jpg")`,
                 }}
               >
-                <span className="col-span-2">
-                </span>
+                <span className="col-span-2"></span>
 
                 <div
                   className="rounded-lg grid grid-cols-2 gap-2 p-10 
                  backdrop-blur shadow-lg bg-white/30"
                 >
-                  <span className="font-primary font-bold text-slate-800 ">Venue</span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Venue
+                  </span>
                   <span className="text-slate-800 ">BE- FT Lawn</span>
 
-                  <span className="font-primary font-bold text-slate-800 ">Time</span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Time
+                  </span>
                   <span className="text-slate-800">TBH</span>
                 </div>
               </div>
