@@ -151,12 +151,11 @@ export default function EventRegistrationForm({
           currency: "INR",
           order_id: res.data.result.paymentId,
           prefill: res.data.result.user,
+          handler: (args) => {
+            console.log(args)
+          }
         };
         const rzpay = new Razorpay(options);
-
-        rzpay.on("payment.success", function (response: any) {
-          console.log(response);
-        });
 
         rzpay.on("payment.failed", function (response: any) {
           console.log(response);
