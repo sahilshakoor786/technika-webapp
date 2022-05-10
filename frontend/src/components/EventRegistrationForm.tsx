@@ -20,7 +20,9 @@ export default function EventRegistrationForm({
   const [error, setError] = useState("");
   const [token, setToken] = useState<Token>();
   const [event, setEvent] = useState<Event>();
-  const [registered, setRegitered] = useState<boolean>(false);
+
+  const [registered, setRegistered] = useState<boolean>(false);
+  const [payment, setPayment] = useState<boolean>(false);
   const [participants, setParticipants] = useState<Array<string>>([]);
 
   useEffect(() => {
@@ -49,13 +51,24 @@ export default function EventRegistrationForm({
       }
 
       try {
-        await axiosInstance.post(`/event/register/check`, {
+        const res = await axiosInstance.post(`/event/register/check`, {
+          eventId: eventId,
           userId: token?.user.id ?? "",
         });
 
-        setRegitered(true);
+        setRegistered(res.data.success);
       } catch (error) {
-        setRegitered(false);
+        setRegistered(false);
+      }
+
+      try {
+        const res = await axiosInstance.post(`/event/register/check/payment`, {
+          userId: token?.user.id ?? "",
+        });
+
+        setPayment(res.data.success);
+      } catch (error) {
+        setPayment(false);
       }
 
       setLoading(false);
@@ -129,8 +142,6 @@ export default function EventRegistrationForm({
           }
         );
 
-        console.log(res.data.result);
-
         const options: RazorpayOptions = {
           name: "Tecknika",
           amount: res.data.result.paymentAmount,
@@ -138,15 +149,15 @@ export default function EventRegistrationForm({
           currency: "INR",
           order_id: res.data.result.paymentId,
           prefill: res.data.result.user,
+          handler: (args) => {
+            console.log(args);
+            setRegistered(true);
+          },
         };
         const rzpay = new Razorpay(options);
 
-        rzpay.on("payment.success", function (response: any) {
-          console.log(response);
-        });
-
         rzpay.on("payment.failed", function (response: any) {
-          console.log(response);
+          setError("Payment failed");
         });
 
         rzpay.open();
@@ -171,7 +182,7 @@ export default function EventRegistrationForm({
         </>
       ) : (
         <>
-          <h1 className="font-primary text-2xl text-center">
+          <h1 className="font-primary text-3xl text-center font-bold">
             Register to {event?.eventName}
           </h1>
 
@@ -179,19 +190,25 @@ export default function EventRegistrationForm({
             className="grid grid-cols-2 gap-2 p-5
             text-slate-600 bg-slate-100 rounded-lg m-5"
           >
-            <span className="font-primary font-bold text-slate-800">Solo Event</span>
+            <span className="font-primary font-bold text-slate-800">
+              Solo Event
+            </span>
             <span>{event?.isSoloEvent ? "Yes" : "No"}</span>
 
-            <span className="font-primary font-bold text-slate-800 ">Max Team Size</span>
+            <span className="font-primary font-bold text-slate-800 ">
+              Max Team Size
+            </span>
             <span>{event?.maxTeamSize}</span>
 
-            <span className="font-primary font-bold text-slate-800">Min Team Size</span>
+            <span className="font-primary font-bold text-slate-800">
+              Min Team Size
+            </span>
             <span>{event?.minTeamSize}</span>
           </div>
 
           {registered ? (
-            <span>Already Registered</span>
-          ) : token?.tscId ? (
+            <span className="font-primary text-xl">Registered to event</span>
+          ) : payment ? (
             <>
               <p>Team Leader</p>
               <input
