@@ -108,7 +108,7 @@ export default function EventRegistrationForm({
           `/event/register`,
           {
             eventId: event?.eventId,
-            eventLeadTSCId: token?.tscId,
+            eventLeadTSCId: token?.user.tscId,
             teamMembersTSCIds: participants,
           },
           {
@@ -173,7 +173,7 @@ export default function EventRegistrationForm({
                   authorization: `Bearer ${token.token}`,
                 },
               });
-              
+
               token.user = userRes.data.user;
               setToken(token);
 
@@ -244,7 +244,7 @@ export default function EventRegistrationForm({
               <p>Team Leader</p>
               <input
                 className="shadow px-4 py-2 rounded focus:outline-none bg-slate-100 my-2"
-                value={token?.tscId}
+                value={token?.user.tscId}
                 readOnly
               />
 
