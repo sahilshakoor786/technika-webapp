@@ -13,5 +13,6 @@ export type Event = {
 export type Registration = {
   eventId: string;
   event: Event;
+  leader: User;
   teamMembersDetails: User[];
 }
