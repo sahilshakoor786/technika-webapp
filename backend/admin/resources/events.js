@@ -2,7 +2,7 @@ const display = require("./display");
 const sort = require("./sort");
 const mongoose = { name: "TSC Database" };
 
-const evnets = require("../../model/evnets");
+const evnets = require("../../model/event");
 
 module.exports = {
   options: {
