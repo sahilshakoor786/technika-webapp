@@ -3,6 +3,7 @@ import Hls from "hls.js";
 import React, { useEffect, useRef, useState } from "react";
 import SecondaryButton from "../SecondaryButton";
 import { getToken, Token } from "src/types/token";
+import Link from "next/link";
 
 export default function HeroSection() {
   const playerRef = useRef<HTMLVideoElement>(null);
@@ -83,13 +84,13 @@ export default function HeroSection() {
 
         <span className="flex justify-around space-x-4">
           {token?.token ? (
-            <a href="/events">
+            <Link href="/events">
               <PrimaryButton text="View Events" />
-            </a>
+            </Link>
           ) : (
-            <a href="/register">
+            <Link href="/register">
               <PrimaryButton text="Register now" />
-            </a>
+            </Link>
           )}
           <a
             href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+2.pdf"
