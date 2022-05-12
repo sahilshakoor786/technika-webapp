@@ -3,11 +3,6 @@ var Schema = mongoose.Schema;
 
 var merchandisePurchase = new Schema(
   {
-    _id: {
-      type: String,
-      required: true,
-    },
-
     merchandiseProductId: {
       type: String,
       required: true,

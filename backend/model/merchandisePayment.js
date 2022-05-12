@@ -3,11 +3,6 @@ var Schema = mongoose.Schema;
 
 var merchandisePayment = new Schema(
   {
-    _id: {
-      type: String,
-      required: true,
-    },
-
     paymentId: {
       type: String,
       required: true,

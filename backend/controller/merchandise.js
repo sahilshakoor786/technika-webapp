@@ -1,6 +1,7 @@
 const MerchandiseProduct = require("../model/merchandiseProduct");
 const MerchandisePurchase = require("../model/merchandisePurchase");
 const MerchandisePayment = require("../model/merchandisePayment");
+const crypto = require("crypto");
 const Razorpay = require("razorpay");
 exports.listMerchandiseProducts = async (req, res) => {
   const merchandiseProducts = await MerchandiseProduct.find();
@@ -19,10 +20,10 @@ exports.purchaseInitiliaze = async (req, res) => {
     name: req.body.name,
     email: req.body.email,
     phone: req.body.phone,
-    userId: req.user.userId || "",
+    userId: req.user?.userId || "",
   };
   const merchandiseProduct = await MerchandiseProduct.findById(
-    req.params.productId
+    req.body.productId
   );
 
   if (!merchandiseProduct) {
@@ -46,10 +47,11 @@ exports.purchaseInitiliaze = async (req, res) => {
   const merchandisePayment = new MerchandisePayment({
     user: user,
     product: merchandiseProduct._id,
-    orderId: order.id,
-    amount: merchandiseProduct.price,
+    paymentId: order.id,
+    paymentAmount: merchandiseProduct.price,
     currency: "INR",
-    status: "pending",
+    paymentStatus: "pending",
+    paymentDate: new Date(),
   });
 
   await merchandisePayment.save();
@@ -59,6 +61,8 @@ exports.purchaseInitiliaze = async (req, res) => {
     merchandiseProductId: merchandiseProduct._id,
     merchandisePaymentId: merchandisePayment._id,
   });
+
+  await merchandisePurchase.save();
 
   res.json({
     success: true,
@@ -90,32 +94,31 @@ exports.purchaseVerify = async (req, res) => {
   }
 
   const merchandisePayment = await MerchandisePayment.findOne({
-    orderId: req.body.razorpay_order_id,
+    paymentId: req.body.razorpay_order_id,
   });
   if (!merchandisePayment) {
     res.status(400).json({ success: false, message: "Payment not found" });
     return;
   }
 
-  if (merchandisePayment.status === "success") {
+  if (merchandisePayment.paymentStatus === "success") {
     res
       .status(400)
       .json({ success: false, message: "Payment already successful" });
     return;
   }
-
-  merchandisePayment.status = "success";
-
-  await merchandisePayment.save();
-
   const merchandisePurchase = await MerchandisePurchase.findOne({
-    merchandisePaymentId: merchandisePayment._id,
+    merchandisePaymentId: merchandisePayment.id,
   });
 
   if (!merchandisePurchase) {
     res.status(400).json({ success: false, message: "Purchase not found" });
     return;
   }
+
+  merchandisePayment.paymentStatus = "success";
+
+  await merchandisePayment.save();
 
   merchandisePurchase.isPaid = true;
   merchandisePurchase.token = Math.random().toString().substr(2, 6);

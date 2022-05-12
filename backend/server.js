@@ -66,7 +66,7 @@ app.post(
 
   merchandiseController.purchaseInitiliaze
 );
-app.put(
+app.post(
   "/merchandise/product/purchase/verify",
   merchandiseController.purchaseVerify
 );
