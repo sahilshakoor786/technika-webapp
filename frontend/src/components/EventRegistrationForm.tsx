@@ -295,7 +295,6 @@ export default function EventRegistrationForm({
                 <span>Need accomations?</span>
                 <input
                   type="checkbox"
-                  checked={accomation}
                   onChange={(e) =>
                     setAccomation(e.target.value == "on" ? true : false)
                   }
