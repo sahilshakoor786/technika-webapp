@@ -17,6 +17,7 @@ export default function ProfileUpdate({
 }: ProfileUpdateProps) {
   const [token, setToken] = useState<Token>();
   const [loading, setLoading] = useState(false);
+  const [validation, setValidation] = useState(true);
 
   const nameInput = useInput({
     type: "text",
@@ -130,6 +131,22 @@ export default function ProfileUpdate({
   async function saveProfile() {
     setLoading(true);
 
+    let valid =
+      nameInput.value.trim() != "" &&
+      phoneInput.value.trim() != "" &&
+      cityInput.value.trim() != "" &&
+      collegeInput.value.trim() != "" &&
+      branchInput.value != 0 &&
+      batchInput.value.trim() != "";
+
+    if (!valid) {
+      setValidation(false);
+      setLoading(false);
+      return;
+    } else {
+      setValidation(true);
+    }
+
     try {
       const res = await axiosInstance.put(
         `/profile/${token?.id}`,
@@ -161,6 +178,7 @@ export default function ProfileUpdate({
 
     setLoading(false);
   }
+
   return (
     <>
       <div className="flex justify-center">
@@ -178,6 +196,7 @@ export default function ProfileUpdate({
       {branchInput.input}
       {batchInput.input}
 
+      {!validation && <p className="text-center text-red-500">All fields are required</p>}
       {!loading ? (
         <PrimaryButton text="Save Profile" onClick={saveProfile} />
       ) : (

@@ -24,6 +24,7 @@ export default function DashboardPage() {
 
   useEffect(() => {
     getUser();
+    getEvents();
   }, []);
 
   async function getUser() {
@@ -40,6 +41,16 @@ export default function DashboardPage() {
     }
 
     setToken(token);
+  }
+
+  async function getEvents() {
+    try {
+      const res = await axiosInstance.get(`/events/${token?.user.id}`);
+
+      console.log(res.data);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   function profileSaveSuccess() {

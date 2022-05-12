@@ -14,8 +14,7 @@ export default function AboutSection() {
       <div className="flex justify-center items-center md:space-x-10 flex-wrap backdrop-blur rounded">
         <span
           id="about-image"
-          className="h-0 md:px-10 w-full
-        opacity-50 overflow-hidden grid place-items-center"
+          className="my-10 w-full grid place-items-center"
           style={{ maxWidth: 650 }}
         >
           <FancyImage
@@ -26,8 +25,7 @@ export default function AboutSection() {
         </span>
         <div
           id="about-text"
-          className="h-0 opacity-50
-          overflow-hidden font-sans text-xl text-white text-center max-w-xl 
+          className="my-10 font-sans text-xl text-white text-center max-w-xl 
           grid place-items-center "
         >
           Born from the rage of the technological era, Technika is a perennial

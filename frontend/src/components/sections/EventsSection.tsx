@@ -66,54 +66,34 @@ export default function EventsSection() {
       </h1>
 
       <div className="flex justify-center items-center md:space-x-10 flex-wrap">
-        <span
-          className="fancy-image h-0 opacity-25 overflow-hidden px-10 
-        flex justify-center items-center"
-        >
-          <FancyImage
-            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
-            width={200}
-            height={300}
-            onClick={() => fancyPopup(0)}
-            text="Central Events"
-          />
-        </span>
-        <span
-          className="fancy-image h-0 opacity-25 overflow-hidden px-10 
-        flex justify-center items-center"
-        >
-          <FancyImage
-            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-            width={200}
-            height={300}
-            onClick={() => fancyPopup(1)}
-            text="Mech Marvel"
-          />
-        </span>
-        <span
-          className="fancy-image h-0 opacity-25 overflow-hidden px-10 
-        flex justify-center items-center"
-        >
-          <FancyImage
-            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
-            width={200}
-            height={300}
-            onClick={() => fancyPopup(2)}
-            text="Game of codes"
-          />
-        </span>
-        <span
-          className="fancy-image h-0 opacity-25 overflow-hidden px-10
-        flex justify-center items-center"
-        >
-          <FancyImage
-            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
-            width={200}
-            height={300}
-            onClick={() => fancyPopup(3)}
-            text="Electronics Hub"
-          />
-        </span>
+        <FancyImage
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+          width={200}
+          height={300}
+          onClick={() => fancyPopup(0)}
+          text="Central Events"
+        />
+        <FancyImage
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+          width={200}
+          height={300}
+          onClick={() => fancyPopup(1)}
+          text="Mech Marvel"
+        />
+        <FancyImage
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+          width={200}
+          height={300}
+          onClick={() => fancyPopup(2)}
+          text="Game of codes"
+        />
+        <FancyImage
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+          width={200}
+          height={300}
+          onClick={() => fancyPopup(3)}
+          text="Electronics Hub"
+        />
 
         <span className="flex justify-center">
           <a href="/events">
@@ -148,9 +128,15 @@ export default function EventsSection() {
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Central Events</span>
               </span>
-              <span className="font-primary font-bold text-slate-800">Time</span>
-              <span className="font-primary font-bold text-slate-800 ">Name</span>
-              <span className="font-primary font-bold text-slate-800">Venue</span>
+              <span className="font-primary font-bold text-slate-800">
+                Time
+              </span>
+              <span className="font-primary font-bold text-slate-800 ">
+                Name
+              </span>
+              <span className="font-primary font-bold text-slate-800">
+                Venue
+              </span>
 
               <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
 
@@ -210,9 +196,15 @@ export default function EventsSection() {
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Mech Marvel</span>
               </span>
-              <span className="font-primary font-bold text-slate-800">Time</span>
-              <span className="font-primary font-bold text-slate-800 ">Name</span>
-              <span className="font-primary font-bold text-slate-800">Venue</span>
+              <span className="font-primary font-bold text-slate-800">
+                Time
+              </span>
+              <span className="font-primary font-bold text-slate-800 ">
+                Name
+              </span>
+              <span className="font-primary font-bold text-slate-800">
+                Venue
+              </span>
 
               <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
 
@@ -275,9 +267,15 @@ export default function EventsSection() {
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">Game Of Codes</span>
               </span>
-              <span className="font-primary font-bold text-slate-800">Time</span>
-              <span className="font-primary font-bold text-slate-800 ">Name</span>
-              <span className="font-primary font-bold text-slate-800">Venue</span>
+              <span className="font-primary font-bold text-slate-800">
+                Time
+              </span>
+              <span className="font-primary font-bold text-slate-800 ">
+                Name
+              </span>
+              <span className="font-primary font-bold text-slate-800">
+                Venue
+              </span>
 
               <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
 
@@ -348,9 +346,15 @@ export default function EventsSection() {
               <span className="col-span-3 text-center my-10">
                 <span className="text-3xl">ELECTRONICS HUB </span>
               </span>
-              <span className="font-primary font-bold text-slate-800">Time</span>
-              <span className="font-primary font-bold text-slate-800 ">Name</span>
-              <span className="font-primary font-bold text-slate-800">Venue</span>
+              <span className="font-primary font-bold text-slate-800">
+                Time
+              </span>
+              <span className="font-primary font-bold text-slate-800 ">
+                Name
+              </span>
+              <span className="font-primary font-bold text-slate-800">
+                Venue
+              </span>
 
               <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
 
