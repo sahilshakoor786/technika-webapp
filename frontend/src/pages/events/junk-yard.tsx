@@ -87,8 +87,32 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+                   <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+              I guess we can agree that not every DIY video of
+5 min crafts is no good and at some point in our
+lives we have all binge watched them.Well now
+is the time to gather all those precious pearls of
+knowledge and spread them around to make
+the best working model from a DIY video that’ll
+be shown to you and grab the title of the biggest
+junk dealer in town. <br />
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+•	A team should of 3-5 members. <br />
+•	The stuff would be provided to the participants and they are not allowed to bring outside materials. <br />
+•	The time duration to make the working model is 20 minutes. <br />
+
+
+
               </div>
             </div>
           </main>
