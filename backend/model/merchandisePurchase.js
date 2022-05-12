@@ -8,9 +8,24 @@ var merchandisePurchase = new Schema(
       required: true,
     },
 
-    user: {
-      type: Object,
+    name: {
+      type: String,
       required: true,
+    },
+
+    email: {
+      type: String,
+      required: true,
+    },
+
+    phone: {
+      type: String,
+      required: true,
+    },
+
+    userId: {
+      type: String,
+      required: false,
     },
 
     merchandisePaymentId: {

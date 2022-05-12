@@ -57,7 +57,10 @@ exports.purchaseInitiliaze = async (req, res) => {
   await merchandisePayment.save();
 
   const merchandisePurchase = new MerchandisePurchase({
-    user: user,
+    name: user.name,
+    email: user.email,
+    phone: user.phone,
+    userId: user.userId,
     merchandiseProductId: merchandiseProduct._id,
     merchandisePaymentId: merchandisePayment._id,
   });
