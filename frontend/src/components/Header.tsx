@@ -140,6 +140,15 @@ export default function Header() {
           </span>
 
           <span className="h-0 overflow-hidden">
+            <span
+              className="menu-link text-3xl md:text-5xl"
+              onClick={toggleMenu}
+            >
+              <Link href="/merch">Merchandise</Link>
+            </span>
+          </span>
+
+          <span className="h-0 overflow-hidden">
             <a
               href="/#sponsors"
               className="menu-link text-3xl md:text-5xl"

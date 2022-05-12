@@ -124,8 +124,7 @@ export default function EventsPage() {
             </div>
             <h1
               className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10"
-              style={{ marginTop: 25, marginBottom: 25 }}
+                mt-32 mb-10"
             >
               Mech Marvel
             </h1>
@@ -138,7 +137,7 @@ export default function EventsPage() {
                   text="LFR"
                 />
               </Link>
-             
+
               <Link href="/events/careaction">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -155,7 +154,7 @@ export default function EventsPage() {
                   text="Blazing Wheel"
                 />
               </Link>
-              
+
               <Link href="/events/robo-combat">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -181,7 +180,7 @@ export default function EventsPage() {
                   text="Path Pradarshak"
                 />
               </Link>
-              
+
               <Link href="/events/kya-engineer">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -198,7 +197,7 @@ export default function EventsPage() {
                   text="Hover-Mania"
                 />
               </Link>
-           
+
               <Link href="/events/soccerbot">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -207,17 +206,14 @@ export default function EventsPage() {
                   text="Soccerbot"
                 />
               </Link>
-             
             </div>
             <h1
               className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10"
-              style={{ marginTop: 25, marginBottom: 25 }}
+              mt-32 mb-10"
             >
               Fly High
             </h1>
             <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-              
               <Link href="/events/udaan">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -226,8 +222,7 @@ export default function EventsPage() {
                   text="Udaan"
                 />
               </Link>
-              
-              
+
               <Link href="/events/free-flight">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -236,12 +231,7 @@ export default function EventsPage() {
                   text="Free Flight"
                 />
               </Link>
-              
-            
 
-              
-              
-            
               <Link href="/events/waterrocket">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -250,7 +240,7 @@ export default function EventsPage() {
                   text="Waterrocket"
                 />
               </Link>
-              
+
               <Link href="/events/simulation">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -262,8 +252,7 @@ export default function EventsPage() {
             </div>
             <h1
               className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10"
-              style={{ marginTop: 25, marginBottom: 25 }}
+              mt-32 mb-10"
             >
               Game Of Codes
             </h1>
@@ -329,14 +318,12 @@ export default function EventsPage() {
             </div>
             <h1
               className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10"
-              style={{ marginTop: 25, marginBottom: 25 }}
+              mt-32 mb-10"
             >
               Electronics Hub
             </h1>
             <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
               {" "}
-              
               <Link href="/events/bridge-o-mania">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
@@ -385,7 +372,6 @@ export default function EventsPage() {
                   text="Morse Laser"
                 />
               </Link>
-            
             </div>
           </div>
         </main>
