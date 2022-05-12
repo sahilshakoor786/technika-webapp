@@ -7,7 +7,7 @@ export default function PrimaryButton({ text, onClick }: PrimaryButtonProps) {
   return (
     <button
       onClick={onClick}
-      className="transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-pink-500 
+      className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-pink-500 
             duration-300 my-5 px-2 py-2 text-xl font-bold text-white 
             bg-blue-900 shadow-lg rounded"
     >
