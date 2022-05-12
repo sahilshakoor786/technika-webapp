@@ -1,7 +1,14 @@
 const EventsSchema = require("../model/evnets");
 const UserSchema = require("../model/user");
+const MerchandiseProduct = require("../model/merchandiseProduct");
+const MerchandisePurchase = require("../model/merchandisePurchase");
+const MerchandisePayment = require("../model/merchandisePayment");
 const events = require("./resources/events");
+
 const user = require("./resources/user");
+const merchandiseProduct = require("./resources/merchandiseProduct");
+const merchandisePurchase = require("./resources/merchandisePurchase");
+const merchandisePurchase = require("./resources/merchandisePayment");
 module.exports = {
   rootPath: "/",
   resources: [
@@ -12,6 +19,21 @@ module.exports = {
     {
       resource: UserSchema,
       ...user,
+    },
+
+    {
+      resource: MerchandiseProduct,
+      ...merchandiseProduct,
+    },
+
+    {
+      resource: MerchandisePurchase,
+      ...merchandisePurchase,
+    },
+
+    {
+      resource: MerchandisePayment,
+      ...merchandisePurchase,
     },
   ],
   version: {
