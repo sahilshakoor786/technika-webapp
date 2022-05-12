@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Event } from "src/types/event";
-import { getToken, Token } from "src/types/token";
+import { getToken, setUser, Token } from "src/types/token";
 import { axiosInstance } from "src/utils/axios";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
@@ -19,6 +19,7 @@ export default function EventRegistrationForm({
   const [error, setError] = useState("");
   const [token, setToken] = useState<Token>();
   const [event, setEvent] = useState<Event>();
+  const [userTscId, setUserTscId] = useState("");
 
   const [registered, setRegistered] = useState<boolean>(false);
   const [payment, setPayment] = useState<boolean>(false);
@@ -27,6 +28,7 @@ export default function EventRegistrationForm({
 
   useEffect(() => {
     getUser();
+    setUserTscId(token?.user.tscId || "_");
   }, []);
 
   function getUser() {
@@ -108,7 +110,7 @@ export default function EventRegistrationForm({
           `/event/register`,
           {
             eventId: event?.eventId,
-            eventLeadTSCId: token?.user.tscId,
+            eventLeadTSCId: userTscId,
             teamMembersTSCIds: participants,
           },
           {
@@ -167,6 +169,17 @@ export default function EventRegistrationForm({
                   authorization: `Bearer ${token.token}`,
                 },
               });
+
+              const userRes = await axiosInstance.get(`/me`, {
+                headers: {
+                  authorization: `Bearer ${token.token}`,
+                },
+              });
+
+              console.log(userRes);
+
+              setUser(userRes.data.user);
+              setUserTscId(userRes.data.user.tscId);
 
               setPayment(true);
             } catch (error) {
@@ -235,7 +248,7 @@ export default function EventRegistrationForm({
               <p>Team Leader</p>
               <input
                 className="shadow px-4 py-2 rounded focus:outline-none bg-slate-100 my-2"
-                value={token?.user.tscId}
+                value={userTscId}
                 readOnly
               />
 
