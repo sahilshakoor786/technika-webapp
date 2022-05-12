@@ -87,10 +87,33 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
+                  <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
                 In this event, participants will have to design an aircraft.
                 This aircraft would be launched in the air field using air
                 pressure concept. The plane which will cover the max range at a
-                certain height will come out on top
+                certain height will come out on top.
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+            
+
+              Satyansh(3rd B.tech ET):   8177020964  <br /> Archana(3rd B.tech ME):73554 95097 <br /> Kartik(3rd B.tech ME):  7037755563<br /> Aryan Verma(3rd B.tech ME): 9519441112<br />
+
               </div>
             </div>
           </main>
