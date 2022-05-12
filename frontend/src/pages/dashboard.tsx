@@ -10,6 +10,7 @@ import { axiosInstance } from "src/utils/axios";
 
 import useRazorpay, { RazorpayOptions } from "react-razorpay";
 import Spinner from "src/components/Spinner";
+import { Registration } from "src/types/event";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -22,12 +23,13 @@ export default function DashboardPage() {
   const [payment, setPayment] = useState<boolean>(false);
   const [accomation, setAccomation] = useState<Boolean>(false);
 
+  const [registrations, setRegistrations] = useState<Registration[]>([]);
+
   useEffect(() => {
-    getUser();
-    getEvents();
+    getInitData();
   }, []);
 
-  async function getUser() {
+  async function getInitData() {
     const token = getToken();
 
     try {
@@ -40,21 +42,18 @@ export default function DashboardPage() {
       setPayment(false);
     }
 
-    setToken(token);
-  }
-
-  async function getEvents() {
     try {
       const res = await axiosInstance.get(`/events/${token?.user.id}`);
-
-      console.log(res.data);
+      setRegistrations(res.data.result);
     } catch (error) {
       console.log(error);
     }
+
+    setToken(token);
   }
 
   function profileSaveSuccess() {
-    getUser();
+    getInitData();
 
     setEditActive(false);
     setMessage("Profile saved");
@@ -289,6 +288,16 @@ export default function DashboardPage() {
               <h1 className="font-primary font-bold text-2xl text-center text-white">
                 Your event registrations
               </h1>
+              {registrations.length == 0 && (
+                <p className="font-bold text-center my-10">
+                  No registrations yet
+                </p>
+              )}
+              {registrations.map((registration) => (
+                <div key={registration.eventId}>
+                  <span>{registration.event.eventName}</span>
+                </div>
+              ))}
             </div>
           </div>
         </main>

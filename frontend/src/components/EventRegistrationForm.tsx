@@ -252,13 +252,13 @@ export default function EventRegistrationForm({
                 readOnly
               />
 
-              <p>Team Members</p>
+              {event && event?.minTeamSize > 1 && <p>Team Members</p>}
 
-              {participants.map((participant, i) => (
+              {participants.map((_, i) => (
                 <span key={i} className="space-x-2 relative">
                   <input
                     className="shadow px-4 py-2 rounded focus:outline-none bg-slate-100 my-2"
-                    placeholder="Enter TSC ID of team member"
+                    placeholder="Enter TSC ID of member"
                     onChange={(e) => setParticipantData(i, e.target.value)}
                   />
                   <button
@@ -280,7 +280,12 @@ export default function EventRegistrationForm({
               ))}
 
               <div className="w-full flex space-x-2 justify-center">
-                <SecondaryButton text="Add more" onClick={addMoreParticipant} />
+                {event && participants.length < event?.minTeamSize && (
+                  <SecondaryButton
+                    text="Add more"
+                    onClick={addMoreParticipant}
+                  />
+                )}
                 <PrimaryButton text="Register now" onClick={handleRegister} />
               </div>
             </>
