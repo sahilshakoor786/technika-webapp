@@ -8,6 +8,7 @@ const app = express();
 const authController = require("./controller/auth");
 const userController = require("./controller/user");
 const eventController = require("./controller/event");
+const merchandiseController = require("./controller/merchandise");
 const middleware = require("./middleware/auth");
 const multer = require("multer");
 const upload = multer();
@@ -53,6 +54,21 @@ app.post(
   "/event/register/payment/verify",
   middleware.authMiddleware,
   eventController.paymentSuccess
+);
+
+app.get("/merchandise/products", merchandiseController.listMerchandiseProducts);
+app.get(
+  "/merchandise/product/:productId",
+  merchandiseController.getMerchandiseProduct
+);
+app.post(
+  "/merchandise/product/purchase/initiliaze",
+
+  merchandiseController.purchaseInitiliaze
+);
+app.post(
+  "/merchandise/product/purchase/verify",
+  merchandiseController.purchaseVerify
 );
 
 const run = async () => {

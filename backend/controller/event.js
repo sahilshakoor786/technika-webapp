@@ -529,10 +529,10 @@ exports.userEvents = async (req, res) => {
         $match: {
           $or: [
             {
-              leaderId: "",
+              leaderId: userId,
             },
             {
-              teamMembers: new ObjectId("626d2ed25aa050a403d3bc07"),
+              teamMembers: new ObjectId(userId),
             },
           ],
         },

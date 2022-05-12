@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-var registrationPayment = new Schema(
+var merchandisePayment = new Schema(
   {
-    userId: {
+    paymentId: {
       type: String,
       required: true,
     },
 
-    paymentId: {
-      type: String,
+    user: {
+      type: Object,
       required: true,
     },
 
@@ -32,11 +32,6 @@ var registrationPayment = new Schema(
       type: String,
     },
 
-    isAccommodation: {
-      type: Boolean,
-      default: false,
-    },
-
     metadata: {
       type: Object,
       required: false,
@@ -54,8 +49,8 @@ var registrationPayment = new Schema(
     },
   }
 );
-var RegistrationPayment = mongoose.model(
-  "RegistrationPayment",
-  registrationPayment
+var MerchandisePayment = mongoose.model(
+  "MerchandisePayment",
+  merchandisePayment
 );
-module.exports = RegistrationPayment;
+module.exports = MerchandisePayment;
