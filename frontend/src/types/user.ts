@@ -11,4 +11,5 @@ export type User = {
   isTSCAdmin: boolean;
   isTSCTeamMember: boolean;
   picture: string;
+  tscId: string;
 };

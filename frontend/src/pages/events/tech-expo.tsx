@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+                Tech expo
               </h1>
 
               <div
@@ -67,12 +67,14 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">
+                    Between Auditorium and Civil Dept
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">10 AM-5 PM</span>
                 </div>
               </div>
 
@@ -87,8 +89,10 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+                A tech exhibition event in which various working models of
+                students from different colleges will be put on show in front of
+                a jury panel & they will be judged on the basis of presentation
+                skills & the efficiency of their models.
               </div>
             </div>
           </main>
@@ -111,7 +115,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCCE03" />
             </div>
           </div>
         </>

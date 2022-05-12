@@ -47,7 +47,10 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+               Free Flight
+
+
+
               </h1>
 
               <div
@@ -67,12 +70,16 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">
+                  Mechanical Department
+
+
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">3:00 PM-5:00 PM</span>
                 </div>
               </div>
 
@@ -86,9 +93,11 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+              >Free flight is the segment of model aviation involving aircraft with no active external control after launch. Free Flight is the original form of hobby aero modeling, with the competitive objective being to build and launch a self controlling aircraft that will consistently achieve the longest flight duration over multiple competition rounds, within various class parameters. Usually the sole objective of free-flight competition is flight duration, and one of the sport’s fascinations and challenges is to design the most efficient aircraft within the various competition limits on parameters such as minimum weight, maximum wing area, and motive power. ROUND:1 Strength of the Plane: This round will be based on the sturdiness of the plane and its efficacy to deal with the wind and air resistance. ROUND:2 Distance travelled by 2 twists: This round will be the concluding round of the competition. The plane with largest distance travelled, will be declared as the winner. 
+
+
+
+
               </div>
             </div>
           </main>
@@ -111,7 +120,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCMM14" />
             </div>
           </div>
         </>

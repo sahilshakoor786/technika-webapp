@@ -47,7 +47,11 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+              Blank Coding
+
+
+
+
               </h1>
 
               <div
@@ -67,12 +71,18 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">
+                  DBMS LAB/INTERNET LAB
+
+
+
+
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">4:00 PM-5:00 PM</span>
                 </div>
               </div>
 
@@ -86,9 +96,16 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+              >Would you phone-a-friend on the ultimate
+              question if you were at the hotseat on the set
+              of KBC? We ask because even though stakes are
+              much lower but you essentially have to display
+              the same amount of trust while you code
+              just on a keyboard with monitor turned away
+              towards your mate who will convey any and all
+              your errors through a game of dumb-charades.
+
+
               </div>
             </div>
           </main>
@@ -111,7 +128,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCGC06" />
             </div>
           </div>
         </>

@@ -47,7 +47,11 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+              VR Gaming
+
+
+
+
               </h1>
 
               <div
@@ -67,12 +71,19 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">
+                  Auditorium
+
+
+
+
+
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">7:30 PM-8:30 PM</span>
                 </div>
               </div>
 
@@ -86,9 +97,11 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+              >Right from your Game Boys to nintendo wii to the cutting edge xboxes and playstations we’ve come a long way on this ever winding yet progressing road of the gaming industry right? But don’t worry we are not here to take you down a trip of nostalgia instead quite the opposite. Buckle up your seatbelts as we hurl you into the majesty of this new era with virtual reality taking the gaming universe by the storm.
+
+
+
+
               </div>
             </div>
           </main>
@@ -111,7 +124,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCCE11" />
             </div>
           </div>
         </>

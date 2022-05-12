@@ -70,7 +70,7 @@ export default function FancyImage({
         }}
       ></div>
 
-      <span className="z-20 text-white text-2xl backdrop-blur">{text}</span>
+      <span className="z-20 text-white text-2xl backdrop-blur text-center">{text}</span>
     </div>
   );
 }

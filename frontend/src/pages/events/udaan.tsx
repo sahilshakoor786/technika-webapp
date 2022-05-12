@@ -47,7 +47,11 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+              Udaan
+
+
+
+
               </h1>
 
               <div
@@ -67,12 +71,18 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">
+                  Parking Lot
+
+
+
+
+                  </span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">5:00 PM-7:00 PM</span>
                 </div>
               </div>
 
@@ -86,9 +96,11 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+              >In this event, teams of 4-6 members will be required to construct a RC plane. The plane has to pass under two heights in two chances given to them. The plane which will cover the larger field will win the game
+
+
+
+
               </div>
             </div>
           </main>
@@ -111,7 +123,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCMM10" />
             </div>
           </div>
         </>

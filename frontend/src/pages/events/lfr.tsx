@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+                LFR
               </h1>
 
               <div
@@ -72,7 +72,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">3 PM-5 PM</span>
                 </div>
               </div>
 
@@ -87,8 +87,9 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+                A robot is designed in such a way to follow a pre-defined path
+                in the first round. The qualified teams then will have to make
+                robots clear the maze within minimum time in the second round.
               </div>
             </div>
           </main>
@@ -111,7 +112,8 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCMM03
+" />
             </div>
           </div>
         </>

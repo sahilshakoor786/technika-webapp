@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Junk Yard
+                Laser-o-reflect
               </h1>
 
               <div
@@ -55,7 +55,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
                 style={{
                   height: 500,
-                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/5b9ee668ee6de.image.jpg")`,
+                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/laseroreflect.png")`,
                 }}
               >
                 <span className="col-span-2"></span>
@@ -67,12 +67,12 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">Atal Seminar Hall</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">10-11 AM</span>
+                  <span className="text-slate-800">3-4 PM</span>
                 </div>
               </div>
 
@@ -87,8 +87,9 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The contestants will be required to make a model in a span of 20
-                min on the basis of a Do-it-yourself video shown to them
+                This event will use the rational skills of the participants to
+                align the mirrors in such a way that the laser light on
+                consecutive reflections should reach the target
               </div>
             </div>
           </main>
@@ -111,7 +112,8 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE01" />
+              <EventRegistrationForm eventId="TSCCE05
+" />
             </div>
           </div>
         </>

@@ -4,9 +4,9 @@ import { getToken, setUser } from "src/types/token";
 import { axiosInstance } from "src/utils/axios";
 import Footer from "./Footer";
 import Header from "./Header";
-
+import { useRouter } from "next/router";
 export default function Layout({ children }: { children: ReactElement }) {
- 
+  const router = useRouter();
   useEffect(() => {
     getUser();
   }, []);
@@ -23,10 +23,14 @@ export default function Layout({ children }: { children: ReactElement }) {
         })
         .then((res) => {
           setUser(res.data.user);
+        })
+        .catch((err) => {
+          localStorage.clear();
+          router.push("/");
         });
     }
   }
-  
+
   return (
     <>
       <Head>
