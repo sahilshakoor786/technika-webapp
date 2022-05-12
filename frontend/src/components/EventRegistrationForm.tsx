@@ -24,7 +24,7 @@ export default function EventRegistrationForm({
   const [registered, setRegistered] = useState<boolean>(false);
   const [payment, setPayment] = useState<boolean>(false);
   const [participants, setParticipants] = useState<Array<string>>([]);
-  const [accomation, setAccomation] = useState<Boolean>(false);
+  const [accomation, setAccomation] = useState(false);
 
   useEffect(() => {
     getUser();
@@ -295,6 +295,7 @@ export default function EventRegistrationForm({
                 <span>Need accomations?</span>
                 <input
                   type="checkbox"
+                  checked={accomation}
                   onChange={(e) =>
                     setAccomation(e.target.value == "on" ? true : false)
                   }
