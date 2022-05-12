@@ -109,7 +109,17 @@ junk dealer in town. <br />
               </h1>
 •	A team should of 3-5 members. <br />
 •	The stuff would be provided to the participants and they are not allowed to bring outside materials. <br />
-•	The time duration to make the working model is 20 minutes. <br />
+•	The time duration to make the working model is 20 minutes. <br /> 
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Chandan Yadav (3rd B.tech PT): 7007226194  <br />
+ Apoorva Sachan (3rdB.tech CHE) :9839120812
+
+
 
 
 

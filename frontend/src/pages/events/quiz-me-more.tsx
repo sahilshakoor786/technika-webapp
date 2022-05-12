@@ -87,8 +87,36 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The participants will have to answer 15 questions in the best
-                possible way by using their reasoning & creativity.
+                       <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+               A two round quiz event which will test general & basic engineering knowledge of the participants and only 4 teams will get the chance to enter round 2. <br />
+               <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              •	It is a two round event. <br />
+•	The questions would be from general scientific knowledge and technical innovations around the globe. <br />
+•	A team should of 2-4 members. <br />
+•	After 1st round 4 teams would qualify for the second round. <br />
+•	And same will be followed to decide the winner.  <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Kumar Satwik Kaushal (3rd B.tech ME): 7880743737 <br />
+
+
+
+
+
               </div>
             </div>
           </main>
