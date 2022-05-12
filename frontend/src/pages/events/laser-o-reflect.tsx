@@ -51,11 +51,11 @@ export default function Page() {
               </h1>
 
               <div
-                className="w-full grid grid-cols-1 lg:grid-cols-3 
-                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
+                className="w-full grid grid-cols-1  lg:grid-cols-3 
+                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-contain bg-no-repeat"
                 style={{
-                  height: 500,
                   backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/laseroreflect.png")`,
+                  height: 375,
                 }}
               >
                 <span className="col-span-2"></span>
@@ -112,8 +112,10 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE05
-" />
+              <EventRegistrationForm
+                eventId="TSCCE05
+"
+              />
             </div>
           </div>
         </>

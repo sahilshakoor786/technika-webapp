@@ -48,7 +48,6 @@ export default function Page() {
                 mt-32 md:mt-20 mb-10"
               >
                 Circuit Trouble
-
               </h1>
 
               <div
@@ -75,7 +74,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">11:00 PM-1:00 PM</span>
+                  <span className="text-slate-800">11:00 AM-1:00 PM</span>
                 </div>
               </div>
 
@@ -90,8 +89,11 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                This event consist of two rounds in which first round will be of multiple choice  written test based on basic electrical circuits and only the qualified contestants will make a team of 2 who will be eligible for the next round in which participants will provided with a problem based on electronics circuit .
-
+                This event consist of two rounds in which first round will be of
+                multiple choice written test based on basic electrical circuits
+                and only the qualified contestants will make a team of 2 who
+                will be eligible for the next round in which participants will
+                provided with a problem based on electronics circuit .
               </div>
             </div>
           </main>
