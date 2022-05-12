@@ -44,23 +44,6 @@ export default function EventsSection() {
         ease: "slow(0.7, 0.7, false)",
       }),
     ]);
-
-    gsap.to(".fancy-image", {
-      scrollTrigger: {
-        trigger: "#events",
-        start: "top center",
-        end: "top top",
-      },
-      height: 340,
-      opacity: 1,
-      // stagger: {
-      //   grid: [1, 4],
-      //   from: "center",
-      //   amount: 1.5,
-      // },
-      duration: 1,
-      ease: "slow(0.7, 0.7, false)",
-    });
   }, []);
 
   function fancyPopup(index: number) {

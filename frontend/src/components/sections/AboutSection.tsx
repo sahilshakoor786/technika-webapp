@@ -1,38 +1,6 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
 import FancyImage from "../FancyImage";
 
 export default function AboutSection() {
-  gsap.registerPlugin(ScrollTrigger);
-
-  useEffect(() => {
-    gsap.to("#about-image", {
-      scrollTrigger: {
-        trigger: "#about",
-        start: "top center",
-        end: "top top",
-      },
-      height: 380,
-      opacity: 1,
-      delay: 0.5,
-      duration: 1,
-      ease: "slow(0.7, 0.7, false)",
-    });
-
-    gsap.to("#about-text", {
-      scrollTrigger: {
-        trigger: "#about",
-        start: "top center",
-        end: "top top",
-      },
-      height: 380,
-      opacity: 1,
-      duration: 1,
-      ease: "slow(0.7, 0.7, false)",
-    });
-  }, []);
-
   return (
     <section
       id="about"
