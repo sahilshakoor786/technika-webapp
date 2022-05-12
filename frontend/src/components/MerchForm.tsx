@@ -135,7 +135,7 @@ export default function MerchForm({ merchId, merchName }: MerchFormProps) {
         </>
       ) : (
         <>
-          <h1 className="font-primary text-3xl text-center font-bold">
+          <h1 className="font-primary text-2xl text-center font-bold">
             Buy {merchName}
           </h1>
 
@@ -146,7 +146,7 @@ export default function MerchForm({ merchId, merchName }: MerchFormProps) {
           {!payment ? (
             <PrimaryButton text="Buy Merch" onClick={handlePayment} />
           ) : (
-            <p className="text-center my-10">
+            <p className="text-center text-xl text-pink-600 my-10">
               Thank you for buying <br />
               <span className="font-primary font-bold">Technika</span> merch
             </p>
