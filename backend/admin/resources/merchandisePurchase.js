@@ -22,6 +22,8 @@ module.exports = {
       },
     },
 
+    listProperties: ["name", "email", "token", "isPaid", "isComplete"],
+
     actions: {
       new: {
         showInDrawer: true,
