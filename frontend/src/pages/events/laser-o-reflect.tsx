@@ -52,9 +52,9 @@ export default function Page() {
 
               <div
                 className="w-full grid grid-cols-1  lg:grid-cols-3 
-                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-contain bg-no-repeat"
+                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
                 style={{
-                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/laseroreflect.png")`,
+                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/laserorefflect.jpg")`,
                   height: 375,
                 }}
               >

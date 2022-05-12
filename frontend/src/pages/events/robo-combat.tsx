@@ -53,10 +53,10 @@ export default function Page() {
 
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
-                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
+                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-bottom"
                 style={{
                   height: 500,
-                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/5b9ee668ee6de.image.jpg")`,
+                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/robocombat.JPG")`,
                 }}
               >
                 <span className="col-span-2"></span>

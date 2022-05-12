@@ -55,7 +55,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
                 style={{
                   height: 500,
-                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/5b9ee668ee6de.image.jpg")`,
+                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/situationroom-transformed.jpeg")`,
                 }}
               >
                 <span className="col-span-2"></span>
