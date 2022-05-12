@@ -323,6 +323,7 @@ export default function DashboardPage() {
                     />
                     {registration.teamMembersDetails.map((user) => (
                       <img
+                        key={user.tscId}
                         src={user.picture}
                         className="w-10 h-10 border-2 border-white rounded-full"
                       />
