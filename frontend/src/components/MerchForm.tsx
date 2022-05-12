@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import { Event } from "src/types/event";
 import { getToken, setUser, Token } from "src/types/token";
 import { axiosInstance } from "src/utils/axios";
 import PrimaryButton from "./PrimaryButton";
-import SecondaryButton from "./SecondaryButton";
 import Spinner from "./Spinner";
 
 import useRazorpay, { RazorpayOptions } from "react-razorpay";
@@ -11,9 +9,10 @@ import { useInput } from "src/utils/useInput";
 
 type MerchFormProps = {
   merchId: string;
+  merchName: string;
 };
 
-export default function MerchForm({ merchId }: MerchFormProps) {
+export default function MerchForm({ merchId, merchName }: MerchFormProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [token, setToken] = useState<Token>();
@@ -38,6 +37,11 @@ export default function MerchForm({ merchId }: MerchFormProps) {
   useEffect(() => {
     getUser();
   }, []);
+
+  useEffect(() => {
+    setPayment(false);
+}, [merchId]);
+
 
   function getUser() {
     const token = getToken();
@@ -132,7 +136,7 @@ export default function MerchForm({ merchId }: MerchFormProps) {
       ) : (
         <>
           <h1 className="font-primary text-3xl text-center font-bold">
-            Buy Merch
+            Buy {merchName}
           </h1>
 
           {nameInput.input}
@@ -142,7 +146,10 @@ export default function MerchForm({ merchId }: MerchFormProps) {
           {!payment ? (
             <PrimaryButton text="Buy Merch" onClick={handlePayment} />
           ) : (
-            <p className="text-center">Thank you for buying technika merch</p>
+            <p className="text-center my-10">
+              Thank you for buying <br />
+              <span className="font-primary font-bold">Technika</span> merch
+            </p>
           )}
         </>
       )}

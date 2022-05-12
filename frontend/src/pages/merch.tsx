@@ -13,6 +13,7 @@ export default function Page() {
 
   const [merchs, setMerchs] = useState<Merch[]>([]);
   const [merchId, setMerchId] = useState("");
+  const [merchName, setMerchName] = useState("");
 
   useEffect(() => {
     getInitData();
@@ -27,8 +28,9 @@ export default function Page() {
     }
   }
 
-  function handleFormPopup(id: string) {
+  function handleFormPopup(id: string, name: string) {
     setMerchId(id);
+    setMerchName(name);
 
     if (!popup) {
       gsap.to("#popup", {
@@ -47,6 +49,7 @@ export default function Page() {
         ease: "slow(0.7, 0.7, false)",
       });
     }
+
     setPopup(!popup);
   }
 
@@ -76,7 +79,7 @@ export default function Page() {
                 width={400}
                 height={300}
                 //   text={merch._id}
-                onClick={() => handleFormPopup(merch._id)}
+                onClick={() => handleFormPopup(merch._id, merch.name)}
               />
             ))}
           </div>
@@ -89,7 +92,7 @@ export default function Page() {
         >
           <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
             <button
-              onClick={() => handleFormPopup("")}
+              onClick={() => handleFormPopup("", "")}
               className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
               absolute rounded-full w-12 h-12 bg-pink-500 
               shadow-lg grid place-items-center hover:scale-110"
@@ -100,7 +103,7 @@ export default function Page() {
               />
             </button>
 
-            <MerchForm merchId={merchId} />
+            <MerchForm merchId={merchId} merchName={merchName} />
           </div>
         </div>
       </main>
