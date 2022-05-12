@@ -139,6 +139,11 @@ export default function DashboardPage() {
     }
   };
 
+  function formatDate(dateString: string) {
+    var d = new Date(dateString);
+    return `${d.getDate()}/${d.getMonth()} ${d.getHours()}:${d.getMinutes()}`;
+  }
+
   return (
     <Auth>
       <Layout>
@@ -148,7 +153,8 @@ export default function DashboardPage() {
         >
           <div className="w-full max-w-5xl grid md:grid-cols-2 place-items-center gap-8 my-20 mt-32">
             <div
-              className="p-10 w-full h-full backdrop-blur 
+              style={{ height: 600 }}
+              className="p-10 w-full h-3/4 backdrop-blur 
               flex flex-col space-y-3
               shadow-lg rounded-lg bg-slate-50/20"
             >
@@ -281,9 +287,10 @@ export default function DashboardPage() {
             </div>
 
             <div
-              className="p-10 w-full h-full backdrop-blur 
+              style={{ height: 600 }}
+              className="p-10 w-full backdrop-blur 
               flex flex-col space-y-3
-              shadow-lg rounded-lg bg-slate-50/20"
+              shadow-lg rounded-lg bg-slate-50/20 overflow-y-scroll"
             >
               <h1 className="font-primary font-bold text-2xl text-center text-white">
                 Your event registrations
@@ -294,8 +301,33 @@ export default function DashboardPage() {
                 </p>
               )}
               {registrations.map((registration) => (
-                <div key={registration.eventId}>
-                  <span>{registration.event.eventName}</span>
+                <div
+                  key={registration.eventId}
+                  className="bg-white/50 rounded-lg px-10 py-5 my-5 
+                relative shadow-md flex flex-col"
+                >
+                  <span className="font-primary font-bold text-xl">
+                    {registration.event.eventName}
+                  </span>
+                  <span className="font-bold mt-2 text-slate-600">
+                    Venue: {registration.event.eventVenue}
+                  </span>
+                  <span className="font-bold mt-2 text-slate-600">
+                    Timings: {formatDate(registration.event.eventTime)}
+                  </span>
+
+                  <div className="flex space-x-2 my-3">
+                    <img
+                      src={registration.leader.picture}
+                      className="w-10 h-10 border-2 border-white rounded-full"
+                    />
+                    {registration.teamMembersDetails.map((user) => (
+                      <img
+                        src={user.picture}
+                        className="w-10 h-10 border-2 border-white rounded-full"
+                      />
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
