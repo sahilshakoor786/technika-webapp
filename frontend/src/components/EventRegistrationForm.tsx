@@ -280,7 +280,7 @@ export default function EventRegistrationForm({
               ))}
 
               <div className="w-full flex space-x-2 justify-center">
-                {event && participants.length < event?.minTeamSize && (
+                {event && event?.minTeamSize > 1 && (
                   <SecondaryButton
                     text="Add more"
                     onClick={addMoreParticipant}
