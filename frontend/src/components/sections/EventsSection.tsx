@@ -64,14 +64,8 @@ export default function EventsSection() {
         Events
       </h1>
 
-      <div className="flex justify-center items-center md:space-x-10 flex-wrap">
-        <FancyImage
-          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
-          width={200}
-          height={300}
-          onClick={() => fancyPopup(0)}
-          text="Central Events"
-        />
+      <div className="flex justify-center items-center space-y-10 md:space-x-10 flex-wrap">
+       
         <FancyImage
           src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
           width={200}
