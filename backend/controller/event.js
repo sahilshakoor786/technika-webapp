@@ -211,7 +211,7 @@ exports.payment = async (req, res) => {
       key_id: process.env.RAZORPAY_KEY_ID,
       key_secret: process.env.RAZORPAY_KEY_SECRET,
     });
-    const amount = isAccommodation ? 150000 : 40000;
+    const amount = isAccommodation ? 200000 : 40000;
 
     var options = {
       amount: amount,

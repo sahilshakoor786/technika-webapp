@@ -168,15 +168,6 @@ export default function EventRegistrationForm({
                 },
               });
 
-              const userRes = await axiosInstance.post(`/me`, args, {
-                headers: {
-                  authorization: `Bearer ${token.token}`,
-                },
-              });
-
-              token.user = userRes.data.user;
-              setToken(token);
-
               setPayment(true);
             } catch (error) {
               setError("Payment failed");
