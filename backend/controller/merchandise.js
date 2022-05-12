@@ -128,6 +128,8 @@ exports.purchaseVerify = async (req, res) => {
 
   await merchandisePurchase.save();
 
+  // send email to user with token
+
   res.json({
     success: true,
     message: "Payment success",
@@ -135,4 +137,18 @@ exports.purchaseVerify = async (req, res) => {
       token: merchandisePurchase.token,
     },
   });
+};
+
+exports.myPurchases = async (req, res) => {
+  if (!req.user) {
+    res.status(400).json({ success: false, message: "User not logged in" });
+    return;
+  }
+
+  const purchases = await MerchandisePurchase.find({
+    userId: req.user.userId,
+    isPaid: true,
+  });
+
+  res.json(purchases);
 };

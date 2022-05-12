@@ -194,3 +194,84 @@ exports.googleCallback = async (req, res, _) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
+exports.sendEmailToNonHbtuStudents = async (req, res, _) => {
+  try {
+    const users = await User.find({
+      $and: [
+        {
+          college: {
+            $nin: [
+              "Harcourt Butler University , Kanpur",
+              "Harcourt Butler Technical University, Kanpur",
+              "HBTU",
+              "",
+              "hbtu",
+              "hbti",
+              "HBTI",
+            ],
+          },
+        },
+
+        { college: { $not: { $regex: /harcourt/, $options: "si" } } },
+        { college: { $not: { $regex: /hbtu/, $options: "si" } } },
+        { college: { $not: { $regex: /butler/, $options: "si" } } },
+      ],
+    });
+
+    // const users = [
+    //   {
+    //     email: "tejpratapsingh545@gmail.com",
+    //     name: "Tejpratap singh",
+    //   },
+    //   {
+    //     email: "contact@technika.org.in",
+    //     name: "Tejpratap singh",
+    //   },
+    //   {
+    //     email: "shubhamrana1999@gmail.com",
+    //     name: "Shubham Rana",
+    //   },
+    // ];
+
+    users.forEach(async (user) => {
+      const emailBody = `
+
+      <html>
+
+        <body>
+          <p>Hey ${user.name},</p>
+          <p>Hope you're doing well.</p>
+
+          <p>
+            It is a friendly reminder that your TSC Id is not generated yet & also
+            payment is due.
+          </p>
+
+          <p>
+            For smooth process, complete the payment shortly & any unsolved queries
+            can be reach out at e-mail id.
+          </p>
+
+          <p>Regards, Team Technika</p>  <br />
+        </body>
+      </html>
+      `;
+
+      await ses.sendEmail(
+        `${user.name}<${user.email}>`,
+        "Reminder: TSC Id not generated , complete registration",
+        emailBody
+      );
+      console.log(user.email, user.college);
+    });
+
+    res.status(200).json({
+      success: true,
+      message: "Email sent successfully",
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+};

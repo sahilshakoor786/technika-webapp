@@ -71,6 +71,9 @@ app.post(
   merchandiseController.purchaseVerify
 );
 
+// app.get("/send/email/non-hbtu", authController.sendEmailToNonHbtuStudents);
+app.get("/merchandise/product/my", merchandiseController.myPurchases);
+
 const run = async () => {
   const mongooseConnection = await mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost:27017/tsc-backend"
