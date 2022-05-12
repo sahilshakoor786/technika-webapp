@@ -20,7 +20,7 @@ export default function EventsPage() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-               Central Events
+              Central Events
             </h1>
 
             <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
@@ -56,7 +56,7 @@ export default function EventsPage() {
                   text="Situation Room"
                 />
               </Link>
-            
+
               <Link href="/events/tech-expo">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
@@ -81,7 +81,7 @@ export default function EventsPage() {
                   text="NFT Design"
                 />
               </Link>
-                 <Link href="/events/bike-show">
+              <Link href="/events/bike-show">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
                   width={200}
@@ -121,22 +121,22 @@ export default function EventsPage() {
                   text="VR gaming"
                 />
               </Link>
-              </div>
-              <h1
+            </div>
+            <h1
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-                style={{marginTop: 25,marginBottom:25}}
+              style={{ marginTop: 25, marginBottom: 25 }}
             >
-               Mech Marvel
-            </h1> 
+              Mech Marvel
+            </h1>
             <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-            <Link href="/events/lfr">
+              <Link href="/events/lfr">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
                   width={200}
                   height={300}
                   text="LFR"
-                  />
+                />
               </Link>
               <Link href="/events/udaan">
                 <FancyImage
@@ -178,7 +178,7 @@ export default function EventsPage() {
                   text="Thread Ripper"
                 />
               </Link>
-                
+
               <Link href="/events/path-pradarshak">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -192,7 +192,7 @@ export default function EventsPage() {
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
                   width={200}
                   height={300}
-                  text="hover-mania"
+                  text="Hover-Mania"
                 />
               </Link>
               <Link href="/events/kya-engineer">
@@ -227,23 +227,22 @@ export default function EventsPage() {
                   text="Simulation"
                 />
               </Link>
-                </div>
-                <h1
+            </div>
+            <h1
               className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10" style={{marginTop: 25,marginBottom:25}}
+                mt-32 md:mt-20 mb-10"
+              style={{ marginTop: 25, marginBottom: 25 }}
             >
-               Game Of Codes
-            </h1> 
+              Game Of Codes
+            </h1>
             <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-
-              
               <Link href="/events/break-the-code">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
                   width={200}
                   height={300}
                   text="Break the code"
-                  />
+                />
               </Link>
               <Link href="/events/rasterize">
                 <FancyImage
@@ -251,16 +250,16 @@ export default function EventsPage() {
                   width={200}
                   height={300}
                   text="RASTERIZE"
-                  />
+                />
               </Link>
-           
+
               <Link href="/events/run-time-terror">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
                   width={200}
                   height={300}
                   text="Run time terror"
-                  />
+                />
               </Link>
               <Link href="/events/red-pencil">
                 <FancyImage
@@ -268,7 +267,7 @@ export default function EventsPage() {
                   width={200}
                   height={300}
                   text="Red Pencil"
-                  />
+                />
               </Link>
               <Link href="/events/blank-coding">
                 <FancyImage
@@ -278,7 +277,7 @@ export default function EventsPage() {
                   text="Blank Coding"
                 />
               </Link>
-              
+
               <Link href="/events/programming-date">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
@@ -287,25 +286,24 @@ export default function EventsPage() {
                   text="Programming Date"
                 />
               </Link>
-              
-              
-                </div>
-                <h1
+            </div>
+            <h1
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-                style={{marginTop: 25,marginBottom:25}}
+              style={{ marginTop: 25, marginBottom: 25 }}
             >
-               Electronics Hub
-            </h1> 
-            <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap"> \
-                
+              Electronics Hub
+            </h1>
+            <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+              {" "}
+              \
               <Link href="/events/bridge-o-mania">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
                   width={200}
                   height={300}
                   text="Bridge-o-mania"
-                  />
+                />
               </Link>
               <Link href="/events/city-maestro">
                 <FancyImage
@@ -313,34 +311,23 @@ export default function EventsPage() {
                   width={200}
                   height={300}
                   text="City Maestro"
-                  />
+                />
               </Link>
-             
               <Link href="/events/save-the-egg">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
                   width={200}
                   height={300}
                   text="Save the Egg"
-                  />
+                />
               </Link>
-              
-           
-           
-              
-            
-            
-             
-            
-             
-             
               <Link href="/events/anadigilox">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
                   width={200}
                   height={300}
                   text="Anadigilogix"
-                  />
+                />
               </Link>
               <Link href="/events/circuit-trouble">
                 <FancyImage
@@ -348,7 +335,7 @@ export default function EventsPage() {
                   width={200}
                   height={300}
                   text="Circuit Trouble"
-                  />
+                />
               </Link>
               <Link href="/events/morse-laser">
                 <FancyImage
@@ -356,7 +343,7 @@ export default function EventsPage() {
                   width={200}
                   height={300}
                   text="Morse Laser"
-                  />
+                />
               </Link>
               <Link href="/events/flip-o-friend">
                 <FancyImage
@@ -364,14 +351,10 @@ export default function EventsPage() {
                   width={200}
                   height={300}
                   text="Flip-o-friend"
-                  />
+                />
               </Link>
-                  </div>
-             
-              
-           
-              
             </div>
+          </div>
         </main>
       </Layout>
     </Auth>
