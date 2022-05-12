@@ -93,7 +93,35 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >There is team of 2 contestants with a twist that both the participants will be made to code in different rooms and on separate questions , within 15-20 minutes both will be swapped.
+              >     <h1
+              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+            >
+              
+            About the Event<br />
+            </h1>
+              “ Whatever may happen,you will always find me
+              by your side”- say all best friends. Here is your
+              chance to put you and your buddy’s best minds
+              to work and solve something apart from the
+              ‘kaands’ you do.Solve two problems separately
+              and once half time is over you swap your under
+              process work.Team with maximum points
+              wins.
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              There will be a team of 2 in this. Both the participants will be made to sit in different rooms and separate questions will be given to them. After 15-20 minutes they will be swapped. The first one will now work on the code of 2nd person and vice versa. The team getting the maximum points will win. Ties will be broken by the amount of time taken.
+   <br />
+   <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>Aman Maurya (3rd B.tech IT):8354855936
+
 
 
 

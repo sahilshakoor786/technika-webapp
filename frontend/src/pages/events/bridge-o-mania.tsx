@@ -86,9 +86,48 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
+              > 
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                The contestant’s have to build a bridge with the help of ice
-                cream sticks and it will be tested on the basis of its strength.
+                
+              About the Event<br />
+              </h1>
+               We didn’t exaggerate when we said we have
+something for everyone.For all the budding
+engineers out there who are fascinated by the
+architectural amazements, the mechanics and
+structural analysis behind it all we have bridgeo-mania where you’ll have to build a bridge of
+ice cream sticks and it will be tested on its load
+taking capacity and strength.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              • Each bridge must be able to hold the weight of the testing equipment, which is about 5 lbs. br
+       <br />
+       • The bridges must be able to stand freely on the supporting bars, spaced 22 inches apart. No
+hooking, gluing, or otherwise fastening the bridges to the supports will be allowed. <br />
+• Bridge must contain a continuous roadway capable of allowing a “matchbox” type car to roll
+completely across the bridge without stopping or falling through. <br />
+• Popsicle sticks are limited to a glued ½” overlap at all connections. Open gaps between
+adjacent sticks is allowable. <br />
+• Bridges will be loaded using a ½” diameter steel rod placed on top of the roadway at the center of
+the bridge. All bridges must be able to accommodate this rod (refer to the figures and photos shown
+on the following pages). <br />
+• Bridges must meet the additional requirements shown on the following pages for connection and
+geometric limitations. <br />
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Vishwas Badal (3rd B.tech ME):8081315195
+
+
               </div>
             </div>
           </main>

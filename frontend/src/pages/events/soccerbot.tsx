@@ -87,9 +87,65 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                This event will make the use of robots designed in a way by the
-                teams of 4 members which have to play soccer in a mini ground.
-                The team with greater no. of goals will won the match.
+                     <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+                "Test your build, observe how it functions, and fuel your logic and reasoning skills through
+imaginative, creative play."
+It's football time and no one plays soccer better than engineers, in their sophisticated way we hail
+this event ROBO SOCCER.
+Build a robot that can make a goal by pushing the ball into the opponent's goal post and defends
+own goal post. This event tests your stability control, handling, and your techniques in
+competing with your opponent. The simultaneous movement rules encourage clever strategies
+and counterstrategies as players try to second-guess their opponents.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              ● Each team will have to defend the goal on its side as well as score the goal on the
+opposite side. <br />
+● Each team can have a maximum of 4 team members. <br />
+● The weight limit of the robot for this competition is 3 Kg. <br />
+● Each robot should not Exceed by maximum 30cm*30cm*30cm(l*b*h*). <br />
+● Team can use ball hit mechanism but not Griper mechanism to hold the ball. <br />
+● Teams have to use same bot for all the rounds. <br />
+● The robot can be wired/ wireless. In case of wired control, the wires should be slack all
+the time. <br />
+● The power supply for the vehicle should not exceed 12V DC between any two points in
+the circuit at any given time. <br />
+              ● The participants will be provided with 220 Volts, 50Hz standard AC supply. Participants
+will have to themselves arrange for an adapter or batteries. <br />
+● The machine must be powered electrically only. Use of IC engine is not allowed
+● The machine must not be made from Lego parts, or any ready-made kit, if we find such a
+machine it will be disqualified. Use of ready-made chassis/ RC Car is not allowed. <br />
+● The body of the vehicle must be covered, to avoid any entanglement between two
+competing robots. <br />
+● Damaging the wires of the opponent will lead to disqualification. <br />
+● The ball can be either dragged or pushed by the team’s bot. <br />
+● Maximum 2 members per team will be allowed to remain close to the field for operating
+the robots. <br />
+● In case of a jam up of robots for more than 30 seconds the robots will have to kick-off
+again at the order of the referee. <br />
+● In case of any discrepancy the final decision rests in the hands of coordinators. <br />
+● Any act of misbehavior or misconduct will lead to immediate disqualification of the
+team. <br />
+● The robots are not allowed to use grippers or actuations which are intended to harm the
+opponent’s robot. <br />
+● The substitution of robots during the competition within the team or with other teams is
+forbidden. <br />
+<h1
+           className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+           >
+           Coordinators: <br />
+         </h1>
+           Pradum Pal (3rd B.tech ET):9571109091   <br />
+ Sudheer Singh (3rd B.tech ET):
+              6386066457
               </div>
             </div>
           </main>

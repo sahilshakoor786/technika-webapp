@@ -93,7 +93,34 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >Free flight is the segment of model aviation involving aircraft with no active external control after launch. Free Flight is the original form of hobby aero modeling, with the competitive objective being to build and launch a self controlling aircraft that will consistently achieve the longest flight duration over multiple competition rounds, within various class parameters. Usually the sole objective of free-flight competition is flight duration, and one of the sport’s fascinations and challenges is to design the most efficient aircraft within the various competition limits on parameters such as minimum weight, maximum wing area, and motive power. ROUND:1 Strength of the Plane: This round will be based on the sturdiness of the plane and its efficacy to deal with the wind and air resistance. ROUND:2 Distance travelled by 2 twists: This round will be the concluding round of the competition. The plane with largest distance travelled, will be declared as the winner. 
+              >
+                  <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+                Free flight is the segment of model aviation involving aircraft with no active external control after launch. Free Flight is the original form of hobby aero modelling, with the competitive objective being to build and launch a self controlling aircraft that will consistently achieve the longest flight duration over multiple competition rounds, within various class parameters. Usually the sole objective of free-flight competition is flight duration, and one of the sport’s fascinations and challenges is to design the most efficient aircraft within the various competition limits on parameters such as minimum weight, maximum wing area, and motive power. 
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+               Strength of the Plane: This round will be based on the sturdiness of the plane and its efficacy to deal with the wind and air resistance. <br />
+               ROUND:2 Distance travelled by 2 twists <br />
+                This round will be the concluding round of the competition. The plane with largest distance travelled, will be declared as the winner. <br />
+                 No metallic part should be used in the modeling of the plane. <br /> 
+                  Styrofoam shouldn’t be used in the making of the plane. <br />
+                  <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              
+
+              Shubham(3rd B.tech CHE):  9120585755 <br /> Harsh Chaudhary(3rd B.tech CHE):  6390339469 <br /> Samiksha(3rd B.tech BE): 7905710930
 
 
 
@@ -120,7 +147,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM14" />
+              <EventRegistrationForm eventId="TSCFH03" />
             </div>
           </div>
         </>

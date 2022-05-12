@@ -87,8 +87,42 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The participants will have to answer 15 questions in the best
-                possible way by using their reasoning & creativity.
+                     <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+                Most of us have had those awkward moments
+where all we had to do was to not turn
+around and all we did was turn around, now
+the outcome might not have been the most
+desirable one but in this activity of ours you
+might get a shot at retribution while we provide
+you with certain situations and you devise
+appropriate reactions. 
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              Guidelines:<br />
+              </h1>
+              •	A team should of 3-4 members. <br />
+•	The participants would be provided with 15(situation based) questions ( technical knowledge, basic engineering knowledge, problem solving) and they have to answer with possible way. <br />
+•	time limit of 30 sec for each questions will be provided. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Vaibhav Shukla (3rd B.tech ME)
+
+: 9026405159
+
+ <br />
+
+
               </div>
             </div>
           </main>

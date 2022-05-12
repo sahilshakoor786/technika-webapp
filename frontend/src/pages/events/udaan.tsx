@@ -96,7 +96,33 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >In this event, teams of 4-6 members will be required to construct a RC plane. The plane has to pass under two heights in two chances given to them. The plane which will cover the larger field will win the game
+              > <h1
+              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+            >
+              
+            About the Event<br />
+            </h1>
+                
+                In this event, teams of 4-6 members will be required to construct a RC plane. The plane has to pass under two heights in two chances given to them. The plane which will cover the larger field will win the game
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              ● The participants would be required to use a high winger RC plane. <br />
+● The planes should be made of coroplast material only. Any discrepancy shall not be entertained.  <br />   
+● The battery used in the plane shall not be more above 2200 mAh in capacity.  <br />
+● Each team should contain 4 members. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Shubham(3rd B.tech CHE): 9120585755 <br /> Vikas(3rd B.tech FT):7248338611 <br />  Nikita(3rd B.tech PL) : 8303290354
+               
+
 
 
 
@@ -123,7 +149,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM10" />
+              <EventRegistrationForm eventId="TSCFH04" />
             </div>
           </div>
         </>

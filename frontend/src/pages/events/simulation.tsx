@@ -86,9 +86,30 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
+              >  <h1
+              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+            >
+              
+            About the Event<br />
+            </h1>
+                Importance of simulation: An RC flight simulator is a computer program that allows pilots of radio-controlled aircraft to practice on a computer, without the risk and expense of damaging a real model. Besides the obvious use of training beginners, they are also used for practising new aerobatics, evaluating a model before buying it, and to allow flight practice when conditions are otherwise unsuitable
+Phoenix RC Simulator allows the use of real R/C transmitters to control the sim. InfinityScape 3D landscale generator allows the user to fly beyond the horizon over beautiful, ever-changing terrain that they create and control.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                The participants will have to answer 15 questions in the best
-                possible way by using their reasoning & creativity.
+                
+                Guidelines: <br />
+              </h1>
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+
+              Satyansh(3rd B.tech ET):8177020964  <br />  
+ Atul(3rd B.tech EE) : 7617816601  <br /> Shubhi(3rd B.tech EE) : 6306654511
+
               </div>
             </div>
           </main>
@@ -111,7 +132,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM12
+              <EventRegistrationForm eventId="TSCFH01
 " />
             </div>
           </div>

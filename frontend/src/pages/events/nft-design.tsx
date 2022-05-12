@@ -86,13 +86,26 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
+              > 
+                  <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
+                
+              About the Event<br />
+              </h1>
                 We are sure that all the money minded tech geeks out there
                 must’ve atleast once (if not repeatedly) in these past few
                 months played with the idea of buying/ curating or even
                 synthesizing a non-fungible token. So here’s your chance to let
                 your creativity run wild but under certain space and time
                 constraints, ironical ? We know.
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+                
+              </h1>
               </div>
             </div>
           </main>

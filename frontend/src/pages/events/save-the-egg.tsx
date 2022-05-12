@@ -87,9 +87,34 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
+                  <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+                This event is sponsored by GNGSE, confused?
+Well it is the “Guy Next to Gym Selling Eggs’’, he
+wants you to design a packaging that’ll keep his
+eggs safe no matter the height they are thrown
+from.
                 In this contestants have to create a platform on which eggs will
                 be dropped from a certain heights and they should make sure that
                 eggs won't break.
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Devanshi Tiwari (3rd B.tech CHE):9580887859
+
               </div>
             </div>
           </main>

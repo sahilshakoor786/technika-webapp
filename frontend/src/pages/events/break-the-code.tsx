@@ -87,11 +87,34 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
+                   <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
                 If you too brag of being a team player in your resumes then you
                 are at the right place,for round 1 a quiz will be conducted and
                 the top 5 teams will make it to round 2 where you have to solve
                 the mystery code through clues. Team to solve the clues at the
                 earliest wins.
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              In the first round, there will be a quiz from which 5 teams will advance to the next round. In 2nd round, clues will be given which will lead to other clues. In total there will be 5-6 clues and the team solving the last clue first will win.
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Ekansh (3rd btech CSE)
+: 9519830235
+  <br />
+
               </div>
             </div>
           </main>

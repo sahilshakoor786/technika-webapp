@@ -86,11 +86,33 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
+              >   <h1
+              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+            >
+              
+            About the Event<br />
+            </h1>
                 How many more times are you gonna go to the PlayStore hat in
                 hand begging for the solutions to your problems. It is high time
                 to take matters into your own hands and design an android
                 application for the problem statement that will be given to you.
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+
+                This event will be organized in two phases.
+First round: Participants will be given an idea. They have to implement that idea into an Android Application, based on their app, they will be screened for the next round.
+Second round: Selected participants will be given a code sample of the app. They have to debug the errors and the winner will be decided accordingly.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1> Swapnil Tripathi (3rd IT):6397334767
+ 
               </div>
             </div>
           </main>

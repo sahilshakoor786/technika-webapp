@@ -87,9 +87,92 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                A robot is designed in such a way to follow a pre-defined path
-                in the first round. The qualified teams then will have to make
-                robots clear the maze within minimum time in the second round.
+                   <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+              Teams have to build an autonomous robot, which can follow a black line and keep track of
+directions while going through the maze. The bot has to go through the mesh from the starting
+point to the ending point in the minimum possible time.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                SPECIFICATIONS OF THE FIELD AND LINES:<br />
+
+              </h1>
+              The COMPETITION FIELD consists of a 13X13 Sqr. ft. The surface of the track will be
+white with a black line marked on it . <br />
+● Arena has a Black track line. The track will be revealed on the spot. <br />
+● The base of the flex would be white with a black line of 25 mm in width. <br />
+● Track will have curved, discontinuous, crossed, 90 degree and 45 degree turns etc. <br />
+● Organizing committee will make every possible attempt to ensure that there are no bumps 
+between the tiles although there may be slight deviations in height and width of up to
+3mm. <br />
+● Competitors must be prepared to deal with these slight imperfections. There will be one
+START point and one FINISH point in the entire field. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                BOT SPECIFICATIONS :<br />
+
+              </h1>
+              ● The autonomous bot must fit into the box of dimensions 200mm *200mm *200mm
+(l*b*h). All measurements and dimensions have 10% tolerance. <br />
+● Robots can be wired/ wireless. In case of wired control, the wires should be slack all the
+time. <br />
+● Maximum weight should not exceed 1.5 kg, including battery. <br />
+● The bot must have sensors onboard to sense the black line on the arena. <br />
+● The machine must not be made from Lego parts or any kind of ready-made kit. If such a
+machine is found it will be disqualified from the competition. <br />
+● Each team is allowed to have only one bot. <br />
+● Extra 5 points will be added to the team score if bot will give a sound or visual signal
+after reaching the finish point. <br />
+
+● The bot should be fully autonomous, it should not include any Bluetooth module and
+should not by any means be controlled during the event. Team can use microcontrollers. <br />
+● The participants will be provided with 220 Volts, 50Hz standard AC supply. Participants
+will have to themselves arrange for an adapter or batteries. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                RULES :<br />
+
+              </h1>
+              ● This is a racing event so the fastest and most balanced robot will win. <br />
+● The robot should be as per the given specifications. <br />
+● Each team can have a maximum of 4 members. Students from different institutions can
+participate in forming their teams. <br />
+● Each member of the team must contain the identity card of his/her respected institute. <br />
+● The robot should not damage the arena. <br /> 
+● No test practice will be allowed in the main arena. Another test and calibration arena will
+be there. <br />
+● The robot must not leave behind any of its parts during the run; else it will result in
+disqualification. <br />
+● Unethical behavior could lead to disqualification. Coordinators have all the rights to take
+the final decision for any matter during the event. <br />
+● The judge's decision will be considered final. <br />
+● The coordination committee reserves the right to add or update any rule. <br />
+● If the design or any mechanism kind of aspect is unique in the BOT, the respective team
+will be awarded as ‘Best Design Certificate’ .(Note: This depends on the Official's 
+Decision.) <br /> 
+● Teams may register online for the event or spot registrations are also available. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                Coordinators: <br />
+              </h1>
+                Avi Kushwaha (3rd B.Tech ME): 83039 25425 <br />
+ Mahaveer Jain (3rd B.Tech CE): 
+           
+
+
+
+
               </div>
             </div>
           </main>

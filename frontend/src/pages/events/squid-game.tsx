@@ -87,8 +87,37 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                An event comprising of multiple rounds whose theme will revolve
-                around the popular Korean Netflix series “Squid Games”.
+                    <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+               Binge watched netflix’s squid games yet? If you haven’t
+then this puts you in major disadvantage in this event of
+ours because for once we are not being sassy with the
+event name but we literally mean it.Welcome to the Squid
+Games!(but with cars..you can take a sigh of relief)
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              •	It would be a 3 round event where participants would get eliminated after every round. <br />
+•	A team consisting of maximum 5 members and minimum 3 members.  <br />
+•	All the round would be similar to the games in the show. <br />
+•	Participants would be required to bring their own bots. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Avi Kushwaha  (3rd B.tech ME): 83039 25425 <br /> Mahaveer Jain (3rd B.tech CE): <br />
+
+             
+
               </div>
             </div>
           </main>
