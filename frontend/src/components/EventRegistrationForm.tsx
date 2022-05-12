@@ -28,11 +28,11 @@ export default function EventRegistrationForm({
 
   useEffect(() => {
     getUser();
-    setUserTscId(token?.user.tscId || "_");
   }, []);
 
   function getUser() {
     const token = getToken();
+    setUserTscId(token?.user.tscId || "");
     setToken(token);
     fetchEventDetails(token);
   }
