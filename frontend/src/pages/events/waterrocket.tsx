@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Blast off to mars
+                Waterrocket
               </h1>
 
               <div
@@ -86,10 +86,30 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
+              >   <h1
+              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+            >
+              
+            About the Event<br />
+            </h1>
+                A water rocket is a model rocket that uses water as its reaction mass. The water is forced out by a pressurized gas, typically compressed air. Like all rocket engines, it operates on the principle of Newton's third law of motion. Hobbyists typically use one or more plastic soft drink bottle as the rocket's pressure vessel.
+Elements of water rocket: Bottle (used as pressure vessel), gas (water rocket can be pressurized using a standard bicycle pump, capable of reaching at least 75 psi), nozzle, fins, landing system, launch tubes.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                The teams of 2-3 members have to prepare rocket models using
-                scrap water bottles. Winners will be decided on the basis of
-                distance covered when launched using air pressure.
+                
+                Guidelines: <br />
+              </h1>
+              Round one- the distance covered by the water rocket will be the judging criteria. <br />
+              Round two- teams qualifying round one will be judged on the basis of the landing system employed in their models i.e. how precisely the rocket hits the target placed on the ground. <br />
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>Himanshu(3rd B.tech ME):  6392430338  <br /> Vikas(3rd B.tech FT): 7248338611  <br /> Nikita(3rd B.tech PL):8303290354
+              
+
               </div>
             </div>
           </main>
@@ -112,7 +132,7 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM08" />
+              <EventRegistrationForm eventId="TSCFH02" />
             </div>
           </div>
         </>

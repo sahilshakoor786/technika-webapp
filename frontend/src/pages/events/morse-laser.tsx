@@ -86,9 +86,34 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
+              ><h1
+              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+            >
+              
+            About the Event<br />
+            </h1>
+                How would Christopher Nolan direct a game of
+dumb charades?
+ He would probably bring out laser pointers and
+display a morse code for the team to decipher
+the movie. We bring to you the morse’s laser
+because that’s exactly what it is.
                 The contestants would be provided with movie name written in
                 Morse's code and they have to guess the movie name .
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>Sudhanshu Tiwari (3rd B.tech ME):8175057261
+
+
               </div>
             </div>
           </main>

@@ -138,12 +138,13 @@ export default function EventsPage() {
                   text="LFR"
                 />
               </Link>
-              <Link href="/events/udaan">
+             
+              <Link href="/events/careaction">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
                   width={200}
                   height={300}
-                  text="Udaan"
+                  text="Ca-Reaction"
                 />
               </Link>
               <Link href="/events/blazing-wheel">
@@ -154,14 +155,7 @@ export default function EventsPage() {
                   text="Blazing Wheel"
                 />
               </Link>
-              <Link href="/events/free-flight">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Free Flight"
-                />
-              </Link>
+              
               <Link href="/events/robo-combat">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -187,14 +181,7 @@ export default function EventsPage() {
                   text="Path Pradarshak"
                 />
               </Link>
-              <Link href="/events/hover-mania">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Hover-Mania"
-                />
-              </Link>
+              
               <Link href="/events/kya-engineer">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -203,14 +190,15 @@ export default function EventsPage() {
                   text="Kya Engineer banega re tu"
                 />
               </Link>
-              <Link href="/events/waterrocket">
+              <Link href="/events/hover-mania">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
                   width={200}
                   height={300}
-                  text="Waterrocket"
+                  text="Hover-Mania"
                 />
               </Link>
+           
               <Link href="/events/soccerbot">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -219,6 +207,50 @@ export default function EventsPage() {
                   text="Soccerbot"
                 />
               </Link>
+             
+            </div>
+            <h1
+              className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+              style={{ marginTop: 25, marginBottom: 25 }}
+            >
+              Fly High
+            </h1>
+            <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+              
+              <Link href="/events/udaan">
+                <FancyImage
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                  width={200}
+                  height={300}
+                  text="Udaan"
+                />
+              </Link>
+              
+              
+              <Link href="/events/free-flight">
+                <FancyImage
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                  width={200}
+                  height={300}
+                  text="Free Flight"
+                />
+              </Link>
+              
+            
+
+              
+              
+            
+              <Link href="/events/waterrocket">
+                <FancyImage
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                  width={200}
+                  height={300}
+                  text="Waterrocket"
+                />
+              </Link>
+              
               <Link href="/events/simulation">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
@@ -242,6 +274,14 @@ export default function EventsPage() {
                   width={200}
                   height={300}
                   text="Break the code"
+                />
+              </Link>
+              <Link href="/events/flip-o-friend">
+                <FancyImage
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                  width={200}
+                  height={300}
+                  text="Flip-O-Friend"
                 />
               </Link>
               <Link href="/events/rasterize">
@@ -296,7 +336,7 @@ export default function EventsPage() {
             </h1>
             <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
               {" "}
-              \
+              
               <Link href="/events/bridge-o-mania">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
@@ -345,14 +385,7 @@ export default function EventsPage() {
                   text="Morse Laser"
                 />
               </Link>
-              <Link href="/events/flip-o-friend">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
-                  width={200}
-                  height={300}
-                  text="Flip-o-friend"
-                />
-              </Link>
+            
             </div>
           </div>
         </main>

@@ -87,6 +87,12 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
+        <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
                 Have you also been humiliated by the line "Kya fayda aisi
                 engineering ka ki pankha, cooler bhi na shi kar pao". If yes
                 then it’s your chance to learn how to repair ‘pankha cooler’
@@ -98,6 +104,37 @@ export default function Page() {
                 are a variety of reasons to do this. Reverse-engineering can be
                 used to learn how something works and to recreate the object or
                 create a similar object with added enhancement.
+                Reverse engineering include: <br />
+1) Information extraction : dismantling,close inspection, research. <br />
+2) Review : understanding the whole working process/ mechanism of the product. <br />
+3) Modification : including your ideas, innovations, or modifications in the product taking care
+of cost, reliability, and efficiency of the existing product. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              ● This will be a team event and each team can have a maximum of 3 participants.
+● There is no branch restriction for students. <br />
+● Event duration will be 60 minutes. <br />
+● Topics of research will be unveiled exactly one hour before the event. All the team
+members are expected to equally participate and do thorough research over topics
+allotted. <br />
+● Each team will be allotted a maximum of 5 minutes for presentation of their ideas and
+concepts. <br />
+● Unethical behavior could lead to disqualification. Coordinators have all the rights to take
+final decisions for any matter during the event. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              , 
+
+              Uday Gupta (3rd B.tech ME): 98077 48401  <br />
+              Mohd Aqib (3rd B.tech ME) : 7983632115 
               </div>
             </div>
           </main>

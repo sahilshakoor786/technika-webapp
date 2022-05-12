@@ -89,10 +89,46 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                A tech exhibition event in which various working models of
-                students from different colleges will be put on show in front of
-                a jury panel & they will be judged on the basis of presentation
-                skills & the efficiency of their models.
+                     <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+               It’s time to break out of the narrow
+confines of the textbook in our very
+prestigious “Tech Expo”, bring all those
+minuscule details regarding the various
+sciences that you used to cram up and
+vomit for the sake of grades, out where
+they belong that is in the real world as
+you make a working prototype to ace this
+event in front of our inter departmental
+judges panel. The criteria will be the
+level of tech used, exclusiveness, ease of
+working, the output of demo operation
+and explanation,answers provided by the
+exhibitor to the jury and completed to the
+conscience of the jury.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              •	Students from within or outside of the college will be given a chance to display their working models/projects. <br />
+•	Candidates can participate in teams as well as solo. <br /> 
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+Shikhar Trivedi(3rd B.tech ME):6387611363
+
+  <br />
+
+
               </div>
             </div>
           </main>

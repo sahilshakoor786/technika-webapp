@@ -89,11 +89,34 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                This event consist of two rounds in which first round will be of
-                multiple choice written test based on basic electrical circuits
-                and only the qualified contestants will make a team of 2 who
-                will be eligible for the next round in which participants will
-                provided with a problem based on electronics circuit .
+                  <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+              You must have heard of this phrase “No resistance
+can drop our potential” irrespective of the fact
+that you considered this a PJ or not, it is essential
+for you to understand the underlying electrical/
+electronics reference for this is what you’ll need
+here. In this event for round 1 participants have to
+undergo a MCQ test.qualified participants proceed
+to round 2 in which they will have to solve a basic
+problem on circuits.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+
               </div>
             </div>
           </main>

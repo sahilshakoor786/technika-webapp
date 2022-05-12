@@ -87,9 +87,37 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                This event will use the rational skills of the participants to
-                align the mirrors in such a way that the laser light on
-                consecutive reflections should reach the target
+                     <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+                If you have also grown up messing around
+with those 20 rupees laser torches that you’d
+get at the diwali fair then you are going to
+absolutely love this event of ours where you
+have to to arrange the given mirrors in order
+so that the laser light can be obtained on the
+required setup.  <br />
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+                •	A team should of 2-3 members. <br />
+ •	4 mirrors and a laser light would be provided to the participants and they have to arrange the given materials in such a way that the laser light reaches the target. <br />
+ <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Himanshu Srivastav (3rd B.tech PT)
+: 9305440483
+ <br />
+ 
               </div>
             </div>
           </main>

@@ -97,9 +97,30 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >Right from your Game Boys to nintendo wii to the cutting edge xboxes and playstations we’ve come a long way on this ever winding yet progressing road of the gaming industry right? But don’t worry we are not here to take you down a trip of nostalgia instead quite the opposite. Buckle up your seatbelts as we hurl you into the majesty of this new era with virtual reality taking the gaming universe by the storm.
+              >
 
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+                Right from your Game Boys to nintendo wii to the cutting edge xboxes and playstations we’ve come a long way on this ever winding yet progressing road of the gaming industry right? But don’t worry we are not here to take you down a trip of nostalgia instead quite the opposite. Buckle up your seatbelts as we hurl you into the majesty of this new era with virtual reality taking the gaming universe by the storm.
 
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Sugam Gupta (3rd B.tech PT): 8707417077
+  <br />
 
 
               </div>

@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Treasure Hunt
+                Ca-Reaction
               </h1>
 
               <div
@@ -67,12 +67,12 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">East Campus</span>
+                  <span className="text-slate-800 ">Mechanical Department</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">9 AM-11 AM</span>
+                  <span className="text-slate-800">11 A.M-1 P.M</span>
                 </div>
               </div>
 
@@ -86,43 +86,44 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              > 
-                  <h1
+              >
+                   <h1
                 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
                 
               About the Event<br />
               </h1>
-              Well what is any fest without a good, mind
-boggling, discombobulating (big fests need
-big words defining it) treasure hunt based on
-your technical and basic scientific knowledge.
-                This is a treasure hunt event in which the teams would be
-                provided with clues and these clues consecutively will lead to
-                the hidden parts which would be required to build the final
-                setup. The first team who decodes all the clues and build the
-                whole setup properly will be the winner of this event.
+              Pay homage to the vast motorcar collection
+we all used to have back in the good old days
+and put those chemistry classes to work in
+order to design a car which uses chemicals
+as fuel. Ain’t no better place than this to do
+your half-baked chemical reactions. <br />
                 <h1
                 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
                 
                 Guidelines: <br />
-              </h1> 
-              •	It can have maximum team member up to 6. With specified team Leader. <br />
-•	Each team would be given a specified task and team which complete the given task in minimum time will be the winner. <br />
-•	The competition area has a special place defined for the Treasure Hunt. <br />
-•	It has 1 Round and this final round. <br />
+              </h1>
+              •	It can be performed with a team of maximum number up to 4 (With a specified team leader).  <br />
+•	It has two Round. Round 1 is eliminating round and round 2 is final round. <br />                 
+•	Each team has to design the manually assembled car running on the basis of chemical energy fuels. <br />
+•	Chemical car will start on the START point and top teams reaching final destination in shortest time will go for final round and the same process will carry again.
+•	Competition area has a special place defined for the Chemical Car. <br />
+
 <h1
                 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
                 
                 Coordinators: <br />
               </h1>
-             
+              Mayank Khanna (3rd B.tech CHE) : 8299023118
 
 
-             Rajat Gupta (3rd B.tech ET):  9839120812  <br />
-             Deepak Singh Rathore (3rd B.tech ET): 9453112831 <br />
+
+
+
+
 
               </div>
             </div>
@@ -146,8 +147,7 @@ your technical and basic scientific knowledge.
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE09
-" />
+              <EventRegistrationForm eventId="TSCCE01" />
             </div>
           </div>
         </>

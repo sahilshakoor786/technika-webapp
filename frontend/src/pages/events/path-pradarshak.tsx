@@ -87,11 +87,41 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
+                  <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
                 Path Pradarshak is an innovation challenge where teams will come
                 up with their unique solutions on given problem statements. Team
                 have to prepare their solution taking care of it’s cost, demand,
                 and reliability. Ideas which will serve society in different
                 manner.
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              ● Each team can have a maximum of 3 participants. <br />
+● There is no restriction of branches for students. <br />
+● Each team has to present their ideas within 5 min of the Slide presentation. <br />
+● Teams without proper Slide presentation will not be considered. <br />
+● Unethical behavior could lead to disqualification. Coordinators have all the rights to take 
+final decisions for any matter during the event. <br />
+● Jury’s decision will be final. <br />
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+             
+
+Shweta Anand (3rd B.tech EE): 8303776392 <br /> Sambhab Garg (3rd B.tech CHE):  9760600000 <br />
+
+
               </div>
             </div>
           </main>

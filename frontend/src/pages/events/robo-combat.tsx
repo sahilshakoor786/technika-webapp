@@ -89,8 +89,27 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-              In this event, players will be required to put on their self-built robots in a 1X1 arena. The robot which will be equipped with best fighting & defending tactics will won the tournament.
-
+                   <h1
+           className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+         >
+           
+         About the Event<br />
+         </h1>
+         Enough of the harmless display of knowledge and the
+benevolence of the sciences. It’s time for destruction,
+some fireworks, some annihilation as your ruthless metal
+monsters go to work at each other in the arena that we
+have here waiting for you and your mean machines.
+Steady your defences and sharpen your weapons.
+May the best bot win! Let’s get ready to rumble!
+              <h1
+           className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+           >
+           Coordinators: <br />
+         </h1>
+           Pradum Pal (3rd B.tech ET):9571109091   <br />
+ Sudheer Singh (3rd B.tech ET):
+              6386066457  
               </div>
             </div>
           </main>

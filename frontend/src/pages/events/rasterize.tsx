@@ -87,8 +87,36 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                The contestant’s will be required to show off their web design
-                skills to replicate the original web design .
+                   <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+                If you too are picky of hot pink,salmon
+pink,magenta pink,baby pink etc and very
+particular of the visuals you serve on you
+website then rasterize is the place for you.
+Replicate the original frontend design
+shown to the closest possible degree and
+emerge as the winner.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              In this event, participants will get an opportunity to show off their front-end web design skills (HTML/CSS/JAVASCRIPT). All the participants will be shown a web design for a brief time and will be provided all relevant data (dimensions, color codes, etc).
+They have to replicate the original web design. A participant whose web design is closest to the original web design shown in the beginning will be considered winner.
+<h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Sumit (3rd btech IT)
+: 9568243301
+  <br />
               </div>
             </div>
           </main>

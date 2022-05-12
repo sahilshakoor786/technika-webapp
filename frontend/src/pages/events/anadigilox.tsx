@@ -88,8 +88,31 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>
+                Be a stiletto in a room full of flats they
+say. Be a circuit designer in a room full
+of coders they (ET engineers of course)
+say. Y’all will be given a problem for
+which you’ll whip up a solution of digital
+circuits.
                There is a team of 3-4 contestant’s required to design a digital circuit on the basis of given problem.
-
+               <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
               </div>
             </div>
           </main>

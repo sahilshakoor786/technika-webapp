@@ -88,9 +88,35 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >
+              >  <h1
+              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+            >
+              
+            About the Event<br />
+            </h1>
+                This one is for all the die hard COC ( I bet you
+read it as clash of clans on the first go right
+?) fans out there. Envision a city of your own,
+furnish it with all the basic amenities and map
+it out in the most elegant way possible. The
+jury shall decide the fate based on the visual
+appeal and financial efficiency of your city.
                 In this event contestant’s will be required to create a map of
                 the city with all the sufficient requirements.
+                <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Guidelines: <br />
+              </h1>
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Coordinators: <br />
+              </h1>
+              Kumar Satwik Kaushal (3rd B.tech ME):7880743737
+
               </div>
             </div>
           </main>
