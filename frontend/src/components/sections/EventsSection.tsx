@@ -1,11 +1,10 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 import React, { useEffect, useState } from "react";
 import FancyImage from "../FancyImage";
-import Image from "next/image";
 import PrimaryButton from "../PrimaryButton";
-import Link from "next/link";
 
 export default function EventsSection() {
   gsap.registerPlugin(ScrollTrigger);
@@ -96,9 +95,9 @@ export default function EventsSection() {
         />
 
         <span className="flex justify-center">
-          <a href="/events">
+          <Link href="/events">
             <PrimaryButton text="Explore more events" />
-          </a>
+          </Link>
         </span>
       </div>
 

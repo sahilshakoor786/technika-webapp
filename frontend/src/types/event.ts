@@ -1,3 +1,5 @@
+import { User } from "./user";
+
 export type Event = {
   eventId: string;
   eventName: string;
@@ -7,3 +9,9 @@ export type Event = {
   minTeamSize: number;
   maxTeamSize: number;
 };
+
+export type Registration = {
+  eventId: string;
+  event: Event;
+  teamMembersDetails: User[];
+}

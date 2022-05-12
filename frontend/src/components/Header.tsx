@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { getToken, Token } from "src/types/token";
@@ -81,12 +82,12 @@ export default function Header() {
         ></div>
       </div>
 
-      <a href="/">
+      <Link href="/">
         <img
           src="https://d2jf5yk8vvx0ti.cloudfront.net/images/logo.png"
-          className="absolute z-10 w-32 top-10 left-10"
+          className="absolute z-10 w-32 top-10 left-10 cursor-pointer"
         />
-      </a>
+      </Link>
 
       <div
         id="menu-links"
@@ -111,9 +112,12 @@ export default function Header() {
 
         <div className="flex flex-col">
           <span className="h-0 overflow-hidden">
-            <a href="/" className="menu-link text-3xl md:text-5xl">
-              Home
-            </a>
+            <span
+              className="menu-link text-3xl md:text-5xl"
+              onClick={toggleMenu}
+            >
+              <Link href="/">Home</Link>
+            </span>
           </span>
 
           <span className="h-0 overflow-hidden">
@@ -127,13 +131,12 @@ export default function Header() {
           </span>
 
           <span className="h-0 overflow-hidden">
-            <a
-              href="/#events"
+            <span
               className="menu-link text-3xl md:text-5xl"
               onClick={toggleMenu}
             >
-              Events
-            </a>
+              <Link href="/events">Events</Link>
+            </span>
           </span>
 
           <span className="h-0 overflow-hidden">
@@ -147,9 +150,12 @@ export default function Header() {
           </span>
           <span className="h-0 overflow-hidden">
             {!token?.token && (
-              <a href="/events" className="menu-link text-3xl md:text-5xl">
-                Register
-              </a>
+              <span
+                className="menu-link text-3xl md:text-5xl"
+                onClick={toggleMenu}
+              >
+                <Link href="/register">Register</Link>
+              </span>
             )}
           </span>
         </div>
@@ -169,11 +175,11 @@ export default function Header() {
       </button>
 
       {token?.token && (
-        <a href="/dashboard">
+        <Link href="/dashboard">
           <button className="fixed z-20 right-28 top-10 rounded-full overflow-hidden border-2 w-12 h-12 bg-blue-900 shadow-lg">
             <img src={token.user.picture} className="w-full h-full" />
           </button>
-        </a>
+        </Link>
       )}
     </header>
   );
