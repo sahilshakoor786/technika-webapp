@@ -211,6 +211,7 @@ export default function EventsPage() {
             <h1
               className="font-primary text-3xl md:text-5xl text-center 
               mt-32 mb-10"
+              style={{ marginTop: 45, marginBottom: 40 }}
             >
               Fly High
             </h1>
