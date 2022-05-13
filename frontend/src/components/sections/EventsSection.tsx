@@ -34,8 +34,15 @@ export default function EventsSection() {
         scale: 1,
         duration: 0.5,
         ease: "slow(0.7, 0.7, false)",
+       }),
+       gsap.timeline({ paused: true }).to("#event-4", {
+        top: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 0.5,
+        ease: "slow(0.7, 0.7, false)",
       }),
-      gsap.timeline({ paused: true }).to("#event-4", {
+      gsap.timeline({ paused: true }).to("#event-5", {
         top: 0,
         opacity: 1,
         scale: 1,
@@ -87,6 +94,20 @@ export default function EventsSection() {
           onClick={() => fancyPopup(3)}
           text="Electronics Hub"
         />
+        <FancyImage
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+          width={200}
+          height={300}
+          onClick={() => fancyPopup(0)}
+          text="Central Events"
+        />
+          <FancyImage
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+          width={200}
+          height={300}
+          onClick={() => fancyPopup(4)}
+          text="Fly High"
+        /> 
 
         <span className="flex justify-center">
           <Link href="/events">
@@ -176,8 +197,8 @@ export default function EventsSection() {
               <span>CSE Seminar Hall</span>
 
               <span>6PM-8PM</span>
-              <a href="/events/bike-show">
-                <span>BIKE SHOW</span>
+              <a href="/events/celebritytalk">
+                <span>Celebrity Talk</span>
               </a>
               <span>Tennis Lawn</span>
 
@@ -471,6 +492,73 @@ export default function EventsSection() {
                 <span>FLIP-O-FRIEND</span>
               </a>
               <span>DBMS Lab/Internet Lab</span>
+            </div>
+          </div>
+        </div>
+        <div
+          id="event-5"
+          className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
+        backdrop-blur opacity-0 px-5 z-40 scale-50"
+        >
+          <div className="w-full max-w-3xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <button
+              onClick={() => fancyPopup(4)}
+              className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
+              absolute rounded-full w-12 h-12 bg-pink-500 
+              shadow-lg grid place-items-center hover:scale-110"
+            >
+              <img
+                src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+                className="w-6 h-6"
+              />
+            </button>
+
+            <div
+              className="grid grid-cols-3 gap-2 px-10 overflow-scroll h-full
+            text-slate-600"
+            >
+              <span className="col-span-3 text-center my-10">
+                <span className="text-3xl">Fly High</span>
+              </span>
+              <span className="font-primary font-bold text-slate-800">
+                Time
+              </span>
+              <span className="font-primary font-bold text-slate-800 ">
+                Name
+              </span>
+              <span className="font-primary font-bold text-slate-800">
+                Venue
+              </span>
+
+              <span className="col-span-3 my-2 h-1 bg-slate-800"></span>
+
+              <span>5:00-7:00PM</span>
+              <a href="/events/udaan">
+                <span>Udaan</span>
+              </a>
+              <span>Parking Lot</span>
+
+              <span>5:00-7:00PM</span>
+              <a href="/events/free-flight">
+                <span>Free Flight</span>
+              </a>
+              <span>Mechanical Department</span>
+
+              <span>3:00PM-5:00PM</span>
+              <a href="/events/waterrocket">
+                <span>Waterrocket</span>
+              </a>
+              <span>West Campus</span>
+
+              <span>9:00-11:00AM</span>
+              <a href="/events/simulation">
+                <span>Simulation</span>
+              </a>
+              <span>Auditorium</span>
+
+       
+             
+              
             </div>
           </div>
         </div>
