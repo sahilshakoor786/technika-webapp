@@ -17,7 +17,7 @@ export default function EventsPage() {
           shadow-lg py-6 px-2 space-y-2 rounded-lg"
           >
             <ul
-              className="nav nav-tabs flex flex-col m-auto md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
+              className="nav nav-tabs flex flex-col m-auto bg-white md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
               id="tabs-tab"
               role="tablist"
             >
@@ -36,9 +36,9 @@ export default function EventsPage() {
       py-3
       my-2
       hover:border-transparent hover:bg-yellow-600
+      hover:text-yellow-200
       focus:border-transparent
-      active
-      text-black
+      text-yellow-400
     "
                   id="tabs-event-tab"
                   data-bs-toggle="pill"
@@ -65,8 +65,9 @@ export default function EventsPage() {
       py-3
       my-2
       hover:border-transparent hover:bg-red-600
+      hover:text-red-200
       focus:border-transparent
-      text-black
+      text-red-400
     "
                   id="tabs-mech-tab"
                   data-bs-toggle="pill"
@@ -93,8 +94,9 @@ export default function EventsPage() {
       py-3
       my-2
       hover:border-transparent hover:bg-blue-600
+      hover:text-blue-200
       focus:border-transparent
-      text-black
+      text-blue-400
     "
                   id="tabs-fly-tab"
                   data-bs-toggle="pill"
@@ -120,9 +122,10 @@ export default function EventsPage() {
       px-6
       py-3
       my-2
-      hover:border-transparent hover:bg-green-600
+     hover:border-transparent hover:bg-green-600
+      hover:text-green-200
       focus:border-transparent
-      text-black
+      text-green-400
     "
                   id="tabs-code-tab"
                   data-bs-toggle="pill"
@@ -149,8 +152,9 @@ export default function EventsPage() {
       py-3
       my-2
       hover:border-transparent hover:bg-purple-600
+      hover:text-purple-200
       focus:border-transparent
-      text-black
+      text-purple-400
     "
                   id="tabs-elect-tab"
                   data-bs-toggle="pill"
