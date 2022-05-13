@@ -141,7 +141,8 @@ export default function DashboardPage() {
 
   function formatDate(dateString: string) {
     var d = new Date(dateString);
-    return `${d.getDate()}/${d.getMonth()} ${d.getHours()}:${d.getMinutes()}`;
+    debugger;
+    return `${d.getDate()}/5 ${d.getHours()}:${d.getMinutes()}`;
   }
 
   return (
