@@ -34,8 +34,8 @@ export default function EventsSection() {
         scale: 1,
         duration: 0.5,
         ease: "slow(0.7, 0.7, false)",
-       }),
-       gsap.timeline({ paused: true }).to("#event-4", {
+      }),
+      gsap.timeline({ paused: true }).to("#event-4", {
         top: 0,
         opacity: 1,
         scale: 1,
@@ -72,7 +72,6 @@ export default function EventsSection() {
       </h1>
 
       <div className="flex justify-center items-center space-y-10 md:space-x-10 flex-wrap">
-       
         <FancyImage
           src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
           width={200}
@@ -101,20 +100,20 @@ export default function EventsSection() {
           onClick={() => fancyPopup(0)}
           text="Central Events"
         />
-          <FancyImage
-          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+        <FancyImage
+          src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
           width={200}
           height={300}
           onClick={() => fancyPopup(4)}
           text="Fly High"
-        /> 
-
-        <span className="flex justify-center">
-          <Link href="/events">
-            <PrimaryButton text="Explore more events" />
-          </Link>
-        </span>
+        />
       </div>
+
+      <span className="flex justify-center mt-10">
+        <Link href="/events">
+          <PrimaryButton text="Explore more events" />
+        </Link>
+      </span>
 
       <>
         <div
@@ -555,10 +554,6 @@ export default function EventsSection() {
                 <span>Simulation</span>
               </a>
               <span>Auditorium</span>
-
-       
-             
-              
             </div>
           </div>
         </div>
