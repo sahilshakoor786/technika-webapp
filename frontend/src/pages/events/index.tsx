@@ -83,7 +83,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/celebritytalk">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/bike+show.jpg"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/celebritytalkcover-transformed.jpeg"
                   width={200}
                   height={300}
                   text="Celebrity Talk"
