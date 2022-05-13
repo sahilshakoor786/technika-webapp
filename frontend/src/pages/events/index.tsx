@@ -59,7 +59,7 @@ export default function EventsPage() {
 
               <Link href="/events/tech-expo">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/techexpo.jpg"
                   width={200}
                   height={300}
                   text="Tech Expo"
