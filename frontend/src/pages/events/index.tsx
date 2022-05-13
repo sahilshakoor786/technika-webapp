@@ -390,7 +390,7 @@ export default function EventsPage() {
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   <Link href="/events/udaan">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                       width={200}
                       height={300}
                       text="Udaan"
@@ -399,7 +399,7 @@ export default function EventsPage() {
 
                   <Link href="/events/free-flight">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                       width={200}
                       height={300}
                       text="Free Flight"
@@ -408,7 +408,7 @@ export default function EventsPage() {
 
                   <Link href="/events/waterrocket">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                       width={200}
                       height={300}
                       text="Waterrocket"
@@ -417,7 +417,7 @@ export default function EventsPage() {
 
                   <Link href="/events/simulation">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                       width={200}
                       height={300}
                       text="Simulation"
