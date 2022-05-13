@@ -106,7 +106,44 @@ from.
               >
                 
                 Guidelines: <br />
+
               </h1>
+              ● No kits or pre-made designs may be used. The structure must be the individual’s invention.  <br />
+
+              ● The structure must be completely released (no strings or other attachments) NO PARACHUTES! <br />
+
+              ● The structure must land in a designated target area. <br />
+
+              ● No gases (i.e. helium) other than air can be present in the structure when it is weighed. <br />
+
+              ● Volume will be calculated based on the outside shape of the container (inside air 
+volume/space will not be subtracted out). <br />
+● Grade A Large eggs will be supplied at the competition. You cannot bring your own egg. <br />
+
+● All containers will be inspected by judges before they are dropped. <br />
+
+● Once an egg is weighed-in with the structure, that egg cannot be exchanged with another. <br />
+
+● The score will be based on the following rubric: <br />
+
+25 points if the egg does not fully crack after the first drop <br />
+30 points if the egg does not fully crack after the second drop <br />
+
+20 points if the egg shows no signs of any form of cracking <br />
+10 points if the container is less than 1 pound <br />
+
+20 points if the container is less than 0.5 pounds  <br />
+
+● The containers will be dropped from one story. The second and final drop will be from two stories. Only two drops will be made. <br />
+
+● The egg must be accessible after the first drop to check for any cracking. <br />
+
+● The level that an egg is cracked (either fully or partially) will be determined by the 
+judges. A partially cracked egg will have slight opening but not leaking. A fully cracked egg is when the inside contents of the egg have been leaked. <br />
+
+● The winner will be determined by the container with the greatest total score. <br />
+
+
               <h1
                 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >

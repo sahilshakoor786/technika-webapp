@@ -106,19 +106,36 @@ taking capacity and strength.
                 
                 Guidelines: <br />
               </h1>
-              • Each bridge must be able to hold the weight of the testing equipment, which is about 5 lbs. br
-       <br />
-       • The bridges must be able to stand freely on the supporting bars, spaced 22 inches apart. No
-hooking, gluing, or otherwise fastening the bridges to the supports will be allowed. <br />
-• Bridge must contain a continuous roadway capable of allowing a “matchbox” type car to roll
-completely across the bridge without stopping or falling through. <br />
-• Popsicle sticks are limited to a glued ½” overlap at all connections. Open gaps between
-adjacent sticks is allowable. <br />
-• Bridges will be loaded using a ½” diameter steel rod placed on top of the roadway at the center of
-the bridge. All bridges must be able to accommodate this rod (refer to the figures and photos shown
-on the following pages). <br />
-• Bridges must meet the additional requirements shown on the following pages for connection and
-geometric limitations. <br />
+              •  Maximum 3 Members per team. Participants from different institutions can form a team.  <br />
+
+              • Participants should not bring their own scale, pencil and cutter which they require at the time of the event. <br />
+
+              • Adhesives and sticks will be provided on the spot.<br />
+
+              • Use of material other than given is not permitted.<br />
+
+              • It is not compulsory to use all the sticks.<br />
+
+              • Time is limited to minimum 2 hours.<br />
+              • Shape: Structure could be of absolutely any shape satisfying the above constraints.  <br />
+              • Once the structure is weighed, you are not allowed to modify your structure in any way.<br />
+
+              • If the structure fails to satisfy any of the above constraints then it will be summarily rejected. <br />
+
+              • Any structure that is not ready within the time limit will not be evaluated. <br />
+
+              • Judges' decision shall be final and binding on all. <br />
+
+              • Maximum no of member at a joint should be 4. <br />
+              • Length (clear span): 40 cm.  <br />
+ 
+              • Bearing (on supports): 2-2.5 cm <br />
+
+              • Width: 10 cm <br />
+ • There should not be any variations in the dimensions of the bridge, Limiting to an error of 1 cm in width and 2 cm in length. <br />
+ 
+
+
               <h1
                 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >

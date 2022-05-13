@@ -107,6 +107,15 @@ circuits.
                 
                 Guidelines: <br />
               </h1>
+              ● There should be at most 3 members in a team. <br />
+              ●  The circuit has to be designed using digital devices. <br />
+              ● Microcontrollers and microprocessors are not allowed. <br />
+              ● The circuit can be made on breadboard or soldered as per the participants wish. <br />
+              ● Participants are required to present a detailed description of their circuit. <br />
+              ● The participants will have to explain the circuit they have made. <br/>
+              ● The decision of the judging committee will be final and bounding. <br />
+              ● Participants must bring the D.C. power source with them. The organisers will provide 220V A.C. supply. No adapters will be provided; the participants must bring their own. <br />
+
               <h1
                 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >

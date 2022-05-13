@@ -106,10 +106,54 @@ to round 2 in which they will have to solve a basic
 problem on circuits.
 <h1
                 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
+                >
                 
                 Guidelines: <br />
-              </h1>
+                </h1>
+                ● After assessing the question, team members need to make the list of the 
+components by their own along with the circuit diagram and present it to the 
+jury members. After that they will be allowed to pick up the necessary 
+components and implement the circuit and present the output to the jury 
+members. <br />
+
+● Use of mobile phones or any other entity having internet connectivity is 
+prohibited and will be immediately expelled if caught.  <br />
+
+● Partial marking would be done to according to the circuit completed and the 
+output presented. <br />
+
+● Time limit for the competition is 30 min.  <br />
+● Circuit implemented on paper without taking hints: 20 points  <br />
+
+● Circuit implemented on bread board with correct output 
+presented: 30 points  <br />
+
+● Circuit implemented on bread board with distorted or indecent 
+output presented: 15 points  <br />
+
+● And hints to be provided if asked for with deduction of points. <br />
+
+Per hint: -15 points <br />
+
+
+
+● Maximum 3 members are allowed in a team. <br />
+
+● Any number of teams can participate from one college/school  <br />
+● Professionals are not allowed. Only students can participate.  <br />
+
+● Participants are required to bring their school/college ID Card. <br />
+
+● A team member can’t be a part of more than one team. <br />
+
+● Bring your college/student I-Card at the time of competition. <br /> 
+
+● Any of the above-mentioned rules, if found violated, teams would not 
+be allowed to participate in the competition. <br />
+
+● In any case, Jury’s decision is final and binding for all. <br />
+
+
               <h1
                 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
