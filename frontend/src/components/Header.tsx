@@ -119,6 +119,7 @@ export default function Header() {
               <Link href="/">Home</Link>
             </span>
           </span>
+          
 
           <span className="h-0 overflow-hidden">
             <a
@@ -128,6 +129,14 @@ export default function Header() {
             >
               About
             </a>
+          </span>
+          <span className="h-0 overflow-hidden">
+            <span
+              className="menu-link text-3xl md:text-5xl"
+              onClick={toggleMenu}
+            >
+              <Link href="/team">Team</Link>
+            </span>
           </span>
 
           <span className="h-0 overflow-hidden">
