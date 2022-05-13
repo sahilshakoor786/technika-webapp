@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Bike Show
+                Celebrity Talk
               </h1>
 
               <div
@@ -55,7 +55,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
                 style={{
                   height: 500,
-                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/bikestunt.jpeg")`,
+                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/celebritytalk.jfif")`,
                 }}
               >
                 <span className="col-span-2"></span>
@@ -68,6 +68,10 @@ export default function Page() {
                     Venue
                   </span>
                   <span className="text-slate-800 ">Tennis Lawn</span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Date
+                  </span>
+                  <span className="text-slate-800">21 May</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
@@ -87,8 +91,7 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                A event in which the professional stuntmen performs a show with
-                their bikes
+               An event in which a celebrity would perform and motivate the participants.
               </div>
             </div>
           </main>

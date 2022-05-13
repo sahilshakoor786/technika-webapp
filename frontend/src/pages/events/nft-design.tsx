@@ -68,6 +68,10 @@ export default function Page() {
                     Venue
                   </span>
                   <span className="text-slate-800 ">CSE Seminar Hall</span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Date
+                  </span>
+                  <span className="text-slate-800">21 May</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
@@ -106,6 +110,14 @@ export default function Page() {
                 Guidelines: <br />
                 
               </h1>
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+                Cordinators: <br />
+                
+              </h1>
+              Neeraj Kumar(3rd CSE):7355287288
               </div>
             </div>
           </main>

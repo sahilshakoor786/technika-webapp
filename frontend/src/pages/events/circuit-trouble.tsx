@@ -70,6 +70,10 @@ export default function Page() {
                   <span className="text-slate-800 ">
                     Electronics Department
                   </span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Date
+                  </span>
+                  <span className="text-slate-800">22 May</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time

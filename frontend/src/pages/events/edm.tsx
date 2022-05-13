@@ -70,11 +70,15 @@ export default function Page() {
                   <span className="text-slate-800 ">
                     Parking Lot
                   </span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Date
+                  </span>
+                  <span className="text-slate-800">22 May</span>
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">8:30 PM-10:30 PM</span>
+                  <span className="text-slate-800">8:30 PM-10:00 PM</span>
                 </div>
               </div>
 

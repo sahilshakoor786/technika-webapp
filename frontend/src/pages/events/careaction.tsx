@@ -72,6 +72,10 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Date
+                  </span>
+                  <span className="text-slate-800">20 May</span>
                   <span className="text-slate-800">11 A.M-1 P.M</span>
                 </div>
               </div>

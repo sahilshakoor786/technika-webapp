@@ -81,12 +81,12 @@ export default function EventsPage() {
                   text="NFT Design"
                 />
               </Link>
-              <Link href="/events/bike-show">
+              <Link href="/events/celebritytalk">
                 <FancyImage
                   src="https://d2jf5yk8vvx0ti.cloudfront.net/images/bike+show.jpg"
                   width={200}
                   height={300}
-                  text="Bike Show"
+                  text="Celebrity Talk"
                 />
               </Link>
               <Link href="/events/treasure-hunt">
