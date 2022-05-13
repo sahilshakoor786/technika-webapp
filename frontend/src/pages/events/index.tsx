@@ -26,7 +26,7 @@ export default function EventsPage() {
             <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
               <Link href="/events/junk-yard">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-serhii-bondarchuk-11849108.jpg"
                   width={200}
                   height={300}
                   text="Junk Yard"
@@ -34,7 +34,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/quiz-me-more">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/quiz+me+more.webp"
                   width={200}
                   height={300}
                   text="Quiz me more"
@@ -42,7 +42,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/laser-o-reflect">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-eva-elijas-7629314.jpg"
                   width={200}
                   height={300}
                   text="Laser-o-Reflect"
@@ -50,7 +50,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/situation-room">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/situation+room.jpg"
                   width={200}
                   height={300}
                   text="Situation Room"
@@ -67,7 +67,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/squid-game">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/squidgame.webp"
                   width={200}
                   height={300}
                   text="Squid Game"
@@ -75,7 +75,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/nft-design">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/nft.jpg"
                   width={200}
                   height={300}
                   text="NFT Design"
@@ -83,7 +83,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/bike-show">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/bike+show.jpg"
                   width={200}
                   height={300}
                   text="Bike Show"
@@ -91,7 +91,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/treasure-hunt">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/treasure+hunt.jpg"
                   width={200}
                   height={300}
                   text="Treasure Hunt"
@@ -99,7 +99,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/fun-fare">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-nasim-didar-3619724.jpg"
                   width={200}
                   height={300}
                   text="Fun Fare"
@@ -107,7 +107,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/edm">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-deane-bayas-9534913.jpg"
                   width={200}
                   height={300}
                   text="EDM"
@@ -115,7 +115,7 @@ export default function EventsPage() {
               </Link>
               <Link href="/events/vr-gaming">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-mikhail-nilov-7887258.jpg"
                   width={200}
                   height={300}
                   text="VR gaming"
@@ -184,7 +184,7 @@ export default function EventsPage() {
 
               <Link href="/events/kya-engineer">
                 <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Kya-Gunda-Banega-Re-Tu.jpg"
                   width={200}
                   height={300}
                   text="Kya Engineer banega re tu"

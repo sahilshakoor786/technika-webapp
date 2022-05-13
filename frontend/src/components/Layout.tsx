@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: ReactElement }) {
   return (
     <>
       <Head>
-        <title>Tecknika</title>
+        <title>Technika</title>
         <meta
           name="description"
           content="Technical Sub-Council HBTU takes initiative, promotes, conducts, and
