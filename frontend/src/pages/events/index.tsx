@@ -16,366 +16,551 @@ export default function EventsPage() {
         bg-blue-800/10 backdrop-blur flex flex-col justify-center
           shadow-lg py-6 px-2 space-y-2 rounded-lg"
           >
-            <h1
-              className="font-primary text-3xl md:text-5xl text-center 
+            <ul
+              className="nav nav-tabs flex flex-col m-auto md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
+              id="tabs-tab"
+              role="tablist"
+            >
+              <li className="nav-item" role="presentation">
+                <a
+                  href="#tabs-event"
+                  className="
+      nav-link
+      block
+      font-medium
+      text-lg
+      leading-tight
+      uppercase
+      border-x-0 border-t-0 border-b-2 border-transparent
+      px-6
+      py-3
+      my-2
+      hover:border-transparent hover:bg-yellow-600
+      focus:border-transparent
+      active
+      text-black
+    "
+                  id="tabs-event-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tabs-event"
+                  role="tab"
+                  aria-controls="tabs-event"
+                  aria-selected="true"
+                >
+                  Central Events
+                </a>
+              </li>
+              <li className="nav-item" role="presentation">
+                <a
+                  href="#tabs-mech"
+                  className="
+      nav-link
+      block
+      font-medium
+      text-lg
+      leading-tight
+      uppercase
+      border-x-0 border-t-0 border-b-2 border-transparent
+      px-6
+      py-3
+      my-2
+      hover:border-transparent hover:bg-red-600
+      focus:border-transparent
+      text-black
+    "
+                  id="tabs-mech-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tabs-mech"
+                  role="tab"
+                  aria-controls="tabs-mech"
+                  aria-selected="false"
+                >
+                  Mech Marvel
+                </a>
+              </li>
+              <li className="nav-item" role="presentation">
+                <a
+                  href="#tabs-fly"
+                  className="
+      nav-link
+      block
+      font-medium
+      text-lg
+      leading-tight
+      uppercase
+      border-x-0 border-t-0 border-b-2 border-transparent
+      px-6
+      py-3
+      my-2
+      hover:border-transparent hover:bg-blue-600
+      focus:border-transparent
+      text-black
+    "
+                  id="tabs-fly-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tabs-fly"
+                  role="tab"
+                  aria-controls="tabs-fly"
+                  aria-selected="false"
+                >
+                  Fly High
+                </a>
+              </li>
+              <li className="nav-item" role="presentation">
+                <a
+                  href="#tabs-code"
+                  className="
+       nav-link
+      block
+      font-medium
+      text-lg
+      leading-tight
+      uppercase
+      border-x-0 border-t-0 border-b-2 border-transparent
+      px-6
+      py-3
+      my-2
+      hover:border-transparent hover:bg-green-600
+      focus:border-transparent
+      text-black
+    "
+                  id="tabs-code-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tabs-code"
+                  role="tab"
+                  aria-controls="tabs-code"
+                  aria-selected="false"
+                >
+                  Game of Codes
+                </a>
+              </li>
+              <li className="nav-item" role="presentation">
+                <a
+                  href="#tabs-elect"
+                  className="
+       nav-link
+      block
+      font-medium
+      text-lg
+      leading-tight
+      uppercase
+      border-x-0 border-t-0 border-b-2 border-transparent
+      px-6
+      py-3
+      my-2
+      hover:border-transparent hover:bg-purple-600
+      focus:border-transparent
+      text-black
+    "
+                  id="tabs-elect-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tabs-elect"
+                  role="tab"
+                  aria-controls="tabs-elect"
+                  aria-selected="false"
+                >
+                  Electronics Hub
+                </a>
+              </li>
+            </ul>
+            <div className="tab-content" id="tabs-tabContent">
+              <div
+                className="tab-pane fade show active"
+                id="tabs-event"
+                role="tabpanel"
+                aria-labelledby="tabs-event-tab"
+              >
+                <h1
+                  className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-            >
-              Central Events
-            </h1>
+                >
+                  Central Events
+                </h1>
 
-            <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-              <Link href="/events/junk-yard">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-serhii-bondarchuk-11849108.jpg"
-                  width={200}
-                  height={300}
-                  text="Junk Yard"
-                />
-              </Link>
-              <Link href="/events/quiz-me-more">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/quiz+me+more.webp"
-                  width={200}
-                  height={300}
-                  text="Quiz me more"
-                />
-              </Link>
-              <Link href="/events/laser-o-reflect">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-eva-elijas-7629314.jpg"
-                  width={200}
-                  height={300}
-                  text="Laser-o-Reflect"
-                />
-              </Link>
-              <Link href="/events/situation-room">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/situation+room.jpg"
-                  width={200}
-                  height={300}
-                  text="Situation Room"
-                />
-              </Link>
+                <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+                  <Link href="/events/junk-yard">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-serhii-bondarchuk-11849108.jpg"
+                      width={200}
+                      height={300}
+                      text="Junk Yard"
+                    />
+                  </Link>
+                  <Link href="/events/quiz-me-more">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/quiz+me+more.webp"
+                      width={200}
+                      height={300}
+                      text="Quiz me more"
+                    />
+                  </Link>
+                  <Link href="/events/laser-o-reflect">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-eva-elijas-7629314.jpg"
+                      width={200}
+                      height={300}
+                      text="Laser-o-Reflect"
+                    />
+                  </Link>
+                  <Link href="/events/situation-room">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/situation+room.jpg"
+                      width={200}
+                      height={300}
+                      text="Situation Room"
+                    />
+                  </Link>
 
-              <Link href="/events/tech-expo">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/techexpo.jpg"
-                  width={200}
-                  height={300}
-                  text="Tech Expo"
-                />
-              </Link>
-              <Link href="/events/squid-game">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/squidgame.webp"
-                  width={200}
-                  height={300}
-                  text="Squid Game"
-                />
-              </Link>
-              <Link href="/events/nft-design">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/nft.jpg"
-                  width={200}
-                  height={300}
-                  text="NFT Design"
-                />
-              </Link>
-              <Link href="/events/celebritytalk">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/celebritytalkcover-transformed.jpeg"
-                  width={200}
-                  height={300}
-                  text="Celebrity Talk"
-                />
-              </Link>
-              <Link href="/events/treasure-hunt">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/treasure+hunt.jpg"
-                  width={200}
-                  height={300}
-                  text="Treasure Hunt"
-                />
-              </Link>
-              <Link href="/events/fun-fare">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-nasim-didar-3619724.jpg"
-                  width={200}
-                  height={300}
-                  text="Fun Fare"
-                />
-              </Link>
-              <Link href="/events/edm">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-deane-bayas-9534913.jpg"
-                  width={200}
-                  height={300}
-                  text="EDM"
-                />
-              </Link>
-              <Link href="/events/vr-gaming">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-mikhail-nilov-7887258.jpg"
-                  width={200}
-                  height={300}
-                  text="VR gaming"
-                />
-              </Link>
-            </div>
-            <h1
-              className="font-primary text-3xl md:text-5xl text-center 
+                  <Link href="/events/tech-expo">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/techexpo.jpg"
+                      width={200}
+                      height={300}
+                      text="Tech Expo"
+                    />
+                  </Link>
+                  <Link href="/events/squid-game">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/squidgame.webp"
+                      width={200}
+                      height={300}
+                      text="Squid Game"
+                    />
+                  </Link>
+                  <Link href="/events/nft-design">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/nft.jpg"
+                      width={200}
+                      height={300}
+                      text="NFT Design"
+                    />
+                  </Link>
+                  <Link href="/events/celebritytalk">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/celebritytalkcover-transformed.jpeg"
+                      width={200}
+                      height={300}
+                      text="Celebrity Talk"
+                    />
+                  </Link>
+                  <Link href="/events/treasure-hunt">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/treasure+hunt.jpg"
+                      width={200}
+                      height={300}
+                      text="Treasure Hunt"
+                    />
+                  </Link>
+                  <Link href="/events/fun-fare">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-nasim-didar-3619724.jpg"
+                      width={200}
+                      height={300}
+                      text="Fun Fare"
+                    />
+                  </Link>
+                  <Link href="/events/edm">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-deane-bayas-9534913.jpg"
+                      width={200}
+                      height={300}
+                      text="EDM"
+                    />
+                  </Link>
+                  <Link href="/events/vr-gaming">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-mikhail-nilov-7887258.jpg"
+                      width={200}
+                      height={300}
+                      text="VR gaming"
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="tabs-mech"
+                role="tabpanel"
+                aria-labelledby="tabs-mech-tab"
+              >
+                <h1
+                  className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 mb-10"
-              style={{ marginTop: 45, marginBottom: 40 }}
-            >
-              Mech Marvel
-            </h1>
-            <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-              <Link href="/events/lfr">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="LFR"
-                />
-              </Link>
+                  style={{ marginTop: 45, marginBottom: 40 }}
+                >
+                  Mech Marvel
+                </h1>
+                <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+                  <Link href="/events/lfr">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="LFR"
+                    />
+                  </Link>
 
-              <Link href="/events/careaction">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Ca-Reaction"
-                />
-              </Link>
-              <Link href="/events/blazing-wheel">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Blazing Wheel"
-                />
-              </Link>
+                  <Link href="/events/careaction">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Ca-Reaction"
+                    />
+                  </Link>
+                  <Link href="/events/blazing-wheel">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Blazing Wheel"
+                    />
+                  </Link>
 
-              <Link href="/events/robo-combat">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Robo Combat"
-                />
-              </Link>
-              <Link href="/events/thread-ripper">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Thread Ripper"
-                />
-              </Link>
+                  <Link href="/events/robo-combat">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Robo Combat"
+                    />
+                  </Link>
+                  <Link href="/events/thread-ripper">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Thread Ripper"
+                    />
+                  </Link>
 
-              <Link href="/events/path-pradarshak">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Path Pradarshak"
-                />
-              </Link>
+                  <Link href="/events/path-pradarshak">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Path Pradarshak"
+                    />
+                  </Link>
 
-              <Link href="/events/kya-engineer">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Kya-Gunda-Banega-Re-Tu.jpg"
-                  width={200}
-                  height={300}
-                  text="Kya Engineer banega re tu"
-                />
-              </Link>
-              <Link href="/events/hover-mania">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Hover-Mania"
-                />
-              </Link>
+                  <Link href="/events/kya-engineer">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Kya-Gunda-Banega-Re-Tu.jpg"
+                      width={200}
+                      height={300}
+                      text="Kya Engineer banega re tu"
+                    />
+                  </Link>
+                  <Link href="/events/hover-mania">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Hover-Mania"
+                    />
+                  </Link>
 
-              <Link href="/events/soccerbot">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Soccerbot"
-                />
-              </Link>
-            </div>
-            <h1
-              className="font-primary text-3xl md:text-5xl text-center 
+                  <Link href="/events/soccerbot">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Soccerbot"
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="tabs-fly"
+                role="tabpanel"
+                aria-labelledby="tabs-fly-tab"
+              >
+                <h1
+                  className="font-primary text-3xl md:text-5xl text-center 
               mt-32 mb-10"
-              style={{ marginTop: 45, marginBottom: 40 }}
-            >
-              Fly High
-            </h1>
-            <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-              <Link href="/events/udaan">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Udaan"
-                />
-              </Link>
+                  style={{ marginTop: 45, marginBottom: 40 }}
+                >
+                  Fly High
+                </h1>
+                <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+                  <Link href="/events/udaan">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Udaan"
+                    />
+                  </Link>
 
-              <Link href="/events/free-flight">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Free Flight"
-                />
-              </Link>
+                  <Link href="/events/free-flight">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Free Flight"
+                    />
+                  </Link>
 
-              <Link href="/events/waterrocket">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Waterrocket"
-                />
-              </Link>
+                  <Link href="/events/waterrocket">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Waterrocket"
+                    />
+                  </Link>
 
-              <Link href="/events/simulation">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Simulation"
-                />
-              </Link>
-            </div>
-            <h1
-              className="font-primary text-3xl md:text-5xl text-center 
+                  <Link href="/events/simulation">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Simulation"
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="tabs-code"
+                role="tabpanel"
+                aria-labelledby="tabs-code-tab"
+              >
+                <h1
+                  className="font-primary text-3xl md:text-5xl text-center 
               mt-32 mb-10"
-              style={{ marginTop: 45, marginBottom: 40 }}
-            >
-              Game Of Codes
-            </h1>
-            <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-              <Link href="/events/break-the-code">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Break the code"
-                />
-              </Link>
-              <Link href="/events/flip-o-friend">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Flip-O-Friend"
-                />
-              </Link>
-              <Link href="/events/rasterize">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="RASTERIZE"
-                />
-              </Link>
+                  style={{ marginTop: 45, marginBottom: 40 }}
+                >
+                  Game Of Codes
+                </h1>
+                <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+                  <Link href="/events/break-the-code">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Break the code"
+                    />
+                  </Link>
+                  <Link href="/events/flip-o-friend">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Flip-O-Friend"
+                    />
+                  </Link>
+                  <Link href="/events/rasterize">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="RASTERIZE"
+                    />
+                  </Link>
 
-              <Link href="/events/run-time-terror">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Run time terror"
-                />
-              </Link>
-              <Link href="/events/red-pencil">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Red Pencil"
-                />
-              </Link>
-              <Link href="/events/blank-coding">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Blank Coding"
-                />
-              </Link>
+                  <Link href="/events/run-time-terror">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Run time terror"
+                    />
+                  </Link>
+                  <Link href="/events/red-pencil">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Red Pencil"
+                    />
+                  </Link>
+                  <Link href="/events/blank-coding">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Blank Coding"
+                    />
+                  </Link>
 
-              <Link href="/events/programming-date">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
-                  width={200}
-                  height={300}
-                  text="Programming Date"
-                />
-              </Link>
-            </div>
-            <h1
-              className="font-primary text-3xl md:text-5xl text-center 
+                  <Link href="/events/programming-date">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      width={200}
+                      height={300}
+                      text="Programming Date"
+                    />
+                  </Link>
+                </div>
+              </div>
+
+              <div
+                className="tab-pane fade"
+                id="tabs-elect"
+                role="tabpanel"
+                aria-labelledby="tabs-elect-tab"
+              >
+                <h1
+                  className="font-primary text-3xl md:text-5xl text-center 
               mt-32 mb-10"
-              style={{ marginTop: 45, marginBottom: 40 }}
-            >
-              Electronics Hub
-            </h1>
-            <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-              {" "}
-              <Link href="/events/bridge-o-mania">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
-                  width={200}
-                  height={300}
-                  text="Bridge-o-mania"
-                />
-              </Link>
-              <Link href="/events/city-maestro">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
-                  width={200}
-                  height={300}
-                  text="City Maestro"
-                />
-              </Link>
-              <Link href="/events/save-the-egg">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
-                  width={200}
-                  height={300}
-                  text="Save the Egg"
-                />
-              </Link>
-              <Link href="/events/anadigilox">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
-                  width={200}
-                  height={300}
-                  text="Anadigilogix"
-                />
-              </Link>
-              <Link href="/events/circuit-trouble">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
-                  width={200}
-                  height={300}
-                  text="Circuit Trouble"
-                />
-              </Link>
-              <Link href="/events/morse-laser">
-                <FancyImage
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
-                  width={200}
-                  height={300}
-                  text="Morse Laser"
-                />
-              </Link>
+                  style={{ marginTop: 45, marginBottom: 40 }}
+                >
+                  Electronics Hub
+                </h1>
+                <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+                  {" "}
+                  <Link href="/events/bridge-o-mania">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      width={200}
+                      height={300}
+                      text="Bridge-o-mania"
+                    />
+                  </Link>
+                  <Link href="/events/city-maestro">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      width={200}
+                      height={300}
+                      text="City Maestro"
+                    />
+                  </Link>
+                  <Link href="/events/save-the-egg">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      width={200}
+                      height={300}
+                      text="Save the Egg"
+                    />
+                  </Link>
+                  <Link href="/events/anadigilox">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      width={200}
+                      height={300}
+                      text="Anadigilogix"
+                    />
+                  </Link>
+                  <Link href="/events/circuit-trouble">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      width={200}
+                      height={300}
+                      text="Circuit Trouble"
+                    />
+                  </Link>
+                  <Link href="/events/morse-laser">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      width={200}
+                      height={300}
+                      text="Morse Laser"
+                    />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </main>
