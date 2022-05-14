@@ -217,34 +217,34 @@ export default function EventRegistrationForm({
         </>
       ) : (
         <>
-          <h1 className="font-primary text-3xl text-center font-bold">
-            Register to {event?.eventName}
-          </h1>
-
-          <div
-            className="grid grid-cols-2 gap-2 p-5
-            text-slate-600 bg-slate-100 rounded-lg m-5"
-          >
-            <span className="font-primary font-bold text-slate-800">
-              Solo Event
-            </span>
-            <span>{event?.isSoloEvent ? "Yes" : "No"}</span>
-
-            <span className="font-primary font-bold text-slate-800 ">
-              Max Team Size
-            </span>
-            <span>{event?.maxTeamSize}</span>
-
-            <span className="font-primary font-bold text-slate-800">
-              Min Team Size
-            </span>
-            <span>{event?.minTeamSize}</span>
-          </div>
-
           {registered ? (
             <span className="font-primary text-xl">Registered to event</span>
           ) : payment ? (
             <>
+              <h1 className="font-primary text-3xl text-center font-bold">
+                Register to {event?.eventName}
+              </h1>
+
+              <div
+                className="grid grid-cols-2 gap-2 p-5
+            text-slate-600 bg-slate-100 rounded-lg m-5"
+              >
+                <span className="font-primary font-bold text-slate-800">
+                  Solo Event
+                </span>
+                <span>{event?.isSoloEvent ? "Yes" : "No"}</span>
+
+                <span className="font-primary font-bold text-slate-800 ">
+                  Max Team Size
+                </span>
+                <span>{event?.maxTeamSize}</span>
+
+                <span className="font-primary font-bold text-slate-800">
+                  Min Team Size
+                </span>
+                <span>{event?.minTeamSize}</span>
+              </div>
+
               <p>Team Leader</p>
               <input
                 className="shadow px-4 py-2 rounded focus:outline-none bg-slate-100 my-2"
@@ -291,6 +291,49 @@ export default function EventRegistrationForm({
             </>
           ) : (
             <>
+              <div>
+                <h1 className="font-primary text-3xl text-center rounded-lg shadow-lg ">
+                  ₹400 ticket-
+                </h1>
+                <ul className="list-disc m-5">
+                  <li className=" hover:bg-blue-50 ">
+                    Access to participate and compete in all 36 competitions
+                    organized in 'Technika'
+                  </li>
+
+                  <li className=" hover:bg-blue-50 ">
+                    Free pass to celebrity night
+                  </li>
+
+                  <li className=" hover:bg-blue-50 ">Free pass to fun fair </li>
+
+                  <li className="hover:bg-blue-50 ">Free pass to EDM Night</li>
+                </ul>
+
+                <h1 className="font-primary text-3xl text-center rounded-lg shadow-lg ">
+                  ₹2000 ticket-
+                </h1>
+
+                <ul className="list-disc m-5">
+                  <li className="hover:bg-blue-50 ">
+                    3 days stay in HBTU hostels, breakfast, dinner, and snacks
+                    included
+                  </li>
+
+                  <li className="hover:bg-blue-50 ">
+                    Access to participate and compete in all 36 competitions
+                    organized in 'Technika'
+                  </li>
+
+                  <li className="hover:bg-blue-50">
+                    Free pass to celebrity night
+                  </li>
+
+                  <li className="hover:bg-blue-50">Free pass to fun fair</li>
+
+                  <li className="hover:bg-blue-50">Free pass to EDM Night</li>
+                </ul>
+              </div>
               <span className="flex justify-center space-x-2 items-center w-full">
                 <span>Need accomations?</span>
                 <input
