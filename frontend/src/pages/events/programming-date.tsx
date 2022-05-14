@@ -100,8 +100,32 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >It is a multi round event, in the first round the participants of opposite gender are paired for the second round in which they would be solving a problem statement together.
-
+              >
+                 <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              About the Event<br />
+              </h1>It is a multi round event, in the first round the participants of opposite gender are paired for the second round in which they would be solving a problem statement together.
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              Guidelines:<br />
+              </h1> 
+              • There will be indivual registration for the participants.   <br />
+              • There will be 2 rounds. <br />
+              • In the first round a coding problem will be givrn to the participants. <br />   
+              • The participants will be paired on the basis of time taken to solve the problem. <br />
+              • In the next round, the paired participants will solve the problem. <br />
+              • The fastest team to solve the problem will be declared as the winner. <br />
+              <h1
+                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
+              >
+                
+              Cordinators:<br />
+              </h1>
+  Ayush Gaur(3rd B.Tech CSE):971115320
 
 
               </div>
