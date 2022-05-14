@@ -8,6 +8,7 @@ const crypto = require("crypto");
 const utils = require("../lib/utils");
 const { default: mongoose } = require("mongoose");
 const { ObjectId } = require("mongodb");
+const ses = require("../lib/ses");
 
 // eventId, eventLeadTSCId , teamMembersTSCIds
 exports.register = async (req, res) => {
@@ -87,6 +88,35 @@ exports.register = async (req, res) => {
 
       await eventRegistrationDetail.save();
 
+      const emailBody = `
+      <!DOCTYPE html>
+      <html lang="en">
+        <body>
+          <div>
+            <p>Hey Tech-Geek,</p>
+      
+            <p>
+              Thank you for registering in ${event.eventName}, the rules and guidelines of the
+              competition can be read through our brochure which can be downloaded
+              through our website. You can checkout all our other events and
+              competitions in our website and register for more! More is better,
+              right? Looking forward to seeing you compete in ${event.eventName}!
+            </p>
+      
+            <p>Regards, Team Technika.</p>
+          </div>
+        </body>
+      </html>
+      
+      
+      `;
+
+      await ses.sendEmail(
+        `${user.name}<${user.email}>`,
+        "Technika | Registration Confirmation",
+        emailBody
+      );
+
       res.status(200).json({
         success: true,
         message: "User registered successfully",
@@ -133,7 +163,12 @@ exports.register = async (req, res) => {
           }
         }
 
-        teamMembers.push(teamMember._id);
+        teamMembers.push({
+          id: teamMember._id,
+          email: teamMember.email,
+          name: teamMember.name,
+          tscId: teamMember.tscId,
+        });
       }
 
       if (teamMembers.length + 1 < event.minTeamSize) {
@@ -155,10 +190,47 @@ exports.register = async (req, res) => {
         isCompleteRegistration: true,
         isTeamRegistration: true,
         leaderId: user.id,
-        teamMembers: teamMembers,
+        teamMembers: teamMembers.map((member) => member.id),
       });
 
       await eventRegistrationDetail.save();
+
+      const emailBody = `
+      <!DOCTYPE html>
+      <html lang="en">
+        <body>
+          <div>
+            <p>Hey Tech-Geek,</p>
+      
+            <p>
+              Thank you for registering in ${event.eventName}, the rules and guidelines of the
+              competition can be read through our brochure which can be downloaded
+              through our website. You can checkout all our other events and
+              competitions in our website and register for more! More is better,
+              right? Looking forward to seeing you compete in ${event.eventName}!
+            </p>
+      
+            <p>Regards, Team Technika.</p>
+          </div>
+        </body>
+      </html>
+      
+      
+      `;
+
+      await ses.sendEmail(
+        `${user.name}<${user.email}>`,
+        "Technika | Registration Confirmation",
+        emailBody
+      );
+
+      teamMembers.forEach(async (member) => {
+        await ses.sendEmail(
+          `${member.name}<${member.email}>`,
+          "Technika | Registration Confirmation",
+          emailBody
+        );
+      });
 
       res.status(200).json({
         success: true,
@@ -301,6 +373,31 @@ exports.paymentSuccess = async (req, res) => {
   user.tscId = tscId;
 
   await user.save();
+
+  const emailBody = `
+  <!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div>
+      <p>Hey ${user.email}</p>
+
+      <p>We have received your payment of ${registrationPayment.paymentAmount} towards events registration  .</p>
+      <p>
+        This is a confirmation receipt for future reference, transaction number
+        is  ${registrationPayment.paymentId}. 
+      </p>
+
+      <p>Regards, Team Technika</p>
+    </div>
+  </body>
+</html>
+`;
+
+  await ses.sendEmail(
+    `${user.name}<${user.email}>`,
+    "Technika | Registration Payment Confirmation",
+    emailBody
+  );
 
   res.status(200).json({
     success: true,
