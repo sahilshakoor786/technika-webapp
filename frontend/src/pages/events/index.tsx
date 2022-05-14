@@ -24,7 +24,10 @@ export default function EventsPage() {
               className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
               role="tablist"
             >
-              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <li
+                style={{ marginTop: 45, marginBottom: 40 }}
+                className="-mb-px mr-2 last:mr-0 flex-auto text-center"
+              >
                 <a
                   className={
                     "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
@@ -40,10 +43,18 @@ export default function EventsPage() {
                   href="#link1"
                   role="tablist"
                 >
-                  Central Events
+                  <div
+                    className="font-primary text-xl md:text-xl text-center 
+              "
+                  >
+                    Central Events
+                  </div>
                 </a>
               </li>
-              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <li
+                style={{ marginTop: 45, marginBottom: 40 }}
+                className="-mb-px mr-2 last:mr-0 flex-auto text-center"
+              >
                 <a
                   className={
                     "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
@@ -59,10 +70,18 @@ export default function EventsPage() {
                   href="#link2"
                   role="tablist"
                 >
-                  Mech Marvel
+                  <div
+                    className="font-primary text-xl md:text-xl text-center 
+              "
+                  >
+                    Mech Marvel
+                  </div>
                 </a>
               </li>
-              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <li
+                style={{ marginTop: 45, marginBottom: 40 }}
+                className="-mb-px mr-2 last:mr-0 flex-auto text-center"
+              >
                 <a
                   className={
                     "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
@@ -78,10 +97,18 @@ export default function EventsPage() {
                   href="#link3"
                   role="tablist"
                 >
-                  Fly High
+                  <div
+                    className="font-primary text-xl md:text-xl text-center 
+              "
+                  >
+                    Fly High
+                  </div>
                 </a>
               </li>
-              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <li
+                className="-mb-px mr-2 last:mr-0 flex-auto text-center"
+                style={{ marginTop: 45, marginBottom: 40 }}
+              >
                 <a
                   className={
                     "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
@@ -97,11 +124,19 @@ export default function EventsPage() {
                   href="#link3"
                   role="tablist"
                 >
-                  Game Of Codes
+                  <div
+                    className="font-primary text-xl md:text-xl text-center 
+              "
+                  >
+                    Game Of Codes
+                  </div>
                 </a>
               </li>
 
-              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <li
+                style={{ marginTop: 45, marginBottom: 40 }}
+                className="-mb-px mr-2 last:mr-0 flex-auto text-center"
+              >
                 <a
                   className={
                     "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
@@ -117,7 +152,12 @@ export default function EventsPage() {
                   href="#link3"
                   role="tablist"
                 >
-                  Electronics Hub
+                  <div
+                    className="font-primary text-xl md:text-xl text-center 
+              "
+                  >
+                    Electronics Hub
+                  </div>
                 </a>
               </li>
             </ul>
@@ -129,13 +169,6 @@ export default function EventsPage() {
                 aria-labelledby="tabs-event-tab"
                 className={openTab === 1 ? "block" : "hidden"}
               >
-                <h1
-                  className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10"
-                >
-                  Central Events
-                </h1>
-
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   <Link href="/events/junk-yard">
                     <FancyImage
@@ -242,13 +275,6 @@ export default function EventsPage() {
                 role="tabpanel"
                 aria-labelledby="tabs-mech-tab"
               >
-                <h1
-                  className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 mb-10"
-                  style={{ marginTop: 45, marginBottom: 40 }}
-                >
-                  Mech Marvel
-                </h1>
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   <Link href="/events/lfr">
                     <FancyImage
@@ -335,13 +361,6 @@ export default function EventsPage() {
                 role="tabpanel"
                 aria-labelledby="tabs-fly-tab"
               >
-                <h1
-                  className="font-primary text-3xl md:text-5xl text-center 
-              mt-32 mb-10"
-                  style={{ marginTop: 45, marginBottom: 40 }}
-                >
-                  Fly High
-                </h1>
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   <Link href="/events/udaan">
                     <FancyImage
@@ -386,13 +405,6 @@ export default function EventsPage() {
                 role="tabpanel"
                 aria-labelledby="tabs-code-tab"
               >
-                <h1
-                  className="font-primary text-3xl md:text-5xl text-center 
-              mt-32 mb-10"
-                  style={{ marginTop: 45, marginBottom: 40 }}
-                >
-                  Game Of Codes
-                </h1>
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   <Link href="/events/break-the-code">
                     <FancyImage
@@ -461,13 +473,6 @@ export default function EventsPage() {
                 role="tabpanel"
                 aria-labelledby="tabs-elect-tab"
               >
-                <h1
-                  className="font-primary text-3xl md:text-5xl text-center 
-              mt-32 mb-10"
-                  style={{ marginTop: 45, marginBottom: 40 }}
-                >
-                  Electronics Hub
-                </h1>
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   {" "}
                   <Link href="/events/bridge-o-mania">
