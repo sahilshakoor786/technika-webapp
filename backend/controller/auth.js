@@ -87,16 +87,7 @@ exports.googleCallback = async (req, res, _) => {
     if (!user) {
       const email = googleUser.email;
 
-      let nextId = await utils.getNextSequence("userid");
-      if (nextId === null) {
-        console.error(`Failed to get next user id`);
-      }
-      let id = "0000" + nextId.toString();
-
-      const tscId = "TSC22" + id.slice(nextId.toString().length - 1);
-
       user = new User({
-        tscId: tscId,
         email,
         name: googleUser.name,
         isHbtuStudent: true,
@@ -107,6 +98,15 @@ exports.googleCallback = async (req, res, _) => {
       });
 
       if (email.split("@")[1] === "hbtu.ac.in") {
+        let nextId = await utils.getNextSequence("userid");
+        if (nextId === null) {
+          console.error(`Failed to get next user id`);
+        }
+        let id = "0000" + nextId.toString();
+
+        const tscId = "TSC22" + id.slice(nextId.toString().length - 1);
+        user.tscId = tscId;
+
         user.isHbtuStudent = true;
       } else if (email.split("@")[1] === "technika.org.in") {
         user.isHbtuStudent = true;

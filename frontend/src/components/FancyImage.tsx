@@ -54,8 +54,6 @@ export default function FancyImage({
         height: height,
         perspective: 700,
       }}
-      onMouseMove={fancyImageHover}
-      onMouseOut={fancyImageOut}
     >
       <div
         ref={imgRef as React.RefObject<HTMLImageElement>}
@@ -70,7 +68,9 @@ export default function FancyImage({
         }}
       ></div>
 
-      <span className="z-20 text-white text-2xl backdrop-blur text-center">{text}</span>
+      <span className="z-20 text-white text-2xl backdrop-blur text-center">
+        {text}
+      </span>
     </div>
   );
 }

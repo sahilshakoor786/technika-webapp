@@ -2,8 +2,12 @@ import Link from "next/link";
 import Auth from "src/components/Auth";
 import FancyImage from "src/components/FancyImage";
 import Layout from "src/components/Layout";
+import React from "react";
 
 export default function EventsPage() {
+  const [openTab, setOpenTab] = React.useState(1);
+  const [color, setcolor] = React.useState("pink");
+
   return (
     <Auth>
       <Layout>
@@ -17,162 +21,113 @@ export default function EventsPage() {
           shadow-lg py-6 px-2 space-y-2 rounded-lg"
           >
             <ul
-              className="nav nav-tabs flex flex-col m-auto bg-white md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
-              id="tabs-tab"
+              className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
               role="tablist"
             >
-              <li className="nav-item" role="presentation">
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                 <a
-                  href="#tabs-event"
-                  className="
-      nav-link
-      block
-      font-medium
-      text-lg
-      leading-tight
-      uppercase
-      border-x-0 border-t-0 border-b-2 border-transparent
-      px-6
-      py-3
-      my-2
-      hover:border-transparent hover:bg-yellow-600
-      hover:text-yellow-200
-      focus:border-transparent
-      text-yellow-400
-    "
-                  id="tabs-event-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tabs-event"
-                  role="tab"
-                  aria-controls="tabs-event"
-                  aria-selected="true"
+                  className={
+                    "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                    (openTab === 1
+                      ? "text-white bg-" + color + "-600"
+                      : "text-" + color + "-600 bg-white")
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(1);
+                  }}
+                  data-toggle="tab"
+                  href="#link1"
+                  role="tablist"
                 >
                   Central Events
                 </a>
               </li>
-              <li className="nav-item" role="presentation">
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                 <a
-                  href="#tabs-mech"
-                  className="
-      nav-link
-      block
-      font-medium
-      text-lg
-      leading-tight
-      uppercase
-      border-x-0 border-t-0 border-b-2 border-transparent
-      px-6
-      py-3
-      my-2
-      hover:border-transparent hover:bg-red-600
-      hover:text-red-200
-      focus:border-transparent
-      text-red-400
-    "
-                  id="tabs-mech-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tabs-mech"
-                  role="tab"
-                  aria-controls="tabs-mech"
-                  aria-selected="false"
+                  className={
+                    "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                    (openTab === 2
+                      ? "text-white bg-" + color + "-600"
+                      : "text-" + color + "-600 bg-white")
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(2);
+                  }}
+                  data-toggle="tab"
+                  href="#link2"
+                  role="tablist"
                 >
                   Mech Marvel
                 </a>
               </li>
-              <li className="nav-item" role="presentation">
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                 <a
-                  href="#tabs-fly"
-                  className="
-      nav-link
-      block
-      font-medium
-      text-lg
-      leading-tight
-      uppercase
-      border-x-0 border-t-0 border-b-2 border-transparent
-      px-6
-      py-3
-      my-2
-      hover:border-transparent hover:bg-blue-600
-      hover:text-blue-200
-      focus:border-transparent
-      text-blue-400
-    "
-                  id="tabs-fly-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tabs-fly"
-                  role="tab"
-                  aria-controls="tabs-fly"
-                  aria-selected="false"
+                  className={
+                    "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                    (openTab === 3
+                      ? "text-white bg-" + color + "-600"
+                      : "text-" + color + "-600 bg-white")
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(3);
+                  }}
+                  data-toggle="tab"
+                  href="#link3"
+                  role="tablist"
                 >
                   Fly High
                 </a>
               </li>
-              <li className="nav-item" role="presentation">
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                 <a
-                  href="#tabs-code"
-                  className="
-       nav-link
-      block
-      font-medium
-      text-lg
-      leading-tight
-      uppercase
-      border-x-0 border-t-0 border-b-2 border-transparent
-      px-6
-      py-3
-      my-2
-     hover:border-transparent hover:bg-green-600
-      hover:text-green-200
-      focus:border-transparent
-      text-green-400
-    "
-                  id="tabs-code-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tabs-code"
-                  role="tab"
-                  aria-controls="tabs-code"
-                  aria-selected="false"
+                  className={
+                    "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                    (openTab === 4
+                      ? "text-white bg-" + color + "-600"
+                      : "text-" + color + "-600 bg-white")
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(4);
+                  }}
+                  data-toggle="tab"
+                  href="#link3"
+                  role="tablist"
                 >
-                  Game of Codes
+                  Game Of Codes
                 </a>
               </li>
-              <li className="nav-item" role="presentation">
+
+              <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                 <a
-                  href="#tabs-elect"
-                  className="
-       nav-link
-      block
-      font-medium
-      text-lg
-      leading-tight
-      uppercase
-      border-x-0 border-t-0 border-b-2 border-transparent
-      px-6
-      py-3
-      my-2
-      hover:border-transparent hover:bg-purple-600
-      hover:text-purple-200
-      focus:border-transparent
-      text-purple-400
-    "
-                  id="tabs-elect-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tabs-elect"
-                  role="tab"
-                  aria-controls="tabs-elect"
-                  aria-selected="false"
+                  className={
+                    "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                    (openTab === 5
+                      ? "text-white bg-" + color + "-600"
+                      : "text-" + color + "-600 bg-white")
+                  }
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenTab(5);
+                  }}
+                  data-toggle="tab"
+                  href="#link3"
+                  role="tablist"
                 >
                   Electronics Hub
                 </a>
               </li>
             </ul>
+
             <div className="tab-content" id="tabs-tabContent">
               <div
-                className="tab-pane fade show active"
                 id="tabs-event"
                 role="tabpanel"
                 aria-labelledby="tabs-event-tab"
+                className={openTab === 1 ? "block" : "hidden"}
               >
                 <h1
                   className="font-primary text-3xl md:text-5xl text-center 
@@ -282,7 +237,7 @@ export default function EventsPage() {
                 </div>
               </div>
               <div
-                className="tab-pane fade"
+                className={openTab === 2 ? "block" : "hidden"}
                 id="tabs-mech"
                 role="tabpanel"
                 aria-labelledby="tabs-mech-tab"
@@ -375,7 +330,7 @@ export default function EventsPage() {
                 </div>
               </div>
               <div
-                className="tab-pane fade"
+                className={openTab === 3 ? "block" : "hidden"}
                 id="tabs-fly"
                 role="tabpanel"
                 aria-labelledby="tabs-fly-tab"
@@ -426,7 +381,7 @@ export default function EventsPage() {
                 </div>
               </div>
               <div
-                className="tab-pane fade"
+                className={openTab === 4 ? "block" : "hidden"}
                 id="tabs-code"
                 role="tabpanel"
                 aria-labelledby="tabs-code-tab"
@@ -501,7 +456,7 @@ export default function EventsPage() {
               </div>
 
               <div
-                className="tab-pane fade"
+                className={openTab === 5 ? "block" : "hidden"}
                 id="tabs-elect"
                 role="tabpanel"
                 aria-labelledby="tabs-elect-tab"
