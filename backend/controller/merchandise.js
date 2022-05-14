@@ -3,6 +3,7 @@ const MerchandisePurchase = require("../model/merchandisePurchase");
 const MerchandisePayment = require("../model/merchandisePayment");
 const crypto = require("crypto");
 const Razorpay = require("razorpay");
+const ses = require("../lib/ses");
 exports.listMerchandiseProducts = async (req, res) => {
   const merchandiseProducts = await MerchandiseProduct.find();
   res.json(merchandiseProducts);
@@ -128,7 +129,32 @@ exports.purchaseVerify = async (req, res) => {
 
   await merchandisePurchase.save();
 
-  // send email to user with token
+  const emailBody = `
+
+  <!DOCTYPE html>
+<html lang="en">
+  <body>
+    <p>Hey ${merchandisePurchase.name},</p>
+
+    <p>
+      Thank you for buying our merchandise! We're sure you're going to look
+      a-mazing in it, you can collect the t-shirts from the collection counter
+      once you reach HBTU. Looking forward to seeing you rock our 'Technika'
+      t-shirts.
+    </p>
+    <p>your token is <b> ${merchandisePurchase.token} </b></p>
+
+    <p>Regards, Team Technika</p>
+  </body>
+</html>
+
+  `;
+
+  await ses.sendEmail(
+    `${merchandisePurchase.name}<${merchandisePurchase.email}>`,
+    "Technika Merchandise Purchase",
+    emailBody
+  );
 
   res.json({
     success: true,
