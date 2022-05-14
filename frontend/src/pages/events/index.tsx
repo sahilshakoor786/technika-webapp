@@ -252,7 +252,7 @@ export default function EventsPage() {
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   <Link href="/events/lfr">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/lfr.png"
                       width={200}
                       height={300}
                       text="LFR"
@@ -269,7 +269,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/blazing-wheel">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/blazing+wheel.webp"
                       width={200}
                       height={300}
                       text="Blazing Wheel"
@@ -278,7 +278,7 @@ export default function EventsPage() {
 
                   <Link href="/events/robo-combat">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/robo+combat-1.jpg"
                       width={200}
                       height={300}
                       text="Robo Combat"
@@ -286,7 +286,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/thread-ripper">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/thread+ripper.jpg"
                       width={200}
                       height={300}
                       text="Thread Ripper"
@@ -295,7 +295,7 @@ export default function EventsPage() {
 
                   <Link href="/events/path-pradarshak">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/path+pradarshak.webp"
                       width={200}
                       height={300}
                       text="Path Pradarshak"
@@ -312,7 +312,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/hover-mania">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/hovermania.jpg"
                       width={200}
                       height={300}
                       text="Hover-Mania"
@@ -321,7 +321,7 @@ export default function EventsPage() {
 
                   <Link href="/events/soccerbot">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/soccerbot+2.webp"
                       width={200}
                       height={300}
                       text="Soccerbot"
@@ -345,7 +345,7 @@ export default function EventsPage() {
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   <Link href="/events/udaan">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/udaan+2.jpg"
                       width={200}
                       height={300}
                       text="Udaan"
@@ -372,7 +372,7 @@ export default function EventsPage() {
 
                   <Link href="/events/simulation">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images//events+/simulation+2.jpg"
                       width={200}
                       height={300}
                       text="Simulation"
