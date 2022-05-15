@@ -51,7 +51,7 @@ export default function Page() {
               >
                 NFT design
               </h1>
-              <Prize prize="1000" />
+              <Prize prize="3000" />
 
 
               <div
