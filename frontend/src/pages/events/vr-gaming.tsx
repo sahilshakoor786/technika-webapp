@@ -54,6 +54,7 @@ export default function Page() {
 
               </h1>
 
+
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"

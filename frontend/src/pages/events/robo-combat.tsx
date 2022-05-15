@@ -5,6 +5,8 @@ import Auth from "src/components/Auth";
 import EventRegistrationForm from "src/components/EventRegistrationForm";
 import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
+import Prize from "src/components/Prize";
+
 
 export default function Page() {
   const [popup, setPopup] = useState(false);
@@ -50,6 +52,9 @@ export default function Page() {
                 Robo-Combat
 
               </h1>
+              <Prize prize="50000" />
+
+              
 
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
