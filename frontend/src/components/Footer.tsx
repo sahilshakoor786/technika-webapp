@@ -19,19 +19,28 @@ export default function Footer() {
         <a href="/privacy-policy.html"> Privacy Policy</a>
       </div>
       <div className="social-links flex items-center mt-3">
-        <a href="https://www.linkedin.com/company/technical-sub-council-hbtu" target="_blank">
+        <a
+          href="https://www.linkedin.com/company/technical-sub-council-hbtu"
+          target="_blank"
+        >
           <img
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-linkedin-circled.svg"
             className=" h-14 w-14"
           />
         </a>
-        <a href="https://instagram.com/technika22?igshid=YmMyMTA2M2Y=" target="_blank">
+        <a
+          href="https://instagram.com/technika22?igshid=YmMyMTA2M2Y="
+          target="_blank"
+        >
           <img
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-instagram.svg"
             className=" h-14 w-14"
           />
         </a>
-        <a href="https://www.facebook.com/technicalsubcouncihbtu/ " target="_blank">
+        <a
+          href="https://www.facebook.com/technicalsubcouncihbtu/ "
+          target="_blank"
+        >
           <img
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-facebook.svg"
             className=" h-14 w-14"

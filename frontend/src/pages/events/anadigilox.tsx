@@ -5,6 +5,7 @@ import Auth from "src/components/Auth";
 import EventRegistrationForm from "src/components/EventRegistrationForm";
 import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
+import Prize from "src/components/Prize";
 
 export default function Page() {
   const [popup, setPopup] = useState(false);
@@ -49,7 +50,7 @@ export default function Page() {
               >
                 Anadigilox
               </h1>
-
+              <Prize prize="3000" />
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -67,9 +68,10 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Electronics Department
-</span>  
-<span className="font-primary font-bold text-slate-800 ">
+                  <span className="text-slate-800 ">
+                    Electronics Department
+                  </span>
+                  <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
                   <span className="text-slate-800">22 May</span>
@@ -92,40 +94,36 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
-                Be a stiletto in a room full of flats they
-say. Be a circuit designer in a room full
-of coders they (ET engineers of course)
-say. Y’all will be given a problem for
-which you’ll whip up a solution of digital
-circuits.
-               There is a team of 3-4 contestant’s required to design a digital circuit on the basis of given problem.
-               <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              ● There should be at most 3 members in a team. <br />
-              ●  The circuit has to be designed using digital devices. <br />
-              ● Microcontrollers and microprocessors are not allowed. <br />
-              ● The circuit can be made on breadboard or soldered as per the participants wish. <br />
-              ● Participants are required to present a detailed description of their circuit. <br />
-              ● The participants will have to explain the circuit they have made. <br/>
-              ● The decision of the judging committee will be final and bounding. <br />
-              ● Participants must bring the D.C. power source with them. The organisers will provide 220V A.C. supply. No adapters will be provided; the participants must bring their own. <br />
-
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                Be a stiletto in a room full of flats they say. Be a circuit
+                designer in a room full of coders they (ET engineers of course)
+                say. Y’all will be given a problem for which you’ll whip up a
+                solution of digital circuits. There is a team of 3-4
+                contestant’s required to design a digital circuit on the basis
+                of given problem.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                ● There should be at most 3 members in a team. <br />
+                ● The circuit has to be designed using digital devices. <br />
+                ● Microcontrollers and microprocessors are not allowed. <br />
+                ● The circuit can be made on breadboard or soldered as per the
+                participants wish. <br />
+                ● Participants are required to present a detailed description of
+                their circuit. <br />
+                ● The participants will have to explain the circuit they have
+                made. <br />
+                ● The decision of the judging committee will be final and
+                bounding. <br />
+                ● Participants must bring the D.C. power source with them. The
+                organisers will provide 220V A.C. supply. No adapters will be
+                provided; the participants must bring their own. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
               </div>
             </div>
           </main>

@@ -238,24 +238,32 @@ exports.sendEmailToNonHbtuStudents = async (req, res, _) => {
       const emailBody = `
 
       <html>
-
-        <body>
-          <p>Hey ${user.name},</p>
-          <p>Hope you're doing well.</p>
-
-          <p>
-            It is a friendly reminder that your TSC Id is not generated yet & also
-            payment is due.
-          </p>
-
-          <p>
-            For smooth process, complete the payment shortly & any unsolved queries
-            can be reach out at e-mail id.
-          </p>
-
-          <p>Regards, Team Technika</p>  <br />
-        </body>
-      </html>
+      <body>
+        <p>Hey ${user.name},</p>
+        <p>Hope you're doing well.</p>
+        <p>
+          It is a friendly reminder that your TSC Id is not generated yet & also
+          payment is due.
+        </p>
+        <p>
+          For smooth process, complete the payment shortly & any unsolved queries
+          can be reach out at e-mail id.
+        </p>
+        <p>Regards, Team Technika</p> <br />
+        <div>
+          <a href="https://www.linkedin.com/company/technical-sub-council-hbtu">
+            <img src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-linkedin-circled.svg" />
+          </a>
+          <a href="https://instagram.com/technika22?igshid=YmMyMTA2M2Y=">
+            <img src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-instagram.svg" />
+          </a>
+          <a href="https://www.facebook.com/technicalsubcouncihbtu/ ">
+            <img src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-facebook.svg" />
+          </a>
+        </div>
+      </body>
+    </html>
+    
       `;
 
       await ses.sendEmail(

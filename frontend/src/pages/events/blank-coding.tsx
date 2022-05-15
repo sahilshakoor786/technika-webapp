@@ -5,7 +5,7 @@ import Auth from "src/components/Auth";
 import EventRegistrationForm from "src/components/EventRegistrationForm";
 import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
-
+import Prize from "src/components/Prize";
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -47,12 +47,10 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-              Blank Coding
-
-
-
-
+                Blank Coding
               </h1>
+
+              <Prize prize="5000" />
 
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
@@ -71,13 +69,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">
-                  DBMS LAB/INTERNET LAB
-
-
-
-
-                  </span>
+                  <span className="text-slate-800 ">DBMS LAB/INTERNET LAB</span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
@@ -101,42 +93,30 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                   <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1> 
-              Would you phone-a-friend on the ultimate
-              question if you were at the hotseat on the set
-              of KBC? We ask because even though stakes are
-              much lower but you essentially have to display
-              the same amount of trust while you code
-              just on a keyboard with monitor turned away
-              towards your mate who will convey any and all
-              your errors through a game of dumb-charades.
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              A team of 2 will take part in this event, the question will be shown to the team.
-After they have understood the question, they will be made to sit on opposite sides of the table, one of the team members can choose the keyboard, and the other can choose the monitor.
-The one with the keyboard will type the solution and can be corrected by the one with the monitor only through signs.
-The fastest team to solve the given set wins. <br />
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              Neeraj (3rd B.tech CSE):7355287288
-
-
-
-
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                Would you phone-a-friend on the ultimate question if you were at
+                the hotseat on the set of KBC? We ask because even though stakes
+                are much lower but you essentially have to display the same
+                amount of trust while you code just on a keyboard with monitor
+                turned away towards your mate who will convey any and all your
+                errors through a game of dumb-charades.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                A team of 2 will take part in this event, the question will be
+                shown to the team. After they have understood the question, they
+                will be made to sit on opposite sides of the table, one of the
+                team members can choose the keyboard, and the other can choose
+                the monitor. The one with the keyboard will type the solution
+                and can be corrected by the one with the monitor only through
+                signs. The fastest team to solve the given set wins. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Neeraj (3rd B.tech CSE):7355287288
               </div>
             </div>
           </main>
