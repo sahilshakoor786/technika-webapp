@@ -51,7 +51,7 @@ export default function Page() {
               >
                 City maestro
               </h1>
-              <Prize prize="1000" />
+              <Prize prize="2000" />
 
               
 

@@ -51,7 +51,7 @@ export default function Page() {
               >
                 Circuit Trouble
               </h1>
-              <Prize prize="1000" />
+              <Prize prize="2000" />
 
               
 
