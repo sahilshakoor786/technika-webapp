@@ -81,11 +81,12 @@ export default function EventEditForm({
             },
           }
         );
+        setLoading(false);
+        window.location.reload();
       } catch (error: any) {
+        setLoading(false);
         setError(error.response.data.message);
       }
-
-      setLoading(false);
     }
   }
 
