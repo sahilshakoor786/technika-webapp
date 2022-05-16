@@ -382,7 +382,12 @@ exports.paymentSuccess = async (req, res) => {
   if (nextId === null) {
     console.error(`Failed to get next user id`);
   }
-  let id = "0000" + nextId.toString();
+  let id;
+  if (registrationPayment.paymentAmount == 200000) {
+    id = "1000" + nextId.toString();
+  } else {
+    id = "0000" + nextId.toString();
+  }
 
   const tscId = "TSC22" + id.slice(nextId.toString().length - 1);
 
