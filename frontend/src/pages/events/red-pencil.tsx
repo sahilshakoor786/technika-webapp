@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="2500" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -94,33 +92,29 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >   <h1
-              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-            >
-              
-            About the Event<br />
-            </h1>
+              >
+                {" "}
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
                 How many more times are you gonna go to the PlayStore hat in
                 hand begging for the solutions to your problems. It is high time
                 to take matters into your own hands and design an android
                 application for the problem statement that will be given to you.
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-
-                This event will be organized in two phases.
-First round: Participants will be given an idea. They have to implement that idea into an Android Application, based on their app, they will be screened for the next round.
-Second round: Selected participants will be given a code sample of the app. They have to debug the errors and the winner will be decided accordingly.
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1> Swapnil Tripathi (3rd IT):6397334767
- 
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                This event will be organized in two phases. First round:
+                Participants will be given an idea. They have to implement that
+                idea into an Android Application, based on their app, they will
+                be screened for the next round. Second round: Selected
+                participants will be given a code sample of the app. They have
+                to debug the errors and the winner will be decided accordingly.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>{" "}
+                Swapnil Tripathi (3rd IT):6397334767
               </div>
             </div>
           </main>
@@ -130,7 +124,7 @@ Second round: Selected participants will be given a code sample of the app. They
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -70,10 +69,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">
-                  Tennis Lawn
-
-                  </span>
+                  <span className="text-slate-800 ">Tennis Lawn</span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
@@ -97,42 +93,37 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                 <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
-                In the memory of all those threads that were
-picked up very confidently from the teacher’s table
-for your geography exam but then were put to all
-other uses than what they were meant for,we have
-a this event where the geometrical understanding
-and basic scientific knowledge will be tested. A
-quiz will be conducted and accordingly a specified
-length of thread will be provided for making
-obstacles for the opponent.
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              •	Every Time can have maximum 4 member with specified team leader. <br />
-•	Each team have to go through the process of technical quiz and on the basis of the result of quiz they would be provided with a thread of particular length. <br />
-•	Each team have to make a geometry with the help of the obtained thread and the opponent team have to cross the geometry without touching the created obstacle. <br />
-•	Team with minimum time and clean task complete will be decided or winner. <br />
-•	The competition area has a special place defined for the Event Thread Ripper. <br />
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-          
-
-              Akarsh Jain (3rd B.tech PT): 7905610056 <br />
-              Sristy Jaiswal (3rd B.tech PT): 6393251438 <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                In the memory of all those threads that were picked up very
+                confidently from the teacher’s table for your geography exam but
+                then were put to all other uses than what they were meant for,we
+                have a this event where the geometrical understanding and basic
+                scientific knowledge will be tested. A quiz will be conducted
+                and accordingly a specified length of thread will be provided
+                for making obstacles for the opponent.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                • Every Time can have maximum 4 member with specified team
+                leader. <br />
+                • Each team have to go through the process of technical quiz and
+                on the basis of the result of quiz they would be provided with a
+                thread of particular length. <br />
+                • Each team have to make a geometry with the help of the
+                obtained thread and the opponent team have to cross the geometry
+                without touching the created obstacle. <br />
+                • Team with minimum time and clean task complete will be decided
+                or winner. <br />
+                • The competition area has a special place defined for the Event
+                Thread Ripper. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Akarsh Jain (3rd B.tech PT): 7905610056 <br />
+                Sristy Jaiswal (3rd B.tech PT): 6393251438 <br />
               </div>
             </div>
           </main>
@@ -142,7 +133,7 @@ obstacles for the opponent.
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -155,8 +146,10 @@ obstacles for the opponent.
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM13
-" />
+              <EventRegistrationForm
+                eventId="TSCMM13
+"
+              />
             </div>
           </div>
         </>

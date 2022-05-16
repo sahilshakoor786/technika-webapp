@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="4000" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -94,30 +92,32 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >  <h1
-              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-            >
-              
-            About the Event<br />
-            </h1>
-                Importance of simulation: An RC flight simulator is a computer program that allows pilots of radio-controlled aircraft to practice on a computer, without the risk and expense of damaging a real model. Besides the obvious use of training beginners, they are also used for practising new aerobatics, evaluating a model before buying it, and to allow flight practice when conditions are otherwise unsuitable
-Phoenix RC Simulator allows the use of real R/C transmitters to control the sim. InfinityScape 3D landscale generator allows the user to fly beyond the horizon over beautiful, ever-changing terrain that they create and control.
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                
-                Guidelines: <br />
-              </h1>
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-
-              Satyansh(3rd B.tech ET):8177020964  <br />  
- Atul(3rd B.tech EE) : 7617816601  <br /> Shubhi(3rd B.tech EE) : 6306654511
-
+                {" "}
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                Importance of simulation: An RC flight simulator is a computer
+                program that allows pilots of radio-controlled aircraft to
+                practice on a computer, without the risk and expense of damaging
+                a real model. Besides the obvious use of training beginners,
+                they are also used for practising new aerobatics, evaluating a
+                model before buying it, and to allow flight practice when
+                conditions are otherwise unsuitable Phoenix RC Simulator allows
+                the use of real R/C transmitters to control the sim.
+                InfinityScape 3D landscale generator allows the user to fly
+                beyond the horizon over beautiful, ever-changing terrain that
+                they create and control.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Satyansh(3rd B.tech ET):8177020964 <br />
+                Atul(3rd B.tech EE) : 7617816601 <br /> Shubhi(3rd B.tech EE) :
+                6306654511
               </div>
             </div>
           </main>
@@ -127,7 +127,7 @@ Phoenix RC Simulator allows the use of real R/C transmitters to control the sim.
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -140,8 +140,10 @@ Phoenix RC Simulator allows the use of real R/C transmitters to control the sim.
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCFH01
-" />
+              <EventRegistrationForm
+                eventId="TSCFH01
+"
+              />
             </div>
           </div>
         </>

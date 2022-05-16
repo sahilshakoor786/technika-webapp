@@ -77,6 +77,8 @@ app.post(
   merchandiseController.purchaseVerify
 );
 
+app.get("/event/detail/:eventId", eventController.getDetail);
+
 // app.get("/send/email/non-hbtu", authController.sendEmailToNonHbtuStudents);
 app.get("/merchandise/product/my", merchandiseController.myPurchases);
 

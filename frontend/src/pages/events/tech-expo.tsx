@@ -52,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="15000" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-bottom"
@@ -96,46 +95,31 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                     <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
-               It’s time to break out of the narrow
-confines of the textbook in our very
-prestigious “Tech Expo”, bring all those
-minuscule details regarding the various
-sciences that you used to cram up and
-vomit for the sake of grades, out where
-they belong that is in the real world as
-you make a working prototype to ace this
-event in front of our inter departmental
-judges panel. The criteria will be the
-level of tech used, exclusiveness, ease of
-working, the output of demo operation
-and explanation,answers provided by the
-exhibitor to the jury and completed to the
-conscience of the jury.
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              •	Students from within or outside of the college will be given a chance to display their working models/projects. <br />
-•	Candidates can participate in teams as well as solo. <br /> 
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-Shikhar Trivedi(3rd B.tech ME):6387611363
-
-  <br />
-
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                It’s time to break out of the narrow confines of the textbook in
+                our very prestigious “Tech Expo”, bring all those minuscule
+                details regarding the various sciences that you used to cram up
+                and vomit for the sake of grades, out where they belong that is
+                in the real world as you make a working prototype to ace this
+                event in front of our inter departmental judges panel. The
+                criteria will be the level of tech used, exclusiveness, ease of
+                working, the output of demo operation and explanation,answers
+                provided by the exhibitor to the jury and completed to the
+                conscience of the jury.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                • Students from within or outside of the college will be given a
+                chance to display their working models/projects. <br />
+                • Candidates can participate in teams as well as solo. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Shikhar Trivedi(3rd B.tech ME):6387611363
+                <br />
               </div>
             </div>
           </main>
@@ -145,7 +129,7 @@ Shikhar Trivedi(3rd B.tech ME):6387611363
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

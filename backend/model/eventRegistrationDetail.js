@@ -32,6 +32,11 @@ var eventRegistrationDetail = new Schema(
       required: false,
       default: [],
     },
+    description: {
+      type: String,
+      required: false,
+      default: "",
+    },
   },
   { timestamps: true },
   {

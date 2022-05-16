@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,8 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="2000" />
 
-              
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -75,7 +72,6 @@ export default function Page() {
                   <span className="text-slate-800 ">
                     Drawing Hall(Civil dept)
                   </span>
-
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
@@ -98,35 +94,27 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >  <h1
-              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-            >
-              
-            About the Event<br />
-            </h1>
-                This one is for all the die hard COC ( I bet you
-read it as clash of clans on the first go right
-?) fans out there. Envision a city of your own,
-furnish it with all the basic amenities and map
-it out in the most elegant way possible. The
-jury shall decide the fate based on the visual
-appeal and financial efficiency of your city.
-                In this event contestant’s will be required to create a map of
-                the city with all the sufficient requirements.
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                
-                Guidelines: <br />
-              </h1>
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              Kumar Satwik Kaushal (3rd B.tech ME):7880743737
-
+                {" "}
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                This one is for all the die hard COC ( I bet you read it as
+                clash of clans on the first go right ?) fans out there. Envision
+                a city of your own, furnish it with all the basic amenities and
+                map it out in the most elegant way possible. The jury shall
+                decide the fate based on the visual appeal and financial
+                efficiency of your city. In this event contestant’s will be
+                required to create a map of the city with all the sufficient
+                requirements.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Kumar Satwik Kaushal (3rd B.tech ME):7880743737
               </div>
             </div>
           </main>
@@ -136,7 +124,7 @@ appeal and financial efficiency of your city.
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -149,8 +137,10 @@ appeal and financial efficiency of your city.
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCEH02
-" />
+              <EventRegistrationForm
+                eventId="TSCEH02
+"
+              />
             </div>
           </div>
         </>

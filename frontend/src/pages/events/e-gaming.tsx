@@ -47,13 +47,8 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-              E-Gaming
-
-
-
-
+                E-Gaming
               </h1>
-
 
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
@@ -72,14 +67,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">
-                  Auditorium
-
-
-
-
-
-                  </span>
+                  <span className="text-slate-800 ">Auditorium</span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
@@ -103,31 +91,25 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
-                Right from your Game Boys to nintendo wii to the cutting edge xboxes and playstations we’ve come a long way on this ever winding yet progressing road of the gaming industry right? But don’t worry we are not here to take you down a trip of nostalgia instead quite the opposite. Buckle up your seatbelts as we hurl you into the majesty of this new era with virtual reality taking the gaming universe by the storm.
-
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              Sugam Gupta (3rd B.tech PT): 8707417077
-  <br />
-
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                Right from your Game Boys to nintendo wii to the cutting edge
+                xboxes and playstations we’ve come a long way on this ever
+                winding yet progressing road of the gaming industry right? But
+                don’t worry we are not here to take you down a trip of nostalgia
+                instead quite the opposite. Buckle up your seatbelts as we hurl
+                you into the majesty of this new era with virtual reality taking
+                the gaming universe by the storm.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Sugam Gupta (3rd B.tech PT): 8707417077
+                <br />
               </div>
             </div>
           </main>
@@ -137,7 +119,7 @@ export default function Page() {
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

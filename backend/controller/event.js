@@ -9,6 +9,7 @@ const utils = require("../lib/utils");
 const { default: mongoose } = require("mongoose");
 const { ObjectId } = require("mongodb");
 const ses = require("../lib/ses");
+const { rmSync } = require("fs");
 
 // eventId, eventLeadTSCId , teamMembersTSCIds
 exports.register = async (req, res) => {
@@ -84,6 +85,7 @@ exports.register = async (req, res) => {
         isTeamRegistration: false,
         leaderId: eventLead,
         teamMembers: [],
+        description: req.body.description || "",
       });
 
       await eventRegistrationDetail.save();
@@ -204,6 +206,7 @@ exports.register = async (req, res) => {
         isTeamRegistration: true,
         leaderId: user.id,
         teamMembers: teamMembers.map((member) => member.id),
+        description: req.body.description || "",
       });
 
       await eventRegistrationDetail.save();
@@ -497,7 +500,7 @@ exports.editRegister = async (req, res) => {
         $not: { _id: eventRegistrationDetail._id },
       });
 
-      if (check) {
+      if (check && check.id != eventRegistrationDetail.id) {
         res.status(400).json({
           success: false,
           message: "User already registered for this event",
@@ -545,6 +548,7 @@ exports.editRegister = async (req, res) => {
     (eventRegistrationDetail.teamMembers = teamMembers.map(
       (member) => member.id
     )),
+      (eventRegistrationDetail.description = req.body.description || ""),
       await eventRegistrationDetail.save();
 
     res.status(200).json({
@@ -765,6 +769,87 @@ exports.userEvents = async (req, res) => {
       success: true,
       result: eventRegistrations,
     });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+exports.getDetail = async (req, res) => {
+  try {
+    const eventId = req.params.eventId;
+
+    const results = await EventRegistrationDetail.aggregate([
+      {
+        $lookup: {
+          let: {
+            userObjId: {
+              $toObjectId: "$leaderId",
+            },
+          },
+          from: "users",
+          pipeline: [
+            {
+              $match: {
+                $expr: {
+                  $eq: ["$_id", "$$userObjId"],
+                },
+              },
+            },
+          ],
+          as: "leader",
+        },
+      },
+      {
+        $lookup: {
+          from: "events",
+          localField: "eventId",
+          foreignField: "eventId",
+          as: "event",
+        },
+      },
+      {
+        $lookup: {
+          from: "users",
+          localField: "teamMembers",
+          foreignField: "_id",
+          as: "teamMembersDetails",
+        },
+      },
+      {
+        $unwind: {
+          path: "$event",
+        },
+      },
+      {
+        $unwind: {
+          path: "$leader",
+        },
+      },
+      {
+        $sort: {
+          eventId: 1,
+        },
+      },
+      {
+        $match: {
+          eventId: eventId,
+        },
+      },
+    ]);
+
+    res.status(200).json(
+      results.map((e) => {
+        return {
+          name: e.leader.name,
+          tscId: e.leader.tscId,
+          number: e.leader.phone,
+          college: e.leader.college,
+          branch: e.leader.branch,
+          batch: e.leader.batch,
+        };
+      })
+    );
   } catch (error) {
     console.log(error);
     res.status(500).json({ success: false, message: error.message });

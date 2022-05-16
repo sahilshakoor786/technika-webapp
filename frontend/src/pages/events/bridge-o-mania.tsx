@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="4000" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -94,65 +92,53 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              > 
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                
-              About the Event<br />
-              </h1>
-               We didn’t exaggerate when we said we have
-something for everyone.For all the budding
-engineers out there who are fascinated by the
-architectural amazements, the mechanics and
-structural analysis behind it all we have bridgeo-mania where you’ll have to build a bridge of
-ice cream sticks and it will be tested on its load
-taking capacity and strength.
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              •  Maximum 3 Members per team. Participants from different institutions can form a team.  <br />
-
-              • Participants should not bring their own scale, pencil and cutter which they require at the time of the event. <br />
-
-              • Adhesives and sticks will be provided on the spot.<br />
-
-              • Use of material other than given is not permitted.<br />
-
-              • It is not compulsory to use all the sticks.<br />
-
-              • Time is limited to minimum 2 hours.<br />
-              • Shape: Structure could be of absolutely any shape satisfying the above constraints.  <br />
-              • Once the structure is weighed, you are not allowed to modify your structure in any way.<br />
-
-              • If the structure fails to satisfy any of the above constraints then it will be summarily rejected. <br />
-
-              • Any structure that is not ready within the time limit will not be evaluated. <br />
-
-              • Judges' decision shall be final and binding on all. <br />
-
-              • Maximum no of member at a joint should be 4. <br />
-              • Length (clear span): 40 cm.  <br />
- 
-              • Bearing (on supports): 2-2.5 cm <br />
-
-              • Width: 10 cm <br />
- • There should not be any variations in the dimensions of the bridge, Limiting to an error of 1 cm in width and 2 cm in length. <br />
- 
-
-
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              Vishwas Badal (3rd B.tech ME):8081315195
-
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                We didn’t exaggerate when we said we have something for
+                everyone.For all the budding engineers out there who are
+                fascinated by the architectural amazements, the mechanics and
+                structural analysis behind it all we have bridgeo-mania where
+                you’ll have to build a bridge of ice cream sticks and it will be
+                tested on its load taking capacity and strength.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                • Maximum 3 Members per team. Participants from different
+                institutions can form a team. <br />
+                • Participants should not bring their own scale, pencil and
+                cutter which they require at the time of the event. <br />
+                • Adhesives and sticks will be provided on the spot.
+                <br />
+                • Use of material other than given is not permitted.
+                <br />
+                • It is not compulsory to use all the sticks.
+                <br />
+                • Time is limited to minimum 2 hours.
+                <br />
+                • Shape: Structure could be of absolutely any shape satisfying
+                the above constraints. <br />
+                • Once the structure is weighed, you are not allowed to modify
+                your structure in any way.
+                <br />
+                • If the structure fails to satisfy any of the above constraints
+                then it will be summarily rejected. <br />
+                • Any structure that is not ready within the time limit will not
+                be evaluated. <br />
+                • Judges' decision shall be final and binding on all. <br />
+                • Maximum no of member at a joint should be 4. <br />
+                • Length (clear span): 40 cm. <br />
+                • Bearing (on supports): 2-2.5 cm <br />
+                • Width: 10 cm <br />
+                • There should not be any variations in the dimensions of the
+                bridge, Limiting to an error of 1 cm in width and 2 cm in
+                length. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Vishwas Badal (3rd B.tech ME):8081315195
               </div>
             </div>
           </main>
@@ -162,7 +148,7 @@ taking capacity and strength.
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -175,8 +161,10 @@ taking capacity and strength.
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCEH01
-" />
+              <EventRegistrationForm
+                eventId="TSCEH01
+"
+              />
             </div>
           </div>
         </>

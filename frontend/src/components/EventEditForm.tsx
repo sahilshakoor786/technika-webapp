@@ -17,7 +17,7 @@ export default function EventEditForm({
   const [error, setError] = useState("");
   const [token, setToken] = useState<Token>();
   const [userTscId, setUserTscId] = useState("");
-
+  const [description, setDescription] = useState(registration?.description);
   const [participants, setParticipants] = useState<Array<string>>(
     registration?.teamMembersDetails.map((e) => e.tscId)
   );
@@ -25,9 +25,11 @@ export default function EventEditForm({
 
   useEffect(() => {
     console.log(registration);
+    setDescription(registration?.description);
+    setParticipants(registration?.teamMembersDetails.map((e) => e.tscId));
 
     getUser();
-  }, []);
+  }, [registration]);
 
   function getUser() {
     const token = getToken();
@@ -74,6 +76,7 @@ export default function EventEditForm({
           {
             id: registration._id,
             teamMembersTSCIds: participants,
+            description: description,
           },
           {
             headers: {
@@ -132,6 +135,13 @@ export default function EventEditForm({
             className="shadow px-4 py-2 rounded focus:outline-none bg-slate-100 my-2"
             value={userTscId}
             readOnly
+          />
+
+          <p>Description</p>
+          <textarea
+            className="shadow  px-4 py-2 resize rounded-md focus:outline-none rounded bg-slate-100"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
 
           {registration?.event && registration?.event?.minTeamSize > 1 && (

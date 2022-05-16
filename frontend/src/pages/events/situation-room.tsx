@@ -52,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="1500" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -94,42 +93,32 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                     <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
-                Most of us have had those awkward moments
-where all we had to do was to not turn
-around and all we did was turn around, now
-the outcome might not have been the most
-desirable one but in this activity of ours you
-might get a shot at retribution while we provide
-you with certain situations and you devise
-appropriate reactions. 
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              Guidelines:<br />
-              </h1>
-              •	A team should of 3-4 members. <br />
-•	The participants would be provided with 15(situation based) questions ( technical knowledge, basic engineering knowledge, problem solving) and they have to answer with possible way. <br />
-•	time limit of 30 sec for each questions will be provided. <br />
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              Vaibhav Shukla (3rd B.tech ME)
-
-: 9026405159
-
- <br />
-
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                Most of us have had those awkward moments where all we had to do
+                was to not turn around and all we did was turn around, now the
+                outcome might not have been the most desirable one but in this
+                activity of ours you might get a shot at retribution while we
+                provide you with certain situations and you devise appropriate
+                reactions.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines:
+                  <br />
+                </h1>
+                • A team should of 3-4 members. <br />
+                • The participants would be provided with 15(situation based)
+                questions ( technical knowledge, basic engineering knowledge,
+                problem solving) and they have to answer with possible way.{" "}
+                <br />
+                • time limit of 30 sec for each questions will be provided.{" "}
+                <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Vaibhav Shukla (3rd B.tech ME) : 9026405159
+                <br />
               </div>
             </div>
           </main>
@@ -139,7 +128,7 @@ appropriate reactions.
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -152,8 +141,10 @@ appropriate reactions.
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE04
-" />
+              <EventRegistrationForm
+                eventId="TSCCE04
+"
+              />
             </div>
           </div>
         </>

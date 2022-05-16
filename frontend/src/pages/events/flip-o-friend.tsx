@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -49,10 +48,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-               Flip-o-friend
-
-
-
+                Flip-o-friend
               </h1>
               <Prize prize="1500" />
 
@@ -73,11 +69,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">
-                  DBMS LAB/INTERNET LAB
-
-
-                  </span>
+                  <span className="text-slate-800 ">DBMS LAB/INTERNET LAB</span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
@@ -100,38 +92,32 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >     <h1
-              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-            >
-              
-            About the Event<br />
-            </h1>
-              “ Whatever may happen,you will always find me
-              by your side”- say all best friends. Here is your
-              chance to put you and your buddy’s best minds
-              to work and solve something apart from the
-              ‘kaands’ you do.Solve two problems separately
-              and once half time is over you swap your under
-              process work.Team with maximum points
-              wins.
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                
-                Guidelines: <br />
-              </h1>
-              There will be a team of 2 in this. Both the participants will be made to sit in different rooms and separate questions will be given to them. After 15-20 minutes they will be swapped. The first one will now work on the code of 2nd person and vice versa. The team getting the maximum points will win. Ties will be broken by the amount of time taken.
-   <br />
-   <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>Aman Maurya (3rd B.tech IT):8354855936
-
-
-
-
+                {" "}
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                “ Whatever may happen,you will always find me by your side”- say
+                all best friends. Here is your chance to put you and your
+                buddy’s best minds to work and solve something apart from the
+                ‘kaands’ you do.Solve two problems separately and once half time
+                is over you swap your under process work.Team with maximum
+                points wins.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                There will be a team of 2 in this. Both the participants will be
+                made to sit in different rooms and separate questions will be
+                given to them. After 15-20 minutes they will be swapped. The
+                first one will now work on the code of 2nd person and vice
+                versa. The team getting the maximum points will win. Ties will
+                be broken by the amount of time taken.
+                <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Aman Maurya (3rd B.tech IT):8354855936
               </div>
             </div>
           </main>
@@ -141,7 +127,7 @@ export default function Page() {
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

@@ -52,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="2000" />
 
-
               <div
                 className="w-full grid grid-cols-1  lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -94,37 +93,27 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                     <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
-                If you have also grown up messing around
-with those 20 rupees laser torches that you’d
-get at the diwali fair then you are going to
-absolutely love this event of ours where you
-have to to arrange the given mirrors in order
-so that the laser light can be obtained on the
-required setup.  <br />
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-                •	A team should of 2-3 members. <br />
- •	4 mirrors and a laser light would be provided to the participants and they have to arrange the given materials in such a way that the laser light reaches the target. <br />
- <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              Himanshu Srivastav (3rd B.tech PT)
-: 9305440483
- <br />
- 
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                If you have also grown up messing around with those 20 rupees
+                laser torches that you’d get at the diwali fair then you are
+                going to absolutely love this event of ours where you have to to
+                arrange the given mirrors in order so that the laser light can
+                be obtained on the required setup. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                • A team should of 2-3 members. <br />
+                • 4 mirrors and a laser light would be provided to the
+                participants and they have to arrange the given materials in
+                such a way that the laser light reaches the target. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Himanshu Srivastav (3rd B.tech PT) : 9305440483
+                <br />
               </div>
             </div>
           </main>
@@ -134,7 +123,7 @@ required setup.  <br />
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

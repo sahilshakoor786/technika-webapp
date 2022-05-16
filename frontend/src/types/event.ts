@@ -21,4 +21,5 @@ export type Registration = {
   teamMembers: string[];
   leaderId: string;
   isTeamRegistration: boolean;
+  description: string;
 };

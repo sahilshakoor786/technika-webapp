@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -50,11 +49,8 @@ export default function Page() {
                 mt-32 md:mt-20 mb-10"
               >
                 Robo-Combat
-
               </h1>
               <Prize prize="50000" />
-
-              
 
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
@@ -70,15 +66,14 @@ export default function Page() {
                   className="rounded-lg grid grid-cols-2 gap-2 p-10 
                  backdrop-blur shadow-lg bg-white/30"
                 >
-                   <span className="font-primary font-bold text-slate-800 ">
+                  <span className="font-primary font-bold text-slate-800 ">
                     Round-1
                   </span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Tennis lawn
-</span>
-<span className="font-primary font-bold text-slate-800 ">
+                  <span className="text-slate-800 ">Tennis lawn</span>
+                  <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
                   <span className="text-slate-800">20 May</span>
@@ -93,9 +88,8 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Tennis lawn
-</span>
-<span className="font-primary font-bold text-slate-800 ">
+                  <span className="text-slate-800 ">Tennis lawn</span>
+                  <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
                   <span className="text-slate-800">22 May</span>
@@ -118,27 +112,21 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                   <h1
-           className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-         >
-           
-         About the Event<br />
-         </h1>
-         Enough of the harmless display of knowledge and the
-benevolence of the sciences. It’s time for destruction,
-some fireworks, some annihilation as your ruthless metal
-monsters go to work at each other in the arena that we
-have here waiting for you and your mean machines.
-Steady your defences and sharpen your weapons.
-May the best bot win! Let’s get ready to rumble!
-              <h1
-           className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-           >
-           Coordinators: <br />
-         </h1>
-           Pradum Pal (3rd B.tech ET):9571109091   <br />
- Sudheer Singh (3rd B.tech ET):
-              6386066457  
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                Enough of the harmless display of knowledge and the benevolence
+                of the sciences. It’s time for destruction, some fireworks, some
+                annihilation as your ruthless metal monsters go to work at each
+                other in the arena that we have here waiting for you and your
+                mean machines. Steady your defences and sharpen your weapons.
+                May the best bot win! Let’s get ready to rumble!
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Pradum Pal (3rd B.tech ET):9571109091 <br />
+                Sudheer Singh (3rd B.tech ET): 6386066457
               </div>
             </div>
           </main>
@@ -148,7 +136,7 @@ May the best bot win! Let’s get ready to rumble!
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

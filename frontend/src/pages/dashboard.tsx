@@ -33,10 +33,12 @@ export default function DashboardPage() {
       isTeamRegistration: true,
       leaderId: "627a64f0951870870aaf4e33",
       teamMembers: ["626d25690ac9e00f00574e68"],
+      description: "test",
       event: {
         _id: "627a7da3ca43c860d6a5593c",
         eventId: "TSCCE09",
-        eventName: "HOW I MET YOUR TREASURE",
+        eventName: "test",
+
         eventDescription:
           "Well what is any fest without a good, mind boggling, discombobulating (big fests need big words defining it) treasure hunt based on your technical and basic scientific knowledge.",
         eventTime: "2022-05-21T03:30:00.000Z",
@@ -93,10 +95,11 @@ export default function DashboardPage() {
       isTeamRegistration: true,
       leaderId: "627a64f0951870870aaf4e33",
       teamMembers: ["626d25690ac9e00f00574e68"],
+      description: "test",
       event: {
         _id: "627a7da3ca43c860d6a5593c",
         eventId: "TSCCE09",
-        eventName: "HOW I MET YOUR TREASURE",
+        eventName: "test",
         eventDescription:
           "Well what is any fest without a good, mind boggling, discombobulating (big fests need big words defining it) treasure hunt based on your technical and basic scientific knowledge.",
         eventTime: "2022-05-21T03:30:00.000Z",
@@ -148,6 +151,7 @@ export default function DashboardPage() {
   const [popup, setPopup] = useState(false);
 
   function handleEventFormPopup(eventRegistration: Registration) {
+    setEditEventRegistration(eventRegistration);
     if (!popup) {
       gsap.to("#event-popup", {
         top: 0,
@@ -166,7 +170,6 @@ export default function DashboardPage() {
       });
     }
 
-    setEditEventRegistration(eventRegistration);
     setPopup(!popup);
   }
 
@@ -506,7 +509,7 @@ export default function DashboardPage() {
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={() =>
                   handleEventFormPopup({
@@ -515,10 +518,11 @@ export default function DashboardPage() {
                     isTeamRegistration: true,
                     leaderId: "627a64f0951870870aaf4e33",
                     teamMembers: ["626d25690ac9e00f00574e68"],
+                    description: "",
                     event: {
                       _id: "627a7da3ca43c860d6a5593c",
                       eventId: "TSCCE09",
-                      eventName: "HOW I MET YOUR TREASURE",
+                      eventName: "test",
                       eventDescription:
                         "Well what is any fest without a good, mind boggling, discombobulating (big fests need big words defining it) treasure hunt based on your technical and basic scientific knowledge.",
                       eventTime: "2022-05-21T03:30:00.000Z",

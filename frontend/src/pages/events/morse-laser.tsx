@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -52,7 +51,6 @@ export default function Page() {
                 Morse Laser
               </h1>
               <Prize prize="3000" />
-              
 
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
@@ -94,34 +92,24 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              ><h1
-              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-            >
-              
-            About the Event<br />
-            </h1>
-                How would Christopher Nolan direct a game of
-dumb charades?
- He would probably bring out laser pointers and
-display a morse code for the team to decipher
-the movie. We bring to you the morse’s laser
-because that’s exactly what it is.
-                The contestants would be provided with movie name written in
-                Morse's code and they have to guess the movie name .
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                
-                Guidelines: <br />
-              </h1>
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>Sudhanshu Tiwari (3rd B.tech ME):8175057261
-
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                How would Christopher Nolan direct a game of dumb charades? He
+                would probably bring out laser pointers and display a morse code
+                for the team to decipher the movie. We bring to you the morse’s
+                laser because that’s exactly what it is. The contestants would
+                be provided with movie name written in Morse's code and they
+                have to guess the movie name .
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Sudhanshu Tiwari (3rd B.tech ME):8175057261
               </div>
             </div>
           </main>
@@ -131,7 +119,7 @@ because that’s exactly what it is.
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

@@ -52,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="2500" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-contain bg-fixed bg-center bg-no-repeat"
@@ -93,30 +92,35 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              >   <h1
-              className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-            >
-              
-            About the Event<br />
-            </h1>
-                A water rocket is a model rocket that uses water as its reaction mass. The water is forced out by a pressurized gas, typically compressed air. Like all rocket engines, it operates on the principle of Newton's third law of motion. Hobbyists typically use one or more plastic soft drink bottle as the rocket's pressure vessel.
-Elements of water rocket: Bottle (used as pressure vessel), gas (water rocket can be pressurized using a standard bicycle pump, capable of reaching at least 75 psi), nozzle, fins, landing system, launch tubes.
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                
-                Guidelines: <br />
-              </h1>
-              Round one- the distance covered by the water rocket will be the judging criteria. <br />
-              Round two- teams qualifying round one will be judged on the basis of the landing system employed in their models i.e. how precisely the rocket hits the target placed on the ground. <br />
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>Himanshu(3rd B.tech ME):  6392430338  <br /> Vikas(3rd B.tech FT): 7248338611  <br /> Nikita(3rd B.tech PL):8303290354
-              
-
+                {" "}
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                A water rocket is a model rocket that uses water as its reaction
+                mass. The water is forced out by a pressurized gas, typically
+                compressed air. Like all rocket engines, it operates on the
+                principle of Newton's third law of motion. Hobbyists typically
+                use one or more plastic soft drink bottle as the rocket's
+                pressure vessel. Elements of water rocket: Bottle (used as
+                pressure vessel), gas (water rocket can be pressurized using a
+                standard bicycle pump, capable of reaching at least 75 psi),
+                nozzle, fins, landing system, launch tubes.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                Round one- the distance covered by the water rocket will be the
+                judging criteria. <br />
+                Round two- teams qualifying round one will be judged on the
+                basis of the landing system employed in their models i.e. how
+                precisely the rocket hits the target placed on the ground.{" "}
+                <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Himanshu(3rd B.tech ME): 6392430338 <br /> Vikas(3rd B.tech FT):
+                7248338611 <br /> Nikita(3rd B.tech PL):8303290354
               </div>
             </div>
           </main>
@@ -126,7 +130,7 @@ Elements of water rocket: Bottle (used as pressure vessel), gas (water rocket ca
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

@@ -74,7 +74,6 @@ export default function Page() {
                     Date
                   </span>
                   <span className="text-slate-800"> 21 May</span>
-                  
 
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
@@ -94,41 +93,33 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                  <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
                 Path Pradarshak is an innovation challenge where teams will come
                 up with their unique solutions on given problem statements. Team
                 have to prepare their solution taking care of it’s cost, demand,
                 and reliability. Ideas which will serve society in different
                 manner.
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              ● Each team can have a maximum of 3 participants. <br />
-● There is no restriction of branches for students. <br />
-● Each team has to present their ideas within 5 min of the Slide presentation. <br />
-● Teams without proper Slide presentation will not be considered. <br />
-● Unethical behavior could lead to disqualification. Coordinators have all the rights to take 
-final decisions for any matter during the event. <br />
-● Jury’s decision will be final. <br />
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-             
-
-Shweta Anand (3rd B.tech EE): 8303776392 <br /> Sambhab Garg (3rd B.tech CHE):  9760600000 <br />
-
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                ● Each team can have a maximum of 3 participants. <br />
+                ● There is no restriction of branches for students. <br />
+                ● Each team has to present their ideas within 5 min of the Slide
+                presentation. <br />
+                ● Teams without proper Slide presentation will not be
+                considered. <br />
+                ● Unethical behavior could lead to disqualification.
+                Coordinators have all the rights to take final decisions for any
+                matter during the event. <br />
+                ● Jury’s decision will be final. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Shweta Anand (3rd B.tech EE): 8303776392 <br /> Sambhab Garg
+                (3rd B.tech CHE): 9760600000 <br />
               </div>
             </div>
           </main>
@@ -138,7 +129,7 @@ Shweta Anand (3rd B.tech EE): 8303776392 <br /> Sambhab Garg (3rd B.tech CHE):  
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -151,8 +142,10 @@ Shweta Anand (3rd B.tech EE): 8303776392 <br /> Sambhab Garg (3rd B.tech CHE):  
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM05
-" />
+              <EventRegistrationForm
+                eventId="TSCMM05
+"
+              />
             </div>
           </div>
         </>

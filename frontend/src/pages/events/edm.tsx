@@ -67,9 +67,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">
-                    Parking Lot
-                  </span>
+                  <span className="text-slate-800 ">Parking Lot</span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
@@ -103,7 +101,7 @@ export default function Page() {
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

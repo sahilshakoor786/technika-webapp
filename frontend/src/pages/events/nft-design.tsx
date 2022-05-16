@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="3000" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -94,34 +92,24 @@ export default function Page() {
               <div
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
-              > 
-                  <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
               >
-                
-              About the Event<br />
-              </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
                 We are sure that all the money minded tech geeks out there
                 must’ve atleast once (if not repeatedly) in these past few
                 months played with the idea of buying/ curating or even
                 synthesizing a non-fungible token. So here’s your chance to let
                 your creativity run wild but under certain space and time
                 constraints, ironical ? We know.
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-                
-              </h1>
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Cordinators: <br />
-                
-              </h1>
-              Neeraj Kumar(3rd CSE):7355287288
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Cordinators: <br />
+                </h1>
+                Neeraj Kumar(3rd CSE):7355287288
               </div>
             </div>
           </main>
@@ -131,7 +119,7 @@ export default function Page() {
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -144,8 +132,10 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCCE06
-" />
+              <EventRegistrationForm
+                eventId="TSCCE06
+"
+              />
             </div>
           </div>
         </>

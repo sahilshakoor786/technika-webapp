@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="1000" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -95,36 +93,30 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                   <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
-                If you too are picky of hot pink,salmon
-pink,magenta pink,baby pink etc and very
-particular of the visuals you serve on you
-website then rasterize is the place for you.
-Replicate the original frontend design
-shown to the closest possible degree and
-emerge as the winner.
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              In this event, participants will get an opportunity to show off their front-end web design skills (HTML/CSS/JAVASCRIPT). All the participants will be shown a web design for a brief time and will be provided all relevant data (dimensions, color codes, etc).
-They have to replicate the original web design. A participant whose web design is closest to the original web design shown in the beginning will be considered winner.
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              Sumit (3rd btech IT)
-: 9568243301
-  <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                If you too are picky of hot pink,salmon pink,magenta pink,baby
+                pink etc and very particular of the visuals you serve on you
+                website then rasterize is the place for you. Replicate the
+                original frontend design shown to the closest possible degree
+                and emerge as the winner.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                In this event, participants will get an opportunity to show off
+                their front-end web design skills (HTML/CSS/JAVASCRIPT). All the
+                participants will be shown a web design for a brief time and
+                will be provided all relevant data (dimensions, color codes,
+                etc). They have to replicate the original web design. A
+                participant whose web design is closest to the original web
+                design shown in the beginning will be considered winner.
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Sumit (3rd btech IT) : 9568243301
+                <br />
               </div>
             </div>
           </main>
@@ -134,7 +126,7 @@ They have to replicate the original web design. A participant whose web design i
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 

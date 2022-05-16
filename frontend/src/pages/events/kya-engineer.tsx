@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="2000" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -95,12 +93,10 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-        <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
                 Have you also been humiliated by the line "Kya fayda aisi
                 engineering ka ki pankha, cooler bhi na shi kar pao". If yes
                 then it’s your chance to learn how to repair ‘pankha cooler’
@@ -111,38 +107,36 @@ export default function Page() {
                 engineering is to find out how an object or system works. There
                 are a variety of reasons to do this. Reverse-engineering can be
                 used to learn how something works and to recreate the object or
-                create a similar object with added enhancement.
-                Reverse engineering include: <br />
-1) Information extraction : dismantling,close inspection, research. <br />
-2) Review : understanding the whole working process/ mechanism of the product. <br />
-3) Modification : including your ideas, innovations, or modifications in the product taking care
-of cost, reliability, and efficiency of the existing product. <br />
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              ● This will be a team event and each team can have a maximum of 3 participants.
-● There is no branch restriction for students. <br />
-● Event duration will be 60 minutes. <br />
-● Topics of research will be unveiled exactly one hour before the event. All the team
-members are expected to equally participate and do thorough research over topics
-allotted. <br />
-● Each team will be allotted a maximum of 5 minutes for presentation of their ideas and
-concepts. <br />
-● Unethical behavior could lead to disqualification. Coordinators have all the rights to take
-final decisions for any matter during the event. <br />
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              , 
-
-              Uday Gupta (3rd B.tech ME): 98077 48401  <br />
-              Mohd Aqib (3rd B.tech ME) : 7983632115 
+                create a similar object with added enhancement. Reverse
+                engineering include: <br />
+                1) Information extraction : dismantling,close inspection,
+                research. <br />
+                2) Review : understanding the whole working process/ mechanism
+                of the product. <br />
+                3) Modification : including your ideas, innovations, or
+                modifications in the product taking care of cost, reliability,
+                and efficiency of the existing product. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                ● This will be a team event and each team can have a maximum of
+                3 participants. ● There is no branch restriction for students.{" "}
+                <br />
+                ● Event duration will be 60 minutes. <br />
+                ● Topics of research will be unveiled exactly one hour before
+                the event. All the team members are expected to equally
+                participate and do thorough research over topics allotted.{" "}
+                <br />
+                ● Each team will be allotted a maximum of 5 minutes for
+                presentation of their ideas and concepts. <br />
+                ● Unethical behavior could lead to disqualification.
+                Coordinators have all the rights to take final decisions for any
+                matter during the event. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                , Uday Gupta (3rd B.tech ME): 98077 48401 <br />
+                Mohd Aqib (3rd B.tech ME) : 7983632115
               </div>
             </div>
           </main>
@@ -152,7 +146,7 @@ final decisions for any matter during the event. <br />
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -165,8 +159,10 @@ final decisions for any matter during the event. <br />
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM06
-" />
+              <EventRegistrationForm
+                eventId="TSCMM06
+"
+              />
             </div>
           </div>
         </>

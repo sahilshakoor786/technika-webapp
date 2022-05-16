@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="5000" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-center"
@@ -71,8 +69,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Tennis Lawn
-</span>
+                  <span className="text-slate-800 ">Tennis Lawn</span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
@@ -96,33 +93,24 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                  <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
                 In this event, participants will have to design an aircraft.
                 This aircraft would be launched in the air field using air
                 pressure concept. The plane which will cover the max range at a
                 certain height will come out on top.
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-
-              <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-            
-
-              Satyansh(3rd B.tech ET):   8177020964  <br /> Archana(3rd B.tech ME):73554 95097 <br /> Kartik(3rd B.tech ME):  7037755563<br /> Aryan Verma(3rd B.tech ME): 9519441112<br />
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Satyansh(3rd B.tech ET): 8177020964 <br /> Archana(3rd B.tech
+                ME):73554 95097 <br /> Kartik(3rd B.tech ME): 7037755563
+                <br /> Aryan Verma(3rd B.tech ME): 9519441112
+                <br />
               </div>
             </div>
           </main>
@@ -132,7 +120,7 @@ export default function Page() {
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
@@ -145,8 +133,10 @@ export default function Page() {
                 />
               </button>
 
-              <EventRegistrationForm eventId="TSCMM07
-" />
+              <EventRegistrationForm
+                eventId="TSCMM07
+"
+              />
             </div>
           </div>
         </>

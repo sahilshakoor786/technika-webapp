@@ -7,7 +7,6 @@ import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
 import Prize from "src/components/Prize";
 
-
 export default function Page() {
   const [popup, setPopup] = useState(false);
 
@@ -53,7 +52,6 @@ export default function Page() {
               </h1>
               <Prize prize="3000" />
 
-
               <div
                 className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
@@ -95,44 +93,32 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                   <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-              About the Event<br />
-              </h1>
-              Pay homage to the vast motorcar collection
-we all used to have back in the good old days
-and put those chemistry classes to work in
-order to design a car which uses chemicals
-as fuel. Ain’t no better place than this to do
-your half-baked chemical reactions. <br />
-                <h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Guidelines: <br />
-              </h1>
-              •	It can be performed with a team of maximum number up to 4 (With a specified team leader).  <br />
-•	It has two Round. Round 1 is eliminating round and round 2 is final round. <br />                 
-•	Each team has to design the manually assembled car running on the basis of chemical energy fuels. <br />
-•	Chemical car will start on the START point and top teams reaching final destination in shortest time will go for final round and the same process will carry again.
-•	Competition area has a special place defined for the Chemical Car. <br />
-
-<h1
-                className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"
-              >
-                
-                Coordinators: <br />
-              </h1>
-              Mayank Khanna (3rd B.tech CHE) : 8299023118
-
-
-
-
-
-
-
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  About the Event
+                  <br />
+                </h1>
+                Pay homage to the vast motorcar collection we all used to have
+                back in the good old days and put those chemistry classes to
+                work in order to design a car which uses chemicals as fuel.
+                Ain’t no better place than this to do your half-baked chemical
+                reactions. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Guidelines: <br />
+                </h1>
+                • It can be performed with a team of maximum number up to 4
+                (With a specified team leader). <br />
+                • It has two Round. Round 1 is eliminating round and round 2 is
+                final round. <br />
+                • Each team has to design the manually assembled car running on
+                the basis of chemical energy fuels. <br />
+                • Chemical car will start on the START point and top teams
+                reaching final destination in shortest time will go for final
+                round and the same process will carry again. • Competition area
+                has a special place defined for the Chemical Car. <br />
+                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                  Coordinators: <br />
+                </h1>
+                Mayank Khanna (3rd B.tech CHE) : 8299023118
               </div>
             </div>
           </main>
@@ -142,7 +128,7 @@ your half-baked chemical reactions. <br />
             className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
             backdrop-blur opacity-0 px-5 z-40 scale-50"
           >
-            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
               <button
                 onClick={handleEventFormPopup}
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
