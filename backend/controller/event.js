@@ -148,6 +148,19 @@ exports.register = async (req, res) => {
           return;
         }
 
+        const check = await EventRegistrationDetail.findOne({
+          eventId: eventId,
+          teamMembers: teamMember.id,
+        });
+
+        if (check) {
+          res.status(400).json({
+            success: false,
+            message: "User already registered for this event",
+          });
+          return;
+        }
+
         if (!teamMember.isHbtuStudent) {
           const registrationPayment = await RegistrationPayment.findOne({
             userId: teamMember.id,
@@ -427,6 +440,118 @@ exports.getEvent = async (req, res) => {
       success: true,
       result: event,
     });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+exports.editRegister = async (req, res) => {
+  try {
+    const id = req.body.id;
+    if (!id) {
+      res.status(400).json({ success: false, message: "User id not found" });
+      return;
+    }
+
+    const eventRegistrationDetail = await EventRegistrationDetail.findById(id);
+    const event = await Event.findOne({
+      eventId: eventRegistrationDetail.eventId,
+    });
+
+    if (event.isSoloEvent) {
+      res.json({
+        success: false,
+        message: "Solo event cannot be edited",
+      });
+      return;
+    }
+
+    if (!eventRegistrationDetail) {
+      res.status(400).json({ success: false, message: "Event not found" });
+      return;
+    }
+
+    if (req.user.id != eventRegistrationDetail.leaderId) {
+      res.status(400).json({ success: false, message: "Not authorized" });
+      return;
+    }
+    const teamMembersTSCIds = req.body.teamMembersTSCIds;
+
+    const teamMembers = [];
+
+    for (let i = 0; i < teamMembersTSCIds.length; i++) {
+      const teamMember = await User.findOne({ tscId: teamMembersTSCIds[i] });
+
+      if (!teamMember) {
+        res.status(400).json({
+          success: false,
+          message: "Team member not found",
+        });
+        return;
+      }
+
+      const check = await EventRegistrationDetail.findOne({
+        eventId: eventRegistrationDetail.eventId,
+        teamMembers: { $in: [teamMember._id] },
+        $not: { _id: eventRegistrationDetail._id },
+      });
+
+      if (check) {
+        res.status(400).json({
+          success: false,
+          message: "User already registered for this event",
+        });
+        return;
+      }
+
+      if (!teamMember.isHbtuStudent) {
+        const registrationPayment = await RegistrationPayment.findOne({
+          userId: teamMember.id,
+          paymentStatus: "success",
+        });
+
+        if (!registrationPayment) {
+          res.status(400).json({
+            success: false,
+            message: "For non HBTU students, payment is required",
+          });
+          return;
+        }
+      }
+
+      teamMembers.push({
+        id: teamMember._id,
+        email: teamMember.email,
+        name: teamMember.name,
+        tscId: teamMember.tscId,
+      });
+    }
+
+    if (teamMembers.length + 1 < event.minTeamSize) {
+      res.status(400).json({
+        success: false,
+        message: "Minimum team size is " + event.minTeamSize,
+      });
+    }
+
+    if (teamMembers.length + 1 > event.maxTeamSize) {
+      res.status(400).json({
+        success: false,
+        message: "Maximum team size is " + event.maxTeamSize,
+      });
+    }
+
+    (eventRegistrationDetail.teamMembers = teamMembers.map(
+      (member) => member.id
+    )),
+      await eventRegistrationDetail.save();
+
+    res.status(200).json({
+      success: true,
+      message: "User registered successfully",
+    });
+    return;
   } catch (error) {
     console.log(error);
     res.status(500).json({ success: false, message: error.message });
