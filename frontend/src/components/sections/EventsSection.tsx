@@ -157,7 +157,8 @@ export default function EventsSection() {
               <a href="/events/junk-yard">
                 <span>JUNKYARD</span>
               </a>
-              <span>BE-FT Lawn</span>
+              <span>Tennis Lawn
+</span>
 
               <span>11AM-12PM</span>
               <a href="/events/quiz-me-more">
@@ -187,7 +188,8 @@ export default function EventsSection() {
               <a href="/events/squid-game">
                 <span>SQUID GAME</span>
               </a>
-              <span>BE-FT Lawn</span>
+              <span>Tennis Lawn
+</span>
 
               <span>3PM-4:30PM</span>
               <a href="/events/nft-design">
@@ -195,11 +197,18 @@ export default function EventsSection() {
               </a>
               <span>CSE Seminar Hall</span>
 
-              <span>6PM-8PM</span>
+              <span>6:00PM-8;30PM</span>
               <a href="/events/celebritytalk">
                 <span>Celebrity Talk</span>
               </a>
-              <span>Tennis Lawn</span>
+              <span>Auditorium
+</span>
+              <span>2PM-4PM</span>
+              <a href="/events/speakertalk">
+                <span>Speaker Talk</span>
+              </a>
+              <span>Auditorium
+</span>
 
               <span>9AM-11AM</span>
               <a href="/events/treasure-hunt">
@@ -220,8 +229,8 @@ export default function EventsSection() {
               <span>Parking Lot</span>
 
               <span>7:30PM-8:30PM</span>
-              <a href="/events/vr-gaming">
-                <span>VR-GAMING</span>
+              <a href="/events/e-gaming">
+                <span>E--GAMING</span>
               </a>
               <span>Auditorium</span>
             </div>
@@ -281,15 +290,17 @@ export default function EventsSection() {
               <a href="/events/blazing-wheel">
                 <span>BLAZING-WHEEL</span>
               </a>
-              <span>BE-FT Lawn</span>
+              <span>Tennis Lawn
+</span>
 
               <span>3PM-5PM</span>
               <a href="/events/free-flight">
                 <span>FREE-FLIGHT</span>
               </a>
-              <span>Mechanical Department</span>
+              <span>parking lot
+</span>
 
-              <span>4:30PM-8:30PM</span>
+              <span>3:00PM-5:00PM</span>
               <a href="/events/robo-combat">
                 <span>ROBO-COMBAT</span>
               </a>
@@ -299,7 +310,8 @@ export default function EventsSection() {
               <a href="/events/thread-ripper">
                 <span>THREAD-RIPPER</span>
               </a>
-              <span>Mechanical Seminar Hall</span>
+              <span>Tennis Lawn
+</span>
 
               <span>12:30PM-2PM</span>
               <a href="/events/path-pradarshak">
@@ -311,7 +323,7 @@ export default function EventsSection() {
               <a href="/events/hover-mania">
                 <span>HOVER MANIA</span>
               </a>
-              <span>Mechanical Department</span>
+              <span>Tennis Lawn</span>
 
               <span>11AM-12:30PM</span>
               <a href="/events/kya-engineer">
@@ -331,7 +343,7 @@ export default function EventsSection() {
               </a>
               <span>Tennis Lawn</span>
 
-              <span>12PM-1PM</span>
+              <span>3:00PM-6:30PM</span>
               <a href="/events/simulation">
                 <span>SIMULATION</span>
               </a>
