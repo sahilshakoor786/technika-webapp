@@ -508,7 +508,65 @@ export default function DashboardPage() {
           >
             <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
               <button
-                onClick={() => handleEventFormPopup(null)}
+                onClick={() =>
+                  handleEventFormPopup({
+                    _id: "628201f3bc07732fd55443b4",
+                    eventId: "TSCCE09",
+                    isTeamRegistration: true,
+                    leaderId: "627a64f0951870870aaf4e33",
+                    teamMembers: ["626d25690ac9e00f00574e68"],
+                    event: {
+                      _id: "627a7da3ca43c860d6a5593c",
+                      eventId: "TSCCE09",
+                      eventName: "HOW I MET YOUR TREASURE",
+                      eventDescription:
+                        "Well what is any fest without a good, mind boggling, discombobulating (big fests need big words defining it) treasure hunt based on your technical and basic scientific knowledge.",
+                      eventTime: "2022-05-21T03:30:00.000Z",
+                      eventVenue: "East capmus",
+                      isSoloEvent: false,
+                      minTeamSize: 2,
+                      maxTeamSize: 4,
+                    },
+                    leader: {
+                      _id: "627a64f0951870870aaf4e33",
+                      id: "626d25690ac9e00f00574e68",
+                      tscId: "TSC2200504",
+                      googleId: "117887387656993132961",
+                      name: "TEJPRATAP SINGH",
+                      email: "tejpratapsingh545@gmail.com",
+                      isHbtuStudent: false,
+                      isTSCTeamMember: false,
+                      isTSCAdmin: false,
+                      college: "hbtu",
+                      city: "Kanpur",
+                      phone: "09935973863",
+                      picture:
+                        "https://lh3.googleusercontent.com/a-/AOh14GjVSHLC1dKFg2UzqCkp2dl3i5pMOH2KY03nECqdRA=s96-c",
+                      batch: "2023",
+                      branch: "Computer Science & Engineering",
+                    },
+                    teamMembersDetails: [
+                      {
+                        _id: "626d25690ac9e00f00574e68",
+                        id: "626d25690ac9e00f00574e68",
+                        tscId: "TSC2200524",
+                        googleId: "108283714822442297303",
+                        name: "Ayush Kumar",
+                        email: "ayushskywalker@gmail.com",
+                        isHbtuStudent: false,
+                        isTSCTeamMember: false,
+                        isTSCAdmin: false,
+                        college: "HBTU",
+                        city: "Kanpur",
+                        phone: "6393443885",
+                        picture:
+                          "https://lh3.googleusercontent.com/a-/AOh14GiwKHTKHtH-D35ZKWPsHq1bhQH-plqr1IOrx-7Dbw=s96-c",
+                        batch: "2023",
+                        branch: "Information Technology",
+                      },
+                    ],
+                  })
+                }
                 className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
               absolute rounded-full w-12 h-12 bg-pink-500 
               shadow-lg grid place-items-center hover:scale-110"
