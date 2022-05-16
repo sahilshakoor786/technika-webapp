@@ -70,6 +70,9 @@ export default function Page() {
                   className="rounded-lg grid grid-cols-2 gap-2 p-10 
                  backdrop-blur shadow-lg bg-white/30"
                 >
+                   <span className="font-primary font-bold text-slate-800 ">
+                    Round-1
+                  </span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
@@ -84,6 +87,23 @@ export default function Page() {
                     Time
                   </span>
                   <span className="text-slate-800">4:30-8:30 PM</span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Round-2
+                  </span>
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Venue
+                  </span>
+                  <span className="text-slate-800 ">Tennis lawn
+</span>
+<span className="font-primary font-bold text-slate-800 ">
+                    Date
+                  </span>
+                  <span className="text-slate-800">22 May</span>
+
+                  <span className="font-primary font-bold text-slate-800 ">
+                    Time
+                  </span>
+                  <span className="text-slate-800">5:00-7:00 PM</span>
                 </div>
               </div>
 

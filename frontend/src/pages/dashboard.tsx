@@ -7,10 +7,12 @@ import ProfileUpdate from "src/components/ProfileUpdate";
 import SecondaryButton from "src/components/SecondaryButton";
 import { getToken, Token } from "src/types/token";
 import { axiosInstance } from "src/utils/axios";
-
+import gsap from "gsap";
 import useRazorpay, { RazorpayOptions } from "react-razorpay";
 import Spinner from "src/components/Spinner";
 import { Registration } from "src/types/event";
+
+import EventEditForm from "src/components/EventEditForm";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -18,12 +20,155 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [editActive, setEditActive] = useState(false);
+  const [eventEdit, setEventEdit] = useState(false);
 
   const [token, setToken] = useState<Token>();
   const [payment, setPayment] = useState<boolean>(false);
   const [accomation, setAccomation] = useState<Boolean>(false);
 
-  const [registrations, setRegistrations] = useState<Registration[]>([]);
+  const [registrations, setRegistrations] = useState<Registration[]>([
+    {
+      _id: "628201f3bc07732fd55443b4",
+      eventId: "TSCCE09",
+      isTeamRegistration: true,
+      leaderId: "627a64f0951870870aaf4e33",
+      teamMembers: ["626d25690ac9e00f00574e68"],
+      event: {
+        _id: "627a7da3ca43c860d6a5593c",
+        eventId: "TSCCE09",
+        eventName: "HOW I MET YOUR TREASURE",
+        eventDescription:
+          "Well what is any fest without a good, mind boggling, discombobulating (big fests need big words defining it) treasure hunt based on your technical and basic scientific knowledge.",
+        eventTime: "2022-05-21T03:30:00.000Z",
+        eventVenue: "East capmus",
+        isSoloEvent: false,
+        minTeamSize: 2,
+        maxTeamSize: 4,
+      },
+      leader: {
+        _id: "627a64f0951870870aaf4e33",
+        id: "626d25690ac9e00f00574e68",
+        tscId: "TSC2200504",
+        googleId: "117887387656993132961",
+        name: "TEJPRATAP SINGH",
+        email: "tejpratapsingh545@gmail.com",
+        isHbtuStudent: false,
+        isTSCTeamMember: false,
+        isTSCAdmin: false,
+        college: "hbtu",
+        city: "Kanpur",
+        phone: "09935973863",
+        picture:
+          "https://lh3.googleusercontent.com/a-/AOh14GjVSHLC1dKFg2UzqCkp2dl3i5pMOH2KY03nECqdRA=s96-c",
+        batch: "2023",
+        branch: "Computer Science & Engineering",
+      },
+      teamMembersDetails: [
+        {
+          _id: "626d25690ac9e00f00574e68",
+          id: "626d25690ac9e00f00574e68",
+          tscId: "TSC2200524",
+          googleId: "108283714822442297303",
+          name: "Ayush Kumar",
+          email: "ayushskywalker@gmail.com",
+          isHbtuStudent: false,
+          isTSCTeamMember: false,
+          isTSCAdmin: false,
+          college: "HBTU",
+          city: "Kanpur",
+          phone: "6393443885",
+          picture:
+            "https://lh3.googleusercontent.com/a-/AOh14GiwKHTKHtH-D35ZKWPsHq1bhQH-plqr1IOrx-7Dbw=s96-c",
+          batch: "2023",
+          branch: "Information Technology",
+        },
+      ],
+    },
+  ]);
+
+  const [editEventRegistration, setEditEventRegistration] =
+    useState<Registration>({
+      _id: "628201f3bc07732fd55443b4",
+      eventId: "TSCCE09",
+      isTeamRegistration: true,
+      leaderId: "627a64f0951870870aaf4e33",
+      teamMembers: ["626d25690ac9e00f00574e68"],
+      event: {
+        _id: "627a7da3ca43c860d6a5593c",
+        eventId: "TSCCE09",
+        eventName: "HOW I MET YOUR TREASURE",
+        eventDescription:
+          "Well what is any fest without a good, mind boggling, discombobulating (big fests need big words defining it) treasure hunt based on your technical and basic scientific knowledge.",
+        eventTime: "2022-05-21T03:30:00.000Z",
+        eventVenue: "East capmus",
+        isSoloEvent: false,
+        minTeamSize: 2,
+        maxTeamSize: 4,
+      },
+      leader: {
+        _id: "627a64f0951870870aaf4e33",
+        id: "627a64f0951870870aaf4e33",
+        tscId: "TSC2200504",
+        googleId: "117887387656993132961",
+        name: "TEJPRATAP SINGH",
+        email: "tejpratapsingh545@gmail.com",
+        isHbtuStudent: false,
+        isTSCTeamMember: false,
+        isTSCAdmin: false,
+        college: "hbtu",
+        city: "Kanpur",
+        phone: "09935973863",
+        picture:
+          "https://lh3.googleusercontent.com/a-/AOh14GjVSHLC1dKFg2UzqCkp2dl3i5pMOH2KY03nECqdRA=s96-c",
+        batch: "2023",
+        branch: "Computer Science & Engineering",
+      },
+      teamMembersDetails: [
+        {
+          _id: "626d25690ac9e00f00574e68",
+          id: "627a64f0951870870aaf4e33",
+          tscId: "TSC2200524",
+          googleId: "108283714822442297303",
+          name: "Ayush Kumar",
+          email: "ayushskywalker@gmail.com",
+          isHbtuStudent: false,
+          isTSCTeamMember: false,
+          isTSCAdmin: false,
+          college: "HBTU",
+          city: "Kanpur",
+          phone: "6393443885",
+          picture:
+            "https://lh3.googleusercontent.com/a-/AOh14GiwKHTKHtH-D35ZKWPsHq1bhQH-plqr1IOrx-7Dbw=s96-c",
+          batch: "2023",
+          branch: "Information Technology",
+        },
+      ],
+    });
+
+  const [popup, setPopup] = useState(false);
+
+  function handleEventFormPopup(eventRegistration: Registration) {
+    if (!popup) {
+      gsap.to("#event-popup", {
+        top: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 0.5,
+        ease: "slow(0.7, 0.7, false)",
+      });
+    } else {
+      gsap.to("#event-popup", {
+        top: "100%",
+        opacity: 0,
+        scale: 0.5,
+        duration: 0.5,
+        ease: "slow(0.7, 0.7, false)",
+      });
+    }
+
+    setEditEventRegistration(eventRegistration);
+    setPopup(!popup);
+  }
 
   useEffect(() => {
     getInitData();
@@ -141,7 +286,7 @@ export default function DashboardPage() {
 
   function formatDate(dateString: string) {
     var d = new Date(dateString);
-    debugger;
+
     return `${d.getDate()}/5 ${d.getHours()}:${d.getMinutes()}`;
   }
 
@@ -307,9 +452,30 @@ export default function DashboardPage() {
                   className="bg-white/50 rounded-lg px-10 py-5 my-5 
                 relative shadow-md flex flex-col"
                 >
-                  <span className="font-primary font-bold text-xl">
-                    {registration.event.eventName}
+                  {registration.leaderId == token?.user.id &&
+                    !registration.event.isSoloEvent && (
+                      <button
+                        onClick={() => handleEventFormPopup(registration)}
+                        className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
+              absolute rounded-full w-12 h-12 bg-pink-500 
+              shadow-lg grid place-items-center hover:scale-110"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="#fff"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                        </svg>
+                      </button>
+                    )}
+
+                  <span className="font-bold mt-2 text-slate-600">
+                    Event: {registration.event.eventName}
                   </span>
+
                   <span className="font-bold mt-2 text-slate-600">
                     Venue: {registration.event.eventVenue}
                   </span>
@@ -332,6 +498,86 @@ export default function DashboardPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div
+            id="event-popup"
+            className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
+            backdrop-blur opacity-0 px-5 z-40 scale-50"
+          >
+            <div className="w-full max-w-xl h-2/3 bg-white shadow-lg relative rounded-lg">
+              <button
+                onClick={() =>
+                  handleEventFormPopup({
+                    _id: "628201f3bc07732fd55443b4",
+                    eventId: "TSCCE09",
+                    isTeamRegistration: true,
+                    leaderId: "627a64f0951870870aaf4e33",
+                    teamMembers: ["626d25690ac9e00f00574e68"],
+                    event: {
+                      _id: "627a7da3ca43c860d6a5593c",
+                      eventId: "TSCCE09",
+                      eventName: "HOW I MET YOUR TREASURE",
+                      eventDescription:
+                        "Well what is any fest without a good, mind boggling, discombobulating (big fests need big words defining it) treasure hunt based on your technical and basic scientific knowledge.",
+                      eventTime: "2022-05-21T03:30:00.000Z",
+                      eventVenue: "East capmus",
+                      isSoloEvent: false,
+                      minTeamSize: 2,
+                      maxTeamSize: 4,
+                    },
+                    leader: {
+                      _id: "627a64f0951870870aaf4e33",
+                      id: "626d25690ac9e00f00574e68",
+                      tscId: "TSC2200504",
+                      googleId: "117887387656993132961",
+                      name: "TEJPRATAP SINGH",
+                      email: "tejpratapsingh545@gmail.com",
+                      isHbtuStudent: false,
+                      isTSCTeamMember: false,
+                      isTSCAdmin: false,
+                      college: "hbtu",
+                      city: "Kanpur",
+                      phone: "09935973863",
+                      picture:
+                        "https://lh3.googleusercontent.com/a-/AOh14GjVSHLC1dKFg2UzqCkp2dl3i5pMOH2KY03nECqdRA=s96-c",
+                      batch: "2023",
+                      branch: "Computer Science & Engineering",
+                    },
+                    teamMembersDetails: [
+                      {
+                        _id: "626d25690ac9e00f00574e68",
+                        id: "626d25690ac9e00f00574e68",
+                        tscId: "TSC2200524",
+                        googleId: "108283714822442297303",
+                        name: "Ayush Kumar",
+                        email: "ayushskywalker@gmail.com",
+                        isHbtuStudent: false,
+                        isTSCTeamMember: false,
+                        isTSCAdmin: false,
+                        college: "HBTU",
+                        city: "Kanpur",
+                        phone: "6393443885",
+                        picture:
+                          "https://lh3.googleusercontent.com/a-/AOh14GiwKHTKHtH-D35ZKWPsHq1bhQH-plqr1IOrx-7Dbw=s96-c",
+                        batch: "2023",
+                        branch: "Information Technology",
+                      },
+                    ],
+                  })
+                }
+                className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
+              absolute rounded-full w-12 h-12 bg-pink-500 
+              shadow-lg grid place-items-center hover:scale-110"
+              >
+                <img
+                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+                  className="w-6 h-6"
+                />
+              </button>
+
+              <EventEditForm registration={editEventRegistration} />
             </div>
           </div>
         </main>

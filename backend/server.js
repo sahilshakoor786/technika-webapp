@@ -32,6 +32,12 @@ app.post(
   eventController.register
 );
 
+app.post(
+  "/event/register/update",
+  middleware.authMiddleware,
+  eventController.editRegister
+);
+
 app.get("/event/:eventId", eventController.getEvent);
 app.get("/event", eventController.listEvent);
 app.post("/event/register/check", eventController.checkRigistartion);

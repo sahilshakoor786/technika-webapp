@@ -234,6 +234,16 @@ export default function EventsPage() {
                       height={300}
                       text="Celebrity Talk"
                     />
+                    
+                  </Link>
+                  <Link href="/events/speakertalk">
+                    <FancyImage
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/celebritytalkcover-transformed.jpeg"
+                      width={200}
+                      height={300}
+                      text="Speaker Talk"
+                    />
+                    
                   </Link>
                   <Link href="/events/treasure-hunt">
                     <FancyImage
@@ -259,12 +269,12 @@ export default function EventsPage() {
                       text="EDM"
                     />
                   </Link>
-                  <Link href="/events/vr-gaming">
+                  <Link href="/events/e-gaming">
                     <FancyImage
                       src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-mikhail-nilov-7887258.jpg"
                       width={200}
                       height={300}
-                      text="VR gaming"
+                      text="E-gaming"
                     />
                   </Link>
                 </div>
