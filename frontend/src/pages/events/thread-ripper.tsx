@@ -71,7 +71,8 @@ export default function Page() {
                     Venue
                   </span>
                   <span className="text-slate-800 ">
-                    Mechanical Seminar Hall
+                  Tennis Lawn
+
                   </span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date

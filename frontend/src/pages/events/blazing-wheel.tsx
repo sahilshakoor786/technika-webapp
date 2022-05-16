@@ -69,7 +69,8 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">BE- FT Lawn</span>
+                  <span className="text-slate-800 ">Tennis Lawn
+</span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>

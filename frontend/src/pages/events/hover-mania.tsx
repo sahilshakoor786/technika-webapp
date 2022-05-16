@@ -71,7 +71,8 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Venue
                   </span>
-                  <span className="text-slate-800 ">Mechanical Dept</span>
+                  <span className="text-slate-800 ">Tennis Lawn
+</span>
                   <span className="font-primary font-bold text-slate-800 ">
                     Date
                   </span>
@@ -80,7 +81,7 @@ export default function Page() {
                   <span className="font-primary font-bold text-slate-800 ">
                     Time
                   </span>
-                  <span className="text-slate-800">11 AM-1 PM</span>
+                  <span className="text-slate-800">3:00 PM-6:30 PM</span>
                 </div>
               </div>
 
