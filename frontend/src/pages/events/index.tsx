@@ -390,12 +390,12 @@ export default function EventsPage() {
                     />
                   </Link>
 
-                  <Link href="/events/waterrocket">
+                  <Link href="/events/blast-of-to-mars">
                     <FancyImage
                       src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                       width={200}
                       height={300}
-                      text="Waterrocket"
+                      text="Blast Of To Mars"
                     />
                   </Link>
 
