@@ -124,6 +124,10 @@ export default function Page() {
                 <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                   Coordinators: <br />
                 </h1>
+              
+                Simran (3rd B.tech ET):6387260477
+
+
               </div>
             </div>
           </main>
