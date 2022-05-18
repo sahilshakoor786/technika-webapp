@@ -274,3 +274,59 @@ with open(f'non_students.csv', 'w', newline='') as csvfile:
             "branch": i['branch'],
             "batch": i['batch']
         })
+
+
+result = client["userDb"]["registrationpayments"].aggregate(
+    [
+        {
+            '$match': {
+                'paymentStatus': 'success'
+            }
+        }, {
+            '$lookup': {
+                'let': {
+                    'userObjId': {
+                        '$toObjectId': '$userId'
+                    }
+                },
+                'from': 'users',
+                'pipeline': [
+                    {
+                        '$match': {
+                            '$expr': {
+                                '$eq': [
+                                    '$_id', '$$userObjId'
+                                ]
+                            }
+                        }
+                    }
+                ],
+                'as': 'user'
+            }
+        }, {
+            '$unwind': {
+                'path': '$user'
+            }
+        }
+    ]
+)
+
+print(":: Generated CSV for all non hbtu  students payment")
+
+with open(f'non_hbtu_payment.csv', 'w', newline='') as csvfile:
+    fieldnames = ['tscId', 'name', 'email',
+                  "college", "branch", "batch"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+
+    for i in result:
+
+        writer.writerow({
+            'tscId': i['user']['tscId'],
+            'name': i['user']['name'],
+            'email': i['user']['email'],
+            "college": i['user']['college'],
+            "branch": i['user']['branch'],
+            "batch": i['user']['batch']
+        })
