@@ -154,3 +154,42 @@ for event in events:
                     "branch": i['branch'],
                     "batch": i['batch']
                 })
+
+
+result = client["userDb"]["eventregistrationdetails"].aggregate([
+    {
+        '$group': {
+            '_id': '$eventId',
+            'count': {
+                '$sum': 1
+            }
+        }
+    }, {
+        '$lookup': {
+            'from': 'events',
+            'localField': '_id',
+            'foreignField': 'eventId',
+            'as': 'event'
+        }
+    }, {
+        '$unwind': {
+            'path': '$event'
+        }
+    }
+])
+
+print(":: Generated CSV for all events")
+
+with open(f'event_count.csv', 'w', newline='') as csvfile:
+    fieldnames = ['event_name', 'event_id', 'registrations']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+
+    for i in result:
+
+        writer.writerow({
+            'event_name': i['event']['eventName'],
+            'event_id': i['event']['eventId'],
+            'registrations': i['count']
+        })
