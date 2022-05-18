@@ -3,6 +3,7 @@ import string
 import os
 from pymongo import MongoClient
 import copy
+import re
 
 import csv
 client = MongoClient(
@@ -192,4 +193,84 @@ with open(f'event_count.csv', 'w', newline='') as csvfile:
             'event_name': i['event']['eventName'],
             'event_id': i['event']['eventId'],
             'registrations': i['count']
+        })
+
+
+result = client["userDb"]["users"].find({"email": {"$regex": "hbtu.ac.in"}})
+
+
+print(":: Generated CSV for all hbtu students")
+
+
+with open(f'hbtu_students.csv', 'w', newline='') as csvfile:
+    fieldnames = ['tscId', 'name', 'email',
+                  "college", "branch", "batch"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+
+    for i in result:
+
+        writer.writerow({
+            'tscId': i['tscId'],
+            'name': i['name'],
+            'email': i['email'],
+            "college": i['college'],
+            "branch": i['branch'],
+            "batch": i['batch']
+        })
+
+
+result = client["userDb"]["users"].find({
+    '$and': [
+        {
+            'college': {
+                '$nin': [
+                    'Harcourt Butler University , Kanpur', 'Harcourt Butler Technical University, Kanpur', 'HBTU', '', 'hbtu', 'hbti', 'HBTI'
+                ]
+            }
+        }, {
+            'college': {
+                '$not': {
+                    '$regex': re.compile(r"harcourt"),
+
+                }
+            }
+        }, {
+            'college': {
+                '$not': {
+                    '$regex': re.compile(r"hbtu"),
+
+                }
+            }
+        }, {
+            'college': {
+                '$not': {
+                    '$regex': re.compile(r"butler"),
+
+                }
+            }
+        }
+    ]
+})
+
+
+print(":: Generated CSV for all non hbtu  students")
+
+with open(f'non_students.csv', 'w', newline='') as csvfile:
+    fieldnames = ['tscId', 'name', 'email',
+                  "college", "branch", "batch"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+
+    for i in result:
+
+        writer.writerow({
+            'tscId': i['tscId'],
+            'name': i['name'],
+            'email': i['email'],
+            "college": i['college'],
+            "branch": i['branch'],
+            "batch": i['batch']
         })
