@@ -20,7 +20,7 @@ exports.register = async (req, res) => {
       return;
     }
 
-    const event = await Event.find({ eventId: eventId });
+    const event = await Event.findOne({ eventId: eventId });
 
     if (!event) {
       res.status(400).json({ success: false, message: "Event not found" });
