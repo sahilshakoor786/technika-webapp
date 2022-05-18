@@ -83,7 +83,7 @@ exports.register = async (req, res) => {
         eventId: eventId,
         isCompleteRegistration: true,
         isTeamRegistration: false,
-        leaderId: eventLead,
+        leaderId: user.id,
         teamMembers: [],
         description: req.body.description || "",
       });
