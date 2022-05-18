@@ -434,7 +434,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/rasterize">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/rasterize.jpg"
                       width={200}
                       height={300}
                       text="RASTERIZE"
@@ -443,7 +443,7 @@ export default function EventsPage() {
 
                   <Link href="/events/run-time-terror">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/runtimeerror.jfif"
                       width={200}
                       height={300}
                       text="Run time terror"
@@ -451,7 +451,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/red-pencil">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/redpencil.png"
                       width={200}
                       height={300}
                       text="Red Pencil"
@@ -468,7 +468,7 @@ export default function EventsPage() {
 
                   <Link href="/events/programming-date">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/programmingdate.webp"
                       width={200}
                       height={300}
                       text="Programming Date"
