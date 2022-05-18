@@ -91,7 +91,7 @@ export default function Page() {
                 className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
               >
-                EDM stand for electronic dance electronics
+                After all the hustle and the bustle, the brainstorming and the mind racking, I guess there should be something fun to look forward to right? And I am not talking about the educational, something to learn kind of fun but the hardcore hit the cloud 9 kind of fun.  Well we are catering to your needs even before you voice them so with this said we bring to you our EDM night. Where the beats are gonna lift you off your feet and throw you into a trance of high powered musical fantasy land.
               </div>
             </div>
           </main>

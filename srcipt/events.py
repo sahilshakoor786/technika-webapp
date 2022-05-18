@@ -7,7 +7,7 @@ import re
 
 import csv
 client = MongoClient(
-    'mongodb+srv://technika:EK8Tn2BIVn7xpxYM@cluster0.fvsvy.mongodb.net/userDb')
+    'mongodb+srv://read-user:8LGcpcGhEbO6bN26@cluster0.fvsvy.mongodb.net/userDb?retryWrites=true&w=majority')
 os.makedirs('events', exist_ok=True)
 events = client['userDb']['events'].find()
 

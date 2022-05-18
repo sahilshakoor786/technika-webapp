@@ -253,12 +253,12 @@ export default function EventsPage() {
                       text="Treasure Hunt"
                     />
                   </Link>
-                  <Link href="/events/fun-fare">
+                  <Link href="/events/fun-fair">
                     <FancyImage
                       src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-nasim-didar-3619724.jpg"
                       width={200}
                       height={300}
-                      text="Fun Fare"
+                      text="Fun Fair"
                     />
                   </Link>
                   <Link href="/events/edm">
