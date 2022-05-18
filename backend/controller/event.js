@@ -786,39 +786,19 @@ exports.getDetail = async (req, res) => {
 
     const results = await EventRegistrationDetail.aggregate([
       {
-        $lookup: {
-          let: {
-            userObjId: {
-              $toObjectId: "$leaderId",
-            },
+        $group: {
+          _id: "$eventId",
+          count: {
+            $sum: 1,
           },
-          from: "users",
-          pipeline: [
-            {
-              $match: {
-                $expr: {
-                  $eq: ["$_id", "$$userObjId"],
-                },
-              },
-            },
-          ],
-          as: "leader",
         },
       },
       {
         $lookup: {
           from: "events",
-          localField: "eventId",
+          localField: "_id",
           foreignField: "eventId",
           as: "event",
-        },
-      },
-      {
-        $lookup: {
-          from: "users",
-          localField: "teamMembers",
-          foreignField: "_id",
-          as: "teamMembersDetails",
         },
       },
       {
@@ -826,32 +806,13 @@ exports.getDetail = async (req, res) => {
           path: "$event",
         },
       },
-      {
-        $unwind: {
-          path: "$leader",
-        },
-      },
-      {
-        $sort: {
-          eventId: 1,
-        },
-      },
-      {
-        $match: {
-          eventId: eventId,
-        },
-      },
     ]);
 
     res.status(200).json(
       results.map((e) => {
         return {
-          name: e.leader.name,
-          tscId: e.leader.tscId,
-          number: e.leader.phone,
-          college: e.leader.college,
-          branch: e.leader.branch,
-          batch: e.leader.batch,
+          name: e.event.eventName,
+          count: e.count,
         };
       })
     );
