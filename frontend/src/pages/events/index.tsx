@@ -238,7 +238,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/speakertalk">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/celebritytalkcover-transformed.jpeg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/speakertalk2.jpg"
                       width={200}
                       height={300}
                       text="Speaker Talk"
@@ -390,18 +390,18 @@ export default function EventsPage() {
                     />
                   </Link>
 
-                  <Link href="/events/waterrocket">
+                  <Link href="/events/blast-of-to-mars">
                     <FancyImage
                       src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                       width={200}
                       height={300}
-                      text="Waterrocket"
+                      text="Blast Of To Mars"
                     />
                   </Link>
 
                   <Link href="/events/simulation">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images//events+/simulation+2.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/simulation.jpg"
                       width={200}
                       height={300}
                       text="Simulation"
@@ -418,7 +418,7 @@ export default function EventsPage() {
                 <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
                   <Link href="/events/break-the-code">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/break%20the%20code.jpg"
                       width={200}
                       height={300}
                       text="Break the code"
@@ -426,7 +426,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/flip-o-friend">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/flip%20o%20friend.jpeg"
                       width={200}
                       height={300}
                       text="Flip-O-Friend"
@@ -459,7 +459,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/blank-coding">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-1224500457-612x612.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blank%20coding.jpg"
                       width={200}
                       height={300}
                       text="Blank Coding"
@@ -487,7 +487,7 @@ export default function EventsPage() {
                   {" "}
                   <Link href="/events/bridge-o-mania">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/bridge%20o%20mania.jpg"
                       width={200}
                       height={300}
                       text="Bridge-o-mania"
@@ -495,7 +495,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/city-maestro">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/city%20maestro.jpg"
                       width={200}
                       height={300}
                       text="City Maestro"
@@ -503,7 +503,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/save-the-egg">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/save%20the%20egg.webp"
                       width={200}
                       height={300}
                       text="Save the Egg"
@@ -511,7 +511,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/anadigilox">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/anadigologix.webp"
                       width={200}
                       height={300}
                       text="Anadigilogix"
@@ -519,7 +519,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/circuit-trouble">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/circuit%20trouble.jpg"
                       width={200}
                       height={300}
                       text="Circuit Trouble"
@@ -527,7 +527,7 @@ export default function EventsPage() {
                   </Link>
                   <Link href="/events/morse-laser">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/abstract-robot-thinking-800x450-1.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/morse%20laser.webp"
                       width={200}
                       height={300}
                       text="Morse Laser"
