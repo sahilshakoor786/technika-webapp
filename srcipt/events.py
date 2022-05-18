@@ -115,7 +115,7 @@ for event in events:
         data2.append(result2)
 
     print(":: Generated CSV for event: ", event['eventName'])
-    with open(f'events/{event["eventName"]}.csv', 'w', newline='') as csvfile2:
+    with open(f'events/{event["eventName"].replace("?","_").replace(" ", "_")}.csv', 'w', newline='') as csvfile2:
         fieldnames = ['event_name', 'event_id', 'leader_tsc_id',
                       "leader_name", "team-members-tsc-ids", "college", "branch", "batch"]
         writer = csv.DictWriter(csvfile2, fieldnames=fieldnames)
@@ -135,7 +135,7 @@ for event in events:
 
             })
 
-    with open(f'events/{event["eventName"]}Members.csv', 'w', newline='') as csvfile1:
+    with open(f'events/{event["eventName"].replace("?","_").replace(" ", "_")}Members.csv', 'w', newline='') as csvfile1:
         fieldnames = ['tscId', 'name', 'email',
                       "phoneNumber", "college", "branch", "batch"]
         writer = csv.DictWriter(csvfile1, fieldnames=fieldnames)
