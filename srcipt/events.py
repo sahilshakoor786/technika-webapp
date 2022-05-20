@@ -314,8 +314,8 @@ result = client["userDb"]["registrationpayments"].aggregate(
 print(":: Generated CSV for all non hbtu  students payment")
 
 with open(f'non_hbtu_payment.csv', 'w', newline='') as csvfile:
-    fieldnames = ['tscId', 'name', 'email',
-                  "college", "branch", "batch"]
+    fieldnames = ['tscId', 'name', 'email', 'phoneNumber', 'isAccommodation',
+                  "college",  "branch", "batch"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
     writer.writeheader()
@@ -327,6 +327,10 @@ with open(f'non_hbtu_payment.csv', 'w', newline='') as csvfile:
             'name': i['user']['name'],
             'email': i['user']['email'],
             "college": i['user']['college'],
+            "phoneNumber": i['user']['phone'],
+            "isAccommodation": i['isAccommodation'],
+
             "branch": i['user']['branch'],
-            "batch": i['user']['batch']
+            "batch": i['user']['batch'],
+
         })

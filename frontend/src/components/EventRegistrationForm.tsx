@@ -7,6 +7,7 @@ import SecondaryButton from "./SecondaryButton";
 import Spinner from "./Spinner";
 
 import useRazorpay, { RazorpayOptions } from "react-razorpay";
+import { time } from "console";
 
 type EventRegistrationFormProps = {
   eventId: string;
@@ -26,6 +27,7 @@ export default function EventRegistrationForm({
   const [payment, setPayment] = useState<boolean>(false);
   const [participants, setParticipants] = useState<Array<string>>([]);
   const [accomation, setAccomation] = useState(false);
+  const [isClosed, setIsClosed] = useState(true);
 
   useEffect(() => {
     getUser();
@@ -212,10 +214,17 @@ export default function EventRegistrationForm({
         <Spinner />
       ) : error ? (
         <>
-          <h1 className="font-primary text-2xl text-center">
+          <h1 className="font-primary  m-5  p-5 text-xl text-center">
             An Unexpected error occured{" "}
           </h1>
           <p>{error}</p>
+        </>
+      ) : isClosed ? (
+        <>
+          <h1 className="font-primary text-xl text-center m-5 p-5">
+            Online Registration is closed , You can register for offline .
+            Please contact the event coordinators.
+          </h1>
         </>
       ) : (
         <>
