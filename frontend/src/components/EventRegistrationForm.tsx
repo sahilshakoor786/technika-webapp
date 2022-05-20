@@ -27,7 +27,7 @@ export default function EventRegistrationForm({
   const [payment, setPayment] = useState<boolean>(false);
   const [participants, setParticipants] = useState<Array<string>>([]);
   const [accomation, setAccomation] = useState(false);
-  const [isClosed, setIsClosed] = useState(true);
+  const [isClosed, setIsClosed] = useState(false);
 
   useEffect(() => {
     getUser();
