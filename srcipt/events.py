@@ -85,6 +85,7 @@ for event in events:
             'event_id': i['event']['eventId'],
             'leader_tsc_id': i['leader']['tscId'],
             "leader_name": i['leader']['name'],
+            "leader_phone_number":i["leader"]["phone"],
             "team-members-tsc-ids":  teamMembersTscIds,
             "college": i['leader']['college'],
             "branch": i['leader']['branch'],
@@ -273,60 +274,4 @@ with open(f'non_students.csv', 'w', newline='') as csvfile:
             "college": i['college'],
             "branch": i['branch'],
             "batch": i['batch']
-        })
-
-
-result = client["userDb"]["registrationpayments"].aggregate(
-    [
-        {
-            '$match': {
-                'paymentStatus': 'success'
-            }
-        }, {
-            '$lookup': {
-                'let': {
-                    'userObjId': {
-                        '$toObjectId': '$userId'
-                    }
-                },
-                'from': 'users',
-                'pipeline': [
-                    {
-                        '$match': {
-                            '$expr': {
-                                '$eq': [
-                                    '$_id', '$$userObjId'
-                                ]
-                            }
-                        }
-                    }
-                ],
-                'as': 'user'
-            }
-        }, {
-            '$unwind': {
-                'path': '$user'
-            }
-        }
-    ]
-)
-
-print(":: Generated CSV for all non hbtu  students payment")
-
-with open(f'non_hbtu_payment.csv', 'w', newline='') as csvfile:
-    fieldnames = ['tscId', 'name', 'email',
-                  "college", "branch", "batch"]
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-    writer.writeheader()
-
-    for i in result:
-
-        writer.writerow({
-            'tscId': i['user']['tscId'],
-            'name': i['user']['name'],
-            'email': i['user']['email'],
-            "college": i['user']['college'],
-            "branch": i['user']['branch'],
-            "batch": i['user']['batch']
         })

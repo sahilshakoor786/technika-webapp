@@ -47,7 +47,7 @@ export default function Page() {
                 className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
               >
-                Fun Fair
+                Fun Fare
               </h1>
 
               <div

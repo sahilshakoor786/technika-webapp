@@ -258,7 +258,7 @@ export default function EventsPage() {
                       src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-nasim-didar-3619724.jpg"
                       width={200}
                       height={300}
-                      text="Fun Fair"
+                      text="Fun Fare"
                     />
                   </Link>
                   <Link href="/events/edm">
@@ -392,7 +392,7 @@ export default function EventsPage() {
 
                   <Link href="/events/blast-of-to-mars">
                     <FancyImage
-                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
+                      src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
                       width={200}
                       height={300}
                       text="Blast Of To Mars"
