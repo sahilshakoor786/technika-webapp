@@ -28,6 +28,7 @@ TSC2200777,DEEPAK VERMA hbtu,210108024@hbtu.ac.in,7084073798,"Harcourt Butler Un
 TSC2200161,SYED MUNAWAR GYAS ,210113049@hbtu.ac.in,8081415394,"Harcourt Butler University , Kanpur",Paint Technology,2025
 TSC2200160,VIKAS GUPTA ,210110073@hbtu.ac.in,6367791036,"Harcourt Butler Technical University , Kanpur",Mechanical Engineering,2025
 TSC2200742,SURYANS 46 hbtu,210113046@hbtu.ac.in,9571237926,"Harcourt Butler University , Kanpur",Paint Technology,2025
+TSC2200896,VAIBHAV AWASTHI 53 hbtu,210113053@hbtu.ac.in,8188813664,"Harcourt Butler University , Kanpur",Paint Technology,2025
 TSC2200808,GARVIT MOHAN SHARMA,210106025@hbtu.ac.in,9457609660,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
 TSC2200227,ANAND TIWARI hbtu,210106075@hbtu.ac.in,8795750328,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
 TSC2200243,MOHIT JAISWAL hbtu,210106039@hbtu.ac.in,8318788041,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
@@ -39,7 +40,6 @@ TSC2200793,ABHINAV SINGH hbtu,210105004@hbtu.ac.in,9528802614,"Harcourt Butler U
 TSC2200323,Aditya Pandey,210111004@hbtu.ac.in,09140812933,"Harcourt Butler University , Kanpur",Oil Technology,2025
 TSC2200121,DEV MOHAN SINGH hbtu,210110025@hbtu.ac.in,8707298972,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
 TSC2200347,MOHIT CHAUDHARY hbtu,210104031@hbtu.ac.in,6396972199,"Harcourt Butler University , Kanpur",Computer Science & Engineering,1
-TSC2200817,SAURABH SINGH hbtu,210104048@hbtu.ac.in,7651913812,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
 TSC2200422,HRITIK GUPTA 56 hbtu,210113056@hbtu.ac.in,9721910922,"Harcourt Butler University , Kanpur",Paint Technology,2025
 TSC2200204,SHIVENDRA TRIPATHI 39 hbtu,210113039@hbtu.ac.in,9336814135,"Harcourt Butler University , Kanpur",Paint Technology,1
 TSC2200847,PRATHAM MAURYA 32,210113032@hbtu.ac.in,8840689447,"Harcourt Butler University , Kanpur",Paint Technology,1
@@ -74,14 +74,10 @@ TSC2200946,VANDITA MISHRA betechstudent2020-21@hbtu.ac.in,200103002@hbtu.ac.in,7
 TSC2200308,MANAV PANDEY,200105077@hbtu.ac.in,7860426324,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
 TSC2200663,SHATAKSHI SACHAN betechstudent2020-21@hbtu.ac.in,200105051@hbtu.ac.in,8115388344,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
 TSC2200613,SACHIN TIWARI betechstudent2020-21@hbtu.ac.in,200105045@hbtu.ac.in,9369492579,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
-TSC2200014,AKSHAT SRIVASTAVA betechstudent2020-21@hbtu.ac.in,200105001@hbtu.ac.in,7355746972,"Harcourt Butler University , Kanpur",Electrical Engineering,2
 TSC2200563,SACHIN MAURYA betechstudent2020-21@hbtu.ac.in,200105044@hbtu.ac.in,9369463239,"Harcourt Butler University , Kanpur",Electrical Engineering,2
 TSC2200893,JAI PRAKASH YADAV betechstudent2020-21@hbtu.ac.in,200105027@hbtu.ac.in,9616436972,"Harcourt Butler University , Kanpur",Electrical Engineering,2
-<<<<<<< HEAD
+TSC2200933,ABHISHEK MAURYA,200105006@hbtu.ac.in,9919630478,"Harcourt Butler University , Kanpur",Electrical Engineering,2
 TSC2200273,TUSHAR SINGHâ€¢64â€¢ hbtu,210102064@hbtu.ac.in,8174089346,"Harcourt Butler University , Kanpur",,2025
-=======
-TSC2200273,TUSHAR SINGH•64• hbtu,210102064@hbtu.ac.in,8174089346,"Harcourt Butler University , Kanpur",,2025
->>>>>>> 6f1cd6a2d6e3146a8400e153ac814a393bf39b3f
 TSC2200073,Vishal Gond ,210104067@hbtu.ac.in,7068033678,"Harcourt Butler University , Kanpur",Computer Science & Engineering,1
 TSC2200639,ANKIT LEKHAK hbtu,210104017@hbtu.ac.in,7300744291,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
 TSC2200956,VIKAS SHARMA hbtu,210104066@hbtu.ac.in,6391415352,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
@@ -119,6 +115,7 @@ TSC2201040,ROHIT SINGH HBTU,210231048@hbtu.ac.in,7814023899,"Harcourt Butler Uni
 TSC2201028,ABHISHEK HBTU,210231001@hbtu.ac.in,9027411524,"Harcourt Butler University , Kanpur",Other,2023
 TSC2201018,SUCHIT NEGI ,210231072@hbtu.ac.in,6396887071,"Harcourt Butler University , Kanpur",Other,2023
 TSC2201027,JAVVAD ALI HBTU,210231026@hbtu.ac.in,6396433959,"Harcourt Butler University , Kanpur",Other,2023
+TSC2201029,Rohit Vishwakarma,210231049@hbtu.ac.in,07860289499,"Harcourt Butler University , Kanpur",Other,2023
 TSC2200065,Aditya Dixit,210113004@hbtu.ac.in,09044653330,"Harcourt Butler University , Kanpur",Paint Technology,2025
 TSC2200593,ATUL KUMAR SINGH hbtu,210103017@hbtu.ac.in,8126397763,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
 TSC2200713,AISHI SHUKLA hbtu,210107002@hbtu.ac.in,9555292341,"Harcourt Butler University , Kanpur",Food Technology,2025
@@ -135,6 +132,7 @@ TSC2200031,Simran Yadav,200108060@hbtu.ac.in,09520234499,"Harcourt Butler Univer
 TSC2200354,Harsh Vardhan Singh,200108032@hbtu.ac.in,6306246606,"Harcourt Butler University , Kanpur",Information Technology,2024
 TSC2200886,RACHIT SHUKLA,210102046@hbtu.ac.in,8318276834,"Harcourt Butler University , Kanpur",Civil Engineering,2025
 TSC2200125,Arpit Kumar ,210102010@hbtu.ac.in,9651802155,"Harcourt Butler University , Kanpur",Civil Engineering,2025
+TSC2200151,MOHD NAZIM,210102033@hbtu.ac.in,9151793446,"Harcourt Butler University , Kanpur",Civil Engineering,2025
 TSC2200861,PRAKHAR SINGH,210102041@hbtu.ac.in,9554106111,"Harcourt Butler University , Kanpur",Civil Engineering,2025
 TSC2200386,SHIVAM SINGH betechstudent2020-21@hbtu.ac.in,200103060@hbtu.ac.in,6386489730,"Harcourt Butler University , Kanpur",Chemical Engineering,2024
 TSC2200102,AYUSH VERMA betechstudent2020-21@hbtu.ac.in,200103019@hbtu.ac.in,9889585089,"Harcourt Butler University , Kanpur",Chemical Engineering,2024
@@ -168,7 +166,7 @@ TSC2201118,SHAILA GUPTA betechstudent2020-21@hbtu.ac.in,200112036@hbtu.ac.in,969
 TSC2200982,JOHN ASHISH KUMAR hbtu,210105037@hbtu.ac.in,8303360267,"Harcourt Butler University , Kanpur",Electrical Engineering,2025
 TSC2200307,AYUSH TRIPATHI hbtu,210105025@hbtu.ac.in,99186268888,"Harcourt Butler University , Kanpur",Electrical Engineering,1
 TSC2200856,ABHINAV SHARMA hbtu,210106002@hbtu.ac.in,7452919042,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
-TSC2201023,Mohd Sayam Fareez,210106038@hbtu.ac.in,+918009877880,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
+TSC2201204,ANKIT SINGH hbtu,210106012@hbtu.ac.in,9076823566,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
 TSC2200694,DIVY TRIVEDI hbtu,210101008@hbtu.ac.in,6387636430,"Harcourt Butler University , Kanpur",Biochemical Engineering,2025
 TSC2200786,Anshuman Pipraiya,210110011@hbtu.ac.in,09569856326,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
 TSC2200248,ARYAN SAXENA hbtu,210110076@hbtu.ac.in,7905132301,"Harcourt Butler Technical University , Kanpur",Mechanical Engineering,2025
@@ -184,7 +182,7 @@ TSC2200705,UTKARSH SINGH hbtu,210108066@hbtu.ac.in,9569770964,"Harcourt Butler U
 TSC2201075,Saksham Kankani,210108056@hbtu.ac.in,09598002211,"Harcourt Butler University , Kanpur",Information Technology,2025
 TSC2200920,Aditya Gupta,200101039@hbtu.ac.in,9045596800,"Harcourt Butler University , Kanpur",Electronics Engineering,2024
 TSC2200707,ANSH GOYAL betechstudent2020-21@hbtu.ac.in,200101033@hbtu.ac.in,9794120846,"Harcourt Butler University , Kanpur",Biochemical Engineering,2024
-TSC2201140,SMRITI RAI betechstudent2020-21@hbtu.ac.in,200101024@hbtu.ac.in,,"Harcourt Butler University , Kanpur",,
+TSC2201140,SMRITI RAI betechstudent2020-21@hbtu.ac.in,200101024@hbtu.ac.in,8303832393,"Harcourt Butler University , Kanpur",Biochemical Engineering,2024
 TSC2201145,MEGHA RAJPUT betechstudent2020-21@hbtu.ac.in,200101011@hbtu.ac.in,9548080870,"Harcourt Butler University , Kanpur",Other,2
 TSC2200103,VIBHAV YADAV hbtu,210108070@hbtu.ac.in,6394264813,"Harcourt Butler University , Kanpur",Information Technology,2025
 TSC2200131,ADITYA VERMA hbtu,210108004@hbtu.ac.in,,"Harcourt Butler University , Kanpur",,
@@ -196,7 +194,7 @@ TSC2201144,NAMAN VERMA hbtu,210110042@hbtu.ac.in,9555341207,"Harcourt Butler Uni
 TSC2201153,HARSHIT CHATURVEDI 26 hbtu,210102026@hbtu.ac.in,8739042605,"Harcourt Butler University , Kanpur",Civil Engineering,2025
 TSC2201156,SHIVANSH SINGH 57 hbtu,210102057@hbtu.ac.in,7380660706,"Harcourt Butler University , Kanpur",Civil Engineering,1
 TSC2201146,AKASH PATEL -03 hbtu,210102003@hbtu.ac.in,9305861372,"Harcourt Butler University , Kanpur",Civil Engineering,2025
-TSC2200464,SRIJAN VISHWAKARMA ,210113044@hbtu.ac.in,8318624826,"Harcourt Butler University , Kanpur",Paint Technology,2025
+TSC2200812,SAURABH 52 hbtu,210102052@hbtu.ac.in,9569885762,"Harcourt Butler University , Kanpur",Civil Engineering,1
 TSC2200978,AMAN GUPTA - 5 hbtu,210102005@hbtu.ac.in,7037628509,"Harcourt Butler University , Kanpur",Civil Engineering,2025
 TSC2201147,AmritRai,210102006@hbtu.ac.in,08005136027,"Harcourt Butler University , Kanpur",Civil Engineering,2025
 TSC2200648,ANKIT GOYAL hbtu,210104014@hbtu.ac.in,,"Harcourt Butler University , Kanpur",,
@@ -230,10 +228,37 @@ TSC2200440,SUNIDHI CHAUHAN hbtu,210112050@hbtu.ac.in,6394027652,"Harcourt Butler
 TSC2200761,AAYUSHI RAO hbtu,210101001@hbtu.ac.in,9794632580,"Harcourt Butler University , Kanpur",Biochemical Engineering,1
 TSC2200694,DIVY TRIVEDI hbtu,210101008@hbtu.ac.in,6387636430,"Harcourt Butler University , Kanpur",Biochemical Engineering,2025
 TSC2200983,Shaurya Sharad Shukla,210101017@hbtu.ac.in,8604621047,"Harcourt Butler University , Kanpur",Biochemical Engineering,2025
-<<<<<<< HEAD
 TSC2200746,SHIVAM BHASKAR hbtu,210107015@hbtu.ac.in,7905499608,"Harcourt Butler University , Kanpur",Food Technology,1
 TSC2200741,PRIYANSHI DHANUKA hbtu,210104040@hbtu.ac.in,8005411434,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
 TSC2200809,ISHA RASTOGI hbtu,210111018@hbtu.ac.in,9129593795,"Harcourt Butler University , Kanpur",Oil Technology,2025
 TSC2200834,FARHAN ZAFAR hbtu,210110028@hbtu.ac.in,7388866337,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
-=======
->>>>>>> 6f1cd6a2d6e3146a8400e153ac814a393bf39b3f
+TSC2200984,AVNEET KUSHWAHA,210112017@hbtu.ac.in,9555448797,"Harcourt Butler University , Kanpur",Plastic Technology,2025
+TSC2200039,ASHUTOSH DWIVEDI hbtu,210112015@hbtu.ac.in,9140986255,"Harcourt Butler University , Kanpur",Plastic Technology,2025
+TSC2200437,Yogeshwari Yadav,210112057@hbtu.ac.in,08755496300,"Harcourt Butler University , Kanpur",Plastic Technology,1
+TSC2201014,Adarsh Tiwari,210112006@hbtu.ac.in,7704970723,"Harcourt Butler University , Kanpur",Plastic Technology,1
+TSC2200708,MANAS MOTWANI ,210112027@hbtu.ac.in,8423399541,"Harcourt Butler University , Kanpur",Plastic Technology,2025
+TSC2200888,UTKARSH AWASTHI hbtu,210112059@hbtu.ac.in,8565807912,"Harcourt Butler University , Kanpur",Plastic Technology,2022
+TSC2200964,ABHISHEK KUMAR hbtu,210112004@hbtu.ac.in,7985588033,"Harcourt Butler University , Kanpur",Plastic Technology,2025
+TSC2201049,Saurabh Shukla,210112046@hbtu.ac.in,06307901092,"Harcourt Butler University , Kanpur",Plastic Technology,2025
+TSC2200230,RAJESH TIWARI  ,200107022@hbtu.ac.in,,"Harcourt Butler University , Kanpur",Food Technology,2024
+TSC2200860,ADI DIXIT betechstudent2020-21@hbtu.ac.in,200106019@hbtu.ac.in,9369774171,"Harcourt Butler University , Kanpur",Electronics Engineering,2024
+TSC2201180,HUZAIFA KHAN betechstudent2020-21@hbtu.ac.in,200101007@hbtu.ac.in,8858043736,"Harcourt Butler University , Kanpur",Paint Technology,2024
+TSC2200817,SAURABH SINGH hbtu,210104048@hbtu.ac.in,7651913812,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
+TSC2200747,SHREYA VERMA hbtu,210104050@hbtu.ac.in,9027354959,"Harcourt Butler University , Kanpur",Computer Science & Engineering,1
+TSC2200750,KANCHAN KUMARI hbtu,210111020@hbtu.ac.in,9369061381,"Harcourt Butler University , Kanpur",Oil Technology,1
+TSC2200431,HARSH YADAV hbtu,210105032@hbtu.ac.in,9519994999,"Harcourt Butler University , Kanpur",Electrical Engineering,1
+TSC2200856,ABHINAV SHARMA hbtu,210106002@hbtu.ac.in,7452919042,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
+TSC2201181,Harshendra Singh Bhadauriya,210105033@hbtu.ac.in,09935629944,"Harcourt Butler University , Kanpur",Electrical Engineering,2025
+TSC2201187,SIDDHARTH hbtu,210105062@hbtu.ac.in,7011377571,"Harcourt Butler University , Kanpur",Electrical Engineering,1
+TSC2200232,HARSH VARDHAN PANDEY betechstudent2020-21@hbtu.ac.in,200102002@hbtu.ac.in,,"Harcourt Butler University , Kanpur",,
+TSC2201009,PARTH TRIPATHI betechstudent2020-21@hbtu.ac.in,200108040@hbtu.ac.in,,"Harcourt Butler University , Kanpur",,
+TSC2201206,RISHABH GUPTA betechstudent2020-21@hbtu.ac.in,200106010@hbtu.ac.in,9935997312,"Harcourt Butler University , Kanpur",Electronics Engineering,2024
+TSC2200288,AAYUSH SRIVASTAVA betechstudent2020-21@hbtu.ac.in,200105003@hbtu.ac.in,,"Harcourt Butler University , Kanpur",,
+TSC2200308,MANAV PANDEY,200105077@hbtu.ac.in,7860426324,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
+TSC2200663,SHATAKSHI SACHAN betechstudent2020-21@hbtu.ac.in,200105051@hbtu.ac.in,8115388344,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
+TSC2200350,HEMANT ACHANTANI hbtu,210110033@hbtu.ac.in,6387336806,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+TSC2200157,Mridul Garg,210110040@hbtu.ac.in,8787071788,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+TSC2200111,PRINCY SHAKYA hbtu,210110049@hbtu.ac.in,8953951140,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+TSC2200111,PRINCY SHAKYA hbtu,210110049@hbtu.ac.in,8953951140,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+TSC2200124,RISHITA GARG,210110054@hbtu.ac.in,9198719486,"Harcourt Butler University , Kanpur",,2025
+TSC2200126,KRATIKA CHOUDHARY hbtu,210110037@hbtu.ac.in,8707732134,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025

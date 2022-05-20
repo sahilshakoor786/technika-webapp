@@ -1,5 +1,8 @@
-<<<<<<< HEAD
 tscId,name,email,phoneNumber,isAccommodation,college,branch,batch
+TSC2200504,TEJPRATAP SINGH,tejpratapsingh545@gmail.com,09935973863,False,hbtu,Computer Science & Engineering,2023
+,TEJPRATAP SINGH,developer@bhaada.co.in,09935973863,False,hbtu,Computer Science & Engineering,2023
+TSC2200512,TEJPRATAP SINGH,admin@bhaada.co.in,09935973863,False,hbtu,Computer Science & Engineering,2023
+TSC2200524,Ayush Kumar,ayushskywalker@gmail.com,6393443885,True,HBTU,Information Technology,2023
 TSC2210788,Kaustubh Singh,sk.singh.kaustubh@gmail.com,7007762358,True,Rajkiya Engineering College,Computer Science & Engineering,2025
 TSC2200797,Yash Bhatnagar,ybhatnagar15@gmail.com,8171596303,False,"MIT, Moradabad",Computer Science & Engineering,2024
 TSC2200799,Prakhar Kapoor,prakharvkapoor@gmail.com,7454854235,False,mit Moradabad,Computer Science & Engineering,2024
@@ -20,24 +23,3 @@ TSC2201095,Mehal Khare,mehalkharee2@gmail.com,8173925857,False,Ranveer Singh ins
 TSC2201109,Prakriti Singh_40,singhprakrati45@gmail.com,9140573995,False,Pranveer Singh institute of technology ,Computer Science & Engineering,2024
 TSC2201108,Sneha Seth,snehaseth40@gmail.com,7394069983,False,Pranveer Singh Institute of Technology ,Computer Science & Engineering,2024
 TSC2201139,Sparsh Rai,sakshamrai30@gmail.com,6394270326,False,Praveen Singh Institute of Technology,Computer Science & Engineering,2024
-=======
-tscId,name,email,college,branch,batch
-TSC2200504,TEJPRATAP SINGH,tejpratapsingh545@gmail.com,hbtu,Computer Science & Engineering,2023
-,TEJPRATAP SINGH,developer@bhaada.co.in,hbtu,Computer Science & Engineering,2023
-TSC2200512,TEJPRATAP SINGH,admin@bhaada.co.in,hbtu,Computer Science & Engineering,2023
-TSC2200524,Ayush Kumar,ayushskywalker@gmail.com,HBTU,Information Technology,2023
-TSC2210788,Kaustubh Singh,sk.singh.kaustubh@gmail.com,Rajkiya Engineering College,Computer Science & Engineering,2025
-TSC2200797,Yash Bhatnagar,ybhatnagar15@gmail.com,"MIT, Moradabad",Computer Science & Engineering,2024
-TSC2200799,Prakhar Kapoor,prakharvkapoor@gmail.com,mit Moradabad,Computer Science & Engineering,2024
-TSC2200800,Sejal Thakur,sejalthakur.pihu@gmail.com,"MIT, Moradabad",Computer Science & Engineering,2024
-TSC2200871,Deeksha Sachan,deekshasachan9343@gmail.com,PSIT,Computer Science & Engineering,2024
-TSC2200872,AVANTIKA YADAV,avantika2004ftp@gmail.com,RAJKIYA ENGINEERING COLLEGE MAINPURI,Computer Science & Engineering,1
-TSC2200881,shubhika,shubhikaxyz@gmail.com,Dr ambedkar institute of Technology kanpur,Other,2024
-TSC2200914,Shreya Verma_49,shreya.v064@gmail.com,,,
-TSC2200931,Surya Pratapfire,suryasinghfire@gmail.com,HBTU,Mechanical Engineering,2
-TSC2200942,pradeep patel ,shubhikabt@gmail.com,dr AITH KANPUR,Other,2024
-TSC2200973,Sparsh Tiwari,sparshsms35@gmail.com,Kanpur institute of technology ,Computer Science & Engineering,2025
-TSC2200975,Vidhi Mishra,mishravidhi18@gmail.com,kanpur institute of technology,Other,1
-TSC2200976,parul yadav,parulydv1643@gmail.com,kanpur institute of technology,Computer Science & Engineering,-1
-TSC2201002,Shivesh Mishra,mishrashivesh396@gmail.com,PSIT,Computer Science & Engineering,2024
->>>>>>> 6f1cd6a2d6e3146a8400e153ac814a393bf39b3f

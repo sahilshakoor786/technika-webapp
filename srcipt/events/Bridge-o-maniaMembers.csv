@@ -1,6 +1,7 @@
 tscId,name,email,phoneNumber,college,branch,batch
 TSC2200591,Nishchhal Nigam,210102035@hbtu.ac.in,8273446300,"Harcourt Butler University , Kanpur",Civil Engineering,2025
 TSC2200319,ABHAY KUMAR YADAV hbtu,210103002@hbtu.ac.in,7007492302,"Harcourt Butler University , Kanpur",Chemical Engineering,1
+TSC2200729,AAKANSH ATREY hbtu,210111001@hbtu.ac.in,9548008390,"Harcourt Butler University , Kanpur",Oil Technology,1
 TSC2200210,NISHANT GOLA hbtu,210103039@hbtu.ac.in,8279987490,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
 TSC2200209,AMARTYA SINGH hbtu,210103008@hbtu.ac.in,7380607885,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
 TSC2200237,ABHAY KUMAR SONKER hbtu,210103001@hbtu.ac.in,6387419192,"Harcourt Butler University , Kanpur",Chemical Engineering,
@@ -95,17 +96,10 @@ TSC2201037,MALVIKA KAPOOR HBTU,210231028@hbtu.ac.in,7300686723,"Harcourt Butler 
 TSC2200750,KANCHAN KUMARI hbtu,210111020@hbtu.ac.in,9369061381,"Harcourt Butler University , Kanpur",Oil Technology,1
 TSC2200121,DEV MOHAN SINGH hbtu,210110025@hbtu.ac.in,8707298972,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
 TSC2200817,SAURABH SINGH hbtu,210104048@hbtu.ac.in,7651913812,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
-<<<<<<< HEAD
 TSC2210973,Sparsh Tiwari,sparshsms35@gmail.com,8957897970,Kanpur institute of technology ,Computer Science & Engineering,2025
 TSC2210975,Vidhi Mishra,mishravidhi18@gmail.com,9415573873,kanpur institute of technology,Other,1
 TSC2210976,parul yadav,parulydv1643@gmail.com,9118709219,kanpur institute of technology,Computer Science & Engineering,-1
 TSC2211035,Mayank Sahu,mayank77sethi@gmail.com,09140268277,Virendra Swaroop Institute of Computer Studies,Other,2023
-=======
-TSC2200973,Sparsh Tiwari,sparshsms35@gmail.com,8957897970,Kanpur institute of technology ,Computer Science & Engineering,2025
-TSC2200975,Vidhi Mishra,mishravidhi18@gmail.com,9415573873,kanpur institute of technology,Other,1
-TSC2200976,parul yadav,parulydv1643@gmail.com,9118709219,kanpur institute of technology,Computer Science & Engineering,-1
-TSC2201035,Mayank Sahu,mayank77sethi@gmail.com,09140268277,Virendra Swaroop Institute of Computer Studies,Other,2023
->>>>>>> 6f1cd6a2d6e3146a8400e153ac814a393bf39b3f
 TSC2200065,Aditya Dixit,210113004@hbtu.ac.in,09044653330,"Harcourt Butler University , Kanpur",Paint Technology,2025
 TSC2200593,ATUL KUMAR SINGH hbtu,210103017@hbtu.ac.in,8126397763,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
 TSC2200713,AISHI SHUKLA hbtu,210107002@hbtu.ac.in,9555292341,"Harcourt Butler University , Kanpur",Food Technology,2025
@@ -163,10 +157,12 @@ TSC2200993,MOHAMMAD MOIN KHAN 57 hbtu,210113057@hbtu.ac.in,9554778872,"Harcourt 
 TSC2200822,MANAS CHAUDHARY hbtu,210110039@hbtu.ac.in,8707511932,"Harcourt Butler University , Kanpur",Mechanical Engineering,1
 TSC2200124,RISHITA GARG,210110054@hbtu.ac.in,9198719486,"Harcourt Butler University , Kanpur",,2025
 TSC2200336,MUDIT MISRA hbtu,210110041@hbtu.ac.in,9260907473,"Harcourt Butler University , Kanpur",,2025
-<<<<<<< HEAD
 TSC2200920,Aditya Gupta,200101039@hbtu.ac.in,9045596800,"Harcourt Butler University , Kanpur",Electronics Engineering,2024
 TSC2200707,ANSH GOYAL betechstudent2020-21@hbtu.ac.in,200101033@hbtu.ac.in,9794120846,"Harcourt Butler University , Kanpur",Biochemical Engineering,2024
-TSC2201140,SMRITI RAI betechstudent2020-21@hbtu.ac.in,200101024@hbtu.ac.in,,"Harcourt Butler University , Kanpur",,
+TSC2201140,SMRITI RAI betechstudent2020-21@hbtu.ac.in,200101024@hbtu.ac.in,8303832393,"Harcourt Butler University , Kanpur",Biochemical Engineering,2024
 TSC2201145,MEGHA RAJPUT betechstudent2020-21@hbtu.ac.in,200101011@hbtu.ac.in,9548080870,"Harcourt Butler University , Kanpur",Other,2
-=======
->>>>>>> 6f1cd6a2d6e3146a8400e153ac814a393bf39b3f
+TSC2200489,SHIVA GUPTA hbtu,210103062@hbtu.ac.in,9721524211,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
+TSC2200324,HIMANSHU SINGH hbtu,210103031@hbtu.ac.in,7985016257,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
+TSC2200517,Ashutosh Jaiswal,210103016@hbtu.ac.in,9336494761,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
+TSC2201040,ROHIT SINGH HBTU,210231048@hbtu.ac.in,7814023899,"Harcourt Butler University , Kanpur",Other,2023
+TSC2201029,Rohit Vishwakarma,210231049@hbtu.ac.in,07860289499,"Harcourt Butler University , Kanpur",Other,2023

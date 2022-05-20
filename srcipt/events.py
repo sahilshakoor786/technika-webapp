@@ -275,7 +275,6 @@ with open(f'non_students.csv', 'w', newline='') as csvfile:
             "branch": i['branch'],
             "batch": i['batch']
         })
-<<<<<<< HEAD
 
 
 result = client["userDb"]["registrationpayments"].aggregate(
@@ -336,5 +335,3 @@ with open(f'non_hbtu_payment.csv', 'w', newline='') as csvfile:
             "batch": i['user']['batch'],
 
         })
-=======
->>>>>>> 6f1cd6a2d6e3146a8400e153ac814a393bf39b3f
