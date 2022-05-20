@@ -113,23 +113,7 @@ export default function SponsorsSection() {
        
       </div>
 
-      <h1 className="text-white font-primary text-5xl my-10 px-10 py-2 backdrop-blur rounded-lg">
-        Media partner
-      </h1>
-
-      <div className="flex justify-center items-center space-y-10 gap-x-5 md:space-x-10  gap-y-2 px-10 py-2 flex-wrap backdrop-blur  ">
-        <a
-          href="https://urban-vada-pav.ueniweb.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            className="h-16 mt-10"
-            src="https://d2jf5yk8vvx0ti.cloudfront.net/images/a1times.jpeg"
-            alt=""
-          />
-        </a>
-      </div>
+      
     </section>
   );
 }
