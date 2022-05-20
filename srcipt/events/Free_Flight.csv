@@ -1,6 +1,6 @@
 event_name,event_id,leader_tsc_id,leader_name,team-members-tsc-ids,college,branch,batch
 Free Flight,TSCFH03,TSC2200604,HARSH hbtu,,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
-Free Flight,TSCFH03,TSC2200722,DIPANSHU VISHWAKARMA hbtu,,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
+Free Flight,TSCFH03,TSC2200722,DIPANSHU VISHWAKARMA hbtu,TSC2200747,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
 Free Flight,TSCFH03,TSC2200747,SHREYA VERMA hbtu,,"Harcourt Butler University , Kanpur",Computer Science & Engineering,1
 Free Flight,TSCFH03,TSC2200770,SATWIK TIWARI hbtu,,"Harcourt Butler University , Kanpur",Plastic Technology,1
 Free Flight,TSCFH03,TSC2200360,ABHYUDAYA PANDEY ,,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
@@ -12,6 +12,6 @@ Free Flight,TSCFH03,TSC2200059,PAVITRA RAJ hbtu,TSC2200133-TSC2200465-TSC2200967
 Free Flight,TSCFH03,TSC2200759,PRAFULLA SAROJ hbtu,TSC2200174-TSC2200340-TSC2200703,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
 Free Flight,TSCFH03,TSC2201052,RHYTHM YADAV hbtu,TSC2200312-TSC2200869,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
 Free Flight,TSCFH03,TSC2200177,YASHI ,TSC2200111-TSC2200124-TSC2200126,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
-Free Flight,TSCFH03,TSC2200379,RISHABH KATIYAR hbtu,TSC2200666-TSC2200708-TSC2200964,"Harcourt Butler University , Kanpur",,
-Free Flight,TSCFH03,TSC2200121,DEV MOHAN SINGH hbtu,TSC2200323-TSC2200347-TSC2200817,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+Free Flight,TSCFH03,TSC2200379,RISHABH KATIYAR hbtu,TSC2200666-TSC2200708-TSC2200964,"Harcourt Butler University , Kanpur",Plastic Technology,2025
+Free Flight,TSCFH03,TSC2200121,DEV MOHAN SINGH hbtu,TSC2200323-TSC2200347-TSC2200738,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
 Free Flight,TSCFH03,TSC2200822,MANAS CHAUDHARY hbtu,TSC2200107-TSC2200336-TSC2201076,"Harcourt Butler University , Kanpur",Mechanical Engineering,1
