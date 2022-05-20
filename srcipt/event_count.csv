@@ -1,4 +1,5 @@
 event_name,event_id,registrations
+<<<<<<< HEAD
 Udaan,TSCFH04,13
 Soccerbot,TSCMM02,24
 Quiz me more,TSCCE02,66
@@ -36,3 +37,42 @@ Thread Ripper,TSCMM13,19
 CIRCUIT TROUBLE,TSCEH05,14
 Red Pencil,TSCGC04,8
 Celebrity Talk,TSCCE12,266
+=======
+Celebrity Talk,TSCCE12,265
+Laser-O-Reflect,TSCCE05,109
+Soccerbot,TSCMM02,24
+Water Rocket,TSCFH02,27
+JUNKYARD ,TSCCE01,82
+CIRCUIT TROUBLE,TSCEH05,14
+Kya Engineer Banega re tu?,TSCMM06,41
+RUN TIME TERROR,TSCGC01,48
+Break the code,TSCGC02,34
+Udaan,TSCFH04,13
+RASTERIZE,TSCGC03,24
+Programming Date,TSCGC07,74
+Simulation,TSCFH01,67
+Tech Expo,TSCCE03,17
+    Path Pradarshak,TSCMM15,15
+FLIP-O-FRIEND,TSCGC05,26
+Free Flight,TSCFH03,16
+Robo-Combat,TSCMM01,2
+CITY MAESTRO,TSCEH02,18
+Morse's Laser ,TSCEH06,34
+HOW I MET YOUR TREASURE,TSCCE09,111
+NFT Design,TSCCE06,23
+VR Gaming,TSCCE11,121
+Bridge-o-mania,TSCEH01,45
+Squid Game,TSCCE07,44
+Bike Show,TSCCE08,5
+Blank Coding,TSCGC06,35
+Hovermania,TSCMM07,25
+Quiz me more,TSCCE02,65
+ANADIGILOGIX,TSCEH04,9
+save the egg,TSCEH03,37
+SITUATION ROOM,TSCCE04,82
+Fun fare,TSCCE10,158
+LFR,TSCMM03,19
+Thread Ripper,TSCMM13,19
+Blazing Wheels,TSCMM04,20
+Red Pencil,TSCGC04,8
+>>>>>>> 6f1cd6a2d6e3146a8400e153ac814a393bf39b3f

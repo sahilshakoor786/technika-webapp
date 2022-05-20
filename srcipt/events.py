@@ -85,6 +85,7 @@ for event in events:
             'event_id': i['event']['eventId'],
             'leader_tsc_id': i['leader']['tscId'],
             "leader_name": i['leader']['name'],
+            "leader_phone_number":i["leader"]["phone"],
             "team-members-tsc-ids":  teamMembersTscIds,
             "college": i['leader']['college'],
             "branch": i['leader']['branch'],
@@ -274,6 +275,7 @@ with open(f'non_students.csv', 'w', newline='') as csvfile:
             "branch": i['branch'],
             "batch": i['batch']
         })
+<<<<<<< HEAD
 
 
 result = client["userDb"]["registrationpayments"].aggregate(
@@ -334,3 +336,5 @@ with open(f'non_hbtu_payment.csv', 'w', newline='') as csvfile:
             "batch": i['user']['batch'],
 
         })
+=======
+>>>>>>> 6f1cd6a2d6e3146a8400e153ac814a393bf39b3f
