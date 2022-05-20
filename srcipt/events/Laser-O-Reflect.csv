@@ -1,9 +1,9 @@
 event_name,event_id,leader_tsc_id,leader_name,team-members-tsc-ids,college,branch,batch
 Laser-O-Reflect,TSCCE05,TSC2200526,RAMESH YADAV 58 hbtu,,"Harcourt Butler University , Kanpur",Paint Technology,1
-Laser-O-Reflect,TSCCE05,TSC2200319,ABHAY KUMAR YADAV hbtu,TSC2200591,"Harcourt Butler University , Kanpur",Chemical Engineering,1
+Laser-O-Reflect,TSCCE05,TSC2200319,ABHAY KUMAR YADAV hbtu,TSC2200591-TSC2200593-TSC2200676,"Harcourt Butler University , Kanpur",Chemical Engineering,1
 Laser-O-Reflect,TSCCE05,TSC2200305,SHAIL KUMAR PRAJAPATI betechstudent2020-21@hbtu.ac.in,TSC2200302-TSC2200607-TSC2200611,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
 Laser-O-Reflect,TSCCE05,TSC2200463,AGRAJ KATIYAR ,TSC2200358-TSC2200449-TSC2200625,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
-Laser-O-Reflect,TSCCE05,TSC2200698,SHREYANSH GUPTA hbtu,TSC2200643-TSC2200646-TSC2200696,"Harcourt Butler University , Kanpur",Information Technology,2025
+Laser-O-Reflect,TSCCE05,TSC2200698,SHREYANSH GUPTA hbtu,TSC2200646-TSC2200947,"Harcourt Butler University , Kanpur",Information Technology,2025
 Laser-O-Reflect,TSCCE05,TSC2200333,Kaustubh Dixit,TSC2200277-TSC2200704-TSC2200706,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
 Laser-O-Reflect,TSCCE05,TSC2200721,DEEPAK SHARMA hbtu,TSC2200198-TSC2200636-TSC2200720,"Harcourt Butler University , Kanpur",Information Technology,2025
 Laser-O-Reflect,TSCCE05,TSC2200724,GAGAN SINGH betechstudent2020-21@hbtu.ac.in,TSC2200096-TSC2200725-TSC2200827,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
@@ -19,15 +19,15 @@ Laser-O-Reflect,TSCCE05,TSC2200662,RISHI SRIVASTAVA hbtu,TSC2200758-TSC2200773-T
 Laser-O-Reflect,TSCCE05,TSC2200748,YASH AGARWAL,TSC2200749-TSC2200777-TSC2200780,"Harcourt Butler University , Kanpur",Information Technology,2025
 Laser-O-Reflect,TSCCE05,TSC2200217,HARSH AGARWAL hbtu,TSC2200159-TSC2200767-TSC2200768,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
 Laser-O-Reflect,TSCCE05,TSC2200797,Yash Bhatnagar,TSC2200800-TSC2200799,"MIT, Moradabad",Computer Science & Engineering,2024
-Laser-O-Reflect,TSCCE05,TSC2200742,SURYANS 46 hbtu,TSC2200160-TSC2200161-TSC2200736,"Harcourt Butler University , Kanpur",Paint Technology,2025
+Laser-O-Reflect,TSCCE05,TSC2200742,SURYANS 46 hbtu,TSC2200160-TSC2200161,"Harcourt Butler University , Kanpur",Paint Technology,2025
 Laser-O-Reflect,TSCCE05,TSC2200121,DEV MOHAN SINGH hbtu,TSC2200347-TSC2200738-TSC2200747,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
 Laser-O-Reflect,TSCCE05,TSC2200808,GARVIT MOHAN SHARMA,TSC2200227-TSC2200243-TSC2200292,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
 Laser-O-Reflect,TSCCE05,TSC2200627,YUKTA SINGH HBTU,TSC2200086-TSC2200612-TSC2200826,"Harcourt Butler University , Kanpur",Paint Technology,2025
-Laser-O-Reflect,TSCCE05,TSC2200644,GAURAV SINGH ,TSC2200617-TSC2200642,"Harcourt Butler University , Kanpur",Electrical Engineering,1
+Laser-O-Reflect,TSCCE05,TSC2200644,GAURAV SINGH ,TSC2200617-TSC2200642-TSC2200793,"Harcourt Butler University , Kanpur",Electrical Engineering,1
 Laser-O-Reflect,TSCCE05,TSC2200487,PRAGYA SINGH hbtu,TSC2200112-TSC2200147-TSC2200309,"Harcourt Butler University , Kanpur",Electronics Engineering,1
 Laser-O-Reflect,TSCCE05,TSC2200326,Shikhar Chaubey,TSC2200033-TSC2200394-TSC2200582,"Harcourt Butler University , Kanpur",Mechanical Engineering,2024
 Laser-O-Reflect,TSCCE05,TSC2200092,CHAMAN SINGH NARWAR hbtu,TSC2200167-TSC2200343,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
-Laser-O-Reflect,TSCCE05,TSC2200098,Utsav,TSC2200103-TSC2200757-TSC2200758,"Harcourt Butler University , Kanpur",Information Technology,2025
+Laser-O-Reflect,TSCCE05,TSC2200098,Utsav,TSC2200103-TSC2200131-TSC2200757,"Harcourt Butler University , Kanpur",Information Technology,2025
 Laser-O-Reflect,TSCCE05,TSC2200651,ARYAN SINGH,TSC2200895-TSC2200896,"Harcourt Butler University , Kanpur",Civil Engineering,1
 Laser-O-Reflect,TSCCE05,TSC2200492,SHUBHANG SHUKLA hbtu,TSC2200875-TSC2200876-TSC2200907,"Harcourt Butler University , Kanpur",Electrical Engineering,2025
 Laser-O-Reflect,TSCCE05,TSC2200783,BIPIN SINGH,TSC2200921-TSC2200924,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
@@ -39,5 +39,60 @@ Laser-O-Reflect,TSCCE05,TSC2200047,ABHAY PRATAP SINGH 01 HBTU,TSC2200283-TSC2200
 Laser-O-Reflect,TSCCE05,TSC2200308,MANAV PANDEY,TSC2200663-TSC2200806-TSC2200946,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
 Laser-O-Reflect,TSCCE05,TSC2200320,ARUSHI DALMEYA- 11 hbtu,TSC2200371-TSC2200784-TSC2200901,"Harcourt Butler University , Kanpur",Civil Engineering,2025
 Laser-O-Reflect,TSCCE05,TSC2200716,GAURAV NIKAM betechstudent2020-21@hbtu.ac.in,TSC2200518,"Harcourt Butler University , Kanpur",Mechanical Engineering,2024
-Laser-O-Reflect,TSCCE05,TSC2200723,JAI KRISHNA TEWARI hbtu,TSC2200711-TSC2200790,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200723,JAI KRISHNA TEWARI hbtu,TSC2200335-TSC2200711-TSC2200790,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
 Laser-O-Reflect,TSCCE05,TSC2200613,SACHIN TIWARI betechstudent2020-21@hbtu.ac.in,TSC2200014-TSC2200563-TSC2200893,"Harcourt Butler University , Kanpur",Electrical Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2200044,TARUN KUMAR SINGH_63 hbtu,TSC2200082-TSC2200360-TSC2200668,"Harcourt Butler University , Kanpur",Civil Engineering,1
+Laser-O-Reflect,TSCCE05,TSC2200158,VARUN JAIN betechstudent2020-21@hbtu.ac.in,TSC2200877-TSC2200949-TSC2200965,"Harcourt Butler University , Kanpur",,
+Laser-O-Reflect,TSCCE05,TSC2200918,Saket Jha,,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200980,Ekansh maurya,TSC2200987-TSC2200989,"Harcourt Butler University , Kanpur",Mechanical Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2200991,NIRANTER HARSH betechstudent2020-21@hbtu.ac.in,TSC2200835-TSC2200992,"Harcourt Butler University , Kanpur",Mechanical Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2200741,PRIYANSHI DHANUKA hbtu,TSC2200769-TSC2200968-TSC2200969,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200435,SHIVAM GUPTA 38 hbtu,TSC2200855-TSC2200897-TSC2200993,"Harcourt Butler University , Kanpur",,
+Laser-O-Reflect,TSCCE05,TSC2200330,PAWAN PRAJAPATI hbtu,TSC2200489-TSC2200515-TSC2200516,"Harcourt Butler University , Kanpur",Chemical Engineering,1
+Laser-O-Reflect,TSCCE05,TSC2200948,PRIYANSHU SINGH hbtu,TSC2200892-TSC2200919,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200845,JATIN KAUSHIK hbtu,TSC2200829-TSC2200836-TSC2200918,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200603,AJAY KUMAR SINGH HBTU,TSC2200573-TSC2200879-TSC2201017,"Harcourt Butler University , Kanpur",Other,2023
+Laser-O-Reflect,TSCCE05,TSC2200722,DIPANSHU VISHWAKARMA hbtu,TSC2200235-TSC2200631-TSC2200832,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200028,Amartya Yadav,TSC2200022-TSC2200031,"Harcourt Butler University , Kanpur",Information Technology,2024
+Laser-O-Reflect,TSCCE05,TSC2200220,SAMARJEET SINGH hbtu,TSC2200427-TSC2200795-TSC2200903,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2201028,ABHISHEK HBTU,TSC2201018-TSC2201027,"Harcourt Butler University , Kanpur",Other,2023
+Laser-O-Reflect,TSCCE05,TSC2201036,NAZIA HBTU,TSC2201037,"Harcourt Butler University , Kanpur",Other,2023
+Laser-O-Reflect,TSCCE05,TSC2200386,SHIVAM SINGH betechstudent2020-21@hbtu.ac.in,TSC2200102-TSC2201012,"Harcourt Butler University , Kanpur",Chemical Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2200703,ARYAMAN VERMA hbtu,TSC2200238-TSC2200328-TSC2200759,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200695,AMRITANSH SINGH CHANDEL hbtu,TSC2200367-TSC2201016,"Harcourt Butler University , Kanpur",Chemical Engineering,1
+Laser-O-Reflect,TSCCE05,TSC2201040,ROHIT SINGH HBTU,TSC2200569-TSC2200915-TSC2201044,"Harcourt Butler University , Kanpur",Other,2023
+Laser-O-Reflect,TSCCE05,TSC2201041,SALIL PRATAP SINGH HBTU,TSC2201045,"Harcourt Butler University , Kanpur",Other,2023
+Laser-O-Reflect,TSCCE05,TSC2200122,ANSHIKA GUPTA hbtu,TSC2200115-TSC2200766,"Harcourt Butler University , Kanpur",Information Technology,1
+Laser-O-Reflect,TSCCE05,TSC2200973,Sparsh Tiwari,TSC2200975-TSC2200976-TSC2201035,Kanpur institute of technology ,Computer Science & Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200786,Anshuman Pipraiya,TSC2200248-TSC2200365-TSC2200755,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200670,SHRUTI NIGAM hbtu,TSC2200436-TSC2200645-TSC2200813,"Harcourt Butler University , Kanpur",Plastic Technology,2025
+Laser-O-Reflect,TSCCE05,TSC2200750,KANCHAN KUMARI hbtu,TSC2200097-TSC2200430-TSC2200817,"Harcourt Butler University , Kanpur",Oil Technology,1
+Laser-O-Reflect,TSCCE05,TSC2200861,PRAKHAR SINGH,TSC2200151-TSC2200863,"Harcourt Butler University , Kanpur",Civil Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2201063,Abhishek Patel,TSC2200679-TSC2200932-TSC2201070,"Harcourt Butler University , Kanpur",Chemical Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2200354,Harsh Vardhan Singh,TSC2200821-TSC2201064-TSC2201069,"Harcourt Butler University , Kanpur",Information Technology,2024
+Laser-O-Reflect,TSCCE05,TSC2200259,HARSH GAUTAM hbtu,TSC2200118-TSC2200202-TSC2200350,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2201071,Naman Sharma,TSC2200370-TSC2200372-TSC2200373,"Harcourt Butler University , Kanpur",Biochemical Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2201077,RITIK KORI hbtu,TSC2200259,"Harcourt Butler University , Kanpur",Mechanical Engineering,1
+Laser-O-Reflect,TSCCE05,TSC2200643,ARYAN GUPTA hbtu,TSC2200649-TSC2200696,"Harcourt Butler University , Kanpur",Information Technology,2025
+Laser-O-Reflect,TSCCE05,TSC2200998,FAIZ KHAN hbtu,TSC2200187-TSC2200794,"Harcourt Butler University , Kanpur",Chemical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200889,RAKESH KUMAR 33 hbtu,TSC2201079,"Harcourt Butler University , Kanpur",Paint Technology,2025
+Laser-O-Reflect,TSCCE05,TSC2200824,TARUN 51 Hbtu,TSC2200853-TSC2201085,"Harcourt Butler University , Kanpur",Paint Technology,2025
+Laser-O-Reflect,TSCCE05,TSC2200746,SHIVAM BHASKAR hbtu,TSC2200268-TSC2200809,"Harcourt Butler University , Kanpur",Food Technology,1
+Laser-O-Reflect,TSCCE05,TSC2200165,Harsh Kalra,TSC2200084-TSC2200157-TSC2200778,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200059,PAVITRA RAJ hbtu,TSC2200465-TSC2200967,"Harcourt Butler University , Kanpur",Food Technology,1
+Laser-O-Reflect,TSCCE05,TSC2200811,DIVYA TRIVEDI hbtu,TSC2200527,"Harcourt Butler University , Kanpur",Biochemical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200575,NITIN SAXENA HBTU,TSC2201048-TSC2201056-TSC2201093,"Harcourt Butler University , Kanpur",Other,2023
+Laser-O-Reflect,TSCCE05,TSC2201047,PIYUSH DWIVEDI hbtu,TSC2201104-TSC2201106-TSC2201119,"Harcourt Butler University , Kanpur",Electrical Engineering,2021
+Laser-O-Reflect,TSCCE05,TSC2200718,ANKUR UTTAM hbtu,TSC2200374-TSC2200590,"Harcourt Butler University , Kanpur",Electronics Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2201032,MUSKAN SINGH betechstudent2020-21@hbtu.ac.in,TSC2200010-TSC2201112-TSC2201118,"Harcourt Butler University , Kanpur",Plastic Technology,2024
+Laser-O-Reflect,TSCCE05,TSC2200982,JOHN ASHISH KUMAR hbtu,TSC2200307-TSC2200856-TSC2201023,"Harcourt Butler University , Kanpur",Electrical Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2200281,ASTITVA YADAV betechstudent2020-21@hbtu.ac.in,TSC2201116-TSC2201120,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2200577,Deepak Mishra,TSC2200560-TSC2200589-TSC2201050,"Harcourt Butler University , Kanpur",Other,2023
+Laser-O-Reflect,TSCCE05,TSC2200145,Deepak Rathore,TSC2200166-TSC2201136,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2200344,ANKITA GAUTAM hbtu,TSC2200615-TSC2200667-TSC2200958,"Harcourt Butler University , Kanpur",Mechanical Engineering,1
+Laser-O-Reflect,TSCCE05,TSC2200920,Aditya Gupta,TSC2200707-TSC2201140-TSC2201145,"Harcourt Butler University , Kanpur",Electronics Engineering,2024
+Laser-O-Reflect,TSCCE05,TSC2201146,AKASH PATEL -03 hbtu,TSC2200464-TSC2200978-TSC2201146,"Harcourt Butler University , Kanpur",Civil Engineering,2025
+Laser-O-Reflect,TSCCE05,TSC2201008,NAMRATA SINGH 28 hbtu,TSC2200268-TSC2200902,"Harcourt Butler University , Kanpur",Paint Technology,1
+Laser-O-Reflect,TSCCE05,TSC2201135,ABHISHEK KUMAR HBTU,TSC2201043-TSC2201057,"Harcourt Butler University , Kanpur",Computer Science & Engineering,2020
+Laser-O-Reflect,TSCCE05,TSC2200379,RISHABH KATIYAR hbtu,TSC2200708-TSC2200798-TSC2200964,"Harcourt Butler University , Kanpur",,
+Laser-O-Reflect,TSCCE05,TSC2200114,SACHIN KUMAR SINGH,TSC2200180-TSC2200911-TSC2201137,"Harcourt Butler University , Kanpur",Mechanical Engineering,2025
