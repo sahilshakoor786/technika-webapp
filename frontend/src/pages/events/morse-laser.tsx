@@ -32,116 +32,117 @@ export default function Page() {
   }
 
   return (
-    <Auth>
-      <Layout>
-        <>
-          <main
-            className="h-full min-h-screen overflow-x-hidden 
+    // <Auth>
+    <Layout>
+      <>
+        <main
+          className="h-full min-h-screen overflow-x-hidden 
           flex justify-center items-center"
-          >
-            <div
-              className="p-10 relative text-white md:w-3/4  h-1/2
+        >
+          <div
+            className="p-10 relative text-white md:w-3/4  h-1/2
             bg-blue-800/10 backdrop-blur flex flex-col justify-center
               shadow-lg py-6 px-2 space-y-2 rounded-lg place-items-center"
-            >
-              <h1
-                className="font-primary text-3xl md:text-5xl text-center 
+          >
+            <h1
+              className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-              >
-                Morse Laser
-              </h1>
-              <Prize prize="3000" />
+            >
+              Morse Laser
+            </h1>
+            <Prize prize="3000" />
 
-              <div
-                className="w-full grid grid-cols-1 lg:grid-cols-3 
+            <div
+              className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
-                style={{
-                  height: 500,
-                  backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/morselaser.avif")`,
-                }}
-              >
-                <span className="col-span-2"></span>
-
-                <div
-                  className="rounded-lg grid grid-cols-2 gap-2 p-10 
-                 backdrop-blur shadow-lg bg-white/30"
-                >
-                  <span className="font-primary font-bold text-slate-800 ">
-                    Venue
-                  </span>
-                  <span className="text-slate-800 ">Auditorium</span>
-                  <span className="font-primary font-bold text-slate-800 ">
-                    Date
-                  </span>
-                  <span className="text-slate-800">22 May</span>
-
-                  <span className="font-primary font-bold text-slate-800 ">
-                    Time
-                  </span>
-                  <span className="text-slate-800">11:00 AM-1:00 PM</span>
-                </div>
-              </div>
-
-              <div className="mb-10">
-                <SecondaryButton
-                  text="Register to event"
-                  onClick={handleEventFormPopup}
-                />
-              </div>
+              style={{
+                height: 500,
+                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/morselaser.avif")`,
+              }}
+            >
+              <span className="col-span-2"></span>
 
               <div
-                className="overflow-hidden font-sans text-xl 
-              text-white text-center max-w-xl"
+                className="rounded-lg grid grid-cols-2 gap-2 p-10 
+                 backdrop-blur shadow-lg bg-white/30"
               >
-                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                  About the Event
-                  <br />
-                </h1>
-                How would Christopher Nolan direct a game of dumb charades? He
-                would probably bring out laser pointers and display a morse code
-                for the team to decipher the movie. We bring to you the morse’s
-                laser because that’s exactly what it is. The contestants would
-                be provided with movie name written in Morse's code and they
-                have to guess the movie name .
-                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                  Guidelines: <br />
-                </h1>
+                <span className="font-primary font-bold text-slate-800 ">
+                  Venue
+                </span>
+                <span className="text-slate-800 ">Auditorium</span>
+                <span className="font-primary font-bold text-slate-800 ">
+                  Date
+                </span>
+                <span className="text-slate-800">22 May</span>
 
-•	There will be a team of 4-5 members. <br />
-•	The theme will be given to one of the team members in the form of a code. <br />
-•	One of the team members will throw a laser on the screen. <br />
-•	And other team members who will be sitting on either side of the screen have to decode the Morse. <br />
-                <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                  Coordinators: <br />
-                </h1>
-                Sudhanshu Tiwari (3rd B.tech ME):8175057261
+                <span className="font-primary font-bold text-slate-800 ">
+                  Time
+                </span>
+                <span className="text-slate-800">11:00 AM-1:00 PM</span>
               </div>
             </div>
-          </main>
 
-          <div
-            id="event-popup"
-            className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
-            backdrop-blur opacity-0 px-5 z-40 scale-50"
-          >
-            <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
-              <button
+            <div className="mb-10">
+              <SecondaryButton
+                text="Register to event"
                 onClick={handleEventFormPopup}
-                className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
-              absolute rounded-full w-12 h-12 bg-pink-500 
-              shadow-lg grid place-items-center hover:scale-110"
-              >
-                <img
-                  src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
-                  className="w-6 h-6"
-                />
-              </button>
+              />
+            </div>
 
-              <EventRegistrationForm eventId="TSCEH06" />
+            <div
+              className="overflow-hidden font-sans text-xl 
+              text-white text-center max-w-xl"
+            >
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                About the Event
+                <br />
+              </h1>
+              How would Christopher Nolan direct a game of dumb charades? He
+              would probably bring out laser pointers and display a morse code
+              for the team to decipher the movie. We bring to you the morse’s
+              laser because that’s exactly what it is. The contestants would be
+              provided with movie name written in Morse's code and they have to
+              guess the movie name .
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                Guidelines: <br />
+              </h1>
+              • There will be a team of 4-5 members. <br />
+              • The theme will be given to one of the team members in the form
+              of a code. <br />
+              • One of the team members will throw a laser on the screen. <br />
+              • And other team members who will be sitting on either side of the
+              screen have to decode the Morse. <br />
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                Coordinators: <br />
+              </h1>
+              Sudhanshu Tiwari (3rd B.tech ME):8175057261
             </div>
           </div>
-        </>
-      </Layout>
-    </Auth>
+        </main>
+
+        <div
+          id="event-popup"
+          className="fixed w-screen h-screen  top-full left-0 flex justify-center items-center 
+            backdrop-blur opacity-0 px-5 z-40 scale-50"
+        >
+          <div className="w-full max-w-xl h-97/100 bg-white shadow-lg relative rounded-lg">
+            <button
+              onClick={handleEventFormPopup}
+              className="transition ease-in-out delay-15 z-20 -right-4 -top-4 
+              absolute rounded-full w-12 h-12 bg-pink-500 
+              shadow-lg grid place-items-center hover:scale-110"
+            >
+              <img
+                src="https://d2jf5yk8vvx0ti.cloudfront.net/images/close.svg"
+                className="w-6 h-6"
+              />
+            </button>
+
+            <EventRegistrationForm eventId="TSCEH06" />
+          </div>
+        </div>
+      </>
+    </Layout>
+    // </Auth>
   );
 }

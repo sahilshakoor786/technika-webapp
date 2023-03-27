@@ -16,27 +16,27 @@ export default function RegisterPage() {
   }
 
   return (
-    <Auth>
-      <Layout>
-        <main
-          className="h-full min-h-screen overflow-x-hidden
+    // <Auth>
+    <Layout>
+      <main
+        className="h-full min-h-screen overflow-x-hidden
           flex justify-center items-center"
-        >
-          <div
-            className="z-10 mx-10 p-10 relative md:w-1/3 h-fit backdrop-blur flex flex-col
+      >
+        <div
+          className="z-10 mx-10 p-10 relative md:w-1/3 h-fit backdrop-blur flex flex-col
           shadow-lg space-y-3 rounded-lg bg-slate-50/10 md:mt-20 mb-10"
-          >
-            <h1 className="font-primary text-2xl text-center text-white">
-              Complete your registration
-            </h1>
+        >
+          <h1 className="font-primary text-2xl text-center text-white">
+            Complete your registration
+          </h1>
 
-            <ProfileUpdate
-              onSuccess={profileSaveSuccess}
-              onError={profileSaveError}
-            />
-          </div>
-        </main>
-      </Layout>
-    </Auth>
+          <ProfileUpdate
+            onSuccess={profileSaveSuccess}
+            onError={profileSaveError}
+          />
+        </div>
+      </main>
+    </Layout>
+    // </Auth>
   );
 }
