@@ -115,7 +115,7 @@ export default function Page() {
               • The fastest team to solve the problem will be declared as the
               winner. <br />
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Cordinators:
+                
                 <br />
               </h1>
               

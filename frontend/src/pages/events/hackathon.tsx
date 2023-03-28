@@ -113,7 +113,7 @@ export default function Page() {
               design is closest to the original web design shown in the
               beginning will be considered winner.
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+               <br />
               </h1>
               <br />
             </div>

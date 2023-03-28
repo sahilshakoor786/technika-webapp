@@ -110,7 +110,7 @@ export default function Page() {
               will lead to other clues. In total there will be 5-6 clues and the
               team solving the last clue first will win.
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+                <br />
               </h1>
             
               <br />

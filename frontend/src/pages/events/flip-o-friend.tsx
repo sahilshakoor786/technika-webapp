@@ -114,7 +114,7 @@ export default function Page() {
               the amount of time taken.
               <br />
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+               <br />
               </h1>
              
             </div>
