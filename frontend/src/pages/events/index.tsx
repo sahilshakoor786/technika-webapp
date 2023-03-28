@@ -439,7 +439,7 @@ export default function EventsPage() {
                   />
                 </Link>
 
-                <Link href="/events/run-time-error">
+                <Link href="/events/run-time-terror">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/runtimeerror.jfif"
                     width={200}
