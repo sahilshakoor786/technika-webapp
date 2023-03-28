@@ -471,7 +471,7 @@ export default function EventsSection() {
               <span>12-Apr
 </span>
               <span>2:15PM-3:15PM</span>
-              <a href="/events/run-time-error">
+              <a href="/events/run-time-terror">
                 <span>RUN TIME TERROR</span>
               </a>
               <span>DBMS Lab/Internet Lab</span>
