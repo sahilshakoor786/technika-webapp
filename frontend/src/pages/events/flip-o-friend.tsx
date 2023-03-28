@@ -69,16 +69,16 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">DBMS LAB/INTERNET LAB</span>
+                <span className="text-slate-800 ">DBMS LAB</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">22 May</span>
+                <span className="text-slate-800">13-April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">3:00 PM-4:00 PM</span>
+                <span className="text-slate-800">11:15- 12:15 PM</span>
               </div>
             </div>
 
@@ -116,7 +116,7 @@ export default function Page() {
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Aman Maurya (3rd B.tech IT):8354855936
+             
             </div>
           </div>
         </main>

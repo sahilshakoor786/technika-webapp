@@ -73,12 +73,12 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">20 May</span>
+                <span className="text-slate-800">13 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">3-4 PM</span>
+                <span className="text-slate-800">2:15-3:15 PM</span>
               </div>
             </div>
 
@@ -121,7 +121,7 @@ export default function Page() {
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Naitik (3rd btech CSE) : 7500103699
+             
               <br />
             </div>
           </div>

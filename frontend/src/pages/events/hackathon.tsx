@@ -48,7 +48,7 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              RASTERIZE
+              HACKATHON
             </h1>
             <Prize prize="1000" />
 
@@ -69,16 +69,16 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">DBMS Lab/Internet Lab</span>
+                <span className="text-slate-800 ">CSE Lab</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">20 May</span>
+                <span className="text-slate-800">12-April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">5-6 PM</span>
+                <span className="text-slate-800">12:00-4:00 PM</span>
               </div>
             </div>
 
@@ -115,7 +115,6 @@ export default function Page() {
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Sumit (3rd btech IT) : 9568243301
               <br />
             </div>
           </div>
