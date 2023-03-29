@@ -112,10 +112,10 @@ export default function Page() {
               • One of the team members will throw a laser on the screen. <br />
               • And other team members who will be sitting on either side of the
               screen have to decode the Morse. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Sudhanshu Tiwari (3rd B.tech ME):8175057261
+              Sudhanshu Tiwari (3rd B.tech ME):8175057261 */}
             </div>
           </div>
         </main>

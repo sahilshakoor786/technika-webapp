@@ -522,52 +522,48 @@ export default function EventsSection() {
               </span>
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
-              <span>2PM-3:30PM</span>
+
+              <span>2:15-4:15PM</span>
               <a href="/events/bridge-o-mania">
                 <span>BRIDGE-O-MANIA</span>
               </a>
-              <span>Civil department</span>
-
-              <span>20-May
-</span>
-              <span>3:30PM-5PM</span>
+              <span>CE Seminar Hall</span>
+              <span>12-April</span>
+              {/* <span>3:30PM-5PM</span>
               <a href="/events/city-maestro">
                 <span>CITY MAESTRO</span>
               </a>
               <span>Drawing Hall(Civil Department)</span>
 
               <span>20-May
-</span>
-              <span>4PM-5PM</span>
+</span> */}
+              <span>2:00-3:30 PM </span>
               <a href="/events/save-the-egg">
                 <span>SAVE THE EGG</span>
               </a>
-              <span>Civil Department</span>
+              <span>GH Complex</span>
+              <span>12-April</span>
 
-              <span>20-May
-</span>
-              <span>9AM-11AM</span>
+              <span>10:00-11:00 AM</span>
               <a href="/events/anadigilox">
                 <span>ANADIGLOGIX</span>
               </a>
               <span>Electronics Department</span>
+              <span>14-April</span>
 
-              <span>22-May
-</span>
-              <span>11AM-1PM</span>
+              <span>11:15-1:15 PM</span>
               <a href="/events/circuit-trouble">
                 <span>CIRCUIT TROUBLE</span>
               </a>
               <span>Electronics Department</span>
-              <span>22-May
-</span>
+              <span>14-April</span>
 
-              <span>11AM-1PM</span>
+              <span>2:00- 3:00 PM</span>
               <a href="/events/morse-laser">
                 <span>MORSE LASER</span>
               </a>
               <span>Auditorium</span>
-              22-May
+              <span>14-April</span>
 
 
               
