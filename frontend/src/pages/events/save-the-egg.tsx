@@ -140,10 +140,10 @@ export default function Page() {
               the inside contents of the egg have been leaked. <br />
               ● The winner will be determined by the container with the greatest
               total score. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Devanshi Tiwari (3rd B.tech CHE):9580887859
+              Devanshi Tiwari (3rd B.tech CHE):9580887859 */}
             </div>
           </div>
         </main>

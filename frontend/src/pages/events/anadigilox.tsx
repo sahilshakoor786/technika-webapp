@@ -119,10 +119,10 @@ export default function Page() {
               ● Participants must bring the D.C. power source with them. The
               organisers will provide 220V A.C. supply. No adapters will be
               provided; the participants must bring their own. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Simran (3rd B.tech ET):6387260477
+              Simran (3rd B.tech ET):6387260477 */}
             </div>
           </div>
         </main>

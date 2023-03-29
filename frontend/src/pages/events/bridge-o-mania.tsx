@@ -134,10 +134,10 @@ export default function Page() {
               • Width: 10 cm <br />• There should not be any variations in the
               dimensions of the bridge, Limiting to an error of 1 cm in width
               and 2 cm in length. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Vishwas Badal (3rd B.tech ME):8081315195
+              Vishwas Badal (3rd B.tech ME):8081315195 */}
             </div>
           </div>
         </main>
