@@ -48,16 +48,16 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              Simulation
+              HACKATHON
             </h1>
-            <Prize prize="4000" />
+            <Prize prize="1000" />
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/simulation.jfif")`,
+                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/rasterize.avif")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -69,16 +69,18 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">ME Dept Seminar Hall</span>
-
+                <span className="text-slate-800 ">CSE Lab
+</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">12-April</span>
+                <span className="text-slate-800">12 Apr</span>
+
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">2:15-3:15 PM</span>
+                <span className="text-slate-800">12 - 4 PM
+</span>
               </div>
             </div>
 
@@ -93,30 +95,26 @@ export default function Page() {
               className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
             >
-              {" "}
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 About the Event
                 <br />
               </h1>
-              Importance of simulation: An RC flight simulator is a computer
-              program that allows pilots of radio-controlled aircraft to
-              practice on a computer, without the risk and expense of damaging a
-              real model. Besides the obvious use of training beginners, they
-              are also used for practising new aerobatics, evaluating a model
-              before buying it, and to allow flight practice when conditions are
-              otherwise unsuitable Phoenix RC Simulator allows the use of real
-              R/C transmitters to control the sim. InfinityScape 3D landscale
-              generator allows the user to fly beyond the horizon over
-              beautiful, ever-changing terrain that they create and control.
+              Welcome to the hackathon event! In this engaging event, you will have the opportunity to collaborate with other tech enthusiasts to create innovative software projects. Whether you are a seasoned developer or a newcomer to the field, this event is an opportunity to flex your creativity, problem-solving skills, and teamwork abilities. You will have access to mentors, resources, and support to help you bring your ideas to life. Throughout the event, you will work tirelessly to prototype your projects and compete for prizes. But more importantly, you will have the opportunity to learn new skills, network with other professionals, and contribute to the development of new technologies that can make a real impact in the world. So let's get ready to hack!
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
+              In this event, participants will get an opportunity to show off
+              their front-end web design skills (HTML/CSS/JAVASCRIPT). All the
+              participants will be shown a web design for a brief time and will
+              be provided all relevant data (dimensions, color codes, etc). They
+              have to replicate the original web design. A participant whose web
+              design is closest to the original web design shown in the
+              beginning will be considered winner.
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              {/* Satyansh(3rd B.tech ET):8177020964 <br />
-              Atul(3rd B.tech EE) : 7617816601 <br /> Shubhi(3rd B.tech EE) :
-              6306654511 */}
+              Sumit (3rd btech IT) : 9568243301
+              <br />
             </div>
           </div>
         </main>
@@ -139,10 +137,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
-              eventId="TSCFH01
-"
-            />
+            <EventRegistrationForm eventId="TSCGC03" />
           </div>
         </div>
       </>
