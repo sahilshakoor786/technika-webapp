@@ -236,7 +236,7 @@ export default function EventsSection() {
                 <span>E--GAMING</span>
               </a>
               <span>Auditorium</span>
-              <span>22-May
+              <span>14-APRIL
 </span>
             </div>
           </div>
