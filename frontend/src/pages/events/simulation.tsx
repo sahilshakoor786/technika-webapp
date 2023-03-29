@@ -69,16 +69,16 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">Auditorium</span>
+                <span className="text-slate-800 ">ME Dept Seminar Hall</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">20 May</span>
+                <span className="text-slate-800">12-April</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">4:00 PM-6:00 PM</span>
+                <span className="text-slate-800">2:15-3:15 PM</span>
               </div>
             </div>
 
@@ -114,9 +114,9 @@ export default function Page() {
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Satyansh(3rd B.tech ET):8177020964 <br />
+              {/* Satyansh(3rd B.tech ET):8177020964 <br />
               Atul(3rd B.tech EE) : 7617816601 <br /> Shubhi(3rd B.tech EE) :
-              6306654511
+              6306654511 */}
             </div>
           </div>
         </main>
