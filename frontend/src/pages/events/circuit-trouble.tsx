@@ -138,10 +138,10 @@ export default function Page() {
               ● Any of the above-mentioned rules, if found violated, teams would
               not be allowed to participate in the competition. <br />● In any
               case, Jury’s decision is final and binding for all. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Taniska (3rd B.tech ET):8923978437
+              Taniska (3rd B.tech ET):8923978437 */}
             </div>
           </div>
         </main>

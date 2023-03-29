@@ -282,105 +282,98 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-              <span>3PM-5PM</span>
-              <a href="/events/lfr">
-                <span>LFR</span>
-              </a>
-              <span>BE-FT Lawn</span>
-              <span>20-May
-</span>
-
               <span>9AM-11AM
 </span>
               <a href="/events/udaan">
                 <span>UDAAN</span>
               </a>
-              <span>Parking Lot</span>
+              <span>West Campus</span>
 
-              <span>22-May
+              <span>13-April
 </span>
-              <span>3PM-5PM</span>
+              <span>12PM-3PM</span>
               <a href="/events/blazing-wheel">
-                <span>BLAZING-WHEEL</span>
+                <span>Roborace</span>
               </a>
-              <span>Tennis Lawn
+              <span>BE/FT Lawn
 </span>
 
-              <span>22-May
+              <span>13-April
 </span>
-              <span>3PM-5PM</span>
+              <span>3:30PM-4:30PM</span>
               <a href="/events/free-flight">
                 <span>FREE-FLIGHT</span>
               </a>
-              <span>parking lot
+              <span>Parking lot
 </span>
 
-              <span>22-May
+              <span>12-April
 </span>
-              <span>3:00PM-5:00PM</span>
+              <span>3:30PM-6:00PM</span>
               <a href="/events/robo-combat">
-                <span>ROBO-COMBAT</span>
+                <span>ROBO-WAR</span>
               </a>
               <span>Tennis Lawn</span>
 
-              <span>20-May
-,22-May
+              <span>13-April
+
 </span>
-              <span>3PM-4:30PM</span>
+              <span>3PM-5PM</span>
               <a href="/events/thread-ripper">
-                <span>THREAD-RIPPER</span>
+                <span>Robo Wrestling</span>
               </a>
-              <span>Tennis Lawn
+              <span>BE/FT Lawn
 </span>
 
-              <span>21-May
+              <span>13-April
 </span>
-              <span>12:30PM-2PM</span>
+              <span>9AM-11AM</span>
               <a href="/events/path-pradarshak">
-                <span>PATH-PRADARSHAK</span>
+                <span>Glider</span>
               </a>
-              <span>Auditorium</span>
+              <span>West Campus</span>
 
-              <span>21-May
+              <span>14-April
 </span>
-              <span>11AM-1PM</span>
-              <a href="/events/hover-mania">
-                <span>HOVER MANIA</span>
-              </a>
-              <span>Tennis Lawn</span>
-
-              <span>21-May
-</span>
-              <span>11AM-12:30PM</span>
+             
+              <span>1PM-2PM</span>
               <a href="/events/kya-engineer">
                 <span>KYA ENGINNER BANEGA RE TU</span>
               </a>
               <span>Auditorium</span>
 
-              <span>21-May
+              <span>14-April
 </span>
-              <span>9AM-11AM</span>
+              <span>4PM-6PM</span>
               <a href="/events/waterrocket">
                 <span>WATER ROCKET</span>
               </a>
               <span>West Campus</span>
 
-              <span>21-May
+              <span>13-April
 </span>
               <span>4PM-6PM</span>
               <a href="/events/soccerbot">
-                <span>SOCCER BOT</span>
+                <span>Robo-Soccer</span>
               </a>
               <span>Tennis Lawn</span>
 
-              <span>21-May
+              <span>12-April
 </span>
-              <span>3:00PM-6:30PM</span>
-              <a href="/events/simulation">
-                <span>SIMULATION</span>
+<span>10AM-12PM</span>
+              <a href="/events/soccerbot">
+                <span>Robo-Soccer</span>
               </a>
-              <span>Auditorium</span>
-              <span>20-May
+              <span>BE/FT Lawn</span>
+
+              <span>13-April
+</span>
+              <span>2:15PM-3:15PM</span>
+              <a href="/events/simulation">
+                <span>Aircraft Simulation</span>
+              </a>
+              <span>ME Dept Seminar Hall</span>
+              <span>12-April
 </span>
             </div>
           </div>
@@ -522,52 +515,48 @@ export default function EventsSection() {
               </span>
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
-              <span>2PM-3:30PM</span>
+
+              <span>2:15-4:15PM</span>
               <a href="/events/bridge-o-mania">
                 <span>BRIDGE-O-MANIA</span>
               </a>
-              <span>Civil department</span>
-
-              <span>20-May
-</span>
-              <span>3:30PM-5PM</span>
+              <span>CE Seminar Hall</span>
+              <span>12-April</span>
+              {/* <span>3:30PM-5PM</span>
               <a href="/events/city-maestro">
                 <span>CITY MAESTRO</span>
               </a>
               <span>Drawing Hall(Civil Department)</span>
 
               <span>20-May
-</span>
-              <span>4PM-5PM</span>
+</span> */}
+              <span>2:00-3:30 PM </span>
               <a href="/events/save-the-egg">
                 <span>SAVE THE EGG</span>
               </a>
-              <span>Civil Department</span>
+              <span>GH Complex</span>
+              <span>12-April</span>
 
-              <span>20-May
-</span>
-              <span>9AM-11AM</span>
+              <span>10:00-11:00 AM</span>
               <a href="/events/anadigilox">
                 <span>ANADIGLOGIX</span>
               </a>
               <span>Electronics Department</span>
+              <span>14-April</span>
 
-              <span>22-May
-</span>
-              <span>11AM-1PM</span>
+              <span>11:15-1:15 PM</span>
               <a href="/events/circuit-trouble">
                 <span>CIRCUIT TROUBLE</span>
               </a>
               <span>Electronics Department</span>
-              <span>22-May
-</span>
+              <span>14-April</span>
 
-              <span>11AM-1PM</span>
+              <span>2:00- 3:00 PM</span>
               <a href="/events/morse-laser">
                 <span>MORSE LASER</span>
               </a>
               <span>Auditorium</span>
-              22-May
+              <span>14-April</span>
 
 
               
