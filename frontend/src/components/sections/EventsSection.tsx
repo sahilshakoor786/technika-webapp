@@ -150,7 +150,7 @@ export default function EventsSection() {
               <span className="font-primary font-bold text-slate-800">
                 Venue
               </span>
-              <span className="font-primary font-bold text-slate-800">
+              <span className="font-primary font-bold text-slate-800"> 
                 Date
               </span>
                   
@@ -265,7 +265,7 @@ export default function EventsSection() {
                 <span>E--GAMING</span>
               </a>
               <span>Auditorium</span>
-              <span>22-May
+              <span>22-May 
 </span>
             </div>
           </div>
@@ -454,60 +454,60 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-              <span>4PM-5PM</span>
+              <span>12:30PM-1:30PM</span>
               <a href="/events/break-the-code">
                 <span>BREAK THE CODE</span>
               </a>
-              <span>DBMS Lab, Internet Lab</span>
+              <span>Computer Science Department Lab</span>
 
-              <span>20-May
+              <span>13-Apr
 </span>
-              <span>5PM-6PM</span>
-              <a href="/events/rasterize">
-                <span>RASTERIZE</span>
+              <span>12:00PM-4:00PM</span>
+              <a href="/events/hackathon">
+                <span>HACKATHON</span>
               </a>
-              <span>DBMS Lab, Internet Lab</span>
+              <span>CSE Lab</span>
 
-              <span>20-May
+              <span>12-Apr
 </span>
-              <span>3PM-4PM</span>
+              <span>2:15PM-3:15PM</span>
               <a href="/events/run-time-terror">
                 <span>RUN TIME TERROR</span>
               </a>
-              <span>DBMS Lab, Internet Lab</span>
+              <span>DBMS Lab/Internet Lab</span>
 
-              <span>20-May
+              <span>13-Apr
 </span>
-              <span>4:30PM-5:30PM</span>
-              <a href="/events/red-pencil">
+              <span>10:00AM-11:00AM</span>
+              {/* <a href="/events/red-pencil">
                 <span>RED PENCIL</span>
               </a>
               <span>CSE Seminar Hall</span>
 
               <span>21-May
 </span>
-              <span>4PM-5PM</span>
-              <a href="/events/blank-coding">
+              <span>4PM-5PM</span> */}
+              {/* <a href="/events/blank-coding">
                 <span>BLANK CODING</span>
               </a>
               <span>DBMS Lab, Internet Lab</span>
 
               <span>22-May
 </span>
-              <span>5PM-6PM</span>
+              <span>5PM-6PM</span> */}
               <a href="/events/programming-date">
                 <span>PROGRAMMING DATE</span>
               </a>
-              <span>DBMS Lab, Internet Lab</span>
-              <span>22-May
+              <span>DBMS Lab</span>
+              <span>13-Apr
 </span>
-<span>3PM-4PM</span>
+<span>11:15AM-12:15PM</span>
               <a href="/events/flip-o-friend">
                 <span>FLIP-O-FRIEND</span>
               </a>
   
-              <span>DBMS Lab/Internet Lab</span>
-              <span>22-May
+              <span>DBMS Lab</span>
+              <span>13-Apr
 </span>
             </div>
           </div>
@@ -643,38 +643,34 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-              <span>5:00-7:00PM</span>
+              <span>9:00-11:00AM</span>
               <a href="/events/udaan">
                 <span>Udaan</span>
               </a>
-              <span>Parking Lot</span>
+              <span>West Campus</span>
 
-              <span>22-May
+              <span>13-April
 </span>
+
+
               <span>5:00-7:00PM</span>
               <a href="/events/free-flight">
                 <span>Free Flight</span>
               </a>
-              <span>Mechanical Department</span>
+              <span>Parking Lot</span>
 
-              <span>22-May
+              <span>12-April
 </span>
-              <span>3:00PM-5:00PM</span>
-              <a href="/events/blast-of-to-mars">
-                <span>Blast of  to mars
-</span>
-              </a>
-              <span>West Campus</span>
 
-              <span>21-May
-</span>
-              <span>9:00-11:00AM</span>
+
+              <span>2:15-3:15 PM</span>
               <a href="/events/simulation">
-                <span>Simulation</span>
+                <span>Aircraft Simulation</span>
               </a>
-              <span>Auditorium</span>
-              <span>20-May
+              <span>ME Dept Seminar Hall</span>
+              <span>12-April
 </span>
+             
             </div>
           </div>
         </div>

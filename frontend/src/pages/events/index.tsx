@@ -430,12 +430,12 @@ export default function EventsPage() {
                     text="Flip-O-Friend"
                   />
                 </Link>
-                <Link href="/events/rasterize">
+                <Link href="/events/hackathon">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/rasterize.jpg"
                     width={200}
                     height={300}
-                    text="RASTERIZE"
+                    text="HACKATHON"
                   />
                 </Link>
 
@@ -447,22 +447,22 @@ export default function EventsPage() {
                     text="Run time terror"
                   />
                 </Link>
-                <Link href="/events/red-pencil">
+                {/* <Link href="/events/red-pencil">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/redpencil.png"
                     width={200}
                     height={300}
                     text="Red Pencil"
                   />
-                </Link>
-                <Link href="/events/blank-coding">
+                </Link> */}
+                {/* <Link href="/events/blank-coding">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blank%20coding.jpg"
                     width={200}
                     height={300}
                     text="Blank Coding"
                   />
-                </Link>
+                </Link> */}
 
                 <Link href="/events/programming-date">
                   <FancyImage
