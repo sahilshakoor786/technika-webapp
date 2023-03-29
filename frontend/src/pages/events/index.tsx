@@ -379,30 +379,30 @@ export default function EventsPage() {
                   />
                 </Link>
 
-                <Link href="/events/free-flight">
+                <Link href="/events/glider">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                     width={200}
                     height={300}
-                    text="Free Flight"
+                    text="Glider"
                   />
                 </Link>
 
-                <Link href="/events/blast-of-to-mars">
+                {/* <Link href="/events/blast-of-to-mars">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
                     width={200}
                     height={300}
                     text="Blast Of To Mars"
                   />
-                </Link>
+                </Link> */}
 
                 <Link href="/events/simulation">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/simulation.jpg"
                     width={200}
                     height={300}
-                    text="Simulation"
+                    text="Aircraft Simulation"
                   />
                 </Link>
               </div>
