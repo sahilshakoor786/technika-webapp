@@ -157,115 +157,86 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-              <span>10AM-11AM</span>
+              <span>2:15PM-3:15PM</span>
               <a href="/events/junk-yard">
                 <span>JUNKYARD</span>
               </a>
-              <span>Tennis Lawn
+              <span>EC 1
 </span>
-<span>20-May
+<span>12-APRIL
 
 
 </span>
 
-              <span>11AM-12PM</span>
+              <span>12PM-2PM</span>
               <a href="/events/quiz-me-more">
                 <span>QUIZ ME MORE</span>
               </a>
               <span>Auditorium</span>
               
+ <span>
+                12-APRIL
+                </span>
 
-              <span>20-May
-</span>
-              <span>3PM-4PM</span>
+              <span>2:15PM-4:15PM</span>
               <a href="/events/laser-o-reflect">
                 <span>LASER-O-REFLECT</span>
               </a>
-              <span>Atal Seminar Hall</span>
+              <span>Auditorium</span>
 
-              <span>20-May
+              <span> 12-APRIL
 </span>
-              <span>12PM-1PM</span>
+              <span>2:15PM-3:15PM</span>
               
               <a href="/events/situation-room">
                 <span>SITUATION ROOM</span>
               </a>
               <span>Auditorium</span>
 
-              <span>20-May
+              <span>12-APRIL
 </span>
               <span>10AM-5PM</span>
               <a href="/events/tech-expo">
                 <span>TECH EXPO</span>
               </a>
               <span>Between Auditorium and Civil Department</span>
-              <span>22-May
+              <span>14-APRIL
 </span>
 
-              <span>9AM-11AM</span>
-              <a href="/events/squid-game">
-                <span>SQUID GAME</span>
-              </a>
-              <span>Tennis Lawn
-</span>
-
-              <span>22-May
-</span>
-              <span>3PM-4:30PM</span>
-              <a href="/events/nft-design">
-                <span>NFT DESIGN</span>
-              </a>
-              <span>CSE Seminar Hall</span>
-
-              <span>21-May
-</span>
-              <span>6:00PM-8:30PM</span>
+        
+              <span>2:30PM-3:30PM</span>
               <a href="/events/celebritytalk">
-                <span>Celebrity Talk</span>
+                <span>Tech Talk</span>
               </a>
               <span>Auditorium
 </span>
-              <span>21-May
+              <span>12-APRIL
 </span>
-              <span>2PM-4PM</span>
-              <a href="/events/speakertalk">
-                <span>Speaker Talk</span>
-              </a>
-              <span>Auditorium
-</span>
-
-              <span>21-May
-</span>
-              <span>9AM-11AM</span>
+        
+              <span>10AM-12PM</span>
               <a href="/events/treasure-hunt">
                 <span>TREASURE HUNT</span>
               </a>
               <span>East Campus</span>
 
-              <span>21-May
+              <span>13-APRIL
 </span>
-              <span>5PM-8PM</span>
+              <span>7PM-10PM</span>
               <a href="/events/fun-fare">
                 <span>FUN FARE</span>
               </a>
-              <span>Parking Lot</span>
+              <span>Tennis Lawn</span>
 
-              <span>20-May
+              <span>12-APRIL
 </span>
-              <span>8:30PM-10:30PM</span>
-              <a href="/events/edm">
-                <span>EDM</span>
-              </a>
-              <span>Parking Lot</span>
-              <span>22-May
-</span>
+          
 
-              <span>7:30PM-8:30PM</span>
+              <span>11:15AM-5:00PM</span>
               <a href="/events/e-gaming">
                 <span>E--GAMING</span>
               </a>
-              <span>Auditorium</span>
-              <span>22-May
+              <span>EC 1</span>
+              <span>12-APRIL
 </span>
             </div>
           </div>
