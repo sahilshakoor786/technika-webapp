@@ -7,6 +7,7 @@ import { teamHospitality } from "src/utils/teamHospitality";
 import { webdev } from "src/utils/webdev"  
 import { teamDesign } from "src/utils/teamDesign";
 import { teamMarketing } from "src/utils/teamMarketing";
+import { photographyteam } from "src/utils/photographyteam";
 
 export default function EventsPage() {
   return (
