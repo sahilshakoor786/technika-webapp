@@ -4,6 +4,7 @@ import TeamImage from "src/components/TeamImage";
 import Layout from "src/components/Layout";
 import { TeamTSC } from "src/utils/TeamTSC";
 import { teamHospitality } from "src/utils/teamHospitality";
+import { webdev } from "src/utils/webdev"  
 
 export default function EventsPage() {
   return (
