@@ -10,9 +10,9 @@ export const webdev=[
         Timestamp: "3/30/2023 1:51:39",
         Name: "Sahil Shakoor",
     Photo: "https://drive.google.com/uc?id=17LlruHPfGptGKznVC4Gyj61fjExOZe6U",
-        "LinkedIn profile URL ": "Sahil Shakoor",
+        "LinkedIn profile URL ": "https://www.linkedin.com/in/sahil-shakoor-270091145",
         "Instagram profile URL":
-          "https://www.linkedin.com/in/sahil-shakoor-270091145",
+          "https://www.instagram.com/sahilshakoor786",
         "Position in TSC": "Associate Web Development Head",
       }, 
        {
