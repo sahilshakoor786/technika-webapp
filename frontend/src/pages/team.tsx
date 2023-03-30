@@ -2,6 +2,7 @@ import Link from "next/link";
 import Auth from "src/components/Auth";
 import TeamImage from "src/components/TeamImage";
 import Layout from "src/components/Layout";
+import { TeamTSC } from "src/utils/TeamTSC";
 
 export default function EventsPage() {
   return (
@@ -24,16 +25,19 @@ export default function EventsPage() {
           </h1>
 
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-            <TeamImage
-              src="https://d2jf5yk8vvx0ti.cloudfront.net/images/Strategie-banner-1024x325.png"
-              width={200}
-              height={300}
-              name="Shubham Rana"
-              position="Secretary"
-              instagram="https://www.instagram.com/technika22/?igshid=YmMyMTA2M2Y="
-              facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-              linkedin="https://www.linkedin.com/company/technical-sub-council-hbtu/"
-            />
+            {TeamTSC.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={350}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
           </div>
         </div>
       </main>
