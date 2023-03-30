@@ -6,6 +6,7 @@ import { TeamTSC } from "src/utils/TeamTSC";
 import { teamHospitality } from "src/utils/teamHospitality";
 import { webdev } from "src/utils/webdev"  
 import { teamDesign } from "src/utils/teamDesign";
+import { teamMarketing } from "src/utils/teamMarketing";
 
 export default function EventsPage() {
   return (
@@ -118,6 +119,32 @@ export default function EventsPage() {
               />
             ))}
           </div>
+          {/* Marketing Team */}
+
+          <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+          
+            Marketing Team
+          </h1>
+
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+            {teamMarketing.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={350}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
+          </div>
+
         </div>
       </main>
     </Layout>
