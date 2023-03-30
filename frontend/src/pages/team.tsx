@@ -41,10 +41,12 @@ export default function EventsPage() {
               />
             ))}
           </div>
+          
  <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
+          
             Website Development Team
           </h1>
 
