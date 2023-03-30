@@ -44,7 +44,7 @@ export default function EventsPage() {
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-            Website Development Team{" "}
+            Website Development Team
           </h1>
 
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
