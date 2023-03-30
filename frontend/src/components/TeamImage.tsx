@@ -27,6 +27,8 @@ export default function TeamImage({
 }: TeamImageProps) {
   const imgRef = useRef<HTMLImageElement>(null);
 
+  console.log("ImageURL", src);
+
   function fancyImageHover(
     e: MouseEvent<HTMLImageElement, globalThis.MouseEvent>
   ) {
@@ -79,28 +81,31 @@ export default function TeamImage({
         }}
       ></div>
       <div className="flex flex-row mt-44">
- <Link href={`${facebook}`} >
-      <img
+        {/* <Link href={`${facebook}`}>
+          <img
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-facebook.svg"
             className=" h-9 w-9 z-20"
-            />
-            </Link>
-            <Link href={`${instagram}`} >
-      <img
+          />
+        </Link> */}
+        <Link href={`${instagram}`}>
+          <img
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-instagram.svg"
             className=" h-9 w-9 z-20"
-            />
-            </Link>
-            <Link href={`${facebook}`} >
- <img
+          />
+        </Link>
+        <Link href={`${linkedin}`}>
+          <img
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-linkedin-circled.svg"
             className=" h-9 w-9 z-20"
-            />
-            </Link>
-            
-            </div>
-      <span className="z-20 mt-1 text-white text-2xl backdrop-blur text-center">{name}</span>
-      <span className="z-20 m-0 text-white text-2xl backdrop-blur text-center">{position}</span>
+          />
+        </Link>
+      </div>
+      <span className="z-20 mt-1 text-white text-2xl backdrop-blur text-center">
+        {name}
+      </span>
+      <span className="z-20 m-0 text-white text-xl backdrop-blur text-center">
+        {position}
+      </span>
     </div>
   );
 }
