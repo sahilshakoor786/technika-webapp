@@ -7,7 +7,7 @@ import { teamHospitality } from "src/utils/teamHospitality";
 import { webdev } from "src/utils/webdev"  
 import { teamDesign } from "src/utils/teamDesign";
 import { teamMarketing } from "src/utils/teamMarketing";
-import { teamPublicity } from "src/utils/teamPublicity";
+import { photographyteam } from "src/utils/photographyteam";
 
 export default function EventsPage() {
   return (
@@ -146,17 +146,15 @@ export default function EventsPage() {
             ))}
           </div>
 
-          {/* Publicity Team */}
-          <h1
+           <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-          
-            Publicity Team
+            Photography Team{}
           </h1>
 
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-            {teamPublicity.map((member) => (
+            {photographyteam.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
@@ -170,6 +168,9 @@ export default function EventsPage() {
               />
             ))}
           </div>
+
+
+          
         </div>
       </main>
     </Layout>
