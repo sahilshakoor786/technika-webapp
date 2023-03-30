@@ -2,7 +2,8 @@ import Link from "next/link";
 import Auth from "src/components/Auth";
 import TeamImage from "src/components/TeamImage";
 import Layout from "src/components/Layout";
-import { TeamTSC } from "src/utils/TeamTSC";
+// import { TeamTSC } from "src/utils/TeamTSC";
+import { TeamSecurityTSC } from "src/utils/TeamSecurityTSC";
 
 export default function EventsPage() {
   return (
@@ -21,11 +22,12 @@ export default function EventsPage() {
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-            Team{" "}
+           Security Team{" "}
           </h1>
 
+          
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-            {TeamTSC.map((member) => (
+            {TeamSecurityTSC.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
