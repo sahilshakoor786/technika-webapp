@@ -50,7 +50,7 @@ export default function Page() {
             >
               Morse Laser
             </h1>
-            <Prize prize="3000" />
+            {/* <Prize prize="3000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
