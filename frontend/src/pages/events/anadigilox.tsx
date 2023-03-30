@@ -50,7 +50,7 @@ export default function Page() {
             >
               Anadigilogix
             </h1>
-            <Prize prize="3000" />
+            {/* <Prize prize="3000" /> */}
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"

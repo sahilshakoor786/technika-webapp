@@ -50,7 +50,7 @@ export default function Page() {
             >
               Treasure Hunt
             </h1>
-            <Prize prize="5000" />
+            {/* <Prize prize="5000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 

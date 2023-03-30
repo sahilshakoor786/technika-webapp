@@ -50,7 +50,7 @@ export default function Page() {
             >
               Blazing Wheel
             </h1>
-            <Prize prize="2000" />
+            {/* <Prize prize="2000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
