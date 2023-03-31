@@ -1,5 +1,5 @@
 export const teamHospitality = [
-{
+  {
     Timestamp: "3/28/2023 21:23:57",
     Name: "Aditya Gautam",
     Photo: "https://drive.google.com/open?id=1lgJfB46K_4SpSNchvF8vXBR9Kt-N8N8a",
@@ -7,8 +7,8 @@ export const teamHospitality = [
     "Instagram profile URL":
       "https://instagram.com/lifewithadii?igshid=YmMyMTA2M2Y=",
     "Position in TSC": "Hospitality Head",
-},
-{
+  },
+  {
     Timestamp: "3/28/2023 21:25:32",
     Name: "PURVI GUPTA ",
     Photo: "https://drive.google.com/open?id=1tWKHoxO0rSBqQwQs5nBWRMoQvlvwXda4",
@@ -70,5 +70,5 @@ export const teamHospitality = [
     "Instagram profile URL":
       "https://instagram.com/the_aryan.soni?igshid=ZDdkNTZiNTM=",
     "Position in TSC": "Hospitality Associate Head",
-  }
+  },
 ];

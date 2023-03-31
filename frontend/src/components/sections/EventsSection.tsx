@@ -150,10 +150,9 @@ export default function EventsSection() {
               <span className="font-primary font-bold text-slate-800">
                 Venue
               </span>
-              <span className="font-primary font-bold text-slate-800"> 
+              <span className="font-primary font-bold text-slate-800">
                 Date
               </span>
-                  
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
@@ -161,22 +160,16 @@ export default function EventsSection() {
               <a href="/events/junk-yard">
                 <span>JUNKYARD</span>
               </a>
-              <span>EC 1
-</span>
-<span>12-APRIL
-
-
-</span>
+              <span>EC 1</span>
+              <span>12-APRIL</span>
 
               <span>12PM-2PM</span>
               <a href="/events/quiz-me-more">
                 <span>QUIZ ME MORE</span>
               </a>
               <span>Auditorium</span>
-              
- <span>
-                12-APRIL
-                </span>
+
+              <span>12-APRIL</span>
 
               <span>2:15PM-4:15PM</span>
               <a href="/events/laser-o-reflect">
@@ -184,60 +177,50 @@ export default function EventsSection() {
               </a>
               <span>Auditorium</span>
 
-              <span> 12-APRIL
-</span>
+              <span> 12-APRIL</span>
               <span>2:15PM-3:15PM</span>
-              
+
               <a href="/events/situation-room">
                 <span>SITUATION ROOM</span>
               </a>
               <span>Auditorium</span>
 
-              <span>12-APRIL
-</span>
+              <span>12-APRIL</span>
               <span>10AM-5PM</span>
               <a href="/events/tech-expo">
                 <span>TECH EXPO</span>
               </a>
               <span>Between Auditorium and Civil Department</span>
-              <span>14-APRIL
-</span>
+              <span>14-APRIL</span>
 
-        
               <span>2:30PM-3:30PM</span>
               <a href="/events/celebritytalk">
                 <span>Tech Talk</span>
               </a>
-              <span>Auditorium
-</span>
-              <span>12-APRIL
-</span>
-        
+              <span>Auditorium</span>
+              <span>12-APRIL</span>
+
               <span>10AM-12PM</span>
               <a href="/events/treasure-hunt">
                 <span>TREASURE HUNT</span>
               </a>
               <span>East Campus</span>
 
-              <span>13-APRIL
-</span>
+              <span>13-APRIL</span>
               <span>7PM-10PM</span>
               <a href="/events/fun-fare">
                 <span>FUN FARE</span>
               </a>
               <span>Tennis Lawn</span>
 
-              <span>12-APRIL
-</span>
-          
+              <span>12-APRIL</span>
 
               <span>11:15AM-5:00PM</span>
               <a href="/events/e-gaming">
                 <span>E--GAMING</span>
               </a>
               <span>Auditorium</span>
-              <span>14-APRIL
-</span>
+              <span>14-APRIL</span>
             </div>
           </div>
         </div>
@@ -282,99 +265,83 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-              <span>9AM-11AM
-</span>
+              <span>9AM-11AM</span>
               <a href="/events/udaan">
                 <span>UDAAN</span>
               </a>
               <span>West Campus</span>
 
-              <span>13-April
-</span>
+              <span>13-April</span>
               <span>12PM-3PM</span>
               <a href="/events/blazing-wheel">
                 <span>Roborace</span>
               </a>
-              <span>BE/FT Lawn
-</span>
+              <span>BE/FT Lawn</span>
 
-              <span>13-April
-</span>
+              <span>13-April</span>
               <span>3:30PM-4:30PM</span>
               <a href="/events/free-flight">
                 <span>FREE-FLIGHT</span>
               </a>
-              <span>Parking lot
-</span>
+              <span>Parking lot</span>
 
-              <span>12-April
-</span>
+              <span>12-April</span>
               <span>3:30PM-6:00PM</span>
               <a href="/events/robo-combat">
                 <span>ROBO-WAR</span>
               </a>
               <span>Tennis Lawn</span>
 
-              <span>13-April
-
-</span>
+              <span>13-April</span>
               <span>3PM-5PM</span>
               <a href="/events/thread-ripper">
                 <span>Robo Wrestling</span>
               </a>
-              <span>BE/FT Lawn
-</span>
+              <span>BE/FT Lawn</span>
 
-              <span>13-April
-</span>
+              <span>13-April</span>
               <span>9AM-11AM</span>
               <a href="/events/path-pradarshak">
                 <span>Glider</span>
               </a>
               <span>West Campus</span>
 
-              <span>14-April
-</span>
-             
+              <span>14-April</span>
+
               <span>1PM-2PM</span>
               <a href="/events/kya-engineer">
                 <span>KYA ENGINNER BANEGA RE TU</span>
               </a>
               <span>Auditorium</span>
 
-              <span>14-April
-</span>
+              <span>14-April</span>
               <span>4PM-6PM</span>
               <a href="/events/waterrocket">
                 <span>WATER ROCKET</span>
               </a>
               <span>West Campus</span>
 
-              <span>13-April
-</span>
+              <span>13-April</span>
               <span>4PM-6PM</span>
               <a href="/events/soccerbot">
                 <span>Robo-Soccer</span>
               </a>
               <span>Tennis Lawn</span>
 
-              <span>12-April
-</span>
-<span>10AM-12PM</span>
+              <span>12-April</span>
+              <span>10AM-12PM</span>
               <a href="/events/soccerbot">
                 <span>Robo-Soccer</span>
               </a>
               <span>BE/FT Lawn</span>
 
-              <span>13-April
-</span>
+              <span>13-April</span>
               <span>2:15PM-3:15PM</span>
               <a href="/events/simulation">
                 <span>Aircraft Simulation</span>
               </a>
               <span>ME Dept Seminar Hall</span>
-              <span>12-April
-</span>
+              <span>12-April</span>
             </div>
           </div>
         </div>
@@ -424,24 +391,21 @@ export default function EventsSection() {
               </a>
               <span>Computer Science Department Lab</span>
 
-              <span>13-Apr
-</span>
+              <span>13-Apr</span>
               <span>12:00PM-4:00PM</span>
               <a href="/events/hackathon">
                 <span>HACKATHON</span>
               </a>
               <span>CSE Lab</span>
 
-              <span>12-Apr
-</span>
+              <span>12-Apr</span>
               <span>2:15PM-3:15PM</span>
               <a href="/events/run-time-terror">
                 <span>RUN TIME TERROR</span>
               </a>
               <span>DBMS Lab/Internet Lab</span>
 
-              <span>13-Apr
-</span>
+              <span>13-Apr</span>
               <span>10:00AM-11:00AM</span>
               {/* <a href="/events/red-pencil">
                 <span>RED PENCIL</span>
@@ -463,16 +427,14 @@ export default function EventsSection() {
                 <span>PROGRAMMING DATE</span>
               </a>
               <span>DBMS Lab</span>
-              <span>13-Apr
-</span>
-<span>11:15AM-12:15PM</span>
+              <span>13-Apr</span>
+              <span>11:15AM-12:15PM</span>
               <a href="/events/flip-o-friend">
                 <span>FLIP-O-FRIEND</span>
               </a>
-  
+
               <span>DBMS Lab</span>
-              <span>13-Apr
-</span>
+              <span>13-Apr</span>
             </div>
           </div>
         </div>
@@ -557,9 +519,6 @@ export default function EventsSection() {
               </a>
               <span>Auditorium</span>
               <span>14-April</span>
-
-
-              
             </div>
           </div>
         </div>
@@ -609,9 +568,7 @@ export default function EventsSection() {
               </a>
               <span>West Campus</span>
 
-              <span>13-April
-</span>
-
+              <span>13-April</span>
 
               <span>5:00-7:00PM</span>
               <a href="/events/free-flight">
@@ -619,18 +576,14 @@ export default function EventsSection() {
               </a>
               <span>Parking Lot</span>
 
-              <span>12-April
-</span>
-
+              <span>12-April</span>
 
               <span>2:15-3:15 PM</span>
               <a href="/events/simulation">
                 <span>Aircraft Simulation</span>
               </a>
               <span>ME Dept Seminar Hall</span>
-              <span>12-April
-</span>
-             
+              <span>12-April</span>
             </div>
           </div>
         </div>
