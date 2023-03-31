@@ -69,16 +69,18 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">Civil Dept</span>
+                <span className="text-slate-800 ">GH Complex
+</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">20 May</span>
+                <span className="text-slate-800">12 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">4 PM-5 PM</span>
+                <span className="text-slate-800">2:00-3:30 PM 
+</span>
               </div>
             </div>
 
