@@ -50,7 +50,7 @@ export default function Page() {
             >
               Aircraft Simulation
             </h1>
-            <Prize prize="4000" />
+            {/* <Prize prize="4000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 

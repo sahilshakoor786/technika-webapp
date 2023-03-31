@@ -50,7 +50,7 @@ export default function Page() {
             >
               Flip-o-friend
             </h1>
-            <Prize prize="1500" />
+            {/* <Prize prize="1500" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 

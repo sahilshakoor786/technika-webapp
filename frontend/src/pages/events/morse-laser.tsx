@@ -50,7 +50,7 @@ export default function Page() {
             >
               Morse Laser
             </h1>
-            <Prize prize="3000" />
+            {/* <Prize prize="3000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
@@ -73,12 +73,13 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">22 May</span>
+                <span className="text-slate-800">14 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">11:00 AM-1:00 PM</span>
+                <span className="text-slate-800">2:00- 3:00 PM
+ </span>
               </div>
             </div>
 

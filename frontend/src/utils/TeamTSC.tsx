@@ -564,4 +564,58 @@ export const TeamTSC = [
     "Instagram profile URL": "Yashpratap273",
     "Position in TSC": "Security ",
   },
+  {
+    Timestamp: "3/30/2023 14:05:20",
+    Name: "Aditya Singh",
+    Photo: "https://drive.google.com/open?id=13a25KQ8AMmrjr2luI-E5LcuD7giTv63P",
+    "Instagram profile URL": "instagram.com/aadii_tya09/",
+    "Position in TSC": "Public and Relations Head",
+  },
+  {
+    Timestamp: "3/30/2023 15:39:35",
+    Name: "Vibhav Yadav ",
+    Photo: "https://drive.google.com/open?id=1mB5G85LeGC40KtV1EqIzr43mtXUEWT0H",
+    "LinkedIn profile URL ":
+      "https://www.linkedin.com/in/vibhav-yadav-2b1b1b233",
+    "Instagram profile URL":
+      "https://instagram.com/vibhav05?igshid=ZDdkNTZiNTM=",
+    "Position in TSC": "Web Dev",
+  },
+  {
+    Timestamp: "3/30/2023 15:55:05",
+    Name: "Devendra Singh Parihar ",
+    Photo: "https://drive.google.com/open?id=1olSM1x5_3g7j9_FEngW3d1cJqXYIB6YL",
+    "LinkedIn profile URL ":
+      "https://www.linkedin.com/in/devendra-singh-parihar-377057222",
+    "Instagram profile URL":
+      "https://instagram.com/_._pariharr_._?igshid=ZDdkNTZiNTM=",
+    "Position in TSC": "Student Secretary ",
+  },
+  {
+    Timestamp: "3/30/2023 21:18:09",
+    Name: "Aryaman Painuly",
+    Photo: "https://drive.google.com/open?id=1wRiCYNrn3nheeYMjw_JMzrrVhGyahn5r",
+    "LinkedIn profile URL ":
+      "https://www.linkedin.com/in/aryaman-painuly-ab4047231",
+    "Instagram profile URL":
+      "https://instagram.com/aryaman_painuly?igshid=ZDdkNTZiNTM=",
+    "Position in TSC": "Marketing Associate",
+  },
+  {
+    Timestamp: "3/30/2023 23:07:41",
+    Name: "Shubh Agarwal ",
+    Photo: "https://drive.google.com/open?id=1CH5x0JR5EzMaS4oLKBvmq7-jUlvkm9Yh",
+    "LinkedIn profile URL ":
+      "https://in.linkedin.com/in/shubh-agarwal-2b4153263",
+    "Position in TSC": "Design Head ",
+  },
+  {
+    Timestamp: "3/31/2023 10:18:24",
+    Name: "Harsh Kalra ",
+    Photo: "https://drive.google.com/open?id=1lB5hu_8-jDfUH80IhKBppvaLKPS4ucDe",
+    "LinkedIn profile URL ": "https://www.linkedin.com/in/harsh-k-7723101b2",
+    "Instagram profile URL":
+      "https://instagram.com/harsh_kalra_2003?igshid=ZDdkNTZiNTM=",
+    "Position in TSC": "Events Associate",
+  },
 ];

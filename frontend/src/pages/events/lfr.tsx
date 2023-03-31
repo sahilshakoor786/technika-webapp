@@ -50,7 +50,7 @@ export default function Page() {
             >
               LFR
             </h1>
-            <Prize prize="2500" />
+            {/* <Prize prize="2500" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 

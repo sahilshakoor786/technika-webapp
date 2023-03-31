@@ -4,7 +4,7 @@ import TeamImage from "src/components/TeamImage";
 import Layout from "src/components/Layout";
 import { TeamTSC } from "src/utils/TeamTSC";
 import { teamHospitality } from "src/utils/teamHospitality";
-import { webdev } from "src/utils/webdev"  
+import { webdev } from "src/utils/webdev";
 import { teamDesign } from "src/utils/teamDesign";
 import { teamMarketing } from "src/utils/teamMarketing";
 import { photographyteam } from "src/utils/photographyteam";
@@ -24,13 +24,13 @@ export default function EventsPage() {
           shadow-lg py-6 px-2 space-y-2 rounded-lg"
         >
           <h1
-            className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10"
+            className="font-primary text-4xl md:text-6xl text-center 
+                mt-32 md:mt-20 mb-20"
           >
             Team{" "}
           </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+          {/* <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
             {TeamTSC.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
@@ -44,17 +44,40 @@ export default function EventsPage() {
                 linkedin={member?.["LinkedIn profile URL "]}
               />
             ))}
-          </div>
-          
- <h1
+          </div> */}
+
+          <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-          
-            Website Development Team
+            Secretary
+          </h1>
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+            <TeamImage
+              key={"Devendra Singh Parihar"}
+              src="https://drive.google.com/open?id=1olSM1x5_3g7j9_FEngW3d1cJqXYIB6YL"
+              width={350}
+              height={400}
+              name={"Devendra Singh Parihar"}
+              position={"Student Secretary"}
+              instagram={
+                "https://instagram.com/_._pariharr_._?igshid=ZDdkNTZiNTM="
+              }
+              facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+              linkedin={
+                "https://www.linkedin.com/in/devendra-singh-parihar-377057222"
+              }
+            />
+          </div>
+
+          <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+            Web Dev Team
           </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             {webdev.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
@@ -70,19 +93,16 @@ export default function EventsPage() {
             ))}
           </div>
 
-
-
-
           {/* Hospitality Team */}
 
           <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-            Team Hospitality{"  "}
+            Hospitality Team
           </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             {teamHospitality.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
@@ -102,11 +122,10 @@ export default function EventsPage() {
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-          
             Design Team
           </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             {teamDesign.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
@@ -127,11 +146,10 @@ export default function EventsPage() {
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-          
             Marketing Team
           </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             {teamMarketing.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
@@ -147,14 +165,14 @@ export default function EventsPage() {
             ))}
           </div>
 
-           <h1
+          <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
             Photography Team{}
           </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             {photographyteam.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
@@ -169,16 +187,15 @@ export default function EventsPage() {
               />
             ))}
           </div>
-           {/* Publicity Team */}
+          {/* Publicity Team */}
           <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-          
             Publicity Team
           </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             {teamPublicity.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
@@ -193,9 +210,6 @@ export default function EventsPage() {
               />
             ))}
           </div>
-
-
-          
         </div>
       </main>
     </Layout>
