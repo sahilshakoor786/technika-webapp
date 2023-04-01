@@ -201,7 +201,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}

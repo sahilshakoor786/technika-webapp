@@ -27,7 +27,7 @@ export default function TeamImage({
 }: TeamImageProps) {
   const imgRef = useRef<HTMLImageElement>(null);
 
-  console.log("ImageURL", src);
+  // console.log("ImageURL", src);
 
   function fancyImageHover(
     e: MouseEvent<HTMLImageElement, globalThis.MouseEvent>
