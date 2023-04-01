@@ -10,6 +10,7 @@ import { teamMarketing } from "src/utils/teamMarketing";
 import { photographyteam } from "src/utils/photographyteam";
 import { teamPublicity } from "src/utils/teamPublicity";
 import { teamEvents } from "src/utils/teamEvents";
+import { teamContent } from "src/utils/teamContent";
 
 export default function EventsPage() {
   return (
@@ -222,6 +223,31 @@ export default function EventsPage() {
 
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             {teamEvents.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={350}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
+          </div>
+
+          
+           {/* Content Team */}
+           <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+            Content Team
+          </h1>
+
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+            {teamContent.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
