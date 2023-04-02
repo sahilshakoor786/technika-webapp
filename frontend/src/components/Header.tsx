@@ -119,7 +119,6 @@ export default function Header() {
               <Link href="/">Home</Link>
             </span>
           </span>
-          
 
           <span className="h-0 overflow-hidden">
             <a
@@ -172,7 +171,9 @@ export default function Header() {
                 className="menu-link text-3xl md:text-5xl"
                 onClick={toggleMenu}
               >
-                <Link href="/register">Register</Link>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScOLylYbIGgafTvtyjqu8HiIzQ9v3ZWvJ9sTIxCdVlDeUr3UA/viewform?usp=sharing">
+                  Register
+                </Link>
               </span>
             )}
           </span>

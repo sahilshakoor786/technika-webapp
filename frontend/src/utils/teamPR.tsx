@@ -43,14 +43,4 @@ export const teamPR = [
     "Instagram profile URL": "__.vivek__kumar",
     "Position in TSC": "Public relations",
   },
-  {
-    Timestamp: "3/29/2023 15:51:52",
-    Name: "Medhavi Singh",
-    Photo: "https://drive.google.com/uc?id=1QmhjkhOd-YjY2Jz0KjPCNf7POMLfLXSw",
-    "LinkedIn profile URL ":
-      "https://www.linkedin.com/in/medhavi-singh-81a27a186",
-    "Instagram profile URL":
-      "https://instagram.com/_medhavi22?igshid=ZDdkNTZiNTM=",
-    "Position in TSC": "Public Relations ",
-  },
 ];
