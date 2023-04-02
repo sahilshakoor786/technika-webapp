@@ -234,28 +234,6 @@ export default function EventsPage() {
               />
             ))}
           </div>
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10"
-          >
-            Public and Relations Team
-          </h1>
-
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamPR.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={350}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
         </div>
       </main>
     </Layout>
