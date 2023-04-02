@@ -6,14 +6,13 @@ import HeroSection from "../components/sections/HeroSection";
 import SponsorsSection from "../components/sections/SponsorsSection";
 
 export default function HomePage() {
-
   return (
     <Layout>
       <main className="overflow-x-hidden">
         <HeroSection />
         <AboutSection />
         <EventsSection />
-        <SponsorsSection />
+        {/* <SponsorsSection /> */}
       </main>
     </Layout>
   );

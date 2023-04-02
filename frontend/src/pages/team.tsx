@@ -11,6 +11,7 @@ import { photographyteam } from "src/utils/photographyteam";
 import { teamPublicity } from "src/utils/teamPublicity";
 import { teamEvents } from "src/utils/teamEvents";
 import { teamContent } from "src/utils/teamContent";
+import { teamSecurity } from "src/utils/teamSecurity";
 
 export default function EventsPage() {
   return (
@@ -58,7 +59,7 @@ export default function EventsPage() {
             <TeamImage
               key={"Devendra Singh Parihar"}
               src="https://drive.google.com/uc?id=1olSM1x5_3g7j9_FEngW3d1cJqXYIB6YL"
-              width={350}
+              width={300}
               height={400}
               name={"Devendra Singh Parihar"}
               position={"Student Secretary"}
@@ -84,7 +85,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -109,7 +110,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -132,7 +133,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -156,7 +157,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -179,7 +180,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -202,7 +203,29 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
+          </div>
+          <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+            Security Team
+          </h1>
+
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+            {teamSecurity.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
