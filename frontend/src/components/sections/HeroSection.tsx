@@ -83,15 +83,15 @@ export default function HeroSection() {
         </span>
 
         <span className="flex justify-around space-x-4">
-          {/* {token?.token ? (
+          {token?.token ? (
             <Link href="/events">
               <PrimaryButton text="View Events" />
             </Link>
           ) : (
-            <Link href="/register">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScOLylYbIGgafTvtyjqu8HiIzQ9v3ZWvJ9sTIxCdVlDeUr3UA/viewform?usp=sharing">
               <PrimaryButton text="Register now" />
             </Link>
-          )} */}
+          )}
           <a
             href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+2.pdf"
             download
