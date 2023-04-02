@@ -39,7 +39,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -60,7 +60,7 @@ export default function EventsPage() {
             <TeamImage
               key={"Devendra Singh Parihar"}
               src="https://drive.google.com/uc?id=1olSM1x5_3g7j9_FEngW3d1cJqXYIB6YL"
-              width={350}
+              width={300}
               height={400}
               name={"Devendra Singh Parihar"}
               position={"Student Secretary"}
@@ -86,7 +86,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -111,7 +111,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -134,7 +134,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -158,7 +158,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -181,7 +181,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -226,7 +226,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -249,7 +249,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -273,7 +273,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -296,7 +296,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
