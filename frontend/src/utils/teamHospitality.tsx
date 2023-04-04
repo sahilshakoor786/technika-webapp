@@ -38,7 +38,7 @@ export const teamHospitality = [
   {
     Timestamp: "3/29/2023 8:30:34",
     Name: "SARTHAK SINGH ",
-    Photo: "https://drive.google.com/uc?id=1w_OaO9Bud41zt28UO9GxLQsvIsqM1x6L",
+    Photo: "https://drive.google.com/uc?id=1WaQv8VG1gCOBfaOV0SKNTMlxSi0A9sYc",
     "Instagram profile URL": "sarthaksingh2045",
     "Position in TSC": "Hospitality Associate Head",
   },
