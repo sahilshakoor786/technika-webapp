@@ -71,19 +71,6 @@ export default function Page() {
             Merch Store
           </h1>
 
-<!--           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-<!--             {merchs.map((merch) => (
-              <FancyImage
-                key={merch._id}
-                src={merch.image}
-                width={400}
-                height={300}
-                //   text={merch._id}
-                onClick={() => handleFormPopup(merch._id, merch.name)}
-              />
-            ))} -->
-<!--           </div> --> -->
-          
           
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
           
