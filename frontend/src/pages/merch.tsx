@@ -71,18 +71,28 @@ export default function Page() {
             Merch Store
           </h1>
 
+          
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-            {merchs.map((merch) => (
+          
               <FancyImage
-                key={merch._id}
-                src={merch.image}
-                width={400}
-                height={300}
-                //   text={merch._id}
-                onClick={() => handleFormPopup(merch._id, merch.name)}
+                key={1}
+                src={'https://drive.google.com/uc?id=1mUTooQbL1pHadThr_n1o-noz7WI_8Cag'}
+                width={300}
+                height={370}
+                  text={"1st year"}
+              
+                onClick={() =>open("https://forms.gle/k8XwtempFsi3WrG8A")}
               />
-            ))}
+                  <FancyImage
+                key={2}
+                src={'https://drive.google.com/uc?id=1AFMBIqljIj2h5ScLrVpFL25BBUAmaGXc'}
+                width={300}
+                height={370}
+                  text={"2nd and 3rd year"}
+                onClick={() => open("https://forms.gle/NAequDUVqPWef3GZ9")}
+              />
           </div>
+          
         </div>
 
         <div
