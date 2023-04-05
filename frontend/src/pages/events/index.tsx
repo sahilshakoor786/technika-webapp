@@ -284,57 +284,58 @@ export default function EventsPage() {
               aria-labelledby="tabs-mech-tab"
             >
               <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-                <Link href="/events/lfr">
+                {/* <Link href="/events/lfr">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/lfr.png"
                     width={200}
                     height={300}
                     text="LFR"
                   />
-                </Link>
+                </Link> */}
 
-                <Link href="/events/careaction">
+                {/* <Link href="/events/careaction">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
                     width={200}
                     height={300}
                     text="Ca-Reaction"
                   />
-                </Link>
-                <Link href="/events/blazing-wheel">
+                </Link> */}
+                {/* <Link href="/events/blazing-wheel">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/blazing+wheel.webp"
                     width={200}
                     height={300}
                     text="Blazing Wheel"
                   />
-                </Link>
+                </Link> */}
 
                 <Link href="/events/robo-combat">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/robo+combat-1.jpg"
                     width={200}
                     height={300}
-                    text="Robo Combat"
+                    text="Robo War"
                   />
-                </Link>
-                <Link href="/events/thread-ripper">
+                   </Link>
+                 
+                {/* <Link href="/events/thread-ripper">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/thread+ripper.jpg"
                     width={200}
                     height={300}
                     text="Thread Ripper"
                   />
-                </Link>
+                </Link> */}
 
-                <Link href="/events/path-pradarshak">
+                {/* <Link href="/events/path-pradarshak">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/path+pradarshak.webp"
                     width={200}
                     height={300}
                     text="Path Pradarshak"
                   />
-                </Link>
+                </Link> */}
 
                 <Link href="/events/kya-engineer">
                   <FancyImage
@@ -344,12 +345,20 @@ export default function EventsPage() {
                     text="Kya Engineer banega re tu"
                   />
                 </Link>
-                <Link href="/events/hover-mania">
+                <Link href="/events/robo-racing">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/hovermania.jpg"
                     width={200}
                     height={300}
-                    text="Hover-Mania"
+                    text="Robo-racing"
+                  />
+                </Link>
+                <Link href="/events/robo-wrestling">
+                  <FancyImage
+                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/robo+combat-1.jpg"
+                    width={200}
+                    height={300}
+                    text="Robo Wrestling"
                   />
                 </Link>
 
@@ -358,7 +367,7 @@ export default function EventsPage() {
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/soccerbot+2.webp"
                     width={200}
                     height={300}
-                    text="Soccerbot"
+                    text="Robo Soccer"
                   />
                 </Link>
               </div>
@@ -377,8 +386,24 @@ export default function EventsPage() {
                     height={300}
                     text="Udaan"
                   />
+                  </Link> 
+                <Link href="/events/water-rocket">
+                  <FancyImage
+                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
+                    width={200}
+                    height={300}
+                    text="Water Rocket"
+                  />
+                </Link> 
+              
+                <Link href="/events/free-flight">
+                  <FancyImage
+                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/simulation.jpg"
+                    width={200}
+                    height={300}
+                    text="Free Flight"
+                  />
                 </Link>
-
                 <Link href="/events/glider">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
@@ -405,6 +430,7 @@ export default function EventsPage() {
                     text="Aircraft Simulation"
                   />
                 </Link>
+               
               </div>
             </div>
             <div

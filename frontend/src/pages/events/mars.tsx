@@ -48,16 +48,16 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              Kya engineer banega re tu
+              Blast Off To Mars
             </h1>
-            {/* <Prize prize="2000" /> */}
+            {/* <Prize prize="3000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
-                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
+                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-center"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/kyaengineer.jpeg")`,
+                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/udaan.jpg")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -69,16 +69,16 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">Auditorium</span>
+                <span className="text-slate-800 ">West Campus</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">14 April</span>
+                <span className="text-slate-800">14-April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">1:00 PM-2:00 PM</span>
+                <span className="text-slate-800">10:00AM-11:00AM</span>
               </div>
             </div>
 
@@ -93,48 +93,17 @@ export default function Page() {
               className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
             >
+              {" "}
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 About the Event
                 <br />
               </h1>
-              Have you also been humiliated by the line "Kya fayda aisi
-              engineering ka ki pankha, cooler bhi na shi kar pao". If yes then
-              it’s your chance to learn how to repair ‘pankha cooler’ Engineers
-              are considered "all-rounders" in society. One of the very
-              important aspects of engineering is "reverse engineering."
-              Reverse-engineering is the act of dismantling/close inspection of
-              an object to see how it works. The purpose of reverse engineering
-              is to find out how an object or system works. There are a variety
-              of reasons to do this. Reverse-engineering can be used to learn
-              how something works and to recreate the object or create a similar
-              object with added enhancement. Reverse engineering include: <br />
-              1) Information extraction : dismantling,close inspection,
-              research. <br />
-              2) Review : understanding the whole working process/ mechanism of
-              the product. <br />
-              3) Modification : including your ideas, innovations, or
-              modifications in the product taking care of cost, reliability, and
-              efficiency of the existing product. <br />
+              Water rocket propulsion challenge
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Guidelines: <br />
+              
               </h1>
-              ● This will be a team event and each team can have a maximum of 3
-              participants. ● There is no branch restriction for students.{" "}
-              <br />
-              ● Event duration will be 60 minutes. <br />● Topics of research
-              will be unveiled exactly one hour before the event. All the team
-              members are expected to equally participate and do thorough
-              research over topics allotted. <br />
-              ● Each team will be allotted a maximum of 5 minutes for
-              presentation of their ideas and concepts. <br />
-              ● Unethical behavior could lead to disqualification. Coordinators
-              have all the rights to take final decisions for any matter during
-              the event. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
-              </h1>
-              , Uday Gupta (3rd B.tech ME): 98077 48401 <br />
-              Mohd Aqib (3rd B.tech ME) : 7983632115
+              {/* Shubham(3rd B.tech CHE): 9120585755 <br /> Vikas(3rd B.tech
+              FT):7248338611 <br /> Nikita(3rd B.tech PL) : 8303290354 */}
             </div>
           </div>
         </main>
@@ -157,10 +126,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
-              eventId="TSCMM06
-"
-            />
+            <EventRegistrationForm eventId="TSCFH04" />
           </div>
         </div>
       </>
