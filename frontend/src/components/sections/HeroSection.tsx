@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
 import React, { useEffect, useRef, useState } from "react";

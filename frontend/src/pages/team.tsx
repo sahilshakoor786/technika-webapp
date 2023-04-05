@@ -54,7 +54,7 @@ export default function EventsPage() {
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-            Secretary
+            Secretaries
           </h1>
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             <TeamImage
@@ -71,6 +71,19 @@ export default function EventsPage() {
               linkedin={
                 "https://www.linkedin.com/in/devendra-singh-parihar-377057222"
               }
+            />
+            <TeamImage
+              key={"Jahnavi Sachan"}
+              src="https://drive.google.com/uc?id=16nlS8V6RlZ9cIlM1azYe_m-w1klgSMPv"
+              width={300}
+              height={400}
+              name={"Jahnavi Sachan"}
+              position={"Joint Secretary"}
+              instagram={
+                "https://instagram.com/artist_manas?igshid=YmMyMTA2M2Y="
+              }
+              facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+              linkedin={"https://www.linkedin.com/in/manas-motwani-685502229"}
             />
           </div>
 
