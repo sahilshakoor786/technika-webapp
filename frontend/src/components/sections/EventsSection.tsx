@@ -156,14 +156,8 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-              <span>2:15PM-3:15PM</span>
-              <a href="/events/junk-yard">
-                <span>JUNKYARD</span>
-              </a>
-              <span>EC 1</span>
-              <span>12-APRIL</span>
 
-              <span>12PM-2PM</span>
+              <span>11AM-1:30PM</span>
               <a href="/events/quiz-me-more">
                 <span>QUIZ ME MORE</span>
               </a>
@@ -171,22 +165,16 @@ export default function EventsSection() {
 
               <span>12-APRIL</span>
 
-              <span>2:15PM-4:15PM</span>
-              <a href="/events/laser-o-reflect">
-                <span>LASER-O-REFLECT</span>
-              </a>
-              <span>Auditorium</span>
-
-              <span> 12-APRIL</span>
-              <span>2:15PM-3:15PM</span>
+             
+              <span>12PM-1PM</span>
 
               <a href="/events/situation-room">
                 <span>SITUATION ROOM</span>
               </a>
               <span>Auditorium</span>
 
-              <span>12-APRIL</span>
-              <span>10AM-5PM</span>
+              <span>13-APRIL</span>
+              <span>All Day</span>
               <a href="/events/tech-expo">
                 <span>TECH EXPO</span>
               </a>
@@ -215,11 +203,11 @@ export default function EventsSection() {
 
               <span>12-APRIL</span>
 
-              <span>11:15AM-5:00PM</span>
+              <span>3PM-5PM</span>
               <a href="/events/e-gaming">
-                <span>E--GAMING</span>
+                <span>E-Football</span>
               </a>
-              <span>Auditorium</span>
+              <span>EC-1</span>
               <span>14-APRIL</span>
             </div>
           </div>

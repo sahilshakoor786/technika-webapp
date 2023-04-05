@@ -71,12 +71,12 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">20 May</span>
+                <span className="text-slate-800">12 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">5:00-8:00 PM</span>
+                <span className="text-slate-800">7PM-10PM</span>
               </div>
             </div>
 
