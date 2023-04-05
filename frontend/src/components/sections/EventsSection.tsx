@@ -559,23 +559,31 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-              <span>9:00-11:00AM</span>
+              <span>9AM-11AM</span>
               <a href="/events/udaan">
-                <span>Udaan</span>
+                <span>UDAAN</span>
               </a>
               <span>West Campus</span>
 
               <span>13-April</span>
 
-              <span>5:00-7:00PM</span>
+              <span>4PM-5PM</span>
               <a href="/events/free-flight">
-                <span>Free Flight</span>
+                <span>FREE-FLIGHT</span>
               </a>
-              <span>Parking Lot</span>
+              <span>LV Ground</span>
 
               <span>12-April</span>
+              <span>9AM-10AM</span>
+              <a href="/events/glider">
+                <span>Touch Down</span>
+              </a>
+              <span>West Campus</span>
 
-              <span>2:15-3:15 PM</span>
+              <span>14-April</span>
+
+
+              <span>12:30PM-2:30PM</span>
               <a href="/events/simulation">
                 <span>Aircraft Simulation</span>
               </a>
