@@ -260,37 +260,37 @@ export default function EventsSection() {
               <span>West Campus</span>
 
               <span>13-April</span>
-              <span>12PM-3PM</span>
+              <span>3PM-6PM</span>
               <a href="/events/blazing-wheel">
                 <span>Roborace</span>
               </a>
-              <span>BE/FT Lawn</span>
+              <span>Tennis Lawn</span>
 
               <span>13-April</span>
-              <span>3:30PM-4:30PM</span>
+              <span>4PM-5PM</span>
               <a href="/events/free-flight">
                 <span>FREE-FLIGHT</span>
               </a>
-              <span>Parking lot</span>
+              <span>LV Ground</span>
 
               <span>12-April</span>
-              <span>3:30PM-6:00PM</span>
+              <span>4PM-5:30PM</span>
               <a href="/events/robo-combat">
                 <span>ROBO-WAR</span>
               </a>
               <span>Tennis Lawn</span>
 
-              <span>13-April</span>
-              <span>3PM-5PM</span>
+              <span>12-April</span>
+              <span>5PM-7PM</span>
               <a href="/events/thread-ripper">
                 <span>Robo Wrestling</span>
               </a>
               <span>BE/FT Lawn</span>
 
-              <span>13-April</span>
-              <span>9AM-11AM</span>
-              <a href="/events/path-pradarshak">
-                <span>Glider</span>
+              <span>12-April</span>
+              <span>9AM-10AM</span>
+              <a href="/events/glider">
+                <span>Touch Down</span>
               </a>
               <span>West Campus</span>
 
@@ -310,21 +310,22 @@ export default function EventsSection() {
               <span>West Campus</span>
 
               <span>13-April</span>
-              <span>4PM-6PM</span>
+              <span>10AM-11AM</span>
+              <a href="/events/waterrocket">
+                <span>Blast Off To Mars</span>
+              </a>
+              <span>West Campus</span>
+
+              <span>14-April</span>
+              <span>4PM-7PM</span>
               <a href="/events/soccerbot">
                 <span>Robo-Soccer</span>
               </a>
               <span>Tennis Lawn</span>
 
-              <span>12-April</span>
-              <span>10AM-12PM</span>
-              <a href="/events/soccerbot">
-                <span>Robo-Soccer</span>
-              </a>
-              <span>BE/FT Lawn</span>
-
-              <span>13-April</span>
-              <span>2:15PM-3:15PM</span>
+              <span>14-April</span>
+              
+              <span>12:30PM-2:30PM</span>
               <a href="/events/simulation">
                 <span>Aircraft Simulation</span>
               </a>
