@@ -211,38 +211,38 @@ export default function EventsPage() {
                     text="Tech Expo"
                   />
                 </Link>
-                <Link href="/events/squid-game">
+                {/* <Link href="/events/squid-game">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/squidgame.webp"
                     width={200}
                     height={300}
                     text="Squid Game"
                   />
-                </Link>
-                <Link href="/events/nft-design">
+                </Link> */}
+                {/* <Link href="/events/nft-design">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/nft.jpg"
                     width={200}
                     height={300}
                     text="NFT Design"
                   />
-                </Link>
-                <Link href="/events/celebritytalk">
+                </Link> */}
+                <Link href="/events/techtalk">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/celebritytalkcover-transformed.jpeg"
                     width={200}
                     height={300}
-                    text="Celebrity Talk"
+                    text="Tech Talk"
                   />
                 </Link>
-                <Link href="/events/speakertalk">
+                {/* <Link href="/events/speakertalk">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/speakertalk2.jpg"
                     width={200}
                     height={300}
                     text="Speaker Talk"
                   />
-                </Link>
+                </Link> */}
                 <Link href="/events/treasure-hunt">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/treasure+hunt.jpg"
@@ -259,14 +259,14 @@ export default function EventsPage() {
                     text="Fun Fare"
                   />
                 </Link>
-                <Link href="/events/edm">
+                {/* <Link href="/events/edm">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-deane-bayas-9534913.jpg"
                     width={200}
                     height={300}
                     text="EDM"
                   />
-                </Link>
+                </Link> */}
                 <Link href="/events/e-gaming">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-mikhail-nilov-7887258.jpg"
@@ -491,14 +491,14 @@ export default function EventsPage() {
                     text="Bridge-o-mania"
                   />
                 </Link>
-                <Link href="/events/city-maestro">
+                {/* <Link href="/events/city-maestro">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/city%20maestro.jpg"
                     width={200}
                     height={300}
                     text="City Maestro"
                   />
-                </Link>
+                </Link> */}
                 <Link href="/events/save-the-egg">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/save%20the%20egg.webp"
