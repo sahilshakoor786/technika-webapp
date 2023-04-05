@@ -170,14 +170,14 @@ export default function EventsPage() {
               className={openTab === 1 ? "block" : "hidden"}
             >
               <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-                <Link href="/events/junk-yard">
+                {/*<Link href="/events/junk-yard">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-serhii-bondarchuk-11849108.jpg"
                     width={200}
                     height={300}
                     text="Junk Yard"
-                  />
-                </Link>
+              />
+                </Link>*/}
                 <Link href="/events/quiz-me-more">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/quiz+me+more.webp"
@@ -272,7 +272,7 @@ export default function EventsPage() {
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-mikhail-nilov-7887258.jpg"
                     width={200}
                     height={300}
-                    text="E-gaming"
+                    text="E-Football"
                   />
                 </Link>
               </div>
@@ -384,18 +384,18 @@ export default function EventsPage() {
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                     width={200}
                     height={300}
-                    text="Glider"
+                    text="Touch Down"
                   />
                 </Link>
 
-                {/* <Link href="/events/blast-of-to-mars">
+                <Link href="/events/blast-of-to-mars">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
                     width={200}
                     height={300}
                     text="Blast Of To Mars"
                   />
-                </Link> */}
+                </Link> 
 
                 <Link href="/events/simulation">
                   <FancyImage
