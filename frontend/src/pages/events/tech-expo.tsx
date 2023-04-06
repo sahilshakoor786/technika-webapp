@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-bottom"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/techexpo.JPG")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1KvCMSKMmbUn6yAyN8pTYFm5FVHEPBPCm")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -80,7 +80,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">10AM-5PM</span>
+                <span className="text-slate-800">All day</span>
               </div>
             </div>
 
