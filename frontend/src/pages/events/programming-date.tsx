@@ -115,11 +115,11 @@ export default function Page() {
               problem. <br />
               • The fastest team to solve the problem will be declared as the
               winner. <br />
-              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Cordinators:
                 <br />
               </h1>
-              Ayush Gaur(3rd B.Tech CSE):971115320 */}
+              Ayush Gaur(3rd B.Tech CSE):971115320
             </div>
           </div>
         </main>
