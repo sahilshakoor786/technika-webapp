@@ -109,10 +109,10 @@ export default function Page() {
               • A team should of 2-4 members. <br />• After 1st round 4 teams
               would qualify for the second round. <br />
               • And same will be followed to decide the winner. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Kumar Satwik Kaushal (3rd B.tech ME): 7880743737 <br />
+              Kumar Satwik Kaushal (3rd B.tech ME): 7880743737 <br /> */}
             </div>
           </div>
         </main>

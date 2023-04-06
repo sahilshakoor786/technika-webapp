@@ -114,11 +114,11 @@ export default function Page() {
               • Students from within or outside of the college will be given a
               chance to display their working models/projects. <br />
               • Candidates can participate in teams as well as solo. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Shikhar Trivedi(3rd B.tech ME):6387611363
-              <br />
+              <br /> */}
             </div>
           </div>
         </main>

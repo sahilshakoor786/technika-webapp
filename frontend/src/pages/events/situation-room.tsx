@@ -112,10 +112,10 @@ export default function Page() {
               basic engineering knowledge, problem solving) and they have to
               answer with possible way. <br />• time limit of 30 sec for each
               questions will be provided. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Vaibhav Shukla (3rd B.tech ME) : 9026405159
+              Vaibhav Shukla (3rd B.tech ME) : 9026405159 */}
               <br />
             </div>
           </div>

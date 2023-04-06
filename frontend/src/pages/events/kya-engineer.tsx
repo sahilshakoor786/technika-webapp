@@ -130,11 +130,11 @@ export default function Page() {
               ● Unethical behavior could lead to disqualification. Coordinators
               have all the rights to take final decisions for any matter during
               the event. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               , Uday Gupta (3rd B.tech ME): 98077 48401 <br />
-              Mohd Aqib (3rd B.tech ME) : 7983632115
+              Mohd Aqib (3rd B.tech ME) : 7983632115 */}
             </div>
           </div>
         </main>

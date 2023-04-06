@@ -111,10 +111,10 @@ export default function Page() {
               screened for the next round. Second round: Selected participants
               will be given a code sample of the app. They have to debug the
               errors and the winner will be decided accordingly.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>{" "}
-              Swapnil Tripathi (3rd IT):6397334767
+              Swapnil Tripathi (3rd IT):6397334767 */}
             </div>
           </div>
         </main>
