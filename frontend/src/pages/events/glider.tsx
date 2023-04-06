@@ -48,7 +48,7 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              Glider
+              Touch-Down
             </h1>
             {/* <Prize prize="3000" /> */}
 
@@ -97,17 +97,15 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Free flight is the segment of model aviation involving aircraft
-              with no active external control after launch. Free Flight is the
-              original form of hobby aero modelling, with the competitive
-              objective being to build and launch a self controlling aircraft
-              that will consistently achieve the longest flight duration over
-              multiple competition rounds, within various class parameters.
-              Usually the sole objective of free-flight competition is flight
-              duration, and one of the sport’s fascinations and challenges is to
-              design the most efficient aircraft within the various competition
-              limits on parameters such as minimum weight, maximum wing area,
-              and motive power.
+              Ever fascinated by the long-winged mechanical birds soaring high in the sky and peeping through the clouds?
+Well, here we are.
+Bringing you a heart-pumping experience like no other. Your very own glider planes flex and launch manually. Y'all will compete in a series of challenges that'll test your ability to navigate, including precision landings and altitude. With each challenge, you'll push yourself to new heights, showing off your skill and technique to judges and fellow competitors alike.
+So, what are you waiting for? Take to the skies and join us for the Gliders Free Flight Competition. This event promises to be an unforgettable experience!
+15. WRONG INNOVATIONS ONLY-
+Looking for a way to unleash your inner mad scientist? 
+Join us for "Wrong Innovations Only" - the competition where we encourage you to let your creativity run wild and pitch the weirdest, wildest, and wackiest ideas you can come up with. From edible paper to shoes that can walk on water, nothing is off-limits!
+Participants will have two minutes to pitch their idea to our panel of judges and the audience. The winner will be chosen by a combined vote from the judges and audience, and will receive a trophy so outrageous that it has to be seen to be believed! 🏆
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
@@ -122,7 +120,7 @@ export default function Page() {
               <br />
               Styrofoam shouldn’t be used in the making of the plane. <br />
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+               
               </h1>
               {/* Shubham(3rd B.tech CHE): 9120585755 <br /> Harsh Chaudhary(3rd
               B.tech CHE): 6390339469 <br /> Samiksha(3rd B.tech BE): 7905710930 */}

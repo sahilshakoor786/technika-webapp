@@ -106,9 +106,9 @@ export default function Page() {
                 Guidelines: <br />
               </h1>
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+               
               </h1>
-              Sugam Gupta (3rd B.tech PT): 8707417077
+              {/* Sugam Gupta (3rd B.tech PT): 8707417077 */}
               <br />
             </div>
           </div>

@@ -104,12 +104,12 @@ export default function Page() {
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Satyansh(3rd B.tech ET): 8177020964 <br /> Archana(3rd B.tech
               ME):73554 95097 <br /> Kartik(3rd B.tech ME): 7037755563
-              <br /> Aryan Verma(3rd B.tech ME): 9519441112
+              <br /> Aryan Verma(3rd B.tech ME): 9519441112 */}
               <br />
             </div>
           </div>

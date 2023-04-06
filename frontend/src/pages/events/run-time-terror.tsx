@@ -119,10 +119,10 @@ export default function Page() {
               next round. In the next round, a basic coding problem will be
               given and the winners will then be decided. Ties will be broken by
               the amount of time taken.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Naitik (3rd btech CSE) : 7500103699
+              Naitik (3rd btech CSE) : 7500103699 */}
               <br />
             </div>
           </div>

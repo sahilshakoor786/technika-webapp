@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-contain bg-fixed bg-center bg-no-repeat"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/waterrocket.JPG")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1KRskX4sh8u_VxPQV9VwpC21laSaCEn5B")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -73,12 +73,12 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">21 May</span>
+                <span className="text-slate-800">14 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">9 AM-11 AM</span>
+                <span className="text-slate-800">10 AM-11 AM</span>
               </div>
             </div>
 
@@ -98,28 +98,19 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              A water rocket is a model rocket that uses water as its reaction
-              mass. The water is forced out by a pressurized gas, typically
-              compressed air. Like all rocket engines, it operates on the
-              principle of Newton's third law of motion. Hobbyists typically use
-              one or more plastic soft drink bottle as the rocket's pressure
-              vessel. Elements of water rocket: Bottle (used as pressure
-              vessel), gas (water rocket can be pressurized using a standard
-              bicycle pump, capable of reaching at least 75 psi), nozzle, fins,
-              landing system, launch tubes.
+              Attention all thrill geeks!
+Get ready to blast off into a world of excitement and innovation with the upcoming water rocket competition! 
+Put all your instincts into making scrap-bottle model rockets using all the best out-of-waste craft lessons from schools and let it reach for the stars. 
+Show off your engineering skills and creativity as you contend with other talented students. Experience the thrill of launching your very own rocket into the sky, as you compete for victory and glory in this incredible event. Whether you're a science geek or just someone who loves a good competition, this water rocket competition is not to be missed. So gather your friends and get ready to take flight, as you prepare to participate in one of the most exciting events of the year!
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Guidelines: <br />
+              
               </h1>
-              Round one- the distance covered by the water rocket will be the
-              judging criteria. <br />
-              Round two- teams qualifying round one will be judged on the basis
-              of the landing system employed in their models i.e. how precisely
-              the rocket hits the target placed on the ground. <br />
+             
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+              
               </h1>
-              Himanshu(3rd B.tech ME): 6392430338 <br /> Vikas(3rd B.tech FT):
-              7248338611 <br /> Nikita(3rd B.tech PL):8303290354
+             
             </div>
           </div>
         </main>

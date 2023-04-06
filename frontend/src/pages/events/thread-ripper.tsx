@@ -119,11 +119,11 @@ export default function Page() {
               or winner. <br />
               • The competition area has a special place defined for the Event
               Thread Ripper. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Akarsh Jain (3rd B.tech PT): 7905610056 <br />
-              Sristy Jaiswal (3rd B.tech PT): 6393251438 <br />
+              Sristy Jaiswal (3rd B.tech PT): 6393251438 <br /> */}
             </div>
           </div>
         </main>

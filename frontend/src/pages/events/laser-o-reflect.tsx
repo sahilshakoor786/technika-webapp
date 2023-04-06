@@ -109,10 +109,10 @@ export default function Page() {
               • 4 mirrors and a laser light would be provided to the
               participants and they have to arrange the given materials in such
               a way that the laser light reaches the target. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Himanshu Srivastav (3rd B.tech PT) : 9305440483
+              Himanshu Srivastav (3rd B.tech PT) : 9305440483 */}
               <br />
             </div>
           </div>
