@@ -188,13 +188,13 @@ export default function EventsSection() {
               <span>Auditorium</span>
               <span>12-APRIL</span>
 
-              <span>10AM-12PM</span>
-              <a href="/events/treasure-hunt">
-                <span>TREASURE HUNT</span>
+             <span>10AM-12PM</span>
+              <a href="/events/beam-me-up-scotty">
+                <span>Beam me up, Scotty</span>
               </a>
               <span>East Campus</span>
-
               <span>13-APRIL</span>
+
               <span>7PM-10PM</span>
               <a href="/events/fun-fare">
                 <span>FUN FARE</span>
@@ -203,12 +203,30 @@ export default function EventsSection() {
 
               <span>12-APRIL</span>
 
-              <span>3PM-5PM</span>
-              <a href="/events/e-gaming">
+            <span>All day</span>
+              <a href="/events/tradex">
+                <span>TradeX</span>
+              </a>
+              <span>Online</span>
+              <span>12-14APRIL</span>
+
+
+              
+                    <span>3:00PM-5:00PM</span>
+              <a href="/events/e-football">
                 <span>E-Football</span>
               </a>
-              <span>EC-1</span>
+              <span>EC 1</span>
               <span>14-APRIL</span>
+
+
+              <span>9:30AM-11:00AM</span>
+              <a href="/events/inauguration">
+                <span>Inauguration</span>
+              </a>
+              <span>Auditorium</span>
+              <span>12-APRIL</span>
+
             </div>
           </div>
         </div>
