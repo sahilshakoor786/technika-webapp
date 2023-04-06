@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/quiz.jfif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1K72gBl83WmNnpEpfHvva_rMGw-K6LyPg")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -78,7 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">12PM-2PM</span>
+                <span className="text-slate-800">11AM-1:30PM</span>
               </div>
             </div>
 
@@ -109,10 +109,10 @@ export default function Page() {
               • A team should of 2-4 members. <br />• After 1st round 4 teams
               would qualify for the second round. <br />
               • And same will be followed to decide the winner. <br />
-              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Kumar Satwik Kaushal (3rd B.tech ME): 7880743737 <br /> */}
+              Kumar Satwik Kaushal (3rd B.tech ME): 7880743737 <br />
             </div>
           </div>
         </main>
