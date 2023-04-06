@@ -406,21 +406,14 @@ export default function EventsSection() {
               <span>CSE Lab</span>
 
               <span>12-Apr</span>
-              <span>2:15PM-3:15PM</span>
+              <span>1:30PM-2:30PM</span>
               <a href="/events/run-time-terror">
-                <span>RUN TIME ERROR</span>
+                <span>RUN TIME TERROR</span>
               </a>
               <span>DBMS Lab/Internet Lab</span>
 
-              <span>13-Apr</span>
-              <span>1:30PM-2:30PM</span>
-              <a href="/events/run-time-terror">
-                <span>RUN TIME ERROR</span>
-              </a>
-              <span>DBMS Lab</span>
-
               <span>14-Apr</span>
-              
+    
               {/* <a href="/events/red-pencil">
                 <span>RED PENCIL</span>
               </a>
@@ -437,7 +430,7 @@ export default function EventsSection() {
               <span>22-May
 </span>
               <span>5PM-6PM</span> */}
-              <span>12PM-1PM</span>
+                        <span>12:00PM-1:00PM</span>
               <a href="/events/programming-date">
                 <span>PROGRAMMING DATE</span>
               </a>
