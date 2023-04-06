@@ -78,7 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">10:00-11:00 AM
+                <span className="text-slate-800">12:00-1:00 PM
 </span>
               </div>
             </div>
