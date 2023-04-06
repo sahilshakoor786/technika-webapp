@@ -391,7 +391,13 @@ export default function EventsSection() {
               </span>
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
+    <span>12:00PM-4:00PM</span>
+              <a href="/events/hackathon">
+                <span>HACKATHON</span>
+              </a>
+              <span>CSE Lab</span>
 
+              <span>12-Apr</span>
               <span>1:15PM-2:15PM</span>
               <a href="/events/break-the-code">
                 <span>BREAK THE CODE</span>
@@ -399,20 +405,8 @@ export default function EventsSection() {
               <span>Computer Science Department Lab</span>
 
               <span>13-Apr</span>
-              <span>12:00PM-4:00PM</span>
-              <a href="/events/hackathon">
-                <span>HACKATHON</span>
-              </a>
-              <span>CSE Lab</span>
-
-              <span>12-Apr</span>
-              <span>1:30PM-2:30PM</span>
-              <a href="/events/run-time-terror">
-                <span>RUN TIME TERROR</span>
-              </a>
-              <span>DBMS Lab/Internet Lab</span>
-
-              <span>14-Apr</span>
+            
+              
     
               {/* <a href="/events/red-pencil">
                 <span>RED PENCIL</span>
@@ -442,6 +436,13 @@ export default function EventsSection() {
               </a>
 
               <span>DBMS Lab</span>
+              <span>14-Apr</span>
+              <span>1:30PM-2:30PM</span>
+              <a href="/events/run-time-terror">
+                <span>RUN TIME TERROR</span>
+              </a>
+              <span>DBMS Lab/Internet Lab</span>
+
               <span>14-Apr</span>
             </div>
           </div>
