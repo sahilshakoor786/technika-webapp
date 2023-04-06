@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/robosoccer.JPG")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1JxPMooN3Bz8Jh1aI4g5YwRkJw7FWTslA")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -73,12 +73,12 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">14 April</span>
+                <span className="text-slate-800">12 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">4:00PM-7:00PM</span>
+                <span className="text-slate-800">4:00PM-6:30PM</span>
               </div>
             </div>
 

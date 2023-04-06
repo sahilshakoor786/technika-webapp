@@ -310,7 +310,7 @@ export default function EventsPage() {
                   />
                 </Link> */}
 
-                <Link href="/events/robo-combat">
+                {/* <Link href="/events/robo-combat">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/robo+combat-1.jpg"
                     width={200}
@@ -318,7 +318,7 @@ export default function EventsPage() {
                     text="Robo War"
                   />
                    </Link>
-                 
+                  */}
                 {/* <Link href="/events/thread-ripper">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/thread+ripper.jpg"
@@ -347,7 +347,7 @@ export default function EventsPage() {
                 </Link>
                 <Link href="/events/robo-racing">
                   <FancyImage
-                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/hovermania.jpg"
+                    src="https://drive.google.com/uc?id=1Lreq69de2aPuASa1X42FSm7gN5SEgG6_"
                     width={200}
                     height={300}
                     text="Robo-racing"
@@ -355,7 +355,7 @@ export default function EventsPage() {
                 </Link>
                 <Link href="/events/robo-wrestling">
                   <FancyImage
-                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/robo+combat-1.jpg"
+                    src="https://drive.google.com/uc?id=1KjdVXD9RcN2YsdEIfsIR1597sGzTOZ2i"
                     width={200}
                     height={300}
                     text="Robo Wrestling"

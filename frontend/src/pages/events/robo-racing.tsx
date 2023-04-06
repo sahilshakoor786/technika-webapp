@@ -48,7 +48,7 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              Robo Racing
+               Turbo Wheels (Robo Race)
             </h1>
             {/* <Prize prize="2000" /> */}
 
@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/blazingwheels.JPG")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1Lreq69de2aPuASa1X42FSm7gN5SEgG6_")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -78,7 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">3:00 PM-6:00PM </span>
+                <span className="text-slate-800">5:30 PM-8:00PM  </span>
               </div>
             </div>
 
@@ -98,7 +98,10 @@ export default function Page() {
                 <br />
                
               </h1>
-              Bot hurdle race
+              Are you an engineer whose childhood curiosity was sparked by the mystery of what made their RC cars zoom? Now, Technika'23 presents an electrifying Bot racing event that will ignite your engineering skills like a bolt of lightning! 
+Build and code your wired or wireless bots with the precision of a surgeon, to conquer our challenging custom-designed tracks that are riddled with moving and stationary obstacles like a maze. But, like a high-stakes game of chess, one wrong move can cost you the game as penalties will be charged for failed hurdle dodging. The winner will be decided based on final scores and the time taken to finish the race, and only the bravest and most skillful engineers will emerge victorious, like gladiators crossing the finish line. 
+As Thomas Edison once said, 'Opportunity is missed by most people because it is dressed in overalls and looks like work.'So, don't miss your chance to be a part of this spine-tingling competition, where innovation knows no bounds!
+
               
             </div>
           </div>

@@ -156,7 +156,6 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-
               <span>11AM-1:30PM</span>
               <a href="/events/quiz-me-more">
                 <span>QUIZ ME MORE</span>
@@ -165,7 +164,6 @@ export default function EventsSection() {
 
               <span>12-APRIL</span>
 
-             
               <span>12PM-1PM</span>
 
               <a href="/events/situation-room">
@@ -252,22 +250,11 @@ export default function EventsSection() {
               </span>
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
-
-            
-
-              <span>13-April</span>
-              <span>3PM-6PM</span>
-              <a href="/events/robo-racing">
-                <span>Roborace</span>
-              </a>
-              <span>Tennis Lawn</span>
-
-              
-
               <span>12-April</span>
-              <span>4PM-5:30PM</span>
-              <a href="/events/robo-combat">
-                <span>ROBO-WAR</span>
+
+              <span>4:00PM-6:30 PM </span>
+              <a href="/events/soccerbot">
+                <span>Robo-Soccer</span>
               </a>
               <span>Tennis Lawn</span>
 
@@ -278,6 +265,13 @@ export default function EventsSection() {
               </a>
               <span>BE/FT Lawn</span>
 
+              <span>13-April</span>
+              <span>5:30 PM-8:00PM</span>
+              <a href="/events/robo-racing">
+                <span>Roborace</span>
+              </a>
+              <span>Tennis Lawn</span>
+
               <span>14-April</span>
 
               <span>1PM-2PM</span>
@@ -285,18 +279,6 @@ export default function EventsSection() {
                 <span>KYA ENGINNER BANEGA RE TU</span>
               </a>
               <span>Auditorium</span>
-
-              <span>13-April</span>
-             
-             
-              <span>4PM-7PM</span>
-              <a href="/events/soccerbot">
-                <span>Robo-Soccer</span>
-              </a>
-              <span>Tennis Lawn</span>
-
-             
-              
             </div>
           </div>
         </div>
@@ -368,7 +350,7 @@ export default function EventsSection() {
               <span>DBMS Lab</span>
 
               <span>14-Apr</span>
-              
+
               {/* <a href="/events/red-pencil">
                 <span>RED PENCIL</span>
               </a>
@@ -547,7 +529,6 @@ export default function EventsSection() {
               <span>West Campus</span>
 
               <span>14-April</span>
-
 
               <span>12:30PM-2:30PM</span>
               <a href="/events/simulation">
