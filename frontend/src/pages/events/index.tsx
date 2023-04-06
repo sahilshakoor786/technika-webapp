@@ -289,24 +289,24 @@ export default function EventsPage() {
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/lfr.png"
                     width={200}
                     height={300}
-                    text="LFR"
+                    text="Robo race"
                   />
                 </Link>
 
-                <Link href="/events/careaction">
+                {/*<Link href="/events/careaction">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
                     width={200}
                     height={300}
                     text="Ca-Reaction"
                   />
-                </Link>
+              </Link>*/}
                 <Link href="/events/blazing-wheel">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/blazing+wheel.webp"
                     width={200}
                     height={300}
-                    text="Blazing Wheel"
+                    text="Robo Wrestling"
                   />
                 </Link>
 
@@ -315,10 +315,10 @@ export default function EventsPage() {
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/robo+combat-1.jpg"
                     width={200}
                     height={300}
-                    text="Robo Combat"
+                    text="Robo War"
                   />
                 </Link>
-                <Link href="/events/thread-ripper">
+                {/*<Link href="/events/thread-ripper">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/thread+ripper.jpg"
                     width={200}
@@ -334,7 +334,7 @@ export default function EventsPage() {
                     height={300}
                     text="Path Pradarshak"
                   />
-                </Link>
+                </Link>*/}
 
                 <Link href="/events/kya-engineer">
                   <FancyImage
@@ -344,21 +344,21 @@ export default function EventsPage() {
                     text="Kya Engineer banega re tu"
                   />
                 </Link>
-                <Link href="/events/hover-mania">
+                {/*<Link href="/events/hover-mania">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/hovermania.jpg"
                     width={200}
                     height={300}
                     text="Hover-Mania"
                   />
-                </Link>
+              </Link>*/}
 
                 <Link href="/events/soccerbot">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/soccerbot+2.webp"
                     width={200}
                     height={300}
-                    text="Soccerbot"
+                    text="Robo Soccer"
                   />
                 </Link>
               </div>
