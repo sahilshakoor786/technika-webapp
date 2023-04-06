@@ -155,8 +155,13 @@ export default function EventsSection() {
               </span>
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
-
-              <span>11AM-1:30PM</span>
+ <span>9:30AM-11:00AM</span>
+              <a href="/events/inauguration">
+                <span>Inauguration</span>
+              </a>
+              <span>Auditorium</span>
+              <span>12-APRIL</span>
+              <span>11:00AM-1:30PM</span>
               <a href="/events/quiz-me-more">
                 <span>QUIZ ME MORE</span>
               </a>
@@ -164,35 +169,12 @@ export default function EventsSection() {
 
               <span>12-APRIL</span>
 
-              <span>12PM-1PM</span>
-
-              <a href="/events/situation-room">
-                <span>SITUATION ROOM</span>
-              </a>
-              <span>Auditorium</span>
-
-              <span>13-APRIL</span>
-              <span>All Day</span>
-              <a href="/events/tech-expo">
-                <span>TECH EXPO</span>
-              </a>
-              <span>Between Auditorium and Civil Department</span>
-              <span>14-APRIL</span>
-
-              <span>2:30PM-3:30PM</span>
-              <a href="/events/celebritytalk">
+              <span>4:00PM-5:00PM</span>
+              <a href="/events/techtalk">
                 <span>Tech Talk</span>
               </a>
-              <span>Auditorium</span>
+              <span>West campus</span>
               <span>12-APRIL</span>
-
-              <span>10AM-12PM</span>
-              <a href="/events/treasure-hunt">
-                <span>TREASURE HUNT</span>
-              </a>
-              <span>East Campus</span>
-
-              <span>13-APRIL</span>
               <span>7PM-10PM</span>
               <a href="/events/fun-fare">
                 <span>FUN FARE</span>
@@ -201,12 +183,71 @@ export default function EventsSection() {
 
               <span>12-APRIL</span>
 
-              <span>3PM-5PM</span>
-              <a href="/events/e-gaming">
+              <span>All day</span>
+              <a href="/events/tradex">
+                <span>TradeX</span>
+              </a>
+              <span>Online</span>
+              <span>12-14APRIL</span>
+
+              
+              <span>1:00PM-3:00PM</span>
+
+
+
+             <a href="/events/junk-yard">
+                <span>JUNKYARD</span>
+              </a>
+              <span>EC 1</span>
+              <span>13-APRIL</span>
+
+
+             
+
+
+
+
+             
+
+
+
+              <span>12PM-1PM</span>
+              <a href="/events/situation-room">
+                <span>SITUATION ROOM</span>
+              </a>
+              <span>Auditorium</span>
+
+              <span>13-APRIL</span>
+              <span>All day</span>
+              <a href="/events/tech-expo">
+                <span>TECH EXPO</span>
+              </a>
+              <span>Between Auditorium and Civil Department</span>
+              <span>14-APRIL</span>
+
+              
+
+              <span>10AM-12PM</span>
+              <a href="/events/beam-me-up-scotty">
+                <span>Beam me up, Scotty</span>
+              </a>
+              <span>East Campus</span>
+              <span>13-APRIL</span>
+
+
+
+
+              
+
+              <span>3:00PM-5:00PM</span>
+              <a href="/events/e-football">
                 <span>E-Football</span>
               </a>
-              <span>EC-1</span>
+              <span>EC 1</span>
               <span>14-APRIL</span>
+
+
+              
             </div>
           </div>
         </div>
