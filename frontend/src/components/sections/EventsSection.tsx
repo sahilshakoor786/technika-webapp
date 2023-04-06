@@ -506,14 +506,12 @@ export default function EventsSection() {
               </span>
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
-
-              <span>9AM-11AM</span>
-              <a href="/events/udaan">
-                <span>UDAAN</span>
+              <span>12:30PM-2:30PM</span>
+              <a href="/events/simulation">
+                <span>Aircraft Simulation</span>
               </a>
-              <span>West Campus</span>
-
-              <span>13-April</span>
+              <span>ME Dept Seminar Hall</span>
+              <span>12-April</span>
 
               <span>4PM-5PM</span>
               <a href="/events/free-flight">
@@ -522,6 +520,15 @@ export default function EventsSection() {
               <span>LV Ground</span>
 
               <span>12-April</span>
+              <span>9AM-11AM</span>
+              <a href="/events/udaan">
+                <span>UDAAN</span>
+              </a>
+              <span>West Campus</span>
+
+              <span>13-April</span>
+
+             
               <span>9AM-10AM</span>
               <a href="/events/glider">
                 <span>Touch Down</span>
@@ -530,28 +537,16 @@ export default function EventsSection() {
 
               <span>14-April</span>
 
-              <span>12:30PM-2:30PM</span>
-              <a href="/events/simulation">
-                <span>Aircraft Simulation</span>
-              </a>
-              <span>ME Dept Seminar Hall</span>
-              <span>12-April</span>
-
+             
               <span>10AM-11AM</span>
-              <a href="/events/mars">
+              <a href="/events/blast-of-to-mars">
                 <span>Blast Off To Mars</span>
               </a>
               <span>West Campus</span>
 
               <span>14-April</span>
 
-              <span>4PM-6PM</span>
-              <a href="/events/water-rocket">
-                <span>WATER ROCKET</span>
-              </a>
-              <span>West Campus</span>
-
-              <span>14-April</span>
+            
             </div>
           </div>
         </div>

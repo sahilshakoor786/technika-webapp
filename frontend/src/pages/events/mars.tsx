@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-center"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/udaan.jpg")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1KRskX4sh8u_VxPQV9VwpC21laSaCEn5B")`,
               }}
             >
               <span className="col-span-2"></span>

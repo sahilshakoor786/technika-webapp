@@ -387,14 +387,14 @@ export default function EventsPage() {
                     text="Udaan"
                   />
                   </Link> 
-                <Link href="/events/water-rocket">
+                {/* <Link href="/events/water-rocket">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
                     width={200}
                     height={300}
                     text="Water Rocket"
                   />
-                </Link> 
+                </Link>  */}
               
                 <Link href="/events/free-flight">
                   <FancyImage
@@ -415,7 +415,7 @@ export default function EventsPage() {
 
                 <Link href="/events/blast-of-to-mars">
                   <FancyImage
-                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
+                    src="https://drive.google.com/uc?id=1KRskX4sh8u_VxPQV9VwpC21laSaCEn5B"
                     width={200}
                     height={300}
                     text="Blast Of To Mars"
