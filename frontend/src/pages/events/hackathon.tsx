@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/rasterize.avif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1KcQBcHD42RufVmyTyJKTnMe0fmeurxe6")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -113,8 +113,8 @@ export default function Page() {
               {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Sumit (3rd btech IT) : 9568243301 */}
-              <br />
+              Sumit (3rd btech IT) : 9568243301
+              <br /> */}
             </div>
           </div>
         </main>
