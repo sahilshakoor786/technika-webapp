@@ -243,12 +243,12 @@ export default function EventsPage() {
                     text="Speaker Talk"
                   />
                 </Link> */}
-                <Link href="/events/treasure-hunt">
+                           <Link href="/events/beam-me-up-scotty">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/treasure+hunt.jpg"
                     width={200}
                     height={300}
-                    text="Treasure Hunt"
+                    text="Beam me up, Scotty"
                   />
                 </Link>
                 <Link href="/events/fun-fair">
