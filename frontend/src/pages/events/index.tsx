@@ -170,14 +170,14 @@ export default function EventsPage() {
               className={openTab === 1 ? "block" : "hidden"}
             >
               <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-                <Link href="/events/junk-yard">
+                {/*<Link href="/events/junk-yard">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-serhii-bondarchuk-11849108.jpg"
                     width={200}
                     height={300}
                     text="Junk Yard"
-                  />
-                </Link>
+              />
+                </Link>*/}
                 <Link href="/events/quiz-me-more">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/quiz+me+more.webp"
@@ -243,12 +243,12 @@ export default function EventsPage() {
                     text="Speaker Talk"
                   />
                 </Link> */}
-                <Link href="/events/treasure-hunt">
+                           <Link href="/events/beam-me-up-scotty">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/treasure+hunt.jpg"
                     width={200}
                     height={300}
-                    text="Treasure Hunt"
+                    text="Beam me up, Scotty"
                   />
                 </Link>
                 <Link href="/events/fun-fair">
@@ -267,14 +267,30 @@ export default function EventsPage() {
                     text="EDM"
                   />
                 </Link> */}
-                <Link href="/events/e-gaming">
+                    <Link href="/events/e-football">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-mikhail-nilov-7887258.jpg"
                     width={200}
                     height={300}
-                    text="E-gaming"
+                    text="E-Football"
                   />
                 </Link>
+                <Link href="/events/inauguration">
+                  <FancyImage
+                    src="https://media.istockphoto.com/id/171279624/photo/traditional-indian-inauguration.jpg?s=612x612&w=0&k=20&c=CeJ4fz2CX68o92ChCDjlXs9TuxhQgFtK-Ua51kzcXQY="
+                    width={200}
+                    height={300}
+                    text="Inauguration"
+                  />
+                </Link>
+                
+                
+                
+                
+                
+                
+                
+                
               </div>
             </div>
             <div
@@ -289,24 +305,24 @@ export default function EventsPage() {
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/lfr.png"
                     width={200}
                     height={300}
-                    text="LFR"
+                    text="Robo race"
                   />
                 </Link>
 
-                <Link href="/events/careaction">
+                {/*<Link href="/events/careaction">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
                     width={200}
                     height={300}
                     text="Ca-Reaction"
                   />
-                </Link>
+              </Link>*/}
                 <Link href="/events/blazing-wheel">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/blazing+wheel.webp"
                     width={200}
                     height={300}
-                    text="Blazing Wheel"
+                    text="Robo Wrestling"
                   />
                 </Link>
 
@@ -315,10 +331,10 @@ export default function EventsPage() {
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/robo+combat-1.jpg"
                     width={200}
                     height={300}
-                    text="Robo Combat"
+                    text="Robo War"
                   />
                 </Link>
-                <Link href="/events/thread-ripper">
+                {/*<Link href="/events/thread-ripper">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/thread+ripper.jpg"
                     width={200}
@@ -334,7 +350,7 @@ export default function EventsPage() {
                     height={300}
                     text="Path Pradarshak"
                   />
-                </Link>
+                </Link>*/}
 
                 <Link href="/events/kya-engineer">
                   <FancyImage
@@ -344,21 +360,21 @@ export default function EventsPage() {
                     text="Kya Engineer banega re tu"
                   />
                 </Link>
-                <Link href="/events/hover-mania">
+                {/*<Link href="/events/hover-mania">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/hovermania.jpg"
                     width={200}
                     height={300}
                     text="Hover-Mania"
                   />
-                </Link>
+              </Link>*/}
 
                 <Link href="/events/soccerbot">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/soccerbot+2.webp"
                     width={200}
                     height={300}
-                    text="Soccerbot"
+                    text="Robo Soccer"
                   />
                 </Link>
               </div>
@@ -384,18 +400,18 @@ export default function EventsPage() {
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
                     width={200}
                     height={300}
-                    text="Glider"
+                    text="Touch Down"
                   />
                 </Link>
 
-                {/* <Link href="/events/blast-of-to-mars">
+                <Link href="/events/blast-of-to-mars">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
                     width={200}
                     height={300}
                     text="Blast Of To Mars"
                   />
-                </Link> */}
+                </Link> 
 
                 <Link href="/events/simulation">
                   <FancyImage

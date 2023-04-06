@@ -69,16 +69,16 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">Auditorium</span>
+                <span className="text-slate-800 ">ME Seminar Hall</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">14 April</span>
+                <span className="text-slate-800">12 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">2:00- 3:00 PM
+                <span className="text-slate-800">2:30PM-3:30PM
  </span>
               </div>
             </div>

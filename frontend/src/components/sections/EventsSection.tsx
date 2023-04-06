@@ -507,7 +507,7 @@ export default function EventsSection() {
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
 
-              <span>2:15-4:15PM</span>
+              <span>12:30PM-2:30PM</span>
               <a href="/events/bridge-o-mania">
                 <span>BRIDGE-O-MANIA</span>
               </a>
@@ -521,33 +521,33 @@ export default function EventsSection() {
 
               <span>20-May
 </span> */}
-              <span>2:00-3:30 PM </span>
+              <span>2:30PM-4:00PM</span>
               <a href="/events/save-the-egg">
                 <span>SAVE THE EGG</span>
               </a>
-              <span>GH Complex</span>
-              <span>12-April</span>
+              <span>Main Building</span>
+              <span>14-April</span>
 
-              <span>10:00-11:00 AM</span>
+              <span>2:30PM-4:00PM</span>
               <a href="/events/anadigilox">
                 <span>ANADIGLOGIX</span>
               </a>
               <span>Electronics Department</span>
               <span>14-April</span>
 
-              <span>11:15-1:15 PM</span>
+              <span>11:15-1:15PM</span>
               <a href="/events/circuit-trouble">
                 <span>CIRCUIT TROUBLE</span>
               </a>
               <span>Electronics Department</span>
               <span>14-April</span>
 
-              <span>2:00- 3:00 PM</span>
+              <span>2:30PM-3:30PM</span>
               <a href="/events/morse-laser">
                 <span>MORSE LASER</span>
               </a>
-              <span>Auditorium</span>
-              <span>14-April</span>
+              <span>ME Seminar Hall</span>
+              <span>12-April</span>
             </div>
           </div>
         </div>
