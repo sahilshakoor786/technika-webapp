@@ -73,12 +73,12 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">13 Apr</span>
+                <span className="text-slate-800">14 Apr</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">11:15- 12:15 PM
+                <span className="text-slate-800">12:30- 1:30 PM
 </span>
               </div>
             </div>

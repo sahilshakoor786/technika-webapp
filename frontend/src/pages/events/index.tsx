@@ -243,12 +243,12 @@ export default function EventsPage() {
                     text="Speaker Talk"
                   />
                 </Link> */}
-                <Link href="/events/treasure-hunt">
+                           <Link href="/events/beam-me-up-scotty">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/treasure+hunt.jpg"
                     width={200}
                     height={300}
-                    text="Treasure Hunt"
+                    text="Beam me up, Scotty"
                   />
                 </Link>
                 <Link href="/events/fun-fair">
@@ -267,7 +267,7 @@ export default function EventsPage() {
                     text="EDM"
                   />
                 </Link> */}
-                <Link href="/events/e-gaming">
+                    <Link href="/events/e-football">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-mikhail-nilov-7887258.jpg"
                     width={200}
@@ -275,6 +275,22 @@ export default function EventsPage() {
                     text="E-Football"
                   />
                 </Link>
+                <Link href="/events/inauguration">
+                  <FancyImage
+                    src="https://media.istockphoto.com/id/171279624/photo/traditional-indian-inauguration.jpg?s=612x612&w=0&k=20&c=CeJ4fz2CX68o92ChCDjlXs9TuxhQgFtK-Ua51kzcXQY="
+                    width={200}
+                    height={300}
+                    text="Inauguration"
+                  />
+                </Link>
+                
+                
+                
+                
+                
+                
+                
+                
               </div>
             </div>
             <div
