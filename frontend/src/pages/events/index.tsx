@@ -178,6 +178,14 @@ export default function EventsPage() {
                     text="Junk Yard"
               />
                 </Link>*/}
+                      <Link href="/events/tradex">
+                  <FancyImage
+                    src="https://drive.google.com/uc?id=1F0jGwLHrOKuyrd2-lijVx1ipDHspwTRA"
+                    width={200}
+                    height={300}
+                    text="TradeX"
+                  />
+                </Link>
                 <Link href="/events/quiz-me-more">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/quiz+me+more.webp"
