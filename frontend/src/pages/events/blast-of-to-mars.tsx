@@ -86,7 +86,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 onClick={handleEventFormPopup}
-                from_link='https://forms.gle/4kvVnrSn9FeXgwWDA'
+                form_link='https://forms.gle/4kvVnrSn9FeXgwWDA'
               />
             </div>
 
