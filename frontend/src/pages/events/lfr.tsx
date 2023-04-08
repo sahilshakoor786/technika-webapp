@@ -85,7 +85,8 @@ export default function Page() {
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-                onClick={handleEventFormPopup}
+               // onClick={handleEventFormPopup}
+               form_link='https://forms.gle/5Brz8icnFQECmhFi9'
               />
             </div>
 
@@ -168,11 +169,11 @@ export default function Page() {
               Decision.) <br />
               ● Teams may register online for the event or spot registrations
               are also available. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+            {/*  <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Avi Kushwaha (3rd B.Tech ME): 83039 25425 <br />
-              Mahaveer Jain (3rd B.Tech CE):
+            Mahaveer Jain (3rd B.Tech CE):*/}
             </div>
           </div>
         </main>

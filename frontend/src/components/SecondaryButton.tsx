@@ -1,9 +1,10 @@
 type PrimaryButtonProps = {
     text: string;
     onClick?: () => void;
+    form_link: any;
   };
   
-  export default function SecondaryButton({ text, onClick }: PrimaryButtonProps) {
+  export default function SecondaryButton({ text, onClick,form_link }: PrimaryButtonProps) {
     return (
       <button
         onClick={onClick}
@@ -11,7 +12,7 @@ type PrimaryButtonProps = {
               duration-300 my-5 px-2 py-2 text-xl font-bold text-white 
               bg-pink-900 shadow-lg rounded"
       >
-        {text}
+       <a href={form_link} target='_blank'> {text}</a>
       </button>
     );
   }
