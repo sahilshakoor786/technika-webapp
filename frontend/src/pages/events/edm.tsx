@@ -80,12 +80,12 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="mb-10">
+            {/* <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
                 onClick={handleEventFormPopup}
               />
-            </div>
+            </div> */}
 
             <div
               className="overflow-hidden font-sans text-xl 

@@ -86,7 +86,8 @@ export default function Page() {
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-                onClick={handleEventFormPopup}
+                form_link="https://forms.gle/QzygmnANBhzMRz9J7"
+                // onClick={handleEventFormPopup}
               />
             </div>
 
