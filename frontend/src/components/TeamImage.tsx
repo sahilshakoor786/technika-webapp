@@ -4,7 +4,7 @@ import Link from "next/link";
 import { EventHandler, MouseEvent, useRef, useState } from "react";
 
 type TeamImageProps = {
-  src?: string;
+  src?: any;
   width: number;
   height: number;
   onClick?: () => void;
