@@ -116,9 +116,9 @@ export default function Page() {
               round and the same process will carry again. • Competition area
               has a special place defined for the Chemical Car. <br />
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+            
               </h1>
-              Mayank Khanna (3rd B.tech CHE) : 8299023118
+          
             </div>
           </div>
         </main>

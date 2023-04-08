@@ -73,20 +73,20 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">21 May</span>
+                <span className="text-slate-800">13 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">3:00 PM-6:30 PM</span>
+                <span className="text-slate-800">5:30PM-7:30 PM </span>
               </div>
             </div>
 
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-               // onClick={handleEventFormPopup}
-               form_link='https://forms.gle/LwP4yEMm9Gb4ebtMA'
+                form_link='https://forms.gle/LwP4yEMm9Gb4ebtMA'
+                onClick={handleEventFormPopup}
               />
             </div>
 
@@ -102,16 +102,16 @@ export default function Page() {
               aircraft would be launched in the air field using air pressure
               concept. The plane which will cover the max range at a certain
               height will come out on top.
-             {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Guidelines: <br />
-              </h1>
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+               
+              </h1>
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Satyansh(3rd B.tech ET): 8177020964 <br /> Archana(3rd B.tech
               ME):73554 95097 <br /> Kartik(3rd B.tech ME): 7037755563
-              <br /> Aryan Verma(3rd B.tech ME): 9519441112
-              <br />*/}
+              <br /> Aryan Verma(3rd B.tech ME): 9519441112 */}
+              <br />
             </div>
           </div>
         </main>

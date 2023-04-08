@@ -115,11 +115,11 @@ export default function Page() {
               have all the rights to take final decisions for any matter during
               the event. <br />
               ● Jury’s decision will be final. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Shweta Anand (3rd B.tech EE): 8303776392 <br /> Sambhab Garg (3rd
-              B.tech CHE): 9760600000 <br />
+              B.tech CHE): 9760600000 <br /> */}
             </div>
           </div>
         </main>

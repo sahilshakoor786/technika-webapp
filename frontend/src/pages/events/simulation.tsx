@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/simulation.jfif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1LXT7sSaJkP-ydX90xJqmfCL-0RRCEjIb")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -78,15 +78,15 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">2:15-3:15 PM</span>
+                <span className="text-slate-800">12:30PM-2:30PM</span>
               </div>
             </div>
 
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-               // onClick={handleEventFormPopup}
-               form_link='https://forms.gle/guPCvJzHbRvmMBnD9'
+                form_link='https://forms.gle/guPCvJzHbRvmMBnD9'
+                onClick={handleEventFormPopup}
               />
             </div>
 
@@ -109,13 +109,13 @@ export default function Page() {
               R/C transmitters to control the sim. InfinityScape 3D landscale
               generator allows the user to fly beyond the horizon over
               beautiful, ever-changing terrain that they create and control.
-                {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Guidelines: <br />
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              
               </h1>
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+               
               </h1>
-            Satyansh(3rd B.tech ET):8177020964 <br />
+              {/* Satyansh(3rd B.tech ET):8177020964 <br />
               Atul(3rd B.tech EE) : 7617816601 <br /> Shubhi(3rd B.tech EE) :
               6306654511 */}
             </div>

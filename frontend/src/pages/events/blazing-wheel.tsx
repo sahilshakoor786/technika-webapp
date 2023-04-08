@@ -153,11 +153,11 @@ export default function Page() {
               matter during the event. <br />
               ● Referee’s Decision will be final. <br />
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+              
               </h1>
-              Mayank Khanna (3rd B.Tech CHE): 8299023118
+             
               <br />
-              Palak jain (3rd B.Tech CHE):
+          
             </div>
           </div>
         </main>

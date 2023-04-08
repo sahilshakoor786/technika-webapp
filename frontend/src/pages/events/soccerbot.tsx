@@ -48,7 +48,7 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              Soccerbot
+              Robo Soccer
             </h1>
             {/* <Prize prize="8000" /> */}
 
@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/robosoccer.JPG")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1JxPMooN3Bz8Jh1aI4g5YwRkJw7FWTslA")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -73,12 +73,12 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">21 May</span>
+                <span className="text-slate-800">12 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">4 PM-6 PM</span>
+                <span className="text-slate-800">4:00PM-6:30PM</span>
               </div>
             </div>
 
@@ -150,10 +150,9 @@ export default function Page() {
               ● The substitution of robots during the competition within the
               team or with other teams is forbidden. <br />
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+               
               </h1>
-              Pradum Pal (3rd B.tech ET):9571109091 <br />
-              Sudheer Singh (3rd B.tech ET): 6386066457
+             
             </div>
           </div>
         </main>

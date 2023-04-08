@@ -66,9 +66,7 @@ export default function Page() {
                 className="rounded-lg grid grid-cols-2 gap-2 p-10 
                  backdrop-blur shadow-lg bg-white/30"
               >
-                <span className="font-primary font-bold text-slate-800 ">
-                  Round-1
-                </span>
+              
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
@@ -76,28 +74,12 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">20 May</span>
+                <span className="text-slate-800">12 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">4:30-8:30 PM</span>
-                <span className="font-primary font-bold text-slate-800 ">
-                  Round-2
-                </span>
-                <span className="font-primary font-bold text-slate-800 ">
-                  Venue
-                </span>
-                <span className="text-slate-800 ">Tennis lawn</span>
-                <span className="font-primary font-bold text-slate-800 ">
-                  Date
-                </span>
-                <span className="text-slate-800">22 May</span>
-
-                <span className="font-primary font-bold text-slate-800 ">
-                  Time
-                </span>
-                <span className="text-slate-800">5:00-7:00 PM</span>
+                <span className="text-slate-800">4:00PM-5:30 PM </span>
               </div>
             </div>
 
@@ -124,10 +106,9 @@ export default function Page() {
               machines. Steady your defences and sharpen your weapons. May the
               best bot win! Let’s get ready to rumble!
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+               <br />
               </h1>
-              Pradum Pal (3rd B.tech ET):9571109091 <br />
-              Sudheer Singh (3rd B.tech ET): 6386066457
+             
             </div>
           </div>
         </main>
