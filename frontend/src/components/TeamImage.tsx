@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import gsap from "gsap";
 import Link from "next/link";
 import { EventHandler, MouseEvent, useRef, useState } from "react";
@@ -87,13 +88,13 @@ export default function TeamImage({
             className=" h-9 w-9 z-20"
           />
         </Link> */}
-        <Link href={`${instagram}`}>
+        <Link href={`${instagram}`} target="_blank" passHref>
           <img
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-instagram.svg"
             className=" h-9 w-9 z-20"
           />
         </Link>
-        <Link href={`${linkedin}`}>
+        <Link href={`${linkedin}`} target="_blank" passHref>
           <img
             src="https://d2jf5yk8vvx0ti.cloudfront.net/images/icons8-linkedin-circled.svg"
             className=" h-9 w-9 z-20"
