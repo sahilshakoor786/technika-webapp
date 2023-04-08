@@ -170,14 +170,14 @@ export default function EventsPage() {
               className={openTab === 1 ? "block" : "hidden"}
             >
               <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-                {/*<Link href="/events/junk-yard">
+<Link href="/events/junk-yard">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/pexels-serhii-bondarchuk-11849108.jpg"
                     width={200}
                     height={300}
                     text="Junk Yard"
               />
-                </Link>*/}
+                </Link>
                       <Link href="/events/tradex">
                   <FancyImage
                     src="https://drive.google.com/uc?id=1F0jGwLHrOKuyrd2-lijVx1ipDHspwTRA"
