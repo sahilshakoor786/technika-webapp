@@ -363,13 +363,7 @@ export default function EventsSection() {
               <span>CSE Lab</span>
 
               <span>12-Apr</span>
-              <span>2:15PM-3:15PM</span>
-              <a href="/events/run-time-terror">
-                <span>RUN TIME ERROR</span>
-              </a>
-              <span>DBMS Lab/Internet Lab</span>
-
-              <span>13-Apr</span>
+             
               <span>1:30PM-2:30PM</span>
               <a href="/events/run-time-terror">
                 <span>RUN TIME ERROR</span>
