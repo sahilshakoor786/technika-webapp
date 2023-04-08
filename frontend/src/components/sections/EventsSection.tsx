@@ -155,7 +155,11 @@ export default function EventsSection() {
               </span>
 
               <span className="col-span-4 my-2 h-1 bg-slate-800"></span>
-  <span>9:30AM-11:00AM</span>
+              
+              
+      
+              
+              <span>9:30AM-11:00AM</span>
               <a href="/events/inauguration">
                 <span>Inauguration</span>
               </a>
@@ -170,11 +174,11 @@ export default function EventsSection() {
               <span>12-APRIL</span>
 
               <span>4:00PM-5:00PM</span>
-              <a href="/events/celebritytalk">
+              <a href="/events/techtalk">
                 <span>Tech Talk</span>
               </a>
               <span>West campus</span>
-              <span>12-APRIL</span>
+              <span>13-APRIL</span>
               <span>7PM-10PM</span>
               <a href="/events/fun-fare">
                 <span>FUN FARE</span>
@@ -247,8 +251,9 @@ export default function EventsSection() {
               <span>14-APRIL</span>
 
 
+                     
               
-
+      
 
             </div>
           </div>
