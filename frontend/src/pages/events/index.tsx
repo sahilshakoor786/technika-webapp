@@ -283,6 +283,14 @@ export default function EventsPage() {
                     text="Inauguration"
                   />
                 </Link>
+                <Link href="/events/wrong-o-ovation">
+                  <FancyImage
+                    src="https://media.istockphoto.com/id/1249851975/vector/business-thinking-creative-idea-vector-icon.jpg?s=612x612&w=0&k=20&c=cGoCnwbi7K9W0K0tqrPzbevhmY63EgKk7a1obYQx4v4="
+                    width={200}
+                    height={300}
+                    text="Wrong-o-vation"
+                  />
+                </Link>
                 
                 
                 

@@ -220,6 +220,14 @@ export default function EventsSection() {
               <span>East Campus</span>
               <span>13-APRIL</span>
 
+              <span>10:00AM-1:00PM</span>
+              <a href="/events/wrong-o-ovation">
+                <span>Wrong-o-vation</span>
+              </a>
+              <span>Auditorium</span>
+              <span>14-APRIL</span>
+
+
               <span>3:00PM-5:00PM</span>
               <a href="/events/e-football">
                 <span>E-Football</span>
