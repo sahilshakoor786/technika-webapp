@@ -97,12 +97,11 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Be a stiletto in a room full of flats they say. Be a circuit
-              designer in a room full of coders they (ET engineers of course)
-              say. Y’all will be given a problem for which you’ll whip up a
-              solution of digital circuits. There is a team of 3-4 contestant’s
-              required to design a digital circuit on the basis of given
-              problem.
+              Are you ready to put your electronics knowledge to the test? Look no further than our college's electronics quiz, a thrilling competition that promises to challenge your skills and understanding of the world of technology.
+This exciting quiz will cover a broad range of topics, from basic electronics concepts to the latest developments in technology. You'll be asked to answer a series of questions that are specifically designed to test your knowledge and understanding of the field.
+At the heart of the quiz are questions that delve into the core concepts of electronics. You'll be asked to demonstrate your understanding of basic circuitry, electrical components, and signal processing. You'll also need to stay up-to-date with the latest advances in the field, from the latest microprocessors to cutting-edge sensors and communication technologies.
+So guys join us for a jaw-dropping quiz.
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>

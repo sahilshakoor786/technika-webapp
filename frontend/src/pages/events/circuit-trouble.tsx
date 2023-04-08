@@ -79,7 +79,7 @@ export default function Page() {
                   Time
                 </span>
                 <span className="text-slate-800">11:15-1:15PM
-</span>
+                </span>
               </div>
             </div>
 
@@ -98,13 +98,9 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              You must have heard of this phrase “No resistance can drop our
-              potential” irrespective of the fact that you considered this a PJ
-              or not, it is essential for you to understand the underlying
-              electrical/ electronics reference for this is what you’ll need
-              here. In this event for round 1 participants have to undergo a MCQ
-              test.qualified participants proceed to round 2 in which they will
-              have to solve a basic problem on circuits.
+              Attention all circuit design enthusiasts! Are you ready to put your skills to the test and compete against the best of the best? Here's your chance to showcase your expertise in a thrilling competition that will put your creativity and ingenuity to the test.
+              In this competition, you will be presented with a unique problem statement that will challenge your knowledge and technical abilities. You will have complete freedom to choose your components and design approach, but your circuit must meet specific performance specifications and constraints.
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
