@@ -13,6 +13,8 @@ import { teamSecurity } from "src/utils/teamSecurity";
 import { teamPR } from "src/utils/teamPR";
 import { teamContent } from "src/utils/teamContent";
 import { teamEvents } from "src/utils/teamEvents";
+import { coordinator } from "src/utils/coordinator";
+import { logistics } from "src/utils/logistics";
 
 export default function EventsPage() {
   return (
@@ -87,6 +89,34 @@ export default function EventsPage() {
             />
           </div>
 
+               <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+            Co-ordinator
+          </h1>
+
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+            {coordinator.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={300}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
+          </div>
+
+
+          
+          
+          
+          
           <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
@@ -319,6 +349,39 @@ export default function EventsPage() {
               />
             ))}
           </div>
+          
+                 <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+            Logistics Team
+          </h1>
+
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+            {logistics.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={350}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
+          </div>
+
+
+
+          
+          
+          
+          
+          
+          
+          
         </div>
       </main>
     </Layout>
