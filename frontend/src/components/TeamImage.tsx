@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/link- */
 import gsap from "gsap";
 import Link from "next/link";
 import { EventHandler, MouseEvent, useRef, useState } from "react";
