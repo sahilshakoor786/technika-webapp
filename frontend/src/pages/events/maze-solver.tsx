@@ -48,7 +48,7 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              Hover Mania
+             Maze Solver
             </h1>
             {/* <Prize prize="5000" /> */}
 
@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-center"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/hovermania.JPG")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1MLUiI-7_B3KgVNRR7vGxFKRrxmnKoSd5")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -69,16 +69,16 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">Tennis Lawn</span>
+                <span className="text-slate-800 ">Auditorium</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">13 April</span>
+                <span className="text-slate-800">14 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">5:30PM-7:30 PM </span>
+                <span className="text-slate-800">2:30PM-4:00PM</span>
               </div>
             </div>
 
@@ -97,10 +97,12 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              In this event, participants will have to design an aircraft. This
-              aircraft would be launched in the air field using air pressure
-              concept. The plane which will cover the max range at a certain
-              height will come out on top.
+              Have you ever had the desire to know the science behind various inventions but never had the chance to do so? 
+There are countless things to discover about Robotics. A lot of it is just too extraordinary for people to believe in. 
+Hence, Technika is presenting an opportunity to be the Maze Solver, but with a twist, before you. You'll be the guiding light, but your victory depends on your Maze Solver Bot.
+A maze solver works on a pre-defined algorithm and detects the shortest path to reach its end goal.
+Well, it's time to be James Dashner in The Maze Runner and tell your bots "Just follow me and run as your life depends on it. Because it does" since your bot will only win if it follows the shortest path to reach the end.
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                
               </h1>

@@ -360,6 +360,14 @@ export default function EventsPage() {
                     height={300}
                     text="Kya Engineer banega re tu"
                   />
+                  </Link>
+                <Link href="/events/maze-solver">
+                  <FancyImage
+                    src="https://drive.google.com/uc?id=1MLUiI-7_B3KgVNRR7vGxFKRrxmnKoSd5"
+                    width={200}
+                    height={300}
+                    text="Maze Solver"
+                  />
                 </Link>
                 <Link href="/events/robo-racing">
                   <FancyImage
@@ -437,10 +445,18 @@ export default function EventsPage() {
                     text="Blast Of To Mars"
                   />
                 </Link> 
+                <Link href="/events/hover-mania">
+                  <FancyImage
+                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/hovermania.JPG"
+                    width={200}
+                    height={300}
+                    text="Hover-Mania"
+                  />
+                </Link>
 
                 <Link href="/events/simulation">
                   <FancyImage
-                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/simulation.jpg"
+                    src="https://drive.google.com/uc?id=1LXT7sSaJkP-ydX90xJqmfCL-0RRCEjIb"
                     width={200}
                     height={300}
                     text="Aircraft Simulation"
