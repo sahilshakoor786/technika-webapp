@@ -171,7 +171,7 @@ export default function Header() {
                 className="menu-link text-3xl md:text-5xl"
                 onClick={toggleMenu}
               >
-                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScOLylYbIGgafTvtyjqu8HiIzQ9v3ZWvJ9sTIxCdVlDeUr3UA/viewform?usp=sharing">
+                <Link href="/register/form">
                   Register
                 </Link>
               </span>
