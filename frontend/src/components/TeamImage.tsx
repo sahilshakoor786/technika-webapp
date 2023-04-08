@@ -78,6 +78,7 @@ export default function TeamImage({
           width: width,
           height: height,
           backgroundImage: `url('${src}')`,
+            backgroundPosition: "center"
         }}
       ></div>
       <div className="flex flex-row mt-44">
