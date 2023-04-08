@@ -61,7 +61,7 @@ export default function EventsPage() {
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             <TeamImage
               key={"Devendra Singh Parihar"}
-              src="https://ibb.co/8MSrzT9"
+              src="https://drive.google.com/file/d/1oU8x2dWlhcpPYb1PVC2vMA-zPfvAwBBd/view?usp=sharing"
               width={300}
               height={400}
               name={"Devendra Singh Parihar"}
@@ -89,7 +89,7 @@ export default function EventsPage() {
             />
           </div>
 
-               <h1
+          <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
@@ -112,11 +112,6 @@ export default function EventsPage() {
             ))}
           </div>
 
-
-          
-          
-          
-          
           <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
@@ -349,8 +344,8 @@ export default function EventsPage() {
               />
             ))}
           </div>
-          
-                 <h1
+
+          <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
@@ -372,16 +367,6 @@ export default function EventsPage() {
               />
             ))}
           </div>
-
-
-
-          
-          
-          
-          
-          
-          
-          
         </div>
       </main>
     </Layout>
