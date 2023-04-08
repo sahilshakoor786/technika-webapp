@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/quiz.jfif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1K72gBl83WmNnpEpfHvva_rMGw-K6LyPg")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -78,7 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">12PM-2PM</span>
+                <span className="text-slate-800">11AM-1:30PM</span>
               </div>
             </div>
 

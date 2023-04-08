@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/situationroom-transformed.jpeg")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1KvCrK9awzkgQwy7lKZEz8IFicP1X22Wx")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -73,12 +73,12 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">12 April</span>
+                <span className="text-slate-800">13 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">2:15PM-3:15PM</span>
+                <span className="text-slate-800">12:00PM-1:00PM</span>
               </div>
             </div>
 
@@ -112,11 +112,11 @@ export default function Page() {
               basic engineering knowledge, problem solving) and they have to
               answer with possible way. <br />• time limit of 30 sec for each
               questions will be provided. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Vaibhav Shukla (3rd B.tech ME) : 9026405159
-              <br />
+              <br /> */}
             </div>
           </div>
         </main>

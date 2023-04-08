@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/breakthecode.avif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1LrdjEhugUMTe2E4cL9prcwupoEnOUHm_")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -111,11 +111,11 @@ export default function Page() {
               advance to the next round. In 2nd round, clues will be given which
               will lead to other clues. In total there will be 5-6 clues and the
               team solving the last clue first will win.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Ekansh (3rd btech CSE) : 9519830235
-              <br />
+              <br /> */}
             </div>
           </div>
         </main>
