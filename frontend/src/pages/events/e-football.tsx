@@ -55,7 +55,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/vrgaming.jfif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1JzALudpsAOXhT7_ehZhRlAse2fSZxd9M")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -102,14 +102,14 @@ export default function Page() {
               the opposite. Buckle up your seatbelts as we hurl you into the
               majesty of this new era with virtual reality taking the gaming
               universe by the storm.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                
               </h1>
-              {/* Sugam Gupta (3rd B.tech PT): 8707417077 */}
-              <br />
+              Sugam Gupta (3rd B.tech PT): 8707417077
+              <br /> */}
             </div>
           </div>
         </main>

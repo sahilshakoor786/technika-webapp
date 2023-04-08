@@ -9,9 +9,12 @@ import { teamDesign } from "src/utils/teamDesign";
 import { teamMarketing } from "src/utils/teamMarketing";
 import { photographyteam } from "src/utils/photographyteam";
 import { teamPublicity } from "src/utils/teamPublicity";
-import { teamEvents } from "src/utils/teamEvents";
-import { teamContent } from "src/utils/teamContent";
 import { teamSecurity } from "src/utils/teamSecurity";
+import { teamPR } from "src/utils/teamPR";
+import { teamContent } from "src/utils/teamContent";
+import { teamEvents } from "src/utils/teamEvents";
+import { coordinator } from "src/utils/coordinator";
+import { logistics } from "src/utils/logistics";
 
 export default function EventsPage() {
   return (
@@ -38,7 +41,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -53,12 +56,12 @@ export default function EventsPage() {
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
-            Secretary
+            Secretaries
           </h1>
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             <TeamImage
               key={"Devendra Singh Parihar"}
-              src="https://drive.google.com/uc?id=1olSM1x5_3g7j9_FEngW3d1cJqXYIB6YL"
+              src="https://ibb.co/8MSrzT9"
               width={300}
               height={400}
               name={"Devendra Singh Parihar"}
@@ -71,6 +74,42 @@ export default function EventsPage() {
                 "https://www.linkedin.com/in/devendra-singh-parihar-377057222"
               }
             />
+            <TeamImage
+              key={"Jahnavi Sachan"}
+              src="https://drive.google.com/uc?id=16nlS8V6RlZ9cIlM1azYe_m-w1klgSMPv"
+              width={300}
+              height={400}
+              name={"Jahnavi Sachan"}
+              position={"Joint Secretary"}
+              instagram={
+                "https://instagram.com/artist_manas?igshid=YmMyMTA2M2Y="
+              }
+              facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+              linkedin={"https://www.linkedin.com/in/manas-motwani-685502229"}
+            />
+          </div>
+
+          <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+            Co-ordinator
+          </h1>
+
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+            {coordinator.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={300}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
           </div>
 
           <h1
@@ -235,9 +274,8 @@ export default function EventsPage() {
               />
             ))}
           </div>
-
-           {/* Events Team */}
-           <h1
+          {/* Events Team */}
+          <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
@@ -249,7 +287,7 @@ export default function EventsPage() {
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
-                width={350}
+                width={300}
                 height={400}
                 name={member?.Name}
                 position={member?.["Position in TSC"]}
@@ -260,9 +298,8 @@ export default function EventsPage() {
             ))}
           </div>
 
-          
-           {/* Content Team */}
-           <h1
+          {/* Content Team */}
+          <h1
             className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
           >
@@ -271,6 +308,52 @@ export default function EventsPage() {
 
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             {teamContent.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={300}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
+          </div>
+
+          <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+            Public and Relations Team
+          </h1>
+
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+            {teamPR.map((member) => (
+              <TeamImage
+                key={member?.Timestamp}
+                src={member?.Photo}
+                width={300}
+                height={400}
+                name={member?.Name}
+                position={member?.["Position in TSC"]}
+                instagram={member?.["Instagram profile URL"]}
+                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                linkedin={member?.["LinkedIn profile URL "]}
+              />
+            ))}
+          </div>
+
+          <h1
+            className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+          >
+            Logistics Team
+          </h1>
+
+          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+            {logistics.map((member) => (
               <TeamImage
                 key={member?.Timestamp}
                 src={member?.Photo}
@@ -284,7 +367,6 @@ export default function EventsPage() {
               />
             ))}
           </div>
-
         </div>
       </main>
     </Layout>

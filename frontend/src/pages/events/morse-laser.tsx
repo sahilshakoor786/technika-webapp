@@ -79,7 +79,7 @@ export default function Page() {
                   Time
                 </span>
                 <span className="text-slate-800">2:30PM-3:30PM
- </span>
+                </span>
               </div>
             </div>
 
@@ -98,12 +98,10 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              How would Christopher Nolan direct a game of dumb charades? He
-              would probably bring out laser pointers and display a morse code
-              for the team to decipher the movie. We bring to you the morse’s
-              laser because that’s exactly what it is. The contestants would be
-              provided with movie name written in Morse's code and they have to
-              guess the movie name .
+              Get ready for an exciting game of Dumb Charades, but with a twist! This time, we're taking it up a notch and using Morse code to decode the movie titles. Are you up for the challenge of cracking the code before time runs out?
+              Morse code is a fascinating method used in telecommunication to encode text characters into standardised sequences of dots and dashes. Each symbol is made up of dits and dahs, which are short and long bursts of sound or light, respectively. These bursts are visually represented as dots and dashes, creating a unique code for each character.
+              In this game, we'll be displaying a Morse code on the screen using a laser. The code will represent a hidden movie name, and you'll have to use your skills to decode the right title before time runs out. It's a thrilling challenge that will put your decoding skills to the test, and we guarantee you'll have a blast playing it! So, are you ready to take on the challenge and decode the fun? Let's get started!
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>

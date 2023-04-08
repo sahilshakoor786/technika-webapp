@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import PrimaryButton from "../PrimaryButton";
 import Hls from "hls.js";
 import React, { useEffect, useRef, useState } from "react";
@@ -88,12 +89,12 @@ export default function HeroSection() {
               <PrimaryButton text="View Events" />
             </Link>
           ) : (
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScOLylYbIGgafTvtyjqu8HiIzQ9v3ZWvJ9sTIxCdVlDeUr3UA/viewform?usp=sharing">
+            <Link href="/register/form">
               <PrimaryButton text="Register now" />
             </Link>
           )}
           <a
-            href="https://d2jf5yk8vvx0ti.cloudfront.net/documents/Technika+Official+Brochure+2.pdf"
+            href="https://drive.google.com/file/d/1LDn44JdgEnrit1PvaWKRNNH2ZP0Dk3OS/view?usp=sharing"
             download
           >
             <SecondaryButton text="Download Brochure" />

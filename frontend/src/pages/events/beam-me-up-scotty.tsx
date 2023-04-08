@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-left"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/treasurehunt.jpeg")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1LrSh36FF12iZ59F1iZG7IZCU5qiHarqL")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -116,10 +116,11 @@ export default function Page() {
               • The competition area has a special place defined for the
               Treasure Hunt. <br />
               • It has 1 Round and this final round. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-              
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+                Coordinators: <br />
               </h1>
-           
+              Rajat Gupta (3rd B.tech ET): 9839120812 <br />
+              Deepak Singh Rathore (3rd B.tech ET): 9453112831 <br /> */}
             </div>
           </div>
         </main>
