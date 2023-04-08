@@ -89,7 +89,7 @@ export default function HeroSection() {
               <PrimaryButton text="View Events" />
             </Link>
           ) : (
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScOLylYbIGgafTvtyjqu8HiIzQ9v3ZWvJ9sTIxCdVlDeUr3UA/viewform?usp=sharing">
+            <Link href="/register/form">
               <PrimaryButton text="Register now" />
             </Link>
           )}
