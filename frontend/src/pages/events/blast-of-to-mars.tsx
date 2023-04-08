@@ -86,6 +86,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 onClick={handleEventFormPopup}
+                form_link='https://forms.gle/4kvVnrSn9FeXgwWDA'
               />
             </div>
 
@@ -115,11 +116,11 @@ export default function Page() {
               Round two- teams qualifying round one will be judged on the basis
               of the landing system employed in their models i.e. how precisely
               the rocket hits the target placed on the ground. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+            {/*<h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              Coordinators: <br />
               </h1>
               Himanshu(3rd B.tech ME): 6392430338 <br /> Vikas(3rd B.tech FT):
-              7248338611 <br /> Nikita(3rd B.tech PL):8303290354
+              7248338611 <br /> Nikita(3rd B.tech PL):8303290354 */}
             </div>
           </div>
         </main>
