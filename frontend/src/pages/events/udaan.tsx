@@ -99,22 +99,17 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              In this event, teams of 4-6 members will be required to construct
-              a RC plane. The plane has to pass under two heights in two chances
-              given to them. The plane which will cover the larger field will
-              win the game
+              Just as birds soar and glide through the sky, competing with their fellow winged creatures, the Technika'23 "Udaan" event invites you to spread your wings and fly high. But instead of feathers and wings, you'll be equipped with an RC plane, battling against the turbulence of the wind, navigating through the clouds, and striving to maintain accuracy and velocity like a skilled engineer at the helm of a complex machine. 
+In the first stage of the competition, participants will be required to employ a high-altitude, winged, remote-controlled aircraft, exclusively made from chloroplast material, to achieve a specific altitude within a designated timeframe. The victorious team will be determined based on the altitude their plane reaches, with the highest altitude winning.
+In the second stage, once the plane reaches the maximum altitude, competitors will reduce the throttle to zero and start gliding, endeavoring to keep their plane in the air for the longest period possible. The champions will be evaluated on their airborne time and the smoothness of their landing.
+So, come and take flight with Technika'23's Udaan, and experience the thrill of engineering in action.
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Guidelines: <br />
+                
               </h1>
-              ● The participants would be required to use a high winger RC
-              plane. <br />
-              ● The planes should be made of coroplast material only. Any
-              discrepancy shall not be entertained. <br />
-              ● The battery used in the plane shall not be more above 2200 mAh
-              in capacity. <br />
-              ● Each team should contain 4 members. <br />
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
+               
               </h1>
               {/* Shubham(3rd B.tech CHE): 9120585755 <br /> Vikas(3rd B.tech
               FT):7248338611 <br /> Nikita(3rd B.tech PL) : 8303290354 */}

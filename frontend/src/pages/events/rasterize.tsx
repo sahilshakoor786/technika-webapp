@@ -112,10 +112,10 @@ export default function Page() {
               have to replicate the original web design. A participant whose web
               design is closest to the original web design shown in the
               beginning will be considered winner.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Sumit (3rd btech IT) : 9568243301
+              Sumit (3rd btech IT) : 9568243301 */}
               <br />
             </div>
           </div>

@@ -291,6 +291,14 @@ export default function EventsPage() {
                     text="Inauguration"
                   />
                 </Link>
+                <Link href="/events/wrong-o-ovation">
+                  <FancyImage
+                    src="https://media.istockphoto.com/id/1249851975/vector/business-thinking-creative-idea-vector-icon.jpg?s=612x612&w=0&k=20&c=cGoCnwbi7K9W0K0tqrPzbevhmY63EgKk7a1obYQx4v4="
+                    width={200}
+                    height={300}
+                    text="Wrong-o-vation"
+                  />
+                </Link>
                 
                 
                 
@@ -308,57 +316,58 @@ export default function EventsPage() {
               aria-labelledby="tabs-mech-tab"
             >
               <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap">
-                <Link href="/events/lfr">
+                {/* <Link href="/events/lfr">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/lfr.png"
                     width={200}
                     height={300}
-                    text="Robo race"
+                    text="LFR"
                   />
-                </Link>
+                </Link> */}
 
-                {/*<Link href="/events/careaction">
+                {/* <Link href="/events/careaction">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/istockphoto-638687756-612x612.jpg"
                     width={200}
                     height={300}
                     text="Ca-Reaction"
                   />
-              </Link>*/}
-                <Link href="/events/blazing-wheel">
+                </Link> */}
+                {/* <Link href="/events/blazing-wheel">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/blazing+wheel.webp"
                     width={200}
                     height={300}
-                    text="Robo Wrestling"
+                    text="Blazing Wheel"
                   />
-                </Link>
+                </Link> */}
 
-                <Link href="/events/robo-combat">
+                {/* <Link href="/events/robo-combat">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/robo+combat-1.jpg"
                     width={200}
                     height={300}
                     text="Robo War"
                   />
-                </Link>
-                {/*<Link href="/events/thread-ripper">
+                   </Link>
+                  */}
+                {/* <Link href="/events/thread-ripper">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/thread+ripper.jpg"
                     width={200}
                     height={300}
                     text="Thread Ripper"
                   />
-                </Link>
+                </Link> */}
 
-                <Link href="/events/path-pradarshak">
+                {/* <Link href="/events/path-pradarshak">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/path+pradarshak.webp"
                     width={200}
                     height={300}
                     text="Path Pradarshak"
                   />
-                </Link>*/}
+                </Link> */}
 
                 <Link href="/events/kya-engineer">
                   <FancyImage
@@ -367,15 +376,31 @@ export default function EventsPage() {
                     height={300}
                     text="Kya Engineer banega re tu"
                   />
-                </Link>
-                {/*<Link href="/events/hover-mania">
+                  </Link>
+                <Link href="/events/maze-solver">
                   <FancyImage
-                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/events+/hovermania.jpg"
+                    src="https://drive.google.com/uc?id=1MLUiI-7_B3KgVNRR7vGxFKRrxmnKoSd5"
                     width={200}
                     height={300}
-                    text="Hover-Mania"
+                    text="Maze Solver"
                   />
-              </Link>*/}
+                </Link>
+                <Link href="/events/robo-racing">
+                  <FancyImage
+                    src="https://drive.google.com/uc?id=1Lreq69de2aPuASa1X42FSm7gN5SEgG6_"
+                    width={200}
+                    height={300}
+                    text="Robo-racing"
+                  />
+                </Link>
+                <Link href="/events/robo-wrestling">
+                  <FancyImage
+                    src="https://drive.google.com/uc?id=1KjdVXD9RcN2YsdEIfsIR1597sGzTOZ2i"
+                    width={200}
+                    height={300}
+                    text="Robo Wrestling"
+                  />
+                </Link>
 
                 <Link href="/events/soccerbot">
                   <FancyImage
@@ -401,8 +426,24 @@ export default function EventsPage() {
                     height={300}
                     text="Udaan"
                   />
+                  </Link> 
+                {/* <Link href="/events/water-rocket">
+                  <FancyImage
+                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
+                    width={200}
+                    height={300}
+                    text="Water Rocket"
+                  />
+                </Link>  */}
+              
+                <Link href="/events/free-flight">
+                  <FancyImage
+                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/simulation.jpg"
+                    width={200}
+                    height={300}
+                    text="Free Flight"
+                  />
                 </Link>
-
                 <Link href="/events/glider">
                   <FancyImage
                     src="https://d2jf5yk8vvx0ti.cloudfront.net/images/aero.jpg"
@@ -414,21 +455,30 @@ export default function EventsPage() {
 
                 <Link href="/events/blast-of-to-mars">
                   <FancyImage
-                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/blastofftomars.jfif"
+                    src="https://drive.google.com/uc?id=1KRskX4sh8u_VxPQV9VwpC21laSaCEn5B"
                     width={200}
                     height={300}
                     text="Blast Of To Mars"
                   />
                 </Link> 
+                <Link href="/events/hover-mania">
+                  <FancyImage
+                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/hovermania.JPG"
+                    width={200}
+                    height={300}
+                    text="Hover-Mania"
+                  />
+                </Link>
 
                 <Link href="/events/simulation">
                   <FancyImage
-                    src="https://d2jf5yk8vvx0ti.cloudfront.net/images/simulation.jpg"
+                    src="https://drive.google.com/uc?id=1LXT7sSaJkP-ydX90xJqmfCL-0RRCEjIb"
                     width={200}
                     height={300}
                     text="Aircraft Simulation"
                   />
                 </Link>
+               
               </div>
             </div>
             <div

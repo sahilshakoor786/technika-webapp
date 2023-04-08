@@ -5,6 +5,7 @@ import Auth from "src/components/Auth";
 import EventRegistrationForm from "src/components/EventRegistrationForm";
 import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
+import Prize from "src/components/Prize";
 
 export default function Page() {
   const [popup, setPopup] = useState(false);
@@ -47,15 +48,16 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              E-Gaming
+             Maze Solver
             </h1>
+            {/* <Prize prize="5000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
-                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
+                gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed bg-center"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/vrgaming.jfif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1MLUiI-7_B3KgVNRR7vGxFKRrxmnKoSd5")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -76,7 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">11:15AM-5:00PM</span>
+                <span className="text-slate-800">2:30PM-4:00PM</span>
               </div>
             </div>
 
@@ -95,20 +97,21 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Right from your Game Boys to nintendo wii to the cutting edge
-              xboxes and playstations we’ve come a long way on this ever winding
-              yet progressing road of the gaming industry right? But don’t worry
-              we are not here to take you down a trip of nostalgia instead quite
-              the opposite. Buckle up your seatbelts as we hurl you into the
-              majesty of this new era with virtual reality taking the gaming
-              universe by the storm.
+              Have you ever had the desire to know the science behind various inventions but never had the chance to do so? 
+There are countless things to discover about Robotics. A lot of it is just too extraordinary for people to believe in. 
+Hence, Technika is presenting an opportunity to be the Maze Solver, but with a twist, before you. You'll be the guiding light, but your victory depends on your Maze Solver Bot.
+A maze solver works on a pre-defined algorithm and detects the shortest path to reach its end goal.
+Well, it's time to be James Dashner in The Maze Runner and tell your bots "Just follow me and run as your life depends on it. Because it does" since your bot will only win if it follows the shortest path to reach the end.
+
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Guidelines: <br />
+               
               </h1>
               {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Sugam Gupta (3rd B.tech PT): 8707417077 */}
+              Satyansh(3rd B.tech ET): 8177020964 <br /> Archana(3rd B.tech
+              ME):73554 95097 <br /> Kartik(3rd B.tech ME): 7037755563
+              <br /> Aryan Verma(3rd B.tech ME): 9519441112 */}
               <br />
             </div>
           </div>
@@ -132,7 +135,10 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCCE11" />
+            <EventRegistrationForm
+              eventId="TSCMM07
+"
+            />
           </div>
         </div>
       </>

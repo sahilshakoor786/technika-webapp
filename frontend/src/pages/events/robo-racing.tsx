@@ -5,6 +5,7 @@ import Auth from "src/components/Auth";
 import EventRegistrationForm from "src/components/EventRegistrationForm";
 import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
+import Prize from "src/components/Prize";
 
 export default function Page() {
   const [popup, setPopup] = useState(false);
@@ -31,7 +32,7 @@ export default function Page() {
   }
 
   return (
-    // <Auth>
+    // // <Auth>
     <Layout>
       <>
         <main
@@ -47,15 +48,16 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              E-Gaming
+               Turbo Wheels (Robo Race)
             </h1>
+            {/* <Prize prize="2000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/vrgaming.jfif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1Lreq69de2aPuASa1X42FSm7gN5SEgG6_")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -67,16 +69,16 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">Auditorium</span>
+                <span className="text-slate-800 ">Tennis Lawn</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">14 April</span>
+                <span className="text-slate-800">13 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">11:15AM-5:00PM</span>
+                <span className="text-slate-800">5:30 PM-8:00PM  </span>
               </div>
             </div>
 
@@ -94,22 +96,13 @@ export default function Page() {
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 About the Event
                 <br />
+               
               </h1>
-              Right from your Game Boys to nintendo wii to the cutting edge
-              xboxes and playstations we’ve come a long way on this ever winding
-              yet progressing road of the gaming industry right? But don’t worry
-              we are not here to take you down a trip of nostalgia instead quite
-              the opposite. Buckle up your seatbelts as we hurl you into the
-              majesty of this new era with virtual reality taking the gaming
-              universe by the storm.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Guidelines: <br />
-              </h1>
-              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
-              </h1>
-              Sugam Gupta (3rd B.tech PT): 8707417077 */}
-              <br />
+              Are you an engineer whose childhood curiosity was sparked by the mystery of what made their RC cars zoom? Now, Technika'23 presents an electrifying Bot racing event that will ignite your engineering skills like a bolt of lightning! 
+Build and code your wired or wireless bots with the precision of a surgeon, to conquer our challenging custom-designed tracks that are riddled with moving and stationary obstacles like a maze. But, like a high-stakes game of chess, one wrong move can cost you the game as penalties will be charged for failed hurdle dodging. The winner will be decided based on final scores and the time taken to finish the race, and only the bravest and most skillful engineers will emerge victorious, like gladiators crossing the finish line. 
+As Thomas Edison once said, 'Opportunity is missed by most people because it is dressed in overalls and looks like work.'So, don't miss your chance to be a part of this spine-tingling competition, where innovation knows no bounds!
+
+              
             </div>
           </div>
         </main>
@@ -132,11 +125,11 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCCE11" />
+            <EventRegistrationForm eventId="TSCMM04" />
           </div>
         </div>
       </>
     </Layout>
-    // </Auth>
+    // // </Auth>
   );
 }

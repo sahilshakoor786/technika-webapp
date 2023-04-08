@@ -110,11 +110,11 @@ export default function Page() {
               5 members and minimum 3 members. <br />• All the round would be
               similar to the games in the show. <br />
               • Participants would be required to bring their own bots. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Avi Kushwaha (3rd B.tech ME): 83039 25425 <br /> Mahaveer Jain
-              (3rd B.tech CE): <br />
+              (3rd B.tech CE): <br /> */}
             </div>
           </div>
         </main>

@@ -73,20 +73,20 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">21 May</span>
+                <span className="text-slate-800">14 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">11 AM-12:30 PM</span>
+                <span className="text-slate-800">1:00 PM-2:00 PM</span>
               </div>
             </div>
 
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-               // onClick={handleEventFormPopup}
-               form_link='https://forms.gle/VwiaSz2wyhQHGYTp6'
+                form_link='https://forms.gle/VwiaSz2wyhQHGYTp6'
+                onClick={handleEventFormPopup}
               />
             </div>
 
@@ -131,11 +131,11 @@ export default function Page() {
               ● Unethical behavior could lead to disqualification. Coordinators
               have all the rights to take final decisions for any matter during
               the event. <br />
-            {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               , Uday Gupta (3rd B.tech ME): 98077 48401 <br />
-              Mohd Aqib (3rd B.tech ME) : 7983632115*/}
+              Mohd Aqib (3rd B.tech ME) : 7983632115 */}
             </div>
           </div>
         </main>
