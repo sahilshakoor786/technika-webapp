@@ -1,7 +1,8 @@
 type PrimaryButtonProps = {
     text: string;
     onClick?: () => void;
-    form_link?:string;
+    form_link?: any;
+
   };
   
   export default function SecondaryButton({ text, onClick,form_link }: PrimaryButtonProps) {

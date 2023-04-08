@@ -61,7 +61,9 @@ export default function EventsPage() {
           <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
             <TeamImage
               key={"Devendra Singh Parihar"}
+
               src="https://i.ibb.co/PxfcT3g/deven.jpg"
+
               width={300}
               height={400}
               name={"Devendra Singh Parihar"}
