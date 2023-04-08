@@ -113,11 +113,11 @@ Don't miss out on this exciting opportunity to learn from industry experts, enga
               • The competition area has a special place defined for the
               TradeX. <br />
               • It has 1 Round and this final round. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Rajat Gupta (3rd B.tech ET): 9839120812 <br />
-              Deepak Singh Rathore (3rd B.tech ET): 9453112831 <br />
+              Deepak Singh Rathore (3rd B.tech ET): 9453112831 <br /> */}
             </div>
           </div>
         </main>

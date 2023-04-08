@@ -114,10 +114,10 @@ export default function Page() {
               team getting the maximum points will win. Ties will be broken by
               the amount of time taken.
               <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
-              Aman Maurya (3rd B.tech IT):8354855936
+              Aman Maurya (3rd B.tech IT):8354855936 */}
             </div>
           </div>
         </main>

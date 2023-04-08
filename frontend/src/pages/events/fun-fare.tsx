@@ -5,7 +5,6 @@ import Auth from "src/components/Auth";
 import EventRegistrationForm from "src/components/EventRegistrationForm";
 import Layout from "src/components/Layout";
 import SecondaryButton from "src/components/SecondaryButton";
-import Prize from "src/components/Prize";
 
 export default function Page() {
   const [popup, setPopup] = useState(false);
@@ -48,16 +47,15 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-              HACKATHON
+              Fun Fare
             </h1>
-            {/* <Prize prize="1000" /> */}
 
             <div
               className="w-full grid grid-cols-1 lg:grid-cols-3 
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://drive.google.com/uc?id=1KcQBcHD42RufVmyTyJKTnMe0fmeurxe6")`,
+                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/funfare.avif")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -69,18 +67,16 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">CSE Lab
-</span>
+                <span className="text-slate-800 ">Tennis Lawn</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
-                <span className="text-slate-800">12 Apr</span>
+                <span className="text-slate-800">12 April</span>
 
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">12 - 4 PM
-</span>
+                <span className="text-slate-800">7PM-10PM</span>
               </div>
             </div>
 
@@ -95,26 +91,7 @@ export default function Page() {
               className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
             >
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                About the Event
-                <br />
-              </h1>
-              Welcome to the hackathon event! In this engaging event, you will have the opportunity to collaborate with other tech enthusiasts to create innovative software projects. Whether you are a seasoned developer or a newcomer to the field, this event is an opportunity to flex your creativity, problem-solving skills, and teamwork abilities. You will have access to mentors, resources, and support to help you bring your ideas to life. Throughout the event, you will work tirelessly to prototype your projects and compete for prizes. But more importantly, you will have the opportunity to learn new skills, network with other professionals, and contribute to the development of new technologies that can make a real impact in the world. So let's get ready to hack!
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Guidelines: <br />
-              </h1>
-              In this event, participants will get an opportunity to show off
-              their front-end web design skills (HTML/CSS/JAVASCRIPT). All the
-              participants will be shown a web design for a brief time and will
-              be provided all relevant data (dimensions, color codes, etc). They
-              have to replicate the original web design. A participant whose web
-              design is closest to the original web design shown in the
-              beginning will be considered winner.
-              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                Coordinators: <br />
-              </h1>
-              Sumit (3rd btech IT) : 9568243301
-              <br /> */}
+              A Carnival fare
             </div>
           </div>
         </main>
@@ -137,7 +114,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCGC03" />
+            <EventRegistrationForm eventId="TSCCE10" />
           </div>
         </div>
       </>

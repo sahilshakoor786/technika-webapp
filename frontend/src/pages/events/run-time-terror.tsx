@@ -57,7 +57,7 @@ export default function Page() {
                 gap-y-10 place-items-center bg-white/50 py-10 rounded-xl bg-cover bg-fixed"
               style={{
                 height: 500,
-                backgroundImage: `url("https://d2jf5yk8vvx0ti.cloudfront.net/images/runtimeerror.avif")`,
+                backgroundImage: `url("https://drive.google.com/uc?id=1LiUWEO7zzYt4d2pCbfvDZXFuS54uSpiS")`,
               }}
             >
               <span className="col-span-2"></span>
@@ -119,11 +119,11 @@ export default function Page() {
               next round. In the next round, a basic coding problem will be
               given and the winners will then be decided. Ties will be broken by
               the amount of time taken.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
               Naitik (3rd btech CSE) : 7500103699
-              <br />
+              <br /> */}
             </div>
           </div>
         </main>
