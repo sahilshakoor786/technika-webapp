@@ -78,16 +78,15 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">1:30-2:30 PM
-</span>
+                <span className="text-slate-800">1:30-2:30 PM</span>
               </div>
             </div>
 
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-               // onClick={handleEventFormPopup}
-              form_link='https://forms.gle/st7BEfpMgs2YTHZH7'
+                // onClick={handleEventFormPopup}
+                form_link="https://forms.gle/st7BEfpMgs2YTHZH7"
               />
             </div>
 
@@ -147,7 +146,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCGC01" />
+            {/* <EventRegistrationForm eventId="TSCGC01" /> */}
           </div>
         </div>
       </>

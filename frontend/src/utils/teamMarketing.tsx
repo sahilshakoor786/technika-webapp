@@ -25,7 +25,7 @@ export const teamMarketing = [
       "https://www.linkedin.com/in/prafulla-saroj-516043229",
     "Instagram profile URL":
       "https://instagram.com/bad__.exe__?igshid=ZDdkNTZiNTM=",
-    "Position in TSC": "Marketing member",
+    "Position in TSC": "Associate head marketing",
   },
   {
     Timestamp: "3/29/2023 1:24:46",

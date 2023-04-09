@@ -69,8 +69,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">CE Seminar Hall
-</span>
+                <span className="text-slate-800 ">CE Seminar Hall</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
@@ -79,16 +78,15 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">12:30PM-2:30PM
-</span>
+                <span className="text-slate-800">12:30PM-2:30PM</span>
               </div>
             </div>
 
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-              //  onClick={handleEventFormPopup}
-              form_link='https://forms.gle/RP56rXteVSc2XdtM6'
+                //  onClick={handleEventFormPopup}
+                form_link="https://forms.gle/RP56rXteVSc2XdtM6"
               />
             </div>
 
@@ -163,10 +161,10 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCEH01
 "
-            />
+            /> */}
           </div>
         </div>
       </>

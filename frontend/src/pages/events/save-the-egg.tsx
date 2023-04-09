@@ -69,8 +69,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">Main Building
-</span>
+                <span className="text-slate-800 ">Main Building</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
@@ -79,8 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">2:30PM-4:00PM
-</span>
+                <span className="text-slate-800">2:30PM-4:00PM</span>
               </div>
             </div>
 
@@ -88,7 +86,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 //onClick={handleEventFormPopup}
-                form_link='https://forms.gle/ZmTwCJ3s6Zm8ba1m8'
+                form_link="https://forms.gle/ZmTwCJ3s6Zm8ba1m8"
               />
             </div>
 
@@ -131,10 +129,9 @@ export default function Page() {
               <br />
               20 points if the egg shows no signs of any form of cracking <br />
               10 points if the container is less than 1 pound <br />
-              20 points if the container is less than 0.5 pounds <br />
-              ● The containers will be dropped from one story. The second and
-              final drop will be from two stories. Only two drops will be made.{" "}
-              <br />
+              20 points if the container is less than 0.5 pounds <br />● The
+              containers will be dropped from one story. The second and final
+              drop will be from two stories. Only two drops will be made. <br />
               ● The egg must be accessible after the first drop to check for any
               cracking. <br />
               ● The level that an egg is cracked (either fully or partially)
@@ -169,10 +166,10 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCEH03
 "
-            />
+            /> */}
           </div>
         </div>
       </>

@@ -78,8 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">12:30- 1:30 PM
-</span>
+                <span className="text-slate-800">12:30- 1:30 PM</span>
               </div>
             </div>
 
@@ -141,7 +140,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCGC05" />
+            {/* <EventRegistrationForm eventId="TSCGC05" /> */}
           </div>
         </div>
       </>

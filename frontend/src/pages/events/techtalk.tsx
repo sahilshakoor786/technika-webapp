@@ -83,8 +83,8 @@ export default function Page() {
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-               // onClick={handleEventFormPopup}
-               form_link='https://forms.gle/ZV7Ajm77oyhxFwAJ8'
+                // onClick={handleEventFormPopup}
+                form_link="https://forms.gle/ZV7Ajm77oyhxFwAJ8"
               />
             </div>
 
@@ -92,15 +92,25 @@ export default function Page() {
               className="overflow-hidden font-sans text-xl 
               text-white text-center max-w-xl"
             >
-                  <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 About the Event
                 <br />
               </h1>
-              Join us for an exclusive Tech Talk by Sandeep Jain, the founder of GeeksforGeeks. This is a unique opportunity to hear from one of the most respected figures in the tech industry, as he shares his insights and experiences in the world of computer science.
-
-During the Tech Talk, Sandeep will discuss the latest trends and advancements in the tech industry, as well as provide valuable tips and advice for aspiring developers and engineers. You will have the chance to ask questions and gain valuable insights into the tech world from one of the industry's most influential leaders.
-
-This is a must-attend event for anyone interested in pursuing a career in tech, or for those who simply want to stay up-to-date on the latest developments in the industry. Don't miss out on this rare opportunity to learn from Sandeep Jain, the founder of GeeksforGeeks. Register now and join us for an unforgettable Tech Talk.
+              Join us for an exclusive Tech Talk by Sandeep Jain, the founder of
+              GeeksforGeeks. This is a unique opportunity to hear from one of
+              the most respected figures in the tech industry, as he shares his
+              insights and experiences in the world of computer science. During
+              the Tech Talk, Sandeep will discuss the latest trends and
+              advancements in the tech industry, as well as provide valuable
+              tips and advice for aspiring developers and engineers. You will
+              have the chance to ask questions and gain valuable insights into
+              the tech world from one of the industry's most influential
+              leaders. This is a must-attend event for anyone interested in
+              pursuing a career in tech, or for those who simply want to stay
+              up-to-date on the latest developments in the industry. Don't miss
+              out on this rare opportunity to learn from Sandeep Jain, the
+              founder of GeeksforGeeks. Register now and join us for an
+              unforgettable Tech Talk.
             </div>
           </div>
         </main>
@@ -123,7 +133,7 @@ This is a must-attend event for anyone interested in pursuing a career in tech, 
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCCE12" />
+            {/* <EventRegistrationForm eventId="TSCCE12" /> */}
           </div>
         </div>
       </>

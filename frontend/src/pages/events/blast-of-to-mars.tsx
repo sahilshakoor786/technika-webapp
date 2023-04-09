@@ -85,7 +85,7 @@ export default function Page() {
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-                form_link='https://forms.gle/4kvVnrSn9FeXgwWDA'
+                form_link="https://forms.gle/4kvVnrSn9FeXgwWDA"
                 // onClick={handleEventFormPopup}
               />
             </div>
@@ -99,19 +99,21 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Attention all thrill geeks!
-Get ready to blast off into a world of excitement and innovation with the upcoming water rocket competition! 
-Put all your instincts into making scrap-bottle model rockets using all the best out-of-waste craft lessons from schools and let it reach for the stars. 
-Show off your engineering skills and creativity as you contend with other talented students. Experience the thrill of launching your very own rocket into the sky, as you compete for victory and glory in this incredible event. Whether you're a science geek or just someone who loves a good competition, this water rocket competition is not to be missed. So gather your friends and get ready to take flight, as you prepare to participate in one of the most exciting events of the year!
-
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-              
-              </h1>
-             
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-              
-              </h1>
-             
+              Attention all thrill geeks! Get ready to blast off into a world of
+              excitement and innovation with the upcoming water rocket
+              competition! Put all your instincts into making scrap-bottle model
+              rockets using all the best out-of-waste craft lessons from schools
+              and let it reach for the stars. Show off your engineering skills
+              and creativity as you contend with other talented students.
+              Experience the thrill of launching your very own rocket into the
+              sky, as you compete for victory and glory in this incredible
+              event. Whether you're a science geek or just someone who loves a
+              good competition, this water rocket competition is not to be
+              missed. So gather your friends and get ready to take flight, as
+              you prepare to participate in one of the most exciting events of
+              the year!
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
             </div>
           </div>
         </main>
@@ -134,7 +136,7 @@ Show off your engineering skills and creativity as you contend with other talent
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCFH02" />
+            {/* <EventRegistrationForm eventId="TSCFH02" /> */}
           </div>
         </div>
       </>

@@ -100,9 +100,7 @@ export default function Page() {
                 <br />
               </h1>
               Water rocket propulsion challenge
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-              
-              </h1>
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
               {/* Shubham(3rd B.tech CHE): 9120585755 <br /> Vikas(3rd B.tech
               FT):7248338611 <br /> Nikita(3rd B.tech PL) : 8303290354 */}
             </div>
@@ -127,7 +125,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCFH04" />
+            {/* <EventRegistrationForm eventId="TSCFH04" /> */}
           </div>
         </div>
       </>

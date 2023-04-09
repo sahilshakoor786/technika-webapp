@@ -66,7 +66,6 @@ export default function Page() {
                 className="rounded-lg grid grid-cols-2 gap-2 p-10 
                  backdrop-blur shadow-lg bg-white/30"
               >
-              
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
@@ -106,9 +105,8 @@ export default function Page() {
               machines. Steady your defences and sharpen your weapons. May the
               best bot win! Let’s get ready to rumble!
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-               <br />
+                <br />
               </h1>
-             
             </div>
           </div>
         </main>
@@ -131,7 +129,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCMM01" />
+            {/* <EventRegistrationForm eventId="TSCMM01" /> */}
           </div>
         </div>
       </>

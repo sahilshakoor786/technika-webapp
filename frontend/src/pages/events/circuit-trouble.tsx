@@ -78,8 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">11:15-1:15PM
-                </span>
+                <span className="text-slate-800">11:15-1:15PM</span>
               </div>
             </div>
 
@@ -87,7 +86,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 //onClick={handleEventFormPopup}
-                form_link='https://forms.gle/saHUvSMKkz4pFWmC8'
+                form_link="https://forms.gle/saHUvSMKkz4pFWmC8"
               />
             </div>
 
@@ -99,9 +98,15 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Attention all circuit design enthusiasts! Are you ready to put your skills to the test and compete against the best of the best? Here's your chance to showcase your expertise in a thrilling competition that will put your creativity and ingenuity to the test.
-              In this competition, you will be presented with a unique problem statement that will challenge your knowledge and technical abilities. You will have complete freedom to choose your components and design approach, but your circuit must meet specific performance specifications and constraints.
-
+              Attention all circuit design enthusiasts! Are you ready to put
+              your skills to the test and compete against the best of the best?
+              Here's your chance to showcase your expertise in a thrilling
+              competition that will put your creativity and ingenuity to the
+              test. In this competition, you will be presented with a unique
+              problem statement that will challenge your knowledge and technical
+              abilities. You will have complete freedom to choose your
+              components and design approach, but your circuit must meet
+              specific performance specifications and constraints.
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
@@ -120,16 +125,14 @@ export default function Page() {
               ● Circuit implemented on bread board with correct output
               presented: 30 points <br />
               ● Circuit implemented on bread board with distorted or indecent
-              output presented: 15 points <br />
-              ● And hints to be provided if asked for with deduction of points.{" "}
-              <br />
+              output presented: 15 points <br />● And hints to be provided if
+              asked for with deduction of points. <br />
               Per hint: -15 points <br />
               ● Maximum 3 members are allowed in a team. <br />● Any number of
               teams can participate from one college/school <br />●
               Professionals are not allowed. Only students can participate.{" "}
-              <br />
-              ● Participants are required to bring their school/college ID Card.{" "}
-              <br />
+              <br />● Participants are required to bring their school/college ID
+              Card. <br />
               ● A team member can’t be a part of more than one team. <br />●
               Bring your college/student I-Card at the time of competition.{" "}
               <br />
@@ -162,7 +165,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCEH05" />
+            {/* <EventRegistrationForm eventId="TSCEH05" /> */}
           </div>
         </div>
       </>

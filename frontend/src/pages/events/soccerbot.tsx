@@ -86,7 +86,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 //onClick={handleEventFormPopup}
-                form_link='https://forms.gle/XUMqgqJS7TbpomVG6'
+                form_link="https://forms.gle/XUMqgqJS7TbpomVG6"
               />
             </div>
 
@@ -114,8 +114,8 @@ export default function Page() {
               ● Each team will have to defend the goal on its side as well as
               score the goal on the opposite side. <br />
               ● Each team can have a maximum of 4 team members. <br />● The
-              weight limit of the robot for this competition is 3 Kg. <br />
-              ● Each robot should not Exceed by maximum 30cm*30cm*30cm(l*b*h*).{" "}
+              weight limit of the robot for this competition is 3 Kg. <br />●
+              Each robot should not Exceed by maximum 30cm*30cm*30cm(l*b*h*).{" "}
               <br />
               ● Team can use ball hit mechanism but not Griper mechanism to hold
               the ball. <br />
@@ -126,12 +126,11 @@ export default function Page() {
               between any two points in the circuit at any given time. <br />
               ● The participants will be provided with 220 Volts, 50Hz standard
               AC supply. Participants will have to themselves arrange for an
-              adapter or batteries. <br />
-              ● The machine must be powered electrically only. Use of IC engine
-              is not allowed ● The machine must not be made from Lego parts, or
-              any ready-made kit, if we find such a machine it will be
-              disqualified. Use of ready-made chassis/ RC Car is not allowed.{" "}
-              <br />
+              adapter or batteries. <br />● The machine must be powered
+              electrically only. Use of IC engine is not allowed ● The machine
+              must not be made from Lego parts, or any ready-made kit, if we
+              find such a machine it will be disqualified. Use of ready-made
+              chassis/ RC Car is not allowed. <br />
               ● The body of the vehicle must be covered, to avoid any
               entanglement between two competing robots. <br />
               ● Damaging the wires of the opponent will lead to
@@ -149,10 +148,7 @@ export default function Page() {
               are intended to harm the opponent’s robot. <br />
               ● The substitution of robots during the competition within the
               team or with other teams is forbidden. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-               
-              </h1>
-             
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
             </div>
           </div>
         </main>
@@ -175,10 +171,10 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCMM02
 "
-            />
+            /> */}
           </div>
         </div>
       </>

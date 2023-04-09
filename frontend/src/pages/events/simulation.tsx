@@ -85,7 +85,7 @@ export default function Page() {
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-                form_link='https://forms.gle/guPCvJzHbRvmMBnD9'
+                form_link="https://forms.gle/guPCvJzHbRvmMBnD9"
                 // onClick={handleEventFormPopup}
               />
             </div>
@@ -109,12 +109,8 @@ export default function Page() {
               R/C transmitters to control the sim. InfinityScape 3D landscale
               generator allows the user to fly beyond the horizon over
               beautiful, ever-changing terrain that they create and control.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-              
-              </h1>
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-               
-              </h1>
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
               {/* Satyansh(3rd B.tech ET):8177020964 <br />
               Atul(3rd B.tech EE) : 7617816601 <br /> Shubhi(3rd B.tech EE) :
               6306654511 */}
@@ -140,10 +136,10 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCFH01
 "
-            />
+            /> */}
           </div>
         </div>
       </>

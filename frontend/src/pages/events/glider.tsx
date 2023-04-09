@@ -98,11 +98,17 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Ever fascinated by the long-winged mechanical birds soaring high in the sky and peeping through the clouds?
-Well, here we are.
-Bringing you a heart-pumping experience like no other. Your very own glider planes flex and launch manually. Y'all will compete in a series of challenges that'll test your ability to navigate, including precision landings and altitude. With each challenge, you'll push yourself to new heights, showing off your skill and technique to judges and fellow competitors alike.
-So, what are you waiting for? Take to the skies and join us for the Gliders Free Flight Competition. This event promises to be an unforgettable experience!
-
+              Ever fascinated by the long-winged mechanical birds soaring high
+              in the sky and peeping through the clouds? Well, here we are.
+              Bringing you a heart-pumping experience like no other. Your very
+              own glider planes flex and launch manually. Y'all will compete in
+              a series of challenges that'll test your ability to navigate,
+              including precision landings and altitude. With each challenge,
+              you'll push yourself to new heights, showing off your skill and
+              technique to judges and fellow competitors alike. So, what are you
+              waiting for? Take to the skies and join us for the Gliders Free
+              Flight Competition. This event promises to be an unforgettable
+              experience!
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
@@ -116,9 +122,7 @@ So, what are you waiting for? Take to the skies and join us for the Gliders Free
               No metallic part should be used in the modeling of the plane.{" "}
               <br />
               Styrofoam shouldn’t be used in the making of the plane. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-               
-              </h1>
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
               {/* Shubham(3rd B.tech CHE): 9120585755 <br /> Harsh Chaudhary(3rd
               B.tech CHE): 6390339469 <br /> Samiksha(3rd B.tech BE): 7905710930 */}
             </div>
@@ -143,12 +147,12 @@ So, what are you waiting for? Take to the skies and join us for the Gliders Free
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCFH03" />
+            {/* <EventRegistrationForm eventId="TSCFH03" /> */}
           </div>
         </div>
       </>
     </Layout>
-    
+
     // </Auth>
   );
-}  
+}

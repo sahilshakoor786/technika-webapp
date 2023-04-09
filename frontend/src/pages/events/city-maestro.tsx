@@ -110,10 +110,7 @@ export default function Page() {
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-            
-              </h1>
-         
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
             </div>
           </div>
         </main>
@@ -136,10 +133,10 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCEH02
 "
-            />
+            /> */}
           </div>
         </div>
       </>

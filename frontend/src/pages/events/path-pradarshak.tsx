@@ -108,9 +108,8 @@ export default function Page() {
               ● Each team can have a maximum of 3 participants. <br />
               ● There is no restriction of branches for students. <br />
               ● Each team has to present their ideas within 5 min of the Slide
-              presentation. <br />
-              ● Teams without proper Slide presentation will not be considered.{" "}
-              <br />
+              presentation. <br />● Teams without proper Slide presentation will
+              not be considered. <br />
               ● Unethical behavior could lead to disqualification. Coordinators
               have all the rights to take final decisions for any matter during
               the event. <br />
@@ -142,10 +141,10 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCMM15
 "
-            />
+            /> */}
           </div>
         </div>
       </>

@@ -104,7 +104,7 @@ export const teamPublicity = [
     "Position in TSC": "Associate head in publicity",
   },
   {
-    Timestamp: "3/29/2023 1:29:04",
+    Timestamp: "3/30/2023 1:29:04",
     Name: "Prabhat Sharma ",
     Photo: "https://drive.google.com/uc?id=1B5HEP7tBzaoBBkajK8rqM5AO8CwX6JD3",
     "LinkedIn profile URL ":

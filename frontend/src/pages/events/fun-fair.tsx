@@ -84,7 +84,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 //onClick={handleEventFormPopup}
-                form_link='https://forms.gle/rKhdbxyjsbgdcpzp7'
+                form_link="https://forms.gle/rKhdbxyjsbgdcpzp7"
               />
             </div>
 
@@ -115,7 +115,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCCE10" />
+            {/* <EventRegistrationForm eventId="TSCCE10" /> */}
           </div>
         </div>
       </>

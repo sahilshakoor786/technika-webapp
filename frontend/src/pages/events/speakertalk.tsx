@@ -115,7 +115,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCCE12" />
+            {/* <EventRegistrationForm eventId="TSCCE12" /> */}
           </div>
         </div>
       </>

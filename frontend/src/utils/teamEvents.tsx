@@ -1,5 +1,5 @@
 export const teamEvents = [
-    {
+  {
     Timestamp: "3/28/2023 21:00:45",
     Name: "Samarthya",
     Photo: "https://drive.google.com/uc?id=1iiLN_bGZ9patHMsSe62lPPMUUJgfMigu",
@@ -28,7 +28,7 @@ export const teamEvents = [
       "https://instagram.com/rahman_haza?igshid=ZDdkNTZiNTM=",
     "Position in TSC": "Associate Event Head",
   },
-   {
+  {
     Timestamp: "3/29/2023 1:17:29",
     Name: "Utkarsh Vashishtha",
     Photo: "https://drive.google.com/uc?id=15Ste1Z5HKGvh834PM_636jIt-X6BzmbU",
@@ -86,5 +86,37 @@ export const teamEvents = [
       "https://instagram.com/harsh_kalra_2003?igshid=ZDdkNTZiNTM=",
     "Position in TSC": "Events Associate",
   },
-  ];
-  
+  {
+    Timestamp: "4/9/2023 1:22:50",
+    Name: "Aman Kushwaha",
+    Photo:
+      "https://drive.google.com/uc?export=view&id=1Rka-rm_xO_jUt0BHyaHZd5QHL-FueK53",
+    "LinkedIn profile URL ":
+      "https://www.linkedin.com/in/aman-kushwaha-697a71246",
+    "Instagram profile URL":
+      "https://instagram.com/aman_k_7700?igshid=ZDdkNTZiNTM=",
+    "Position in TSC": "Associate events and logistics head",
+  },
+  {
+    Timestamp: "4/9/2023 1:22:55",
+    Name: "Aryan Sharma",
+    Photo:
+      "https://drive.google.com/uc?export=view&id=1Ruwa4W_exD4CPVwMEyLcrv0yStHC5OSO",
+    "LinkedIn profile URL ":
+      "https://www.linkedin.com/in/aryan-sharma-70a7a9172",
+    "Instagram profile URL":
+      "https://instagram.com/aryn.shrma_?igshid=ZDdkNTZiNTM=",
+    "Position in TSC": "Associate Events Head",
+  },
+  {
+    Timestamp: "4/9/2023 1:22:90",
+    Name: "Abhishek Upadhyay",
+    Photo:
+      "https://drive.google.com/uc?export=view&id=1RykF5PeNJ7GPrsXc_MFV3dCoi5AKX2Xh",
+    "LinkedIn profile URL ":
+      "https://www.linkedin.com/in/abhishek-upadhyay-50a6b4230",
+    "Instagram profile URL":
+      "https://instagram.com/theabhishekupadhyay021?igshid=ZDdkNTZiNTM=",
+    "Position in TSC": "Associate Events Head",
+  },
+];

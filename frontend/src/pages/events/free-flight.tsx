@@ -86,7 +86,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 //onClick={handleEventFormPopup}
-                form_link='https://forms.gle/D9u9ps5GkehmaaFz8'
+                form_link="https://forms.gle/D9u9ps5GkehmaaFz8"
               />
             </div>
 
@@ -122,9 +122,7 @@ export default function Page() {
               No metallic part should be used in the modeling of the plane.{" "}
               <br />
               Styrofoam shouldn’t be used in the making of the plane. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-               
-              </h1>
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
               {/* Shubham(3rd B.tech CHE): 9120585755 <br /> Harsh Chaudhary(3rd
               B.tech CHE): 6390339469 <br /> Samiksha(3rd B.tech BE): 7905710930 */}
             </div>
@@ -149,7 +147,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCFH03" />
+            {/* <EventRegistrationForm eventId="TSCFH03" /> */}
           </div>
         </div>
       </>

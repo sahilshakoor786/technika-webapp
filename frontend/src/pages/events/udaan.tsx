@@ -85,8 +85,8 @@ export default function Page() {
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-              //  onClick={handleEventFormPopup}
-              form_link='https://forms.gle/DL6n4iF4HBK6S6rQ9'
+                //  onClick={handleEventFormPopup}
+                form_link="https://forms.gle/DL6n4iF4HBK6S6rQ9"
               />
             </div>
 
@@ -99,18 +99,27 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Just as birds soar and glide through the sky, competing with their fellow winged creatures, the Technika'23 "Udaan" event invites you to spread your wings and fly high. But instead of feathers and wings, you'll be equipped with an RC plane, battling against the turbulence of the wind, navigating through the clouds, and striving to maintain accuracy and velocity like a skilled engineer at the helm of a complex machine. 
-In the first stage of the competition, participants will be required to employ a high-altitude, winged, remote-controlled aircraft, exclusively made from chloroplast material, to achieve a specific altitude within a designated timeframe. The victorious team will be determined based on the altitude their plane reaches, with the highest altitude winning.
-In the second stage, once the plane reaches the maximum altitude, competitors will reduce the throttle to zero and start gliding, endeavoring to keep their plane in the air for the longest period possible. The champions will be evaluated on their airborne time and the smoothness of their landing.
-So, come and take flight with Technika'23's Udaan, and experience the thrill of engineering in action.
-
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-                
-              </h1>
-
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-               
-              </h1>
+              Just as birds soar and glide through the sky, competing with their
+              fellow winged creatures, the Technika'23 "Udaan" event invites you
+              to spread your wings and fly high. But instead of feathers and
+              wings, you'll be equipped with an RC plane, battling against the
+              turbulence of the wind, navigating through the clouds, and
+              striving to maintain accuracy and velocity like a skilled engineer
+              at the helm of a complex machine. In the first stage of the
+              competition, participants will be required to employ a
+              high-altitude, winged, remote-controlled aircraft, exclusively
+              made from chloroplast material, to achieve a specific altitude
+              within a designated timeframe. The victorious team will be
+              determined based on the altitude their plane reaches, with the
+              highest altitude winning. In the second stage, once the plane
+              reaches the maximum altitude, competitors will reduce the throttle
+              to zero and start gliding, endeavoring to keep their plane in the
+              air for the longest period possible. The champions will be
+              evaluated on their airborne time and the smoothness of their
+              landing. So, come and take flight with Technika'23's Udaan, and
+              experience the thrill of engineering in action.
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
               {/* Shubham(3rd B.tech CHE): 9120585755 <br /> Vikas(3rd B.tech
               FT):7248338611 <br /> Nikita(3rd B.tech PL) : 8303290354 */}
             </div>
@@ -135,7 +144,7 @@ So, come and take flight with Technika'23's Udaan, and experience the thrill of 
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCFH04" />
+            {/* <EventRegistrationForm eventId="TSCFH04" /> */}
           </div>
         </div>
       </>

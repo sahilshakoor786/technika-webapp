@@ -69,8 +69,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Venue
                 </span>
-                <span className="text-slate-800 ">CSE Lab
-</span>
+                <span className="text-slate-800 ">CSE Lab</span>
                 <span className="font-primary font-bold text-slate-800 ">
                   Date
                 </span>
@@ -79,16 +78,15 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">12 - 4 PM
-</span>
+                <span className="text-slate-800">12 - 4 PM</span>
               </div>
             </div>
 
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-              //  onClick={handleEventFormPopup}
-              form_link='https://forms.gle/xvrE5Pb89PKrnTrj9'
+                //  onClick={handleEventFormPopup}
+                form_link="https://forms.gle/xvrE5Pb89PKrnTrj9"
               />
             </div>
 
@@ -100,7 +98,18 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Welcome to the hackathon event! In this engaging event, you will have the opportunity to collaborate with other tech enthusiasts to create innovative software projects. Whether you are a seasoned developer or a newcomer to the field, this event is an opportunity to flex your creativity, problem-solving skills, and teamwork abilities. You will have access to mentors, resources, and support to help you bring your ideas to life. Throughout the event, you will work tirelessly to prototype your projects and compete for prizes. But more importantly, you will have the opportunity to learn new skills, network with other professionals, and contribute to the development of new technologies that can make a real impact in the world. So let's get ready to hack!
+              Welcome to the hackathon event! In this engaging event, you will
+              have the opportunity to collaborate with other tech enthusiasts to
+              create innovative software projects. Whether you are a seasoned
+              developer or a newcomer to the field, this event is an opportunity
+              to flex your creativity, problem-solving skills, and teamwork
+              abilities. You will have access to mentors, resources, and support
+              to help you bring your ideas to life. Throughout the event, you
+              will work tirelessly to prototype your projects and compete for
+              prizes. But more importantly, you will have the opportunity to
+              learn new skills, network with other professionals, and contribute
+              to the development of new technologies that can make a real impact
+              in the world. So let's get ready to hack!
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
@@ -138,7 +147,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCGC03" />
+            {/* <EventRegistrationForm eventId="TSCGC03" /> */}
           </div>
         </div>
       </>

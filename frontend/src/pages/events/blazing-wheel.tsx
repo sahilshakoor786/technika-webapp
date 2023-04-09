@@ -86,7 +86,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 //onClick={handleEventFormPopup}
-                form_link='https://forms.gle/vgkgRJTF1mM4mprf7'
+                form_link="https://forms.gle/vgkgRJTF1mM4mprf7"
               />
             </div>
 
@@ -152,12 +152,8 @@ export default function Page() {
               coordinators have all the rights to take final decisions for any
               matter during the event. <br />
               ● Referee’s Decision will be final. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-              
-              </h1>
-             
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
               <br />
-          
             </div>
           </div>
         </main>
@@ -180,7 +176,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCMM04" />
+            {/* <EventRegistrationForm eventId="TSCMM04" /> */}
           </div>
         </div>
       </>

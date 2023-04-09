@@ -48,7 +48,7 @@ export default function Page() {
               className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
             >
-             Maze Solver
+              Maze Solver
             </h1>
             {/* <Prize prize="5000" /> */}
 
@@ -98,15 +98,19 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Have you ever had the desire to know the science behind various inventions but never had the chance to do so? 
-There are countless things to discover about Robotics. A lot of it is just too extraordinary for people to believe in. 
-Hence, Technika is presenting an opportunity to be the Maze Solver, but with a twist, before you. You'll be the guiding light, but your victory depends on your Maze Solver Bot.
-A maze solver works on a pre-defined algorithm and detects the shortest path to reach its end goal.
-Well, it's time to be James Dashner in The Maze Runner and tell your bots "Just follow me and run as your life depends on it. Because it does" since your bot will only win if it follows the shortest path to reach the end.
-
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-               
-              </h1>
+              Have you ever had the desire to know the science behind various
+              inventions but never had the chance to do so? There are countless
+              things to discover about Robotics. A lot of it is just too
+              extraordinary for people to believe in. Hence, Technika is
+              presenting an opportunity to be the Maze Solver, but with a twist,
+              before you. You'll be the guiding light, but your victory depends
+              on your Maze Solver Bot. A maze solver works on a pre-defined
+              algorithm and detects the shortest path to reach its end goal.
+              Well, it's time to be James Dashner in The Maze Runner and tell
+              your bots "Just follow me and run as your life depends on it.
+              Because it does" since your bot will only win if it follows the
+              shortest path to reach the end.
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
               {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
@@ -136,10 +140,10 @@ Well, it's time to be James Dashner in The Maze Runner and tell your bots "Just 
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCMM07
 "
-            />
+            /> */}
           </div>
         </div>
       </>

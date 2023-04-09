@@ -97,7 +97,11 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Join us for a historic and momentous occasion as we celebrate the traditional inauguration of Technika'23 from the Technical Sub Council. This event will mark a significant milestone in the history of our organization and we invite you to be a part of this special day. <br />
+              Join us for a historic and momentous occasion as we celebrate the
+              traditional inauguration of Technika'23 from the Technical Sub
+              Council. This event will mark a significant milestone in the
+              history of our organization and we invite you to be a part of this
+              special day. <br />
               {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
@@ -132,7 +136,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCCE01" />
+            {/* <EventRegistrationForm eventId="TSCCE01" /> */}
           </div>
         </div>
       </>

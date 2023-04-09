@@ -86,7 +86,6 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 //onClick={handleEventFormPopup}
-                
               />
             </div>
 
@@ -114,10 +113,7 @@ export default function Page() {
               monitor. The one with the keyboard will type the solution and can
               be corrected by the one with the monitor only through signs. The
               fastest team to solve the given set wins. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-             
-              </h1>
-             
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
             </div>
           </div>
         </main>
@@ -140,7 +136,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCGC06" />
+            {/* <EventRegistrationForm eventId="TSCGC06" /> */}
           </div>
         </div>
       </>

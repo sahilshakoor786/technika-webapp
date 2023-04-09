@@ -85,7 +85,7 @@ export default function Page() {
             <div className="mb-10">
               <SecondaryButton
                 text="Register to event"
-                form_link='https://forms.gle/LwP4yEMm9Gb4ebtMA'
+                form_link="https://forms.gle/LwP4yEMm9Gb4ebtMA"
                 onClick={handleEventFormPopup}
               />
             </div>
@@ -102,9 +102,7 @@ export default function Page() {
               aircraft would be launched in the air field using air pressure
               concept. The plane which will cover the max range at a certain
               height will come out on top.
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-               
-              </h1>
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
               {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
               </h1>
@@ -134,10 +132,10 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCMM07
 "
-            />
+            /> */}
           </div>
         </div>
       </>

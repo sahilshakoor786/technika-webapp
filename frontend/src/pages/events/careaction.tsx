@@ -115,10 +115,7 @@ export default function Page() {
               reaching final destination in shortest time will go for final
               round and the same process will carry again. • Competition area
               has a special place defined for the Chemical Car. <br />
-              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
-            
-              </h1>
-          
+              <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5"></h1>
             </div>
           </div>
         </main>
@@ -141,7 +138,7 @@ export default function Page() {
               />
             </button>
 
-            <EventRegistrationForm eventId="TSCMM11" />
+            {/* <EventRegistrationForm eventId="TSCMM11" /> */}
           </div>
         </div>
       </>

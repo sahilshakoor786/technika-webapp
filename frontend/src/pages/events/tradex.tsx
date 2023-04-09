@@ -78,8 +78,7 @@ export default function Page() {
                 <span className="font-primary font-bold text-slate-800 ">
                   Time
                 </span>
-                <span className="text-slate-800">All day
-</span>
+                <span className="text-slate-800">All day</span>
               </div>
             </div>
 
@@ -87,7 +86,7 @@ export default function Page() {
               <SecondaryButton
                 text="Register to event"
                 //onClick={handleEventFormPopup}
-                form_link='https://forms.gle/LSPJYYf1qK9WAMb79'
+                form_link="https://forms.gle/LSPJYYf1qK9WAMb79"
               />
             </div>
 
@@ -99,11 +98,23 @@ export default function Page() {
                 About the Event
                 <br />
               </h1>
-              Join us for an exciting online trading event, where traders and investors from around the world come together to learn, network and trade. Our event will feature presentations from industry experts on a variety of topics, including trading strategies, risk management, and market analysis. Participants will also have the opportunity to engage in live trading sessions, where they can put their skills to the test and learn from experienced traders.
-
-In addition to educational seminars and trading sessions, our event will provide ample networking opportunities. Connect with other traders, exchange ideas and build valuable relationships that can help you succeed in the world of finance. Our online trading event is the perfect opportunity to stay up-to-date on the latest trends in the financial markets and gain the knowledge and skills needed to take your trading to the next level.
-
-Don't miss out on this exciting opportunity to learn from industry experts, engage in live trading sessions and network with other traders. Register now and join us for an unforgettable online trading event.
+              Join us for an exciting online trading event, where traders and
+              investors from around the world come together to learn, network
+              and trade. Our event will feature presentations from industry
+              experts on a variety of topics, including trading strategies, risk
+              management, and market analysis. Participants will also have the
+              opportunity to engage in live trading sessions, where they can put
+              their skills to the test and learn from experienced traders. In
+              addition to educational seminars and trading sessions, our event
+              will provide ample networking opportunities. Connect with other
+              traders, exchange ideas and build valuable relationships that can
+              help you succeed in the world of finance. Our online trading event
+              is the perfect opportunity to stay up-to-date on the latest trends
+              in the financial markets and gain the knowledge and skills needed
+              to take your trading to the next level. Don't miss out on this
+              exciting opportunity to learn from industry experts, engage in
+              live trading sessions and network with other traders. Register now
+              and join us for an unforgettable online trading event.
               <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Guidelines: <br />
               </h1>
@@ -111,8 +122,8 @@ Don't miss out on this exciting opportunity to learn from industry experts, enga
               Leader. <br />• Each team would be given a specified task and team
               which complete the given task in minimum time will be the winner.{" "}
               <br />
-              • The competition area has a special place defined for the
-              TradeX. <br />
+              • The competition area has a special place defined for the TradeX.{" "}
+              <br />
               • It has 1 Round and this final round. <br />
               {/* <h1 className="font-primary text-2xl md:text-5xl text-center mt-5 mb-5">
                 Coordinators: <br />
@@ -141,10 +152,10 @@ Don't miss out on this exciting opportunity to learn from industry experts, enga
               />
             </button>
 
-            <EventRegistrationForm
+            {/* <EventRegistrationForm
               eventId="TSCCE09
 "
-            />
+            /> */}
           </div>
         </div>
       </>
