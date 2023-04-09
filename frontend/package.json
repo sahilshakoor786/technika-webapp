@@ -16,7 +16,7 @@
     "express-session": "^1.17.2",
     "gsap": "^3.10.3",
     "hls.js": "^1.1.5",
-        "react-dropzone": "^14.2.3",
+    "react-dropzone": "^14.2.3",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.1",
@@ -26,7 +26,8 @@
     "react-audio-player": "^0.17.0",
     "react-dom": "18.0.0",
     "react-razorpay": "^1.1.5",
-    "redis": "^4.0.6"
+    "redis": "^4.0.6",
+    "firebase": "^9.16.0"
   },
   "devDependencies": {
     "@types/connect-redis": "^0.0.18",
