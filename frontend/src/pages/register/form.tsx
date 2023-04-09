@@ -24,7 +24,7 @@ interface RegistrationForm {
   gender: string;
   requiresAccommodation: boolean;
   paymentAmount: number;
-  paymentReceipt: any;
+  paymentReceipt?: any;
 }
 
 export default function EventRegistrationForm() {
@@ -93,7 +93,6 @@ export default function EventRegistrationForm() {
     } catch (err) {
       console.log(err);
     }
-    router.push("/confirmation"); // Redirect to confirmation page
   };
   function handleRemoveImage() {
     setRegistrationForm({
