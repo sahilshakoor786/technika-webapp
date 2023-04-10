@@ -44,10 +44,24 @@ export default function EventRegistrationForm() {
     gender: "",
     requiresAccommodation: false,
     paymentAmount: 300,
-    paymentReceipt: null,
+    paymentReceipt: "",
   });
   const handleInputChange = (event: any) => {
     const target = event.target;
+    
+    if(target.name==="paymentReceipt"){
+      const file = event.target.files?.[0];
+      const reader = new FileReader();
+      reader.readAsDataURL(file)
+      reader.onload = () => {
+        const dataURL = reader.result;
+        const base64String = dataURL?.toString().split(",")[1] || "";
+        setRegistrationForm({
+          ...registrationForm,
+          paymentReceipt: base64String,
+        });
+    };
+  }else{
     const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
     setRegistrationForm((prevState) => ({
@@ -64,7 +78,7 @@ export default function EventRegistrationForm() {
       });
     }
   };
-
+  }
   const onDrop = (acceptedFiles: any) => {
     const imageRef = ref(storage, `images/${acceptedFiles[0].name}`);
     uploadBytes(imageRef, acceptedFiles[0]).then(() => {
@@ -306,31 +320,19 @@ export default function EventRegistrationForm() {
             Payment Receipt
           </label>
           <div
-            {...getRootProps()}
+ 
             className="border border-gray-400 p-2 rounded-md"
           >
-            <input {...getInputProps()} />
-            <p className="text-gray-400">
-              Drag 'n' drop receipt file here, or click to select file
-            </p>
-            <div className="mt-2">
-              {registrationForm.paymentReceipt && (
-                <div className="flex items-center">
-                  <img
-                    src={URL.createObjectURL(registrationForm.paymentReceipt)}
-                    alt="payment receipt"
-                    className="h-16 w-auto object-contain mr-2"
-                  />
-                  <button
-                    type="button"
-                    onClick={handleRemoveImage}
-                    className="text-red-600 hover:text-red-800"
-                  >
-                    Remove
-                  </button>
-                </div>
-              )}
-            </div>
+            <input 
+                 type="file"
+                name="paymentReceipt"
+                id="paymentReceipt"
+                // value={registrationForm.paymentReceipt}
+                onChange={handleInputChange}
+                required
+                className="border border-gray-400 p-2 w-full rounded-md"
+                onClick={handleRemoveImage} />
+      
           </div>
         </div>
         <div className="flex justify-end">
