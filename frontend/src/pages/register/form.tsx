@@ -255,7 +255,7 @@ export default function EventRegistrationForm() {
 
   <h2 className="block text-gray-700 font-bold mb-2">Rs.1500 if accommodation is required or Rs.300 if not.</h2>
   <div className="mt-6">
-    <img src="https://drive.google.com/uc?id=1GVHYej02ArYPyafiaFjTkkSA6FYPpxko" alt="accommodation prices" className="h-64 object-contain" />
+    <img src="https://drive.google.com/uc?id=1HgKcPBmzHLR7p_PtfPDtCh5dFm8AkauH" alt="accommodation prices" className="h-64 object-contain" />
   </div>
   <div className="mb-4">
     <label htmlFor="paymentReceipt" className="block text-gray-700 font-bold mb-2">
