@@ -27,7 +27,8 @@
     "react-dom": "18.0.0",
     "react-razorpay": "^1.1.5",
     "redis": "^4.0.6",
-    "firebase": "^9.16.0"
+    "firebase": "^9.16.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/connect-redis": "^0.0.18",

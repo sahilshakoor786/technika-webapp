@@ -12,6 +12,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { ref, uploadBytes } from "firebase/storage";
+import { v4 } from "uuid";
 interface RegistrationForm {
   firstName: string;
   lastName: string;
@@ -66,6 +67,10 @@ export default function EventRegistrationForm() {
   };
 
   const onDrop = (acceptedFiles: any) => {
+    const imageRef = ref(storage, `images/${acceptedFiles[0].name + v4()}`);
+    uploadBytes(imageRef, acceptedFiles[0]).then(() => {
+      console.log("Image uploaded");
+    });
     setRegistrationForm({
       ...registrationForm,
       paymentReceipt: acceptedFiles[0],
@@ -84,9 +89,12 @@ export default function EventRegistrationForm() {
   //     }));
   //   };
 
+  // console.log("Payment", URL.createObjectURL(registrationForm.paymentReceipt));
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Handle form submission here
+    delete registrationForm["paymentReceipt"];
     console.log(registrationForm);
     try {
       const docRef = await addDoc(formsCollectionRef, registrationForm);
