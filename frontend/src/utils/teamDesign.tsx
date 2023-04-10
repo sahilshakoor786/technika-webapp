@@ -29,4 +29,12 @@ export const teamDesign = [
       "https://instagram.com/ig_prashant002?igshid=ZDdkNTZiNTM=",
     "Position in TSC": "Design Team Member ",
   },
+  {
+    Timestamp: "3/29/2023 16:38:03",
+    Name: "Vishal Kumar Shah",
+    Photo: "https://drive.google.com/uc?id=1QLaE9LOO7vQunfET3lTQ30xx85a3BJdY",
+    "LinkedIn profile URL ": "https://www.linkedin.com/in/vishal-kr-shah-72239b206",
+    "Instagram profile URL": "https://www.instagram.com/kumar.vishalshah/",
+    "Position in TSC": "Design",
+  },
 ];
