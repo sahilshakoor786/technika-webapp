@@ -43,4 +43,14 @@ export const teamPR = [
     "Instagram profile URL": "__.vivek__kumar",
     "Position in TSC": "Public relations",
   },
+  {
+    Timestamp: "3/30/2023 1:29:04",
+    Name: "Prabhat Sharma ",
+    Photo: "https://drive.google.com/uc?id=1B5HEP7tBzaoBBkajK8rqM5AO8CwX6JD3",
+    "LinkedIn profile URL ":
+      "https://www.linkedin.com/in/prabhat-sharma-3955ba22b",
+    "Instagram profile URL":
+      "https://instagram.com/sharmaji__7.7?igshid=ZDdkNTZiNTM=",
+    "Position in TSC": "Public relations",
+  }
 ];
