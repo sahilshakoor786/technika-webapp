@@ -280,14 +280,13 @@ export default function EventRegistrationForm() {
       className="border border-gray-400 p-2 w-full rounded-md"
     />
   </div> */}
-
+        s{" "}
         <h2 className="block text-gray-700 font-bold mb-2">
-          Rs.1500 if accommodation is required or Rs.300 if not. (Only for
-          Outsiders)
+          Rs.1500 if accommodation is required or Rs.300 if not.
         </h2>
         <div className="mt-6">
           <img
-            src="https://drive.google.com/uc?id=1GVHYej02ArYPyafiaFjTkkSA6FYPpxko"
+            src="https://drive.google.com/uc?id=1HgKcPBmzHLR7p_PtfPDtCh5dFm8AkauH"
             alt="accommodation prices"
             className="h-64 object-contain"
           />
