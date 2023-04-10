@@ -89,7 +89,8 @@ export default function EventRegistrationForm() {
     // Handle form submission here
     console.log(registrationForm);
     try {
-      await addDoc(formsCollectionRef, registrationForm);
+      const docRef = await addDoc(formsCollectionRef, registrationForm);
+      console.log("<<<<<<<<<<<<<<<", docRef);
     } catch (err) {
       console.log(err);
     }
