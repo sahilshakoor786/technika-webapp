@@ -275,7 +275,7 @@ export default function EventRegistrationForm() {
       Payment Receipt
     </label>
     <div  className="border border-gray-400 p-2 rounded-md">
-      <input {
+      <input 
            type="file"
                 name="paymentReceipt"
                 id="paymentReceipt"
@@ -286,7 +286,7 @@ export default function EventRegistrationForm() {
                 onClick={handleRemoveImage}
         
         
-        } />
+         />
       <p className="text-gray-400">Drag 'n' drop receipt file here, or click to select file</p>
       <div className="mt-2">
         {registrationForm.paymentReceipt && (
