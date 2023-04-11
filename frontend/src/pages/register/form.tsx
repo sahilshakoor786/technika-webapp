@@ -287,7 +287,6 @@ export default function EventRegistrationForm() {
         
         
          />
-      <p className="text-gray-400">Drag 'n' drop receipt file here, or click to select file</p>
       <div className="mt-2">
         {registrationForm.paymentReceipt && (
           <div className="flex items-center">
