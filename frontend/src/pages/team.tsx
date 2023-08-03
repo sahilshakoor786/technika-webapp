@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Auth from "src/components/Auth";
 import TeamImage from "src/components/TeamImage";
-import OldTeam from "src/components/OldTeam";
+import Team21 from "src/components/Team21-22";
+import Team20 from "src/components/Team20-21";
+import Team19 from "src/components/Team19-20";
 import Layout from "src/components/Layout";
 import { TeamTSC } from "src/utils/TeamTSC";
 import { teamHospitality } from "src/utils/teamHospitality";
@@ -18,10 +20,9 @@ import { coordinator } from "src/utils/coordinator";
 import { logistics } from "src/utils/logistics";
 import React from "react";
 
-
 export default function EventsPage() {
   const [year, setYear] = React.useState(1);
- 
+
   return (
     // // <Auth>
     <Layout>
@@ -72,6 +73,22 @@ export default function EventsPage() {
             shadow-lg rounded"
             >
               Technika 2021-22
+            </button>
+            <button
+              onClick={() => setYear(3)}
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
+            duration-300 my-5 px-2 py-2 text-xl font-bold text-white 
+            shadow-lg rounded"
+            >
+              Technika 2020-21
+            </button>
+            <button
+              onClick={() => setYear(4)}
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
+            duration-300 my-5 px-2 py-2 text-xl font-bold text-white 
+            shadow-lg rounded"
+            >
+              Technika 2019-20
             </button>
           </div>
           {year === 1 ? (
@@ -394,10 +411,17 @@ export default function EventsPage() {
                 ))}
               </div>
             </div>
+          ) : year === 2 ? (
+            <>
+              <Team21></Team21>
+            </>
+          ) : year == 3 ? (
+            <>
+              <Team20></Team20>
+            </>
           ) : (
             <>
-              <OldTeam></OldTeam>
-            
+              <Team19></Team19>
             </>
           )}
         </div>
