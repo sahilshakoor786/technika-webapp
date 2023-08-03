@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Auth from "src/components/Auth";
 import TeamImage from "src/components/TeamImage";
+import OldTeam from "src/components/OldTeam";
 import Layout from "src/components/Layout";
 import { TeamTSC } from "src/utils/TeamTSC";
 import { teamHospitality } from "src/utils/teamHospitality";
@@ -15,8 +16,12 @@ import { teamContent } from "src/utils/teamContent";
 import { teamEvents } from "src/utils/teamEvents";
 import { coordinator } from "src/utils/coordinator";
 import { logistics } from "src/utils/logistics";
+import React from "react";
+
 
 export default function EventsPage() {
+  const [year, setYear] = React.useState(1);
+ 
   return (
     // // <Auth>
     <Layout>
@@ -51,324 +56,350 @@ export default function EventsPage() {
               />
             ))}
           </div> */}
-
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
-                mt-32 md:mt-20 mb-10"
-          >
-            Secretaries
-          </h1>
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            <TeamImage
-              key={"Devendra Singh Parihar"}
-
-              src="https://i.ibb.co/PxfcT3g/deven.jpg"
-
-              width={300}
-              height={400}
-              name={"Devendra Singh Parihar"}
-              position={"Student Secretary"}
-              instagram={
-                "https://instagram.com/_._pariharr_._?igshid=ZDdkNTZiNTM="
-              }
-              facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-              linkedin={
-                "https://www.linkedin.com/in/devendra-singh-parihar-377057222"
-              }
-            />
-            <TeamImage
-              key={"Jahnavi Sachan"}
-              src="https://drive.google.com/uc?id=16nlS8V6RlZ9cIlM1azYe_m-w1klgSMPv"
-              width={300}
-              height={400}
-              name={"Jahnavi Sachan"}
-              position={"Joint Secretary"}
-              instagram={
-                "https://instagram.com/artist_manas?igshid=YmMyMTA2M2Y="
-              }
-              facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-              linkedin={"https://www.linkedin.com/in/manas-motwani-685502229"}
-            />
+          <div className="flex justify-evenly">
+            <button
+              onClick={() => setYear(1)}
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 
+            duration-300 my-5 px-2 py-2 text-xl font-bold text-white 
+            shadow-lg rounded"
+            >
+              Technika 2022-23
+            </button>
+            <button
+              onClick={() => setYear(2)}
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
+            duration-300 my-5 px-2 py-2 text-xl font-bold text-white 
+            shadow-lg rounded"
+            >
+              Technika 2021-22
+            </button>
           </div>
-
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+          {year === 1 ? (
+            <div className="mt-10">
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Co-ordinator
-          </h1>
+              >
+                Secretaries
+              </h1>
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                <TeamImage
+                  key={"Devendra Singh Parihar"}
+                  src="https://i.ibb.co/PxfcT3g/deven.jpg"
+                  width={300}
+                  height={400}
+                  name={"Devendra Singh Parihar"}
+                  position={"Student Secretary"}
+                  instagram={
+                    "https://instagram.com/_._pariharr_._?igshid=ZDdkNTZiNTM="
+                  }
+                  facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                  linkedin={
+                    "https://www.linkedin.com/in/devendra-singh-parihar-377057222"
+                  }
+                />
+                <TeamImage
+                  key={"Jahnavi Sachan"}
+                  src="https://drive.google.com/uc?id=16nlS8V6RlZ9cIlM1azYe_m-w1klgSMPv"
+                  width={300}
+                  height={400}
+                  name={"Jahnavi Sachan"}
+                  position={"Joint Secretary"}
+                  instagram={
+                    "https://instagram.com/artist_manas?igshid=YmMyMTA2M2Y="
+                  }
+                  facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                  linkedin={
+                    "https://www.linkedin.com/in/manas-motwani-685502229"
+                  }
+                />
+              </div>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {coordinator.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
-
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Web Dev Team
-          </h1>
+              >
+                Co-ordinator
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {webdev.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {coordinator.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
 
-          {/* Hospitality Team */}
-
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Hospitality Team
-          </h1>
+              >
+                Web Dev Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamHospitality.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
-          {/* Design Team */}
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {webdev.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+
+              {/* Hospitality Team */}
+
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Design Team
-          </h1>
+              >
+                Hospitality Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamDesign.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
-          {/* Marketing Team */}
-
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {teamHospitality.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+              {/* Design Team */}
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Marketing Team
-          </h1>
+              >
+                Design Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamMarketing.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {teamDesign.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+              {/* Marketing Team */}
 
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Photography Team{}
-          </h1>
+              >
+                Marketing Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {photographyteam.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
-          {/* Publicity Team */}
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {teamMarketing.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Publicity Team
-          </h1>
+              >
+                Photography Team{}
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamPublicity.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {photographyteam.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+              {/* Publicity Team */}
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Security Team
-          </h1>
+              >
+                Publicity Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamSecurity.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
-          {/* Events Team */}
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {teamPublicity.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Events Team
-          </h1>
+              >
+                Security Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamEvents.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
-
-          {/* Content Team */}
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {teamSecurity.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+              {/* Events Team */}
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Content Team
-          </h1>
+              >
+                Events Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamContent.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {teamEvents.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
 
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              {/* Content Team */}
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Public and Relations Team
-          </h1>
+              >
+                Content Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {teamPR.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={300}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {teamContent.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
 
-          <h1
-            className="font-primary text-3xl md:text-5xl text-center 
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
                 mt-32 md:mt-20 mb-10"
-          >
-            Logistics Team
-          </h1>
+              >
+                Public and Relations Team
+              </h1>
 
-          <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
-            {logistics.map((member) => (
-              <TeamImage
-                key={member?.Timestamp}
-                src={member?.Photo}
-                width={350}
-                height={400}
-                name={member?.Name}
-                position={member?.["Position in TSC"]}
-                instagram={member?.["Instagram profile URL"]}
-                facebook="https://www.facebook.com/technicalsubcouncihbtu/"
-                linkedin={member?.["LinkedIn profile URL "]}
-              />
-            ))}
-          </div>
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {teamPR.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={300}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+
+              <h1
+                className="font-primary text-3xl md:text-5xl text-center 
+                mt-32 md:mt-20 mb-10"
+              >
+                Logistics Team
+              </h1>
+
+              <div className="flex justify-center items-center gap-y-8 gap-x-8 flex-wrap py-20">
+                {logistics.map((member) => (
+                  <TeamImage
+                    key={member?.Timestamp}
+                    src={member?.Photo}
+                    width={350}
+                    height={400}
+                    name={member?.Name}
+                    position={member?.["Position in TSC"]}
+                    instagram={member?.["Instagram profile URL"]}
+                    facebook="https://www.facebook.com/technicalsubcouncihbtu/"
+                    linkedin={member?.["LinkedIn profile URL "]}
+                  />
+                ))}
+              </div>
+            </div>
+          ) : (
+            <>
+              <OldTeam></OldTeam>
+            
+            </>
+          )}
         </div>
       </main>
     </Layout>
