@@ -27,64 +27,68 @@ const TeamMembersSection: React.FC<{
 const TeamPage: React.FC = () => {
   const coreTeamMembers: TeamMember[] = [
     {
-      name: "Prateek Kumar Singh",
-      department: "ME",
+      name: "Ayush Verma",
+      department: "Et",
       position: "Technical Secretary",
     },
-    { name: "Bhashkar Singh", department: "ET", position: "Joint Secretary" },
-    { name: "Rinku Yadav", department: "ME", position: "Event Head" },
-    { name: "Amrisha Srivastava", department: "CHE", position: "Event Head" },
+    { name: "Shekhar Mishra", department: "CHE", position: "Joint Secretary" },
+    { name: "Sonamika Agarwal", department: "PL", position: "Event Head" },
+    { name: "Amrita Yadav", department: "CSE", position: "Event Head" },
   ];
 
   const departmentalHeads: { [key: string]: TeamMember[] } = {
     MECHANICAL: [
-      { name: "Pyush Verma", position: "Head", department: "MECHANICAL" },
-      { name: "Sagar Gupta", position: "Head", department: "MECHANICAL" },
+      { name: "Rahul Kushwaha", position: "Head", department: "MECHANICAL" },
+      { name: "Rohit Shah", position: "Head", department: "MECHANICAL" },
     ],
     "COMPUTER SCIENCE AND ENGG.": [
       {
-        name: "Anik Gupta",
+        name: "Arvind Dubey",
         position: "Head",
         department: "COMPUTER SCIENCE AND ENGG.",
       },
       {
-        name: "Ankit Gupta",
+        name: "Rishika Saini",
         position: "Head",
         department: "COMPUTER SCIENCE AND ENGG.",
       },
     ],
     "ELECTRONICS ENGG.": [
       {
-        name: "Himanshi Paliwal",
+        name: "Om Gupta",
         position: "Head",
         department: "ELECTRONICS ENGG.",
       },
       {
-        name: "Ravinder Singh",
+        name: "Deepu Shrivastav",
         position: "Head",
         department: "ELECTRONICS ENGG.",
       },
     ],
     "CIVIL ENGG. HEAD": [
-      { name: "Shruti Raypa", position: "Head", department: "CIVIL ENGG." },
-      { name: "Mahima Rajput", position: "Head", department: "CIVIL ENGG." },
+      { name: "Shreedhar Sen", position: "Head", department: "CIVIL ENGG." },
+      { name: "Krati Arora", position: "Head", department: "CIVIL ENGG." },
     ],
     "CHEMICAL ENGG. HEAD": [
-      { name: "Mayank Sharma", position: "Head", department: "CHEMICAL ENGG." },
+      { name: "Shalu Dixit", position: "Head", department: "CHEMICAL ENGG." },
       {
-        name: "Amrisha Srivastava",
+        name: "Ram Kapoor",
         position: "Head",
         department: "CHEMICAL ENGG.",
       },
       {
-        name: "Nikhil Aggarwal",
+        name: "Niharika Trivedi",
         position: "Head",
         department: "CHEMICAL ENGG.",
       },
     ],
     "CENTRAL STAGE": [
-      { name: "Saloni Maurya", position: "Head", department: "CENTRAL STAGE" },
-      { name: "Harshit Dubey", position: "Head", department: "CENTRAL STAGE" },
+      { name: "Shree Dubey", position: "Head", department: "CENTRAL STAGE" },
+      {
+        name: "Harshita Pandey",
+        position: "Head",
+        department: "CENTRAL STAGE",
+      },
     ],
   };
 
